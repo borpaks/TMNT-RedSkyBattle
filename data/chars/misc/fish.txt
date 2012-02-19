@@ -1,0 +1,12 @@
+name	Fish
+health	30
+mp		30
+type	item
+nolife 1
+setlayer 1
+anim idle
+	loop	0
+	delay	1000
+	offset	18 14
+	bbox	13 6 1 16
+	frame	data/chars/misc/fish.gif

@@ -1,0 +1,89 @@
+name	rtkng
+health	500
+speed	5
+type	enemy
+paingrab 1
+cantgrab 1
+nomove 1 1
+nolife 1
+noquake 1
+jumpheight 0
+anim idle
+	loop	1
+	offset	1 1
+	bbox	276 2999 1 1
+	delay	2
+        movez 2 
+	frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        movez  0
+        delay 30
+        frame	data/chars/misc/empty.gif
+        delay 2
+        movez -2
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        movez  0
+        delay 30
+        frame	data/chars/misc/empty.gif
+anim walk
+	loop	1
+	offset	1 1
+	bbox	276 2999 1 1
+	delay	30
+	frame	data/chars/misc/empty.gif
+anim pain
+	offset	1 1
+	bbox	276 2999 1 1
+	delay	30
+	frame	data/chars/misc/empty.gif
+anim fall
+	offset	1 1
+	bbox	276 2999 1 1
+	delay	30
+	frame	data/chars/misc/empty.gif
+anim rise
+      offset	1 1
+	bbox	276 2999 1 1
+	delay	30
+	frame	data/chars/misc/empty.gif

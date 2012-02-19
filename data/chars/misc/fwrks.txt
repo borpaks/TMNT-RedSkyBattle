@@ -1,0 +1,76 @@
+name	fwrks
+health 1
+type	obstacle
+diesound data/sounds/klunk.wav
+nodrop 1
+shadow 2
+nolife 1
+noatflash 1
+flash bflash
+nodieblink 1
+load wybua
+score 0 0
+anim idle
+	delay	100
+	offset	12 59
+	bbox	2 0 27 54
+	frame	data/chars/misc/fwrks1.gif
+anim death
+	delay	10
+	offset	12 59
+	bbox	2 0 27 54
+        custknife wybua
+        throwframe 20 60
+	frame	data/chars/misc/fwrks2.gif
+        offset	13 59
+        frame	data/chars/misc/fwrks3.gif
+        offset	12 59
+        frame	data/chars/misc/fwrks4.gif
+		offset	13 59
+        frame	data/chars/misc/fwrks2.gif
+        delay 9
+        offset	12 59
+        frame	data/chars/misc/fwrks2.gif
+        offset	13 59
+        frame	data/chars/misc/fwrks3.gif
+        offset	12 59
+        frame	data/chars/misc/fwrks4.gif
+		offset	13 59
+        frame	data/chars/misc/fwrks2.gif
+        delay 8
+        offset	12 59
+        frame	data/chars/misc/fwrks2.gif
+        offset	13 59
+        frame	data/chars/misc/fwrks3.gif
+        offset	12 59
+        frame	data/chars/misc/fwrks4.gif
+		offset	13 59
+        frame	data/chars/misc/fwrks2.gif
+        delay 7
+        offset	12 59
+        frame	data/chars/misc/fwrks2.gif
+        offset	13 59
+        frame	data/chars/misc/fwrks3.gif
+        offset	12 59
+        frame	data/chars/misc/fwrks4.gif
+		offset	13 59
+        frame	data/chars/misc/fwrks2.gif
+        delay 6
+        offset	12 59
+        frame	data/chars/misc/fwrks2.gif
+        offset	13 59
+        frame	data/chars/misc/fwrks3.gif
+        offset	12 59
+        frame	data/chars/misc/fwrks4.gif
+		offset	13 59
+        frame	data/chars/misc/fwrks2.gif
+        delay 	140
+        offset	12 59
+        bbox    0 0 0 0 
+        frame	data/chars/misc/fwrks1.gif
+        delay 	10
+        frame	data/chars/misc/fwrks1.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/fwrks1.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/fwrks1.gif

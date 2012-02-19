@@ -1,0 +1,15 @@
+name	easy2
+type	endlevel
+branch easy2
+nolife 1
+anim idle
+        loop 1
+	offset  32 100
+        delay   50
+        bbox    24 4 15 76
+        frame	data/chars/sign/1a.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/sign/1b.gif
+        frame	data/chars/misc/empty.gif
+
+ 

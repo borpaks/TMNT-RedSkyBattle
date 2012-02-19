@@ -1,0 +1,34 @@
+name	men3
+health	100000
+speed	6
+type	enemy
+subtype arrow
+nolife 1
+shadow 1
+remap data/chars/splinter/menb1.gif data/chars/splinter/menbalt1.gif
+anim spawn
+	offset	29 72
+	delay	1
+        bbox 0 0 0 0
+         @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%1;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/splinter/menb1.gif
+anim idle
+	loop	1
+	offset	29 72
+	delay	10
+        bbox 0 0 0 0
+	frame	data/chars/splinter/menb1.gif
+        frame	data/chars/splinter/menb2.gif
+        frame	data/chars/splinter/menb3.gif
+        frame	data/chars/splinter/menb4.gif
+        frame	data/chars/splinter/menb5.gif

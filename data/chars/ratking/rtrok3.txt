@@ -1,0 +1,115 @@
+name	rtrok3
+health	1
+type	enemy
+subtype chase
+hostile player
+speed 10
+nolife 1
+nomove 0 1
+facing 2
+shadow 1
+grabdistance 5
+hostile player npc
+candamage player npc obstacle 
+anim idle
+        range 0 50
+        delay 1
+	offset 30 14
+        movez -50
+        bbox 0 1000 1 1
+        frame	data/chars/misc/empty.gif
+        movez 0
+        delay 10
+        hitflash wybu3
+        hitfx   data/sounds/granat.wav
+        burn 25 -10 20 28 10 0 0 0 10
+        frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif
+         frame	data/chars/ratking/rkrok1.gif
+        frame	data/chars/ratking/rkrok2.gif
+        frame	data/chars/ratking/rkrok3.gif

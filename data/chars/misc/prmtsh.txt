@@ -1,0 +1,22 @@
+name	prmtsh
+health	1
+type	enemy
+speed 10
+nolife 1
+noatflash 1
+flash bflash
+remove 0
+candamage nps enemy player obstacle
+anim idle
+        delay 1
+        seta 1
+        flipframe 1
+	offset	9 -46
+        bbox    0 0 0 0
+        hitfx   data/sounds/knifes.wav
+        frame	data/chars/misc/empty.gif
+        delay 10
+	frame	data/chars/misc/prmt3.gif
+        delay 1000
+        blast	17 10 17 37 50 1 0 15
+        frame	data/chars/misc/prmt4.gif

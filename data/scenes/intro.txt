@@ -1,0 +1,5 @@
+animation	data/scenes/senile.gif
+#music       data/music/opening.ogg 0 0
+#animation	data/scenes/opening/25a.gif 1 
+#animation	data/scenes/opening/25b.gif 1 
+#animation	data/scenes/opening/25d.gif 1 

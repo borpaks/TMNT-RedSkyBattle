@@ -1,0 +1,114 @@
+name	foot3a
+health	40
+speed	12
+type	enemy
+subtype biker
+shadow	3
+diesound data/sounds/die1.wav
+paingrab 1
+throw	2 4
+nolife 1
+grabdistance 20
+throwdamage	20
+jumpheight 3
+cantgrab 1
+noquake 1
+remap data/chars/foot/01.gif data/chars/foot/alt1.gif
+remap data/chars/foot/01.gif data/chars/foot/alt2.gif
+remap data/chars/foot/01.gif data/chars/foot/alt3.gif
+remap data/chars/foot/01.gif data/chars/foot/alt4.gif 
+remap data/chars/foot/01.gif data/chars/foot/alt5.gif
+remap data/chars/foot/01.gif data/chars/foot/alt6.gif 
+remap data/chars/foot/01.gif data/chars/foot/alt7.gif  
+hostile player npc
+candamage player npc obstacle enemy
+rider footr
+load footr
+anim idle
+	loop	1
+	offset	74 89
+        seta 1
+	bbox	68 19 16 37
+	delay	30
+        hitflash bflash
+        attack  68 19 16 37 6 1 0 0 10
+	frame	data/chars/foot2/01.gif
+        frame	data/chars/foot2/01a.gif
+anim spawn
+	offset	74 90
+	bbox	68 19 16 37
+	delay	5
+        frame	data/chars/foot2/01.gif
+anim pain
+        loop 1
+	offset	74 89
+        seta 1
+	bbox	100000000 0 1 1
+	delay	5
+	frame	data/chars/foot2/13a.gif
+anim spain
+        offset	26 60
+	bbox	19 9 16 41
+        delay   5
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+         frame	data/chars/foot/sh1.gif
+anim shock
+        offset	26 60
+	bbox	19 9 16 41
+        delay   5
+        landframe 17
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/10.gif
+anim sdie
+        offset	26 60
+	bbox	19 9 16 41
+        delay   5
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+               

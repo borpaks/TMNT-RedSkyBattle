@@ -1,0 +1,241 @@
+name	Punk
+health	400
+speed	7
+type	enemy
+shadow	1
+diesound data/sounds/die1.wav
+cantgrab 1
+nodrop 1
+escapehits 3
+icon data/chars/punk/icon.gif
+throw	2 4
+grabdistance 20
+throwdamage	20
+noquake 1
+falldie 1
+nodieblink 1
+dust dust
+jumpheight 3
+score 10000 2
+hostile player npc
+candamage player npc enemy obstacle 
+bflash bflash
+thold 30
+blockodds 1
+gfxshadow 1
+anim spawn
+	offset	38 89
+	bbox	34 31 18 48
+	delay	30
+	frame	data/chars/punk/01.gif
+anim idle
+	loop	1
+	offset	38 89
+	bbox	34 31 18 48
+	delay	30
+	frame	data/chars/punk/01.gif
+anim walk
+	loop	1
+	offset	38 89
+	bbox	34 31 18 48
+	delay	20
+	frame	data/chars/punk/07.gif
+        	frame	data/chars/punk/06.gif
+       	 frame	data/chars/punk/05.gif
+       	 frame	data/chars/punk/01.gif
+anim run
+	loop	1
+	offset	38 89
+	bbox	34 31 18 48
+	delay	7
+	frame	data/chars/punk/05.gif
+        	frame	data/chars/punk/06.gif
+        	frame	data/chars/punk/07.gif
+       	 frame	data/chars/punk/01.gif
+anim pain
+	offset	26 60
+	offset	38 89
+	bbox	34 31 18 48
+	delay	5
+	frame	data/chars/punk/16.gif
+        offset	39 89
+        frame	data/chars/punk/16.gif
+        offset	38 89
+	frame	data/chars/punk/16.gif
+        offset	39 89
+        frame	data/chars/punk/16.gif
+        offset	38 89
+	frame	data/chars/punk/16.gif
+        offset	39 89
+        frame	data/chars/punk/16.gif
+        offset	38 89
+	frame	data/chars/punk/16.gif
+anim death
+        offset	38 89
+	bbox	34 31 18 48
+	delay	100
+	frame	data/chars/punk/18.gif
+        frame	data/chars/punk/19.gif
+        frame	data/chars/punk/18.gif
+anim fall
+	offset	38 89
+	bbox	0 0 0 0
+	delay	30
+        landframe 2
+	frame	data/chars/punk/16.gif
+        frame	data/chars/punk/19.gif
+        frame	data/chars/punk/17.gif
+anim fall2
+	offset	38 89
+	bbox	34 31 18 48
+	delay	20
+        landframe 3
+	frame	data/chars/punk/16.gif
+        frame	data/chars/punk/17.gif
+        frame	data/chars/punk/19.gif
+        frame	data/chars/punk/18.gif
+anim rise
+        offset	38 89
+	bbox	0 0 0 0
+	delay	10
+	frame	data/chars/punk/19.gif
+        frame	data/chars/punk/17.gif
+        frame	data/chars/punk/16.gif
+anim attack1
+	range	20 40
+	offset	38 89
+	bbox	34 31 18 48
+	delay	5
+	frame	data/chars/punk/08.gif
+        frame	data/chars/punk/09.gif
+        frame	data/chars/punk/10.gif
+        frame	data/chars/punk/11.gif
+        attack  42 38 47 41 10 0 0 0 20
+        frame	data/chars/punk/12.gif
+        frame	data/chars/punk/13.gif
+        attack  0 0 0 0 0
+        frame	data/chars/punk/14.gif
+        frame	data/chars/punk/15.gif
+anim attack2
+	range	20 40
+	offset	38 89
+	bbox	34 31 18 48
+	delay	10
+	frame	data/chars/punk/08.gif
+        frame	data/chars/punk/09.gif
+        frame	data/chars/punk/10.gif
+        frame	data/chars/punk/11.gif
+        attack  42 38 47 41 10 0 0 0 20
+        frame	data/chars/punk/12.gif
+        frame	data/chars/punk/13.gif
+        attack  0 0 0 0 0
+        frame	data/chars/punk/14.gif
+        frame	data/chars/punk/15.gif
+        offset	43 89
+	bbox	34 31 18 48
+	frame	data/chars/punk/08.gif
+        frame	data/chars/punk/09.gif
+        frame	data/chars/punk/10.gif
+        frame	data/chars/punk/11.gif
+        attack  42 38 47 41 10 1 0 0 20
+        frame	data/chars/punk/12.gif
+        frame	data/chars/punk/13.gif
+        attack  0 0 0 0 0
+        frame	data/chars/punk/14.gif
+        frame	data/chars/punk/15.gif
+	frame	data/chars/punk/04.gif
+        delay 20
+        frame	data/chars/punk/02.gif
+        frame	data/chars/punk/03.gif
+        frame	data/chars/punk/02.gif
+        frame	data/chars/punk/03.gif
+        frame	data/chars/punk/02.gif
+        frame	data/chars/punk/03.gif
+        frame	data/chars/punk/02.gif
+anim special
+range 0 100
+	offset	38 89
+	bbox	0 0 0 0
+	delay	3
+	move 4
+	frame	data/chars/punk/08.gif
+        frame	data/chars/punk/09.gif
+        frame	data/chars/punk/10.gif
+        frame	data/chars/punk/11.gif
+        blast  42 38 47 41 20 1 0 20
+        frame	data/chars/punk/12.gif
+        bbox	34 31 18 48
+        frame	data/chars/punk/13.gif
+        attack  0 0 0 0 0
+        frame	data/chars/punk/14.gif
+        frame	data/chars/punk/15.gif
+	delay	2
+	frame	data/chars/punk/08.gif
+        frame	data/chars/punk/09.gif
+        frame	data/chars/punk/10.gif
+        frame	data/chars/punk/11.gif
+        blast  42 38 47 41 20 1 0 20
+        frame	data/chars/punk/12.gif
+        bbox	34 31 18 48
+        frame	data/chars/punk/13.gif
+        attack  0 0 0 0 0
+        frame	data/chars/punk/14.gif
+        frame	data/chars/punk/15.gif
+anim special2
+	range 0 100
+	offset	38 89
+	bbox	0 0 0 0
+	delay	5
+	frame	data/chars/punk/08.gif
+        frame	data/chars/punk/09.gif
+        frame	data/chars/punk/10.gif
+        frame	data/chars/punk/11.gif
+        blast  42 38 47 41 10 1 0 20
+        frame	data/chars/punk/12.gif
+        bbox	34 31 18 48
+        frame	data/chars/punk/13.gif
+        attack  0 0 0 0 0
+        frame	data/chars/punk/14.gif
+        frame	data/chars/punk/15.gif
+anim riseattack 
+        range	0 50
+	offset	38 89
+	bbox	34 31 18 48
+	delay	10
+	frame	data/chars/punk/08.gif
+        frame	data/chars/punk/09.gif
+        frame	data/chars/punk/10.gif
+        frame	data/chars/punk/11.gif
+        attack  42 38 47 41 10 0 0 0 20
+        frame	data/chars/punk/12.gif
+        frame	data/chars/punk/13.gif
+        attack  0 0 0 0 0
+        frame	data/chars/punk/14.gif
+        frame	data/chars/punk/15.gif
+        offset	43 89
+	bbox	34 31 18 48
+	frame	data/chars/punk/08.gif
+        frame	data/chars/punk/09.gif
+        frame	data/chars/punk/10.gif
+        frame	data/chars/punk/11.gif
+        attack  42 38 47 41 10 1 0 0 20
+        frame	data/chars/punk/12.gif
+        frame	data/chars/punk/13.gif
+        attack  0 0 0 0 0
+        frame	data/chars/punk/14.gif
+        frame	data/chars/punk/15.gif
+	frame	data/chars/punk/04.gif
+        delay 20
+        frame	data/chars/punk/02.gif
+        frame	data/chars/punk/03.gif
+        frame	data/chars/punk/02.gif
+        frame	data/chars/punk/03.gif
+        frame	data/chars/punk/02.gif
+        frame	data/chars/punk/03.gif
+        frame	data/chars/punk/02.gif
+anim block
+        offset	38 89
+	bbox	34 31 18 48
+	delay	30
+	frame	data/chars/punk/11.gif
+

@@ -1,0 +1,1281 @@
+name	leo2
+health	103
+speed	10
+chargerate 2
+type	npc
+subtype follow
+aimove chase
+nolife 1
+shadow	3
+makeinv 4 
+running  20 4 2 1 0
+throw	2 4
+grabdistance 10
+com d u s freespecial6
+bflash bflash
+thold 30
+blockodds 1
+noquake 1
+throwdamage	20
+icon data/chars/leo/icona.gif
+iconpain data/chars/leo/icon1.gif
+icondie data/chars/leo/icon2.gif
+iconmphigh data/sprites/mp2.gif
+iconmphalf data/sprites/mp1.gif
+iconmplow data/chars/misc/empty.gif
+#remap data/chars/leo/a1.gif data/chars/leo/alt1.gif
+remap data/chars/leo/a1.gif data/chars/leo/alt2.gif
+remap data/chars/leo/a1.gif data/chars/leo/alt3.gif
+parrow	data/sprites/parow.gif	-5 -90
+parrow2	data/sprites/parow2.gif	-5 -90
+dust dust
+load dongrtr
+load leosp
+weaploss 2
+typeshot 2
+hostile enemy shot
+candamage enemy obstacle shot
+atchain 1 2 3 4 0 2 3 4 0 3 4 0 4
+falldie 1
+nodieblink 1
+lifespan 25
+aggression 120
+anim freespecial6
+    energycost 123
+	mponly  1
+        offset  500 294
+        delay   10
+        custknife leosp
+        throwframe	1 -1
+        sound   data/sounds/lkicksh.wav
+        frame	data/chars/bosf/b1.gif
+        offset	57 248
+        frame	data/chars/leo/spcl1.gif
+        frame	data/chars/leo/spcl2.gif
+        frame	data/chars/leo/spcl1.gif
+        frame	data/chars/leo/spcl2.gif
+        frame	data/chars/leo/spcl1.gif
+        frame	data/chars/leo/spcl2.gif
+        frame	data/chars/leo/spcl1.gif
+        frame	data/chars/leo/spcl2.gif
+        frame	data/chars/leo/spcl1.gif
+        frame	data/chars/leo/spcl2.gif
+        frame	data/chars/leo/spcl1.gif
+        frame	data/chars/leo/spcl2.gif
+        frame	data/chars/leo/spcl1.gif
+        frame	data/chars/leo/spcl2.gif
+        frame	data/chars/leo/spcl1.gif
+        frame	data/chars/leo/spcl2.gif
+        frame	data/chars/leo/spcl1.gif
+        frame	data/chars/leo/spcl2.gif
+        frame	data/chars/leo/spcl1.gif
+        frame	data/chars/leo/spcl2.gif
+        frame	data/chars/leo/spcl1.gif
+        frame	data/chars/leo/spcl2.gif
+anim idle
+    range   100 1000
+	loop	1
+	delay	120
+	offset	24 62
+	bbox	19 13 22 38
+	frame	data/chars/leo/a1.gif
+        delay   15
+	frame	data/chars/leo/a2.gif
+        delay   50
+        frame	data/chars/leo/a1.gif
+        delay   15
+        frame	data/chars/leo/a2.gif
+        delay   45
+        frame	data/chars/leo/a1.gif
+        delay   15
+	frame	data/chars/leo/a3.gif
+       	frame	data/chars/leo/a4.gif
+        frame	data/chars/leo/a5.gif
+	frame	data/chars/leo/a4.gif
+        frame	data/chars/leo/a3.gif
+	frame	data/chars/leo/a4.gif
+        frame	data/chars/leo/a5.gif
+        frame	data/chars/leo/a4.gif
+        frame	data/chars/leo/a3.gif
+        frame	data/chars/leo/a4.gif
+        frame	data/chars/leo/a5.gif
+        frame	data/chars/leo/a4.gif
+        frame	data/chars/leo/a3.gif
+anim death
+	offset	39 101
+    sound   data/sounds/cbunga.wav
+		delay	15
+		frame	data/chars/leo/esc1.gif
+        movea 7
+        move 4
+        delay 2
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        fshadow 1
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+		frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+		frame	data/chars/leo/esc2.gif
+        frame	data/chars/leo/esc2.gif
+anim charge
+        loop 1
+        delay	1
+	offset	39 101
+        bbox	31 50 26 53
+	frame	data/chars/leo/sel1.gif
+        offset	40 101
+        frame	data/chars/leo/sel1.gif
+anim spawn
+	delay	10
+    move 13
+    flipframe 1
+	offset	27 75
+	bbox	21 24 24 42
+	 @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%6;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+		frame	data/chars/leo/ww09.gif
+        frame	data/chars/leo/ww10.gif
+		frame	data/chars/leo/ww11.gif
+        frame	data/chars/leo/ww12.gif
+        frame	data/chars/leo/ww09.gif
+        frame	data/chars/leo/ww10.gif
+		frame	data/chars/leo/ww11.gif
+        frame	data/chars/leo/ww12.gif
+        frame	data/chars/leo/ww09.gif
+        frame	data/chars/leo/ww10.gif
+		frame	data/chars/leo/ww11.gif
+        frame	data/chars/leo/ww12.gif
+        frame	data/chars/leo/ww09.gif
+        frame	data/chars/leo/ww10.gif
+		frame	data/chars/leo/ww11.gif
+        frame	data/chars/leo/ww12.gif
+        move 0
+			delay   30
+			offset	22 94
+			bbox	26 46 25 42
+			frame	data/chars/leo/a1a.gif
+anim respawn
+	delay	10
+    move 13
+    flipframe 1
+	offset	27 75
+	bbox	21 24 24 42
+	 @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%6;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+		frame	data/chars/leo/ww09.gif
+        frame	data/chars/leo/ww10.gif
+		frame	data/chars/leo/ww11.gif
+        frame	data/chars/leo/ww12.gif
+        frame	data/chars/leo/ww09.gif
+        frame	data/chars/leo/ww10.gif
+		frame	data/chars/leo/ww11.gif
+        frame	data/chars/leo/ww12.gif
+        frame	data/chars/leo/ww09.gif
+        frame	data/chars/leo/ww10.gif
+		frame	data/chars/leo/ww11.gif
+        frame	data/chars/leo/ww12.gif
+        frame	data/chars/leo/ww09.gif
+        frame	data/chars/leo/ww10.gif
+		frame	data/chars/leo/ww11.gif
+        frame	data/chars/leo/ww12.gif
+        move 0
+			delay   30
+			offset	22 94
+			bbox	26 46 25 42
+			frame	data/chars/leo/a1a.gif
+anim walk
+    range -1000 1000
+	loop	1
+	delay	14
+	offset	41 63
+	bbox	34 12 22 41
+	frame	data/chars/leo/ww01.gif
+	frame	data/chars/leo/ww02.gif
+        #offset	41 63
+	frame	data/chars/leo/ww03.gif
+        #offset	41 64
+        frame	data/chars/leo/ww04.gif
+anim up
+	loop	1
+	delay	14
+	offset	28 61
+	bbox	23 5 19 44
+	frame	data/chars/leo/ww05.gif
+	frame	data/chars/leo/ww06.gif
+      	frame	data/chars/leo/ww07.gif
+        frame	data/chars/leo/ww08.gif
+anim down
+	loop	1
+	delay	14
+	offset	41 63
+	bbox	34 12 22 41
+	frame	data/chars/leo/ww01.gif
+	frame	data/chars/leo/ww02.gif
+	frame	data/chars/leo/ww03.gif
+        frame	data/chars/leo/ww04.gif
+anim upper
+        offset	24 62
+        delay 1
+        bbox  15 8 32 43
+        jumpframe 1 2
+        frame	data/chars/leo/sf5.gif
+        delay 2
+        move 2
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        offset	33 65
+        bbox    23 14 40 31
+        attack  23 0 67 63 10 1 1 0 20 
+        frame	data/chars/leo/sf7.gif 
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif 
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+anim riseattack
+        range   0 100
+        offset	39 79
+	delay	5
+        throwframe 12 -1
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        move 3
+	frame	data/chars/leo/r4.gif
+        move 2
+        frame	data/chars/leo/r4.gif
+        move 1
+        frame	data/chars/leo/r4.gif
+        move 0
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+        delay	5
+        bbox    0 0 0 0
+	offset	106 103
+        attack  127 50 55 59 2 0 0 0 5
+        sound   data/sounds/pizpow.wav
+        move    2
+        movez   2
+	frame	data/chars/leo/z1.gif
+        attack  0
+        frame	data/chars/leo/z2.gif
+        move -2
+        attack  40 34 48 56 2 0 0 0 5 
+	frame	data/chars/leo/z3.gif
+        attack  0
+	frame	data/chars/leo/z4.gif
+        attack  127 50 55 59 2 0 0 0 5
+        movez -2
+	frame	data/chars/leo/z1.gif
+        attack  0
+        frame	data/chars/leo/z2.gif
+        move 2
+        attack  40 34 48 56 2 0 0 0 5 
+	frame	data/chars/leo/z3.gif
+        attack  0
+	frame	data/chars/leo/z4.gif
+        attack  127 50 55 59 2 0 0 0 5
+        movez 2
+	frame	data/chars/leo/z1.gif
+        attack  0
+        frame	data/chars/leo/z2.gif
+        move -2
+        attack  40 34 48 56 2 0 0 0 5 
+	frame	data/chars/leo/z3.gif
+        attack  0
+	frame	data/chars/leo/z4.gif
+        movez   -2
+        move    -2
+        attack  127 50 55 59 2 0 0 0 5
+	frame	data/chars/leo/z1.gif
+        attack  0
+	frame	data/chars/leo/z2.gif
+	blast	40 34 126 77 10 1 0 0 0 5
+        move    2
+	frame	data/chars/leo/z3.gif
+	blast	40 34 126 77 12 1 0 0 0 5
+	frame	data/chars/leo/z4.gif
+	blast	40 34 126 77 14 1 0 0 0 10
+        movez   0
+        move    0
+	frame	data/chars/leo/z1.gif
+anim run
+    loop	1
+	delay	12
+	offset	27 75
+	bbox	21 24 24 42
+	frame	data/chars/leo/ww09.gif
+        frame	data/chars/leo/ww10.gif
+	frame	data/chars/leo/ww11.gif
+        frame	data/chars/leo/ww12.gif
+anim ATTACKBACKWARD
+    range   10 50
+        delay 1
+        offset	24 62
+	bbox	19 13 22 38
+        hitflash bflash
+	frame	data/chars/leo/a1.gif
+        offset	24 62
+        delay 15
+	bbox	18 21 26 31
+	frame	data/chars/leo/ka1.gif
+        offset	29 62
+        attack2  0 12 42 42 10 1 0 0 20
+        frame	data/chars/leo/ka2.gif
+        attack2  0 0 0 0
+        offset	24 62
+        frame	data/chars/leo/ka1.gif
+anim runattack
+    delay	10
+	offset	78 112
+        bbox	64 58 25 37
+        hitfx   data/sounds/knifes.wav
+       	frame	data/chars/leo/ab5.gif
+	frame	data/chars/leo/ab6.gif
+	bbox	63 60 29 37
+        attack  72 60 73 30 6 0 0 0 5
+	frame	data/chars/leo/ab7.gif
+        attack  0 0 0 0 0
+        bbox	64 58 25 37
+        frame	data/chars/leo/ab5.gif
+	frame	data/chars/leo/ab6.gif
+	bbox	63 60 29 37
+        attack  72 60 73 30 6 0 0 0 5
+	frame	data/chars/leo/ab7.gif
+        attack  0 0 0 0 0
+        bbox	64 58 25 37
+        frame	data/chars/leo/ab5.gif
+	frame	data/chars/leo/ab6.gif
+        attack  72 60 73 30 6
+        bbox	63 60 29 37 0 0 0 5
+	frame	data/chars/leo/ab7.gif
+        attack  0 0 0 0 0
+        bbox	64 58 25 37
+        delay 20
+        frame	data/chars/leo/ab5.gif
+        delay 5
+        move 10
+	frame	data/chars/leo/ab6.gif
+	bbox	63 60 29 37
+        blast   72 60 73 30 12 1 0 30
+        delay   20
+	frame	data/chars/leo/ab7.gif
+anim attack1
+	range   20 40
+        offset	78 112
+	delay	10
+	bbox	63 55 24 37
+        hitfx   data/sounds/knifes.wav
+	frame	data/chars/leo/aba1.gif
+        delay 5
+        frame	data/chars/leo/aba2.gif
+	bbox	80 68 33 28
+        attack	80 57 64 56 6 0 0 0 10
+	frame	data/chars/leo/ab2.gif
+        delay 10
+        frame	data/chars/leo/ab2a.gif
+anim attack2
+	range   20 40
+	delay	10
+	offset	78 112
+	bbox	64 58 25 37
+        hitfx   data/sounds/knifes.wav
+	frame	data/chars/leo/ab3.gif
+        delay 5
+	bbox	65 59 27 33
+	attack	65 40 64 52 6 0 0 0 10
+	frame	data/chars/leo/ab4b.gif
+        attack  0 0 0 0 0
+        delay   15
+        frame	data/chars/leo/ab4a.gif
+        delay 20
+        bbox	64 58 25 37
+       	frame	data/chars/leo/ab5.gif
+        delay  10
+	frame	data/chars/leo/ab6.gif
+	bbox	63 60 29 37
+        attack  72 60 73 30 6 0 0 0 10
+	frame	data/chars/leo/ab7.gif
+anim attack3
+	range   20 50
+	delay	1
+	offset	41 91
+	bbox	30 25 27 47
+        #jumpframe 1 2
+        hitfx   data/sounds/knifes.wav
+	frame	data/chars/leo/ac1.gif
+        delay 5
+        move    2
+        frame	data/chars/leo/ac1.gif
+        frame	data/chars/leo/ac2.gif
+        frame	data/chars/leo/ac2.gif
+        attack	34 49 56 35 6 0 0 0 10
+	frame	data/chars/leo/ac3.gif
+        attack  0 0 0 0 0 
+	frame	data/chars/leo/ac3.gif
+        attack  34 49 56 35 8 1 0 0 20
+	frame	data/chars/leo/ac4.gif 
+        delay 10
+       	frame	data/chars/leo/ac4.gif
+anim attack4
+		range   10 50
+        delay 1
+        offset	102 105
+        jumpframe 1 2
+        bbox    99 43 23 40
+        hitflash bflash
+        frame	data/chars/leo/ja1.gif
+        delay   5
+        move  2
+        frame	data/chars/leo/ja1.gif
+        frame	data/chars/leo/ja1.gif
+        move    4
+        sound   data/sounds/ayoo.wav
+        attack2   108 40 28 41 10 1 0 0 30
+        frame	data/chars/leo/ja2.gif
+        frame	data/chars/leo/ja2.gif
+        frame	data/chars/leo/ja2.gif
+anim special
+        mponly  1
+        energycost 61
+	delay	5
+	offset	106 103
+        hitfx   data/sounds/knifes.wav
+        sound   data/sounds/pizpow.wav
+        move    2
+        movez   2
+        attack  100 47 83 52 2 0 0 0 5
+	frame	data/chars/leo/z1.gif
+        attack  0
+        frame	data/chars/leo/z2.gif
+        move -2
+        attack  46 41 70 53 2 0 0 0 5 
+	frame	data/chars/leo/z3.gif
+        attack  0
+	frame	data/chars/leo/z4.gif
+        attack  100 47 83 52 4 0 0 0 5
+        movez -2
+	frame	data/chars/leo/z1.gif
+        attack  0
+        frame	data/chars/leo/z2.gif
+        move 2
+        attack  46 41 70 53 4 0 0 0 5 
+	frame	data/chars/leo/z3.gif
+        attack  0
+	frame	data/chars/leo/z4.gif
+        attack  100 47 83 52 6 0 0 0 5
+        movez 2
+	frame	data/chars/leo/z1.gif
+        attack  0
+        frame	data/chars/leo/z2.gif
+        move -2
+        attack  46 41 70 53 6 0 0 0 5 
+	frame	data/chars/leo/z3.gif
+        attack  0
+	frame	data/chars/leo/z4.gif
+        movez   -2
+        move    -2
+        attack  100 47 83 52 6 0 0 0 5
+	frame	data/chars/leo/z1.gif
+        attack  0
+	frame	data/chars/leo/z2.gif
+	blast	46 41 70 53 10 1 0 0 0 5
+        move    2
+	frame	data/chars/leo/z3.gif
+	blast	100 47 83 52 12 1 0 0 0 5
+	frame	data/chars/leo/z4.gif
+	blast	46 41 70 53 1 0 0 0 10
+        movez   0
+        move    0
+	frame	data/chars/leo/z1.gif
+anim special2
+    mponly  1
+    energycost 61
+	offset	24 62
+	bbox	19 13 22 38
+        jumpframe 18 2
+        offset	39 79
+        delay 5
+        bbox 0 0 0 0
+        hitflash bflash
+        frame	data/chars/leo/x1.gif
+        delay 3
+        move    5
+        frame	data/chars/leo/x2.gif
+        frame	data/chars/leo/x2.gif
+        frame	data/chars/leo/x2.gif
+        frame	data/chars/leo/x2.gif
+        frame	data/chars/leo/x2.gif
+        delay 5
+        offset	39 79
+        move 0
+		frame	data/chars/leo/r1.gif
+		frame	data/chars/leo/r2.gif
+        delay 3
+        move    5
+		frame	data/chars/leo/r3.gif
+		frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+		frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+        offset	35 76
+        bbox  28 38 19 34
+        blast   41 38 21 30 50 1 0 30
+        delay   5
+        frame	data/chars/leo/sf7.gif
+        delay 2
+        move 5
+		frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        frame	data/chars/leo/sf7.gif
+        delay 5
+        move 8
+        frame	data/chars/leo/sf7.gif
+        move 7
+        frame	data/chars/leo/sf7.gif
+        move 6
+        frame	data/chars/leo/sf7.gif
+        move 5
+        frame	data/chars/leo/sf7.gif
+        move 4
+        frame	data/chars/leo/sf7.gif
+anim special3
+        mponly  1
+        energycost 61
+        dive 2 1
+        delay   5
+        offset	102 105
+        bbox    97 53 22 34
+        hitflash bflash
+        frame	data/chars/leo/ja1.gif
+        attack2  102 40 47 66 10 1 0 0 30
+        delay   10
+        frame	data/chars/leo/ja2.gif
+        offset	102 105
+        delay   5
+        attack  0 0 0 0 0
+        frame	data/chars/leo/ja1.gif
+         offset	40 85
+        bbox    48 19 23 32 
+        attack2  41 36 47 34 10 1 0 0 30
+        delay   10
+	frame	data/chars/leo/jk1.gif
+        delay   5
+        offset	102 105
+        bbox    97 53 22 34
+        attack  0 0 0 0 0
+        frame	data/chars/leo/ja1.gif
+        attack2  102 40 47 66 10 1 0 0 30
+        delay   10
+        frame	data/chars/leo/ja2.gif
+        delay 5
+        offset	41 91
+        bbox	30 25 27 47
+        hitflash flash
+        frame   data/chars/leo/ac1.gif
+        frame   data/chars/leo/ac2.gif
+        blast	34 49 56 35 6 1 0 30
+        frame   data/chars/leo/ac3.gif
+        delay 100
+        blast  34 49 56 35 8 1 0 30
+        frame   data/chars/leo/ac4.gif
+anim throw
+	    range -1 10
+        delay   15
+        offset	24 62
+	bbox	0 0 0 0
+        throwframewait 1
+        move 3
+	frame	data/chars/leo/th3.gif
+        delay 8
+        move 0
+        offset	48 56
+	sound	data/sounds/aya.wav
+        frame	data/chars/leo/th1.gif
+	delay	35
+	frame	data/chars/leo/th2.gif
+        offset	39 79
+	delay	10
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        move 3
+	frame	data/chars/leo/r4.gif
+        move 2
+        frame	data/chars/leo/r4.gif
+        move 1
+        frame	data/chars/leo/r4.gif
+        move 0
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+anim pain
+	offset	55 76
+	bbox	36 24 24 42
+	delay	12
+	frame	data/chars/leo/p1.gif
+        frame	data/chars/leo/p2.gif
+        frame	data/chars/leo/p3.gif
+        frame	data/chars/leo/p2.gif
+anim pain2
+	offset	24 62
+	bbox	19 13 22 38
+	delay	5
+	frame	data/chars/leo/pe3.gif
+        offset	25 62
+        frame	data/chars/leo/pe3.gif
+        offset	24 62
+        frame	data/chars/leo/pe3.gif
+        offset	25 62
+        frame	data/chars/leo/pe3.gif
+         offset	24 62
+        frame	data/chars/leo/pe3.gif
+anim pain3
+	offset	24 62
+	bbox	100000000 0 1 1 
+	delay	5
+        move    2
+        movez   2
+	frame	data/chars/leo/pe1.gif
+        frame	data/chars/leo/pe2.gif
+        move -2
+        frame	data/chars/leo/pe1.gif
+        frame	data/chars/leo/pe2.gif
+         movez -2
+        frame	data/chars/leo/pe1.gif
+        bbox	19 13 22 38
+        frame	data/chars/leo/pe2.gif
+        move 2
+        frame	data/chars/leo/pe1.gif
+        frame	data/chars/leo/pe2.gif
+        movez 2
+        frame	data/chars/leo/pe1.gif
+        frame	data/chars/leo/pe2.gif
+        move -2
+        delay 6
+        frame	data/chars/leo/pe1.gif
+        delay 7
+        frame	data/chars/leo/pe2.gif
+        movez -2
+        move -2
+        delay 8
+        frame	data/chars/leo/pe1.gif
+        delay 9
+        frame	data/chars/leo/pe2.gif
+        move 2
+        delay 10
+        frame	data/chars/leo/pe1.gif
+        frame	data/chars/leo/pe2.gif
+anim pain4
+	offset	24 62
+	bbox	1000000000 0 1 1 
+	delay	10
+        movea 10
+        move -5
+        movez -2
+        sound   data/sounds/mytoss.wav
+	frame	data/chars/leo/pe5.gif
+        movea -5
+        frame	data/chars/leo/pe6.gif
+        move  -5
+        frame	data/chars/leo/pe7.gif
+        movea 10
+	frame	data/chars/leo/pe5.gif
+        movea -5
+        frame	data/chars/leo/pe6.gif
+        movea  -5
+        frame	data/chars/leo/pe7.gif
+        movea 10
+        bbox	19 13 22 38
+	frame	data/chars/leo/pe5.gif
+        movea -5
+        frame	data/chars/leo/pe6.gif
+        movea  -5
+        frame	data/chars/leo/pe7.gif
+        movea 0
+        move  0
+        delay 5
+        movez 0
+        offset	25 62
+        frame	data/chars/leo/pe7.gif
+        offset	24 62
+        frame	data/chars/leo/pe7.gif
+        offset	25 62
+        frame	data/chars/leo/pe7.gif
+anim pain5
+	offset	24 62
+	bbox	1000000000 0 1 1 
+	delay	170
+        sound   data/sounds/mynose.wav
+	frame	data/chars/leo/pe8.gif
+        delay	5
+        offset	25 62
+        frame	data/chars/leo/pe8.gif
+        offset	24 62
+        frame	data/chars/leo/pe8.gif
+        offset	25 62
+        frame	data/chars/leo/pe8.gif
+        offset	24 62
+        frame	data/chars/leo/pe8.gif
+        offset	25 62
+        frame	data/chars/leo/pe8.gif
+        offset	24 62
+        frame	data/chars/leo/pe8.gif
+        offset	39 79
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        move 3
+	frame	data/chars/leo/r4.gif
+        move 2
+        frame	data/chars/leo/r4.gif
+        move 1
+        frame	data/chars/leo/r4.gif
+        move 0
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+anim pain6
+	offset	24 62
+	bbox	19 13 22 38
+	delay	10
+        sound   data/sounds/cooloff.wav
+	frame	data/chars/leo/mous1.gif
+        frame	data/chars/leo/mous2.gif
+        frame	data/chars/leo/mous1.gif
+        frame	data/chars/leo/mous2.gif
+        frame	data/chars/leo/mous1.gif
+        frame	data/chars/leo/mous2.gif
+        frame	data/chars/leo/mous1.gif
+        frame	data/chars/leo/mous2.gif
+        frame	data/chars/leo/mous1.gif
+        frame	data/chars/leo/mous2.gif
+anim pain8
+        delay	10
+	offset	24 62
+	bbox	100000000 0 1 1
+	frame	data/chars/leo/q1.gif
+	frame	data/chars/leo/q2.gif
+        delay   100
+        frame	data/chars/leo/q3.gif
+        delay 10
+        frame	data/chars/leo/q4.gif
+        frame	data/chars/leo/q5.gif
+        frame	data/chars/leo/q6.gif
+	offset	49 74
+	frame	data/chars/leo/ge.gif
+anim pain7
+        delay	100
+	offset	24 62
+	bbox	10000000000 0 1 1
+	frame	data/chars/don/freze.gif
+        delay 10
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 9
+        offset	24 62
+        frame	data/chars/don/freze.gif
+        delay 8
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 7
+        offset	24 62
+        frame	data/chars/don/freze.gif
+        delay 6
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 5
+        offset	24 62
+        frame	data/chars/don/freze.gif
+         delay 4
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 3
+        offset	24 62
+        frame	data/chars/don/freze.gif
+        delay 2
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 1
+        offset	24 62
+        frame	data/chars/don/freze.gif
+anim death7
+        delay 200
+        offset 24 62
+        bbox  1000000000 0 1 1
+        frame data/chars/don/freze.gif
+        delay 10
+        frame data/chars/don/freze.gif
+anim pain9
+        delay	20
+	offset	39 101
+	frame	data/chars/leo/sel1.gif
+        delay 5
+        movea 8
+        offset	39 106
+        bbox    31 50 21 53
+	frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif
+        movea -8
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif
+        offset	39 101
+        delay 10
+        movea   0
+	frame	data/chars/leo/sel1.gif 
+        delay 5
+        movea 8
+        offset	39 106
+        bbox    31 50 21 53
+	frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif
+        movea -8
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif
+        offset	39 101
+        delay 10
+        movea   0
+	frame	data/chars/leo/sel1.gif
+        delay 5
+        movea 8
+        offset	39 106
+        bbox    31 50 21 53
+	frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif
+        movea -8
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif 
+        frame	data/chars/leo/sel2.gif
+        offset	39 101
+        delay 10
+        movea   0
+	frame	data/chars/leo/sel1.gif 
+anim fall9
+       delay 1
+        jumpframe 1 3 -1 0
+        landframe 2
+        offset	39 106
+        bbox    0 0 0 0
+	frame	data/chars/leo/sel2.gif 
+        delay 1000
+        frame	data/chars/leo/sel2.gif 
+        offset	24 62
+        delay 15
+        frame	data/chars/leo/fl2.gif
+anim  bpain
+        delay 100
+        offset	24 62
+	bbox	1000000000 0 1 1
+	frame	data/chars/leo/burn.gif
+anim  bdie
+        delay 100
+        offset	24 62
+	bbox	1000000000 0 1 1
+	frame	data/chars/leo/burn.gif
+anim spain
+        offset	24 62
+	bbox	19 13 22 38
+        delay   5
+        frame	data/chars/leo/spain.gif        
+	frame	data/chars/leo/spain2.gif
+        frame	data/chars/leo/spain.gif
+        frame	data/chars/leo/spain2.gif
+        frame	data/chars/leo/spain.gif
+        frame	data/chars/leo/spain2.gif
+        frame	data/chars/leo/spain.gif
+        frame	data/chars/leo/spain2.gif
+        frame	data/chars/leo/spain.gif
+        frame	data/chars/leo/spain2.gif
+        frame	data/chars/leo/spain.gif
+        frame	data/chars/leo/spain2.gif
+        frame	data/chars/leo/spain.gif
+        frame	data/chars/leo/spain2.gif
+        frame	data/chars/leo/spain.gif
+        frame	data/chars/leo/spain2.gif
+        frame	data/chars/leo/spain.gif
+anim shock
+        delay 5
+        offset	24 62
+	bbox	100000000000 0 1 1
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+anim sdie
+        delay 5
+        offset	24 62
+         custknife sshc
+      throwframe 29 40
+	bbox	100000000 0 1 1
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+          offset	24 62
+	delay	10
+	frame	data/chars/leo/pe3.gif
+        sound data/sounds/shellsh.wav
+        frame	data/chars/leo/pe4.gif
+        offset	106 80
+	delay	10
+        move -10
+	frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j5.gif
+	frame	data/chars/leo/j4.gif
+	frame	data/chars/leo/j3.gif
+        frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j5.gif
+        frame	data/chars/leo/j4.gif
+	frame	data/chars/leo/j3.gif
+        frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j5.gif
+        move 0
+	delay	120
+	offset	24 98
+       	frame	data/chars/leo/fl3.gif
+        delay 10
+        frame	data/chars/leo/fl4.gif
+anim fall
+	offset	24 62
+	delay	15
+	frame	data/chars/leo/pe4.gif
+        delay 45
+        hitflash bflash
+        attack  10 41 16 25 8 1 0 0 0 10
+        frame	data/chars/leo/fl1.gif
+        attack  0
+        delay   80
+       	frame	data/chars/leo/fl2.gif
+anim fall2
+	offset	24 62
+        delay 1
+        jumpframe 1 4 -1 0
+        landframe 3
+        frame	data/chars/leo/fl1.gif
+	delay	29
+        bbox    10 37 38 26
+	frame	data/chars/leo/fl1.gif
+        delay 1000
+        frame	data/chars/leo/fl1.gif
+        attack  0
+        delay   80
+       	frame	data/chars/leo/fl2.gif
+anim rise
+	offset	39 79
+	delay	15
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        move 3
+	frame	data/chars/leo/r4.gif
+        move 2
+        frame	data/chars/leo/r4.gif
+        move 1
+        frame	data/chars/leo/r4.gif
+        move 0
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+anim land
+	offset	39 79
+	delay	12
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+	frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r4.gif
+anim block
+        delay 5
+        offset	23 63
+	bbox	19 13 22 38
+        followanim 2
+        counterframe 2 1 0
+	frame	data/chars/leo/bl1.gif
+        frame	data/chars/leo/bl2.gif
+        delay 100
+        frame	data/chars/leo/bl3.gif
+        delay 10
+        frame	data/chars/leo/bl2.gif
+anim follow1
+        offset	89 92
+	bbox	0 0 0 0
+        delay   10
+        custknife dongrtr
+        throwframe 3 -1
+        hitfx  data/sounds/fall.wav
+        quakeframe 2 2 3
+	frame	data/chars/leo/y2.gif
+        frame	data/chars/leo/y3.gif
+        frame	data/chars/leo/y4.gif
+        attack9  18 55 59 38 19 1 1 1 15
+        sound   data/sounds/fall.wav
+        frame	data/chars/leo/y5.gif
+        frame	data/chars/leo/y5.gif
+anim follow2
+        delay	1
+	offset	24 62
+	bbox	0 0 0 0
+        flipframe 1
+	frame	data/chars/leo/a1.gif
+        offset	39 79
+        delay 10
+        bbox 0 0 0 0
+        frame	data/chars/leo/x1.gif
+        delay 3
+        move    5
+        frame	data/chars/leo/x2.gif
+        frame	data/chars/leo/x2.gif
+        frame	data/chars/leo/x2.gif
+        frame	data/chars/leo/x2.gif
+        frame	data/chars/leo/x2.gif
+        delay 5
+        offset	39 79
+        move 0
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+        delay 3
+        move    5
+	frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        move 3
+	frame	data/chars/leo/r4.gif
+        move 2
+        frame	data/chars/leo/r4.gif
+        move 1
+        frame	data/chars/leo/r4.gif
+        move 0
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif  
+anim follow3
+        offset	89 92
+	bbox	0 0 0 0
+        delay   10
+        custknife footthr
+        throwframe 3 50
+        hitflash aaaaaa
+        hitfx   data/sounds/aya.wav
+	frame	data/chars/leo/y2.gif
+        frame	data/chars/leo/y3.gif
+        frame	data/chars/leo/y6.gif
+        delay 30
+        attack8 54 21 32 39 19 1 1 1 
+        frame	data/chars/leo/y7.gif	
+anim follow5
+      offset	108 82
+	delay	8
+      bbox	0 0 0 0
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 1 0
+	frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j3.gif
+	frame	data/chars/leo/j4.gif
+	frame	data/chars/leo/j5.gif
+        frame	data/chars/leo/j2.gif
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 0
+offset	39 79
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        move 3
+	frame	data/chars/leo/r4.gif
+        move 2
+        frame	data/chars/leo/r4.gif
+        move 1
+        frame	data/chars/leo/r4.gif
+        move 0
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+anim follow6
+      offset	108 82
+	delay	8
+      bbox	0 0 0 0
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 -1 0
+	frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j3.gif
+	frame	data/chars/leo/j4.gif
+	frame	data/chars/leo/j5.gif
+        frame	data/chars/leo/j2.gif
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 0
+      offset	39 79
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        move 3
+	frame	data/chars/leo/r4.gif
+        move 2
+        frame	data/chars/leo/r4.gif
+        move 1
+        frame	data/chars/leo/r4.gif
+        move 0
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+anim follow7
+        delay   5
+        bbox    0 0 0 0
+        hitflash bflash
+        offset	39 79
+        jumpframe 4 2 2 0
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+	frame	data/chars/leo/r3.gif
+      frame	data/chars/leo/r4.gif
+      offset	35 76
+        bbox  0 0 0 0
+        blast   41 38 21 30 50 1 0 30
+        delay   40
+        frame	data/chars/leo/sf7.gif

@@ -1,0 +1,303 @@
+nocheats 1
+colourselect   1
+ajspecial      1
+nodropen       1
+noaircancel    0
+versusdamage   0
+spdirection 1 1 1 1
+maxattacks 70
+maxfollows 50
+maxfreespecials 40
+lifescore 50000 
+# Required objects. These must always be loaded.
+
+load	Flash		data/chars/misc/flash.txt
+load	bFlash		data/chars/misc/bflash.txt
+load	cFlash		data/chars/misc/cflash.txt
+load	lFlash		data/chars/misc/lflash.txt
+load	grFlash		data/chars/misc/grflash.txt
+load	dust      	data/chars/misc/dust.txt
+load	Star2		data/chars/misc/star2.txt
+load	Star3		data/chars/misc/star3.txt
+load	shurik		data/chars/ftelite/shurik.txt
+load	damage		data/chars/misc/damage.txt
+load	footthr	    data/chars/foot/footthr.txt
+load	wat       	data/bgs/sewer/wat.txt
+load	wat2       	data/bgs/sewer/wat2.txt
+load	wat3       	data/bgs/sewer/wat3.txt
+load	wat4      	data/bgs/sewer/wat4.txt
+load	wfl     	data/bgs/sewer/wfl.txt
+load	bosf3       data/chars/bosf/bosf3.txt
+load	bbat        data/chars/casey/bbat.txt
+load	casknf      data/chars/casey/casknf.txt
+load	fck         data/chars/casey/fck.txt
+load	sshck       data/chars/don/sshck.txt
+load	sshc       	data/chars/leo/sshc.txt
+load	sshk    	data/chars/mich/sshk.txt
+load	ssh3		data/chars/raph/ssh3.txt
+load	cowa       	data/chars/don/cowa.txt
+
+# Players must also be loaded.
+
+load	leo1      	data/chars/leo/leo1/leo1.txt
+load	leo2       	data/chars/leo/leo2.txt
+load	leo3       	data/chars/leo/leo3.txt
+load	leo4       	data/chars/leo/leo4.txt
+load	leo5      	data/chars/leo/leo5.txt
+load	leo       	data/chars/leo/leo.txt
+
+load	raph1       data/chars/raph/raph1/raph1.txt
+load	raph2       data/chars/raph/raph2.txt
+load	raph3       data/chars/raph/raph3.txt
+load	raph4	    data/chars/raph/raph4.txt
+load	raph5       data/chars/raph/raph5.txt
+load	raph       	data/chars/raph/raph.txt
+
+load	mich1       data/chars/mich/mich1/mich1.txt
+load	mich2       data/chars/mich/mich2.txt
+load	mich3       data/chars/mich/mich3.txt
+load	mich4       data/chars/mich/mich4.txt
+load	mich5       data/chars/mich/mich5.txt
+load	mich        data/chars/mich/mich.txt
+
+load	don1       	data/chars/don/don1/don1.txt
+load	don2       	data/chars/don/don2.txt
+load	don3       	data/chars/don/don3.txt
+load	don4       	data/chars/don/don4.txt
+load	don5       	data/chars/don/don5.txt
+load	don       	data/chars/don/don.txt
+
+load	leosp		data/chars/leo/leosp.txt
+load	rapsp		data/chars/raph/rapsp.txt
+load	micsp		data/chars/mich/micsp.txt
+load	donsp		data/chars/don/donsp.txt
+load	cassp		data/chars/casey/cassp.txt
+load	ftsp      	data/chars/foot/ftsp.txt
+load	slasp       data/chars/slash/slasp.txt
+load	dongrtr		data/chars/don/dongrtr.txt
+load	dongrtr2	data/chars/don/dongrtr2.txt
+
+# Items and other objects can be loaded when needed.
+
+know	pizza       data/chars/misc/pizza.txt
+know	pizzamp     data/chars/misc/pizzamp.txt
+know	pizzapow    data/chars/misc/pizzapow.txt
+know	pizzapo2    data/chars/misc/pizzapo2.txt
+know	fish        data/chars/misc/fish.txt
+know	1up         data/chars/misc/1up.txt
+know	gold        data/chars/misc/gold.txt
+know	bonus       data/chars/misc/bonus.txt
+
+# Obstacles (item containers)
+
+know	znak        data/bgs/lv1a/znak.txt
+know	znk        	data/bgs/park/znk.txt
+know	sgn			data/bgs/park/sgn.txt
+know	tree		data/bgs/park/tree.txt
+know	Trash		data/chars/misc/trash.txt
+know	oildrm		data/chars/misc/oildrm.txt
+know	fwrks		data/chars/misc/fwrks.txt
+know    roadblk     data/chars/misc/roadblk.txt
+know	hydr		data/chars/hydr/hydr.txt
+know	hydrnn		data/chars/hydr/hydrnn.txt
+know	hydrsh		data/chars/hydr/hydrsh.txt
+know	prmt		data/chars/misc/prmt.txt
+know	prmtsh		data/chars/misc/prmtsh.txt
+know	prmtnn		data/chars/misc/prmtnn.txt
+know	log1		data/bgs/ship/log1.txt
+
+# Paths
+
+know    levsel          data/chars/sign/levsel.txt
+know    easy1           data/chars/sign/easy1.txt
+know    norm1           data/chars/sign/norm1.txt
+know    hard1           data/chars/sign/hard1.txt
+know    easy2           data/chars/sign/easy2.txt
+know    hard2           data/chars/sign/hard2.txt
+know    hard3           data/chars/sign/hard3.txt
+know    secret          data/chars/sign/secret.txt
+
+# Enemies
+
+know    Razher          data/chars/razher/razher.txt
+know    wtrp            data/bgs/ship/wtrp.txt
+know    elcage          data/chars/misc/elcage.txt
+know    ftel            data/chars/foot/ftel.txt
+know    ccore           data/chars/misc/ccore.txt
+know    bochka          data/chars/misc/bochka.txt
+know    Kirpich         data/chars/misc/krpch.txt
+know    segun           data/chars/segun/segun.txt
+know	mac3            data/chars/auto/mac3.txt
+know	footbw			data/chars/foot/footbw.txt
+know	footn2			data/chars/footn2/footn2.txt
+know	footspr			data/chars/foot/footspr.txt
+know	footf			data/chars/foot/footf.txt
+know	fball			data/chars/foot/fball.txt
+know	boxer      		data/chars/boxer/boxer.txt
+know	mankn      		data/chars/mankn/mankn.txt
+know	tricer      	data/chars/tricer/tricer.txt
+know	transp2      	data/chars/transp/transp2.txt
+know	transp      	data/chars/transp/transp.txt
+know	bigmouse       	data/chars/bigmouse/bigmouse.txt
+know	bmssh1       	data/chars/bigmouse/bmssh1.txt
+know	bmssh4       	data/chars/bigmouse/bmssh4.txt
+know	Casene      	data/chars/casey/casene.txt
+know	michen       	data/chars/mich/michen.txt
+know	raphen       	data/chars/raph/raphen.txt
+know	rockste3        data/chars/rocksted/rockste3.txt
+know	rocksted	data/chars/rocksted/rocksted.txt
+know	rockste2	data/chars/rocksted/rockste2.txt
+know	dirtbag	        data/chars/dirtbag/dirtbag.txt
+know	dirtbag2	data/chars/dirtbag/dirtbag2.txt
+know	bebop2	        data/chars/bepop/bepop2.txt
+know	bebop	        data/chars/bepop/bepop.txt
+know	cslash	        data/chars/slash/cslash.txt
+know	cslash2	        data/chars/slash/cslash2.txt
+know	rock       	data/chars/rock/rock.txt
+know	rock1       	data/chars/rock/rock1.txt
+know	rock2       	data/chars/rock/rock2.txt
+know	rock2a       	data/chars/rock/rock2a.txt
+know	rock3       	data/chars/rock/rock3.txt
+know	baxter       	data/chars/baxter/baxter.txt
+know	rat_king       	data/chars/ratking/ratking.txt
+know	rtkng       	data/chars/ratking/rtkng.txt
+know	rtrok       	data/chars/ratking/rtrok.txt
+know	rtrok2       	data/chars/ratking/rtrok2.txt
+know	rtrok3      	data/chars/ratking/rtrok3.txt
+know	robo		data/chars/robo/robo.txt
+know	robo2		data/chars/robo/robo2.txt
+know	ltknf           data/chars/letherhd/ltknf.txt
+know	rak             data/chars/letherhd/rak.txt
+know	Letherhead      data/chars/letherhd/letherhd.txt
+know	ftrh	        data/chars/foot/ftrh.txt
+know	ftrh2	        data/chars/foot/ftrh2.txt
+know	foottrh	        data/chars/foot/foottrh.txt
+know	foottrh2	data/chars/foot/foottrh2.txt
+know	dynamrg	        data/chars/footrog/dynamrg.txt
+know	dynamrg	        data/chars/auto/dynamrg2.txt
+know	footrog	        data/chars/footrog/footrog.txt
+know	footrog2	data/chars/footrog/footrog2.txt
+know	footaxe     	data/chars/footaxe/footaxe.txt
+know	footaxe2     	data/chars/footaxe/footaxe2.txt
+know	footr	        data/chars/foot/footr.txt
+know	footn	        data/chars/footn/footn.txt
+know	footthr	        data/chars/foot/footthr.txt
+know	foota	        data/chars/foot/foota.txt
+know	foot2	        data/chars/foot/foot2.txt
+know	foot2a	        data/chars/foot/foot2a.txt
+know	foot3           data/chars/foot/foot3.txt
+know	foot3a          data/chars/foot/foot3a.txt
+know	foot4           data/chars/foot/foot4.txt
+know	foot4a          data/chars/foot/foot4a.txt
+know	foot5           data/chars/foot/foot5.txt
+know	foot6           data/chars/foot/foot6.txt
+know	foot6a          data/chars/foot/foot6a.txt
+know	footwt          data/chars/foot/footwt.txt
+know	foottri	        data/chars/foottri/foottri.txt
+know	footsw	        data/chars/footsw/footsw.txt
+know	foothk          data/chars/foothk/foothk.txt
+know	heli2       data/chars/heli/heli2.txt
+know	heli        data/chars/heli/heli.txt
+know	robot       data/chars/robot/robot.txt
+know	robot2      data/chars/robot/robot2.txt
+know	mouser      data/chars/mouser/mouser.txt
+know	mouser2     data/chars/mouser/mouser2.txt
+know	mouser3     data/chars/mouser/mouser3.txt
+know	fly	        data/chars/fly/fly.txt
+know	fly2	    data/chars/fly/fly2.txt
+
+know	punk        data/chars/punk/punk.txt
+know	foot	    data/chars/foot/foot.txt
+know	footfh      data/chars/footfh/footfh.txt
+
+# Other stuff
+know	pic1		data/chars/misc/pic1.txt
+know	footddd	    data/chars/misc/footddd.txt
+know	footop3	    data/chars/foot/footop3.txt
+know	footop2	    data/chars/foot/footop2.txt
+know	footop2a	data/chars/foot/footop2a.txt
+know	footop	    data/chars/foot/footop.txt
+know    men         data/chars/splinter/men.txt
+know    men2        data/chars/splinter/men2.txt
+know    men3        data/chars/splinter/men3.txt
+know    women       data/chars/splinter/women.txt
+know    splinte2    data/chars/splinter/splinte2.txt
+know    april       data/chars/splinter/april.txt
+know    aprtgt      data/chars/splinter/aprtgt.txt
+know	txtslow    	data/chars/misc/txtslow.txt
+know	dynam       data/chars/foot/dynam.txt
+know	bosskill    data/chars/misc/bosskill.txt
+know	bossnone    data/chars/misc/bossnone.txt
+know	bosslow    	data/chars/misc/bosslow.txt
+know	swhole     	data/chars/misc/swhole.txt
+know	rain     	data/chars/misc/rain.txt
+know	raind     	data/chars/misc/raind.txt
+know	splinter    data/chars/splinter/splinter.txt
+know	shotup      data/chars/rocksted/shotup.txt
+know	laser2      data/chars/robot/laser2.txt
+know	laser3      data/chars/robo/laser3.txt
+know	missile		data/chars/rock/missile.txt
+know	arrow2		data/chars/footbw/arrow2.txt
+know	shtfl   	data/chars/misc/shtfl.txt
+know	tram    	data/bgs/metro/tram.txt
+know	tram2    	data/bgs/metro/tram2.txt
+know	lvbegin    	data/chars/misc/lvbegin.txt
+know	lvbegin2    data/chars/misc/lvbegin2.txt
+know	space     	data/chars/misc/space.txt
+know	Shot		data/chars/misc/shot.txt
+know	Sho2		data/chars/bepop/sho2.txt
+know	vict       	data/chars/bosf/vict.txt
+know	bosf       	data/chars/bosf/bosf.txt
+know	bosf2       	data/chars/bosf/bosf2.txt
+know	Shoot		data/chars/misc/shoot.txt
+know	Star		data/chars/misc/star.txt
+know	Steam		data/chars/misc/steam.txt
+know	Steamer		data/chars/misc/steamer.txt
+know	auto      	data/chars/auto/auto.txt
+know	autoa      	data/chars/auto/autoa.txt
+know	autob      	data/chars/auto/autob.txt
+know	autoc      	data/chars/auto/autoc.txt
+know	auto2      	data/chars/auto/auto2.txt
+know	auto3      	data/chars/auto/auto3.txt
+know	auto4      	data/chars/auto/auto4.txt
+know	auto5      	data/chars/auto/auto5.txt
+know	motor      	data/chars/auto/motor.txt
+know	motor2    	data/chars/auto/motor2.txt
+know	motor3    	data/chars/auto/motor3.txt
+know	motorbb    	data/chars/auto/motorbb.txt
+know	motorbb2   	data/chars/auto/motorbb2.txt
+know	motrcks     data/chars/auto/motrcks.txt
+know	rocktlk  	data/chars/rocksted/rocktlk.txt
+know	wybufl    	data/chars/wybu/wybufl.txt
+know	wybu     	data/chars/wybu/wybu.txt
+know	wybu1     	data/chars/wybu/wybu1.txt
+know	wybu2     	data/chars/wybu/wybu2.txt
+know	wybu3    	data/chars/wybu/wybu3.txt
+know	wybua     	data/chars/wybu/wybua.txt
+know	wybub     	data/chars/wybu/wybub.txt
+know	wybuc    	data/chars/wybu/wybuc.txt
+know	hbomb2      data/chars/heli/hbomb2.txt
+know	hbomb       data/chars/heli/hbomb.txt
+know	hshtfl      data/chars/heli/hshtfl.txt
+know	wrak      	data/bgs/lv1a/wrak.txt
+know	wrak2      	data/bgs/lv1a/wrak2.txt
+know	pal1       	data/bgs/metro2/pal1.txt
+know	pal2        data/bgs/metro2/pal2.txt
+know	pl1        	data/bgs/constr/pl1.txt
+know	pl2       	data/bgs/constr/pl2.txt
+know	pan1       	data/bgs/port/pan1.txt
+know	pan2       	data/bgs/port/pan2.txt
+know	pp1			data/bgs/roof/pp1.txt
+
+know	st1        	data/scenes/stopng/st1.txt
+know	st2        	data/scenes/stopng/st2.txt
+know	st2sw       data/scenes/stopng/st2sw.txt
+know	st3       	data/scenes/stopng/st3.txt
+know	st4      	data/scenes/stopng/st4.txt
+know	st5       	data/scenes/stopng/st5.txt
+know	st6       	data/scenes/stopng/st6.txt
+know	st6b       	data/scenes/stopng/st6b.txt
+know	st7     	data/scenes/stopng/st7.txt
+know	st7b     	data/scenes/stopng/st7b.txt
+know	tatsuop     data/scenes/stopng/tatsuop.txt
+know	surv		data/scenes/demo/surv.txt

@@ -1,0 +1,14 @@
+name	raind
+type	none
+anim idle
+        loop 1
+        offset  0 34
+        delay   5
+	frame	data/chars/misc/rd1.gif
+        frame	data/chars/misc/rd2.gif
+        frame	data/chars/misc/rd3.gif
+        frame	data/chars/misc/rd4.gif
+        frame	data/chars/misc/rd5.gif
+        frame	data/chars/misc/rd6.gif
+        frame	data/chars/misc/rd7.gif
+        frame	data/chars/misc/rd8.gif

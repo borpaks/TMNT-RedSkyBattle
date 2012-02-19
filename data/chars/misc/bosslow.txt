@@ -1,0 +1,21 @@
+name	bosslow
+type	text
+subtype noskip
+nolife 1
+setlayer 2
+nolife 1
+cantgrab 1
+anim idle
+	offset  1000 444
+        delay   10
+        frame	data/chars/bosf/b1.gif
+        frame	data/chars/bosf/b2.gif
+        frame	data/chars/bosf/b1.gif
+        frame	data/chars/bosf/b2.gif
+        frame	data/chars/bosf/b1.gif
+        frame	data/chars/bosf/b2.gif
+        frame	data/chars/bosf/b1.gif
+        frame	data/chars/bosf/b2.gif
+        delay   1
+        frame	data/chars/misc/empty.gif
+ 

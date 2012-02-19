@@ -1,0 +1,27 @@
+name	prmt
+health	1
+type	obstacle
+diesound data/sounds/klunk.wav
+nodrop 1
+nolife 1
+toflip 1
+noatflash 1
+flash prmtnn
+grabdistance 0
+nodieblink 3
+jumpheight 0
+load prmtsh
+load prmtnn
+anim idle
+	loop	1
+	delay	1
+	offset	9 45
+	bbox	3 0 12 54
+        frame	data/chars/misc/prmt1.gif
+	frame	data/chars/misc/prmt1.gif
+anim death
+	delay	1
+	offset	9 45
+	bbox	0 0 0 0
+	frame	data/chars/misc/prmt2.gif
+        frame	data/chars/misc/prmt2.gif

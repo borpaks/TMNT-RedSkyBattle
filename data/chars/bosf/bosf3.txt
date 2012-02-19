@@ -1,0 +1,14 @@
+name	bosf3
+type	none
+setlayer  15
+cantgrab 1
+nolife 1
+anim idle
+        offset  1000 444
+        delay   10
+        platform 1 1 1 1 1 1
+        seta 1
+        frame	data/chars/bosf/b1.gif
+        frame	data/chars/bosf/b2.gif
+        delay   1
+        frame	data/chars/misc/empty.gif

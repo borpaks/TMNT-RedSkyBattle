@@ -1,0 +1,166 @@
+music		data/music/boss1.ogg
+bossmusic	data/music/boss3a.ogg
+notime 1
+settime 0
+background	data/bgs/traning/a1.gif 
+panel		data/bgs/traning/a1.gif
+order	a
+spawn1 10 60 0
+spawn2 10 90 0
+#--group1-----
+spawn	lvbegin
+flip 1
+coords	320 240
+at	0
+
+spawn	april
+coords	110 130
+at	0
+
+spawn	splinte2
+coords	280 130
+at	0
+
+wait
+at 5
+
+spawn	Footsw
+aggression 90
+flip 1
+coords	350 240
+at	2
+
+spawn	Footn
+aggression 60
+flip 1
+coords	-30 150
+at	2
+
+group	1 2
+at 	    0
+
+spawn	rock2a
+aggression 70
+coords	350 150
+at	2
+
+spawn	rock3
+flip 1
+aggression 70
+coords	-30 240
+at	2
+
+spawn  punk
+alias  Joe_Jordison
+aggression 70
+health 150
+flip 1
+coords	350 250
+at 2
+
+spawn	mankn
+alias  Batka_Tony_Hawkovich
+aggression 70
+health 200
+coords	350 170
+at	2
+
+spawn	bebop
+alias Naughty_Pig
+aggression 50
+health      150
+flip 1
+coords	0 150
+at	2
+
+spawn	rocksted
+alias Rocksteady
+aggression 60
+health      150
+coords	320 250
+at	2
+
+spawn 	pizza
+flip 1
+coords  150 150 220
+at  2
+
+spawn	letherhead
+alias Crockodile_Gena
+aggression 60
+health      170
+coords	380 250
+at	2
+
+spawn	dirtbag2
+alias Dirty_Rat
+map 2
+aggression 60
+health      150
+coords	-30 230
+at	2
+
+spawn	tricer
+aggression 80
+health      100
+flip 1
+coords	350 260
+at	2
+
+spawn	tricer
+aggression 80
+map 1
+health      110
+flip 1
+coords	-30 150
+at	2
+
+spawn	michen
+alias Mike_Clone
+map 3
+aggression 120
+flip 1
+coords 350 160
+at  2
+
+spawn	raphen
+alias Raph_Clone
+map 3
+aggression 120
+flip 1
+coords 350 250
+at  2
+
+spawn 	robo
+alias	Metal_Head_V.2.5
+health	180
+map 2
+aggression 110
+flip 1
+item bosslow
+coords -50 160
+at 	2
+
+spawn 	casene
+alias	Casey_Jones
+health	180
+aggression 110
+flip 1
+map 2
+item bosslow
+coords 350 250
+at 	2
+
+spawn 	pizzamp
+coords  200 190 370
+at  2
+
+spawn cslash
+alias Crazy_Slash
+aggression 30
+map 1
+flip 1
+boss 1
+item bosf
+coords 350 170
+at 	2

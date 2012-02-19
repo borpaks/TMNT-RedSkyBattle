@@ -1,0 +1,448 @@
+music		data/music/wship.ogg
+bossmusic	data/music/boss3a.ogg
+notime 1
+settime 0
+rock 1
+background		data/bgs/ship/bg1a.gif
+panel	        data/bgs/ship/a2a.gif
+frontpanel		data/bgs/ship/p1.gif
+wall 0 158 -50 -50 1476 1476 40 1000
+wall 100 224 -38 -38 60 60 52 1000
+wall 704 224 -38 -38 62 62 52 1000
+wall 1310 224 -38 -38 62 62 52 1000
+wall 1520 138 -50 -50 180 180 40 1000
+wall 1520 168 0 100 180 180 40 1000
+wall 1700 258 -50 -9 180 180 90 1000
+order	a
+direction right
+bgspeed 3
+
+spawn1 20 100 0
+spawn2 30 120 0
+spawn3 40 140 0
+spawn4 50 160 0
+
+spawn	lvbegin
+coords	320 240
+at	0
+spawn	st7
+coords  170 100
+at 0
+spawn	log1
+coords	76 118
+at 0
+spawn	log1
+coords	685 118
+at 0
+spawn	log1
+coords	1290 118
+at 0
+spawn wtrp
+coords 237 170
+at 50
+spawn wtrp
+coords 362 170
+at 50
+spawn wtrp
+coords 331 234
+at 50
+spawn wtrp
+coords 460 200
+at 50
+spawn wtrp
+coords 685 235
+at 50
+spawn wtrp
+coords 850 170
+at 50
+spawn wtrp
+coords 938 203
+at 50
+spawn wtrp
+coords 880 233
+at 50
+spawn wtrp
+coords 1127 170
+at 50
+spawn wtrp
+coords 1165 203
+at 50
+spawn wtrp
+coords 1318 234
+at 50
+
+spawn foota
+map 2
+aggression 90
+coords 350 200
+at 70
+spawn foota
+aggression 90
+map 2
+coords 350 240
+at 70
+
+group 2 5
+at 150
+wait
+at 150
+
+spawn foot2
+map 6
+aggression 90
+coords 20 160
+at 150
+spawn foot2
+map 6
+aggression 90
+coords 160 160
+at 150
+spawn foot2
+map 6
+aggression 90
+coords 300 160
+at 150
+
+spawn footsw
+aggression 90
+coords -30 170
+at 150
+spawn footbw
+map 1
+aggression 90
+coords -30 230
+at 150
+spawn footsw
+aggression 90
+coords 350 170
+at 150
+spawn footbw
+map 1
+aggression 90
+coords 350 230
+at 150
+
+group 4 7
+at 450
+wait
+at 450
+spawn footop3
+map 6
+aggression 90
+coords 30 160
+at 450
+spawn footop3
+map 6
+aggression 90
+coords 30 230
+at 450
+spawn footop3
+map 6
+aggression 90
+coords 160 190
+at 450
+spawn footop3
+map 6
+aggression 90
+coords 300 160
+at 450
+spawn footop3
+map 6
+aggression 90
+coords 300 230
+at 450
+spawn foot
+map 2
+coords 450 160
+at 450
+spawn foot
+map 2
+coords -100 230
+at 450
+spawn foot4
+map 1
+flip 1
+aggression 90
+coords -90 160
+at 450
+spawn foot4
+map 1
+flip 1
+aggression 90
+coords -90 240
+at 450
+spawn foot4
+map 1
+aggression 90
+coords 410 160
+at 450
+spawn foot4
+map 1
+aggression 90
+coords 410 240
+at 450
+
+spawn footsw
+aggression 90
+coords -30 170
+at 450
+spawn footsw
+aggression 90
+coords 350 240
+at 450
+spawn footrog2
+map 1
+coords 255 180
+at 450
+spawn footrog2
+map 1
+flip 1
+coords 285 180
+at 450
+
+
+spawn foottri
+aggression 90
+map 3
+coords 350 170
+at 650
+spawn foottri
+aggression 90
+map 3
+coords 350 220
+at 650
+
+wait
+at 770
+group 3 5
+at 770
+
+spawn foot2
+aggression 90
+map 6
+coords 20 160
+at 600
+spawn foot2
+aggression 90
+map 6
+coords 160 160
+at 600
+spawn foot2
+aggression 90
+map 6
+coords 300 160
+at 600
+spawn footfh
+aggression 100
+map 1
+coords 20 160
+at 600
+spawn footfh
+aggression 100
+map 1
+coords 160 160
+at 600
+spawn footfh
+aggression 100
+map 1
+coords 300 160
+at 600
+spawn footbw
+aggression 100
+map 1
+coords 350 160
+at 600
+spawn footbw
+aggression 100
+map 1
+coords 350 220
+at 600
+spawn footaxe
+aggression 90
+map 2
+coords -30 180
+at 600
+
+wait
+at 900
+spawn ccore
+coords 300 160
+at 800
+spawn ccore
+coords 300 190
+at 800
+spawn ccore
+coords 300 240
+at 800
+
+spawn ccore
+flip 1
+coords -600 160
+at 800
+spawn ccore
+flip 1
+coords -600 190
+at 800
+spawn ccore
+flip 1
+coords -600 230
+at 800
+
+wait
+at 1020
+group 3 7
+at 1020
+spawn foot5
+aggression 90
+map 6
+coords 30 180
+at 980
+spawn foot5
+aggression 90
+map 6
+coords 160 160
+at 980
+spawn foot5
+aggression 90
+map 6
+coords 160 220
+at 980
+spawn foot5
+aggression 90
+map 6
+coords 300 180
+at 980
+spawn foota
+aggression 90
+map 2
+coords -30 170
+at 980
+spawn foota
+aggression 90
+map 2
+coords -30 210
+at 980
+
+spawn footn
+aggression 90
+map 2
+coords 350 160
+at 980
+spawn footn
+aggression 90
+map 2
+coords 350 230
+at 980
+spawn footn2
+aggression 90
+map 1
+coords -20 180
+at 980
+spawn foottri
+aggression 90
+map 3
+coords 450 160
+at 980
+spawn foottri
+aggression 90
+map 3
+coords 450 230
+at 980
+
+group 1 5
+at 1090
+spawn foothk
+map 1
+coords 350 170
+at 1000
+spawn foothk
+map 1
+coords 350 200
+at 1000
+spawn foothk
+map 1
+coords 350 230
+at 1000
+spawn foothk
+map 1
+coords 350 250
+at 1000
+wait
+at 1200
+spawn footbw
+map 1
+coords -30 170
+at 1200
+spawn footbw
+map 1
+coords -30 230
+at 1200
+spawn foottri
+map 5
+coords -50 230
+at 1200
+spawn foot2
+map 6
+coords 80 148
+at 1200
+spawn foot5
+map 6
+coords 170 210
+at 1200
+spawn footfh
+map 1
+coords 80 148
+at 1200
+spawn footop3
+map 6
+coords 20 230
+at 1200
+spawn foot5
+map 6
+coords 200 190
+at 1200
+spawn footop3
+map 6
+coords 70 180
+at 1200
+spawn foot5
+map 6
+coords 150 225
+at 1200
+spawn footbw
+map 1
+coords -30 170
+at 1200
+spawn footbw
+map 1
+coords -30 230
+at 1200
+spawn footf
+aggression 100
+map 1
+coords -70 170
+at 1200
+spawn footf
+aggression 100
+map 1
+coords -70 230
+at 1200
+spawn ftel
+alias Foot_Elite
+item bosslow
+aggression 120
+health 320
+2phealth 410
+3phealth 500
+4phealth 620
+map 1
+coords -30 210
+at 1200
+spawn	fwrks
+flip 1
+coords  302 260
+at	1200
+spawn	secret
+flip 1
+coords  302 260
+at	1200

@@ -1,0 +1,22 @@
+name	swhole
+health	1
+type	trap
+subtype	touch
+nolife 1
+nomove 1 1
+#facing 1
+grabdistance 1
+shadow 1
+hostile player npc
+candamage player npc
+anim spawn
+	delay	1
+	offset	0 50
+	frame	data/chars/misc/empty.gif
+anim idle
+	loop	1
+	offset	0 50
+		delay	2
+		hitfx	data/sounds/empty.gif
+		attack8	-2 -2 8 8 0 0 1 1
+		frame	data/chars/misc/empty.gif

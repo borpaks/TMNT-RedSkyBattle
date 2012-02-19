@@ -1,0 +1,35 @@
+name	women
+health	100000
+speed	6
+type	enemy
+subtype arrow
+nolife 1
+shadow 1
+remap data/chars/splinter/wom1.gif data/chars/splinter/womalt1.gif
+anim spawn
+	offset	17 94
+	delay	1
+        bbox    0 0 0 0
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%1;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/splinter/wom1.gif
+anim idle
+	loop	1
+	offset	17 94
+	delay	8
+        bbox    0 0 0 0
+	frame	data/chars/splinter/wom1.gif
+        frame	data/chars/splinter/wom2.gif
+        frame	data/chars/splinter/wom3.gif
+        frame	data/chars/splinter/wom4.gif
+        frame	data/chars/splinter/wom5.gif
+        frame	data/chars/splinter/wom6.gif

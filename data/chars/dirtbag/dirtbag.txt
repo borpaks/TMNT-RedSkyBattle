@@ -1,0 +1,332 @@
+name	Dirtbag
+health	600
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+shadow	3
+speed  8
+diesound data/sounds/die2.wav
+icon data/chars/dirtbag/icon.gif
+throw 2 3
+jumpheight 3
+cantgrab 1
+escapehits 3
+falldie 2
+nodieblink 1
+throwdamage	20
+hostile player npc
+dust wat2
+load wat2
+candamage player npc enemy obstacle 
+score 5000 2
+remap data/chars/dirtbag/01.gif data/chars/dirtbag/alt3.gif
+running  16 4 2 1 0
+load foot6a
+load foot6
+summonkill 0
+anim idle
+	loop	1
+	offset	38 81
+	bbox	31 24 21 50
+	delay	20
+        seta 1
+        summonframe 1 350 0 0 0
+        subentity foot6a
+	frame	data/chars/dirtbag/01.gif
+	frame	data/chars/dirtbag/03.gif
+        frame	data/chars/dirtbag/01.gif
+        delay   10
+        frame	data/chars/dirtbag/02.gif
+	frame	data/chars/dirtbag/03.gif
+anim walk
+	loop	1
+	offset	38 81
+        seta 1
+	bbox	31 24 21 50
+	delay	18
+        summonframe 1 -100 50 0 0
+        subentity foot6
+	frame	data/chars/dirtbag/04.gif
+	frame	data/chars/dirtbag/05.gif
+        frame	data/chars/dirtbag/04.gif
+        frame	data/chars/dirtbag/03.gif
+anim run
+	loop	1
+	offset	38 81
+        seta 1
+	bbox	31 24 21 50
+	delay	8
+        custknife wat
+        throwframe 1 -1
+	frame	data/chars/dirtbag/04.gif
+	frame	data/chars/dirtbag/05.gif
+        frame	data/chars/dirtbag/04.gif
+        frame	data/chars/dirtbag/03.gif
+anim runattack
+	offset	38 81
+        seta 1
+	bbox	31 24 21 50
+        delay 20
+        jumpframe 1 2 2 0
+        dropframe 2
+        landframe 3
+        custknife wat2
+        throwframe 3 -1
+        frame	data/chars/dirtbag/10.gif
+        delay	100
+        frame	data/chars/dirtbag/11.gif
+        delay   1000
+        frame	data/chars/dirtbag/06.gif
+        delay   10
+        @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 0
+        frame	data/chars/dirtbag/07.gif
+        attack4  35 36 47 49 16 0 0 1 20
+        frame	data/chars/dirtbag/08.gif
+        delay 30
+        frame	data/chars/dirtbag/08.gif
+        attack4 0 0 0 0 0
+        delay 15
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+anim pain
+	offset	38 81
+        seta 1
+	bbox	31 24 21 50
+	delay	5
+	frame	data/chars/dirtbag/10.gif
+        offset	39 81
+	frame	data/chars/dirtbag/10.gif
+        offset	38 81
+        frame	data/chars/dirtbag/10.gif
+        offset	39 81
+        frame	data/chars/dirtbag/10.gif
+        offset	38 81
+        frame	data/chars/dirtbag/10.gif
+        offset	39 81
+        frame	data/chars/dirtbag/10.gif
+        offset	38 81
+        delay 30
+        frame	data/chars/dirtbag/10.gif
+anim fall
+	offset	38 82
+	bbox	0 0 0 0
+	delay	100
+        landframe 1
+	frame	data/chars/dirtbag/13.gif
+        bbox    0 0 0 0
+        frame	data/chars/dirtbag/13.gif
+anim fall2
+	offset	38 82
+	bbox	31 24 21 50
+	delay	100
+        landframe 1
+	frame	data/chars/dirtbag/13.gif
+        bbox    0 0 0 0
+        frame	data/chars/dirtbag/13.gif
+anim death
+	offset	38 82
+	bbox	0 0 0 0
+	delay	100
+	frame	data/chars/dirtbag/13.gif
+        bbox    0 0 0 0
+        @cmd playmusic("data/music/lv5.ogg", 1)
+        frame	data/chars/dirtbag/13.gif
+anim rise
+	offset	38 81
+        seta 1
+	bbox	0 0 0 0
+	delay	15
+	frame	data/chars/dirtbag/12.gif
+anim attack1
+	range	20 60
+	offset	38 81
+        seta 1
+	bbox	31 24 21 50
+	delay	20
+        custknife wat2
+        throwframe 2 -1
+	frame	data/chars/dirtbag/06.gif
+        delay 10
+	frame	data/chars/dirtbag/07.gif
+        delay 30
+        attack4  35 36 47 49 16 0 0 1 20
+        frame	data/chars/dirtbag/08.gif
+        attack4 0 0 0 0 0
+        delay 15
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+anim attack2
+	range	160 170
+	offset	38 81
+        seta 1
+	bbox	31 24 21 50
+        delay 20
+        jumpframe 1 4 2 0
+        dropframe 2
+        landframe 3
+        custknife wat2
+        throwframe 3 -1
+        frame	data/chars/dirtbag/10.gif
+        delay	20
+        frame	data/chars/dirtbag/11.gif
+        delay   1000
+        frame	data/chars/dirtbag/06.gif
+        delay   10
+        @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 0
+        frame	data/chars/dirtbag/07.gif
+        attack4  35 36 47 49 16 0 0 1 20
+        frame	data/chars/dirtbag/08.gif
+        delay 30
+        frame	data/chars/dirtbag/08.gif
+        attack4 0 0 0 0 0
+        delay 15
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+anim attack3
+	range	10 30
+	offset	38 81
+        seta 1
+	bbox	31 24 21 50
+	delay	10
+        custknife wat2
+        throwframe 2 -1
+	frame	data/chars/dirtbag/06.gif
+        delay 10
+	frame	data/chars/dirtbag/07.gif
+        delay 20
+        attack4  35 36 47 49 16 0 0 1 20
+        frame	data/chars/dirtbag/08.gif
+        attack4 0 0 0 0 0
+        delay 10
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/06.gif
+anim attack4
+        range 160 170
+        offset	38 81
+        seta 1
+	bbox	31 24 21 50
+	delay	200
+        counterframe 0 1 0
+        followanim 1
+        frame	data/chars/dirtbag/10.gif
+anim attack5
+        range 160 170
+	offset	38 81
+	bbox	31 24 21 50
+	delay	20
+        seta 1
+	frame	data/chars/dirtbag/01.gif
+	frame	data/chars/dirtbag/03.gif
+        frame	data/chars/dirtbag/01.gif
+        delay   10
+        frame	data/chars/dirtbag/02.gif
+	frame	data/chars/dirtbag/03.gif
+anim jump
+        range 80 81
+        offset	38 81
+	bbox	31 24 21 50
+        frame	data/chars/dirtbag/10.gif
+anim jumpattack
+        offset	38 81
+        seta 1
+	bbox	31 24 21 50
+        delay 1
+        jumpframe 1 4 2 0
+        custknife wat2
+        throwframe 2 -1
+        landframe 2
+        frame	data/chars/dirtbag/10.gif
+        delay 1000
+        frame	data/chars/dirtbag/11.gif
+        delay  30
+        @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 0
+        frame	data/chars/dirtbag/10.gif
+anim riseattack
+	range	10 60
+	offset	38 81
+        seta 1
+	bbox	0 0 0 0
+	delay	20
+        custknife wat2
+        throwframe 2 -1
+	frame	data/chars/dirtbag/06.gif
+        delay 10
+	frame	data/chars/dirtbag/07.gif
+        delay 30
+        attack4  35 36 47 49 16 0 0 1 20
+        frame	data/chars/dirtbag/08.gif
+        attack4 0 0 0 0 0
+        delay 15
+        bbox	31 24 21 50
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+anim special2
+        range 0 100
+        offset	38 81
+        seta 1
+	bbox	0 0 0 0
+	delay	20
+        custknife wat2
+        throwframe 2 -1
+	frame	data/chars/dirtbag/06.gif
+        delay 10
+	frame	data/chars/dirtbag/07.gif
+        delay 30
+        attack4  35 36 47 49 16 0 0 1 20
+        frame	data/chars/dirtbag/08.gif
+        attack4 0 0 0 0 0
+        delay 15
+        bbox	31 24 21 50
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+anim spawn
+	offset	38 81
+        seta 1
+	bbox	0 0 0 0
+	delay	50
+        @cmd playmusic("data/music/boss2.ogg", 1)
+	frame	data/chars/dirtbag/12.gif
+        frame	data/chars/dirtbag/10.gif
+anim follow1
+	offset	38 81
+        seta 1
+	bbox	0 0 0 0
+	delay	20
+        custknife wat2
+        throwframe 2 -1
+	frame	data/chars/dirtbag/06.gif
+        delay 10
+	frame	data/chars/dirtbag/07.gif
+        delay 30
+        attack4  35 36 47 49 16 0 0 1 20
+        frame	data/chars/dirtbag/08.gif
+        attack4 0 0 0 0 0
+        delay 15
+        bbox	31 24 21 50
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif
+        frame	data/chars/dirtbag/09.gif
+        frame	data/chars/dirtbag/08.gif

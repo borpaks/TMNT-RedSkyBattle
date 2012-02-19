@@ -1,0 +1,73 @@
+name	men2
+health	1
+speed	5
+type	enemy
+subtype arrow
+nolife 1
+shadow 3
+score 5000 2
+noquake 1
+remap data/chars/foot/01.gif data/chars/foot/alt1.gif
+remap data/chars/foot/01.gif data/chars/foot/alt2.gif
+remap data/chars/foot/01.gif data/chars/foot/alt3.gif
+remap data/chars/foot/01.gif data/chars/foot/alt4.gif
+remap data/chars/foot/01.gif data/chars/foot/alt5.gif  
+anim spawn
+	offset	26 62
+	bbox	19 9 16 41
+	delay	1
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%5;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/foot/rn1.gif
+anim idle
+        loop	1
+	offset	26 62
+	bbox	19 9 16 41
+	delay	8
+	frame	data/chars/foot/rn1.gif
+        frame	data/chars/foot/rn2.gif
+        frame	data/chars/foot/rn3.gif
+        frame	data/chars/foot/rn4.gif
+        frame	data/chars/foot/rn5.gif
+        frame	data/chars/foot/rn6.gif
+        frame	data/chars/foot/rn7.gif
+        frame	data/chars/foot/rn8.gif
+anim pain
+	offset	26 60
+	bbox	19 9 16 41
+	delay	5
+        offset	26 60
+	frame	data/chars/foot/08.gif
+        offset	27 60
+        frame	data/chars/foot/08.gif
+        offset	26 60
+	frame	data/chars/foot/08.gif
+        offset	27 60
+        frame	data/chars/foot/08.gif
+        offset	26 60
+	frame	data/chars/foot/08.gif
+        offset	27 60
+        frame	data/chars/foot/08.gif
+        offset	26 60
+	frame	data/chars/foot/08.gif
+        offset	27 60
+        frame	data/chars/foot/08.gif
+anim fall
+	offset	26 60
+	delay	30
+        hitflash bflash
+        bbox	276 2999 1 1
+	frame	data/chars/foot/09.gif
+        attack  10 23 19 32 6 1 0 0 10
+	frame	data/chars/foot/09.gif
+        attack  0
+        frame	data/chars/foot/10.gif

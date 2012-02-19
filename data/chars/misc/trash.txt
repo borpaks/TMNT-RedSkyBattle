@@ -1,0 +1,44 @@
+name	Trash
+health	1
+type	obstacle
+toflip 
+nolife 1
+noatflash 1
+flash bflash
+grabdistance 20
+nodieblink 3
+jumpheight 3
+anim idle
+	loop	0
+	delay	100
+	offset	15 29
+	bbox	9 -13 19 50
+	frame	data/chars/misc/trash2.gif
+anim fall
+	offset	15 29
+        delay   5
+        landframe 13
+        sound data/sounds/klunk.wav
+        frame	data/chars/misc/trash3.gif
+        delay 22
+        frame	data/chars/misc/trash5.gif
+        frame	data/chars/misc/trash4.gif
+        frame	data/chars/misc/trash8.gif
+        delay 200
+        frame	data/chars/misc/trash6.gif
+        delay 15
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/trash6.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/trash6.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/trash6.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/trash6.gif
+        @script
+        if(frame == 13){
+        void self = getlocalvar("self");
+        killentity(self);
+        }
+        @end_script
+        frame	data/chars/misc/empty.gif

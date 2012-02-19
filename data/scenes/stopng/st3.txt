@@ -1,0 +1,12 @@
+name	st3
+type	none
+setlayer 1000
+facing 1
+anim idle
+	offset	73 8
+        delay 30
+        frame	data/chars/misc/empty.gif
+        delay   200
+        frame	data/scenes/stopng/3.gif
+        delay   1
+        frame	data/chars/misc/empty.gif

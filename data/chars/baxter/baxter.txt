@@ -1,0 +1,171 @@
+name	Baxter
+health	300
+speed  12
+type   enemy
+aimove chase
+aimove wander
+aimove normal
+jumpheight 3
+shadow	2
+icon	data/chars/baxter/icon.gif
+flash flash2
+diesound data/sounds/die2.wav
+nodrop 1
+cantgrab 1
+thold 30
+blockodds 1
+noatflash 1
+hostile player npc
+candamage player npc enemy obstacle 
+escapehits 3
+falldie 1
+nodieblink 1
+score  4000 2
+gfxshadow 1
+anim spawn
+	offset	107 115
+	bbox	0 0 0 0
+	#movea   -3
+	move    15
+	fshadow 0
+	delay 	7
+	fshadow 1
+	frame	data/chars/baxter/a2.gif
+	fshadow 2
+	frame	data/chars/baxter/a1.gif
+	fshadow 3
+	frame	data/chars/baxter/a3.gif
+	frame	data/chars/baxter/a2.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a3.gif
+	frame	data/chars/baxter/a2.gif
+	frame	data/chars/baxter/a1.gif
+anim idle
+	seta 65
+	loop	1
+	offset	107 115
+	bbox	102 43 17 21
+	delay	10
+	frame	data/chars/baxter/a2.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a3.gif
+	frame	data/chars/baxter/a1.gif
+anim walk
+	loop	1
+	seta 65
+    offset	107 115
+	bbox	102 43 17 21
+		delay	10
+		frame	data/chars/baxter/a2.gif
+		frame	data/chars/baxter/a1.gif
+		frame	data/chars/baxter/a3.gif
+		frame	data/chars/baxter/a1.gif
+anim rise
+	offset	109 126
+		delay	5
+		frame	data/chars/baxter/a2.gif
+		frame	data/chars/baxter/a1.gif
+        frame	data/chars/baxter/a3.gif
+        frame	data/chars/baxter/a1.gif
+anim attack1
+    range  30 80
+	seta 65
+	hitflash cflash
+    offset 107 115
+	bbox	102 43 17 21
+        delay  20
+        frame  data/chars/baxter/at2.gif
+        offset 89 100
+		bbox	102 43 17 21
+        shock 123 75 111 37 10 0 0
+        frame  data/chars/baxter/at3.gif
+		frame  data/chars/baxter/at3.gif
+        shock 0 0 0 0 0
+        offset 107 115
+		bbox	102 43 17 21
+        frame  data/chars/baxter/at2.gif
+anim attack2
+    range  30 80
+	seta 65
+    offset 107 115
+	bbox	102 43 17 21
+        delay  20
+        frame  data/chars/baxter/at2.gif
+        offset 89 100
+		bbox	102 43 17 21
+        shock  123 75 111 37 10 0 0
+        frame  data/chars/baxter/at3.gif
+		frame  data/chars/baxter/at3.gif
+        shock  0 0 0 0 0
+        offset 107 115
+		bbox	102 43 17 21
+        frame  data/chars/baxter/at2.gif
+anim attack3
+    range  50 100
+	seta 65
+    offset 107 115
+	bbox	102 43 17 21
+        delay  20
+        frame  data/chars/baxter/at2.gif
+        offset 89 100
+		bbox	102 43 17 21
+        shock 123 75 111 37 10 0 0
+        frame  data/chars/baxter/at3.gif
+		frame  data/chars/baxter/at3.gif
+        shock 0 0 0 0 0
+        offset 107 115
+		bbox	102 43 17 21
+        frame  data/chars/baxter/at2.gif
+anim pain
+	seta 65
+	offset	107 115
+	bbox	102 43 17 21
+		delay	10
+		frame	data/chars/baxter/d1.gif
+anim fall
+	seta 	1
+	offset  107 88
+	movea 	3
+		delay	5
+		frame	data/chars/baxter/d1.gif
+anim fall2
+	seta 	1
+	offset  107 88
+	movea 	3
+		delay	5
+		frame	data/chars/baxter/d1.gif
+anim death
+	offset	107 115
+	bbox	0 0 0 0
+	delay	5
+	frame	data/chars/baxter/d1.gif
+	flipframe 1
+    movea 7
+    move 15
+	delay	5
+	frame	data/chars/baxter/a2.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a3.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a2.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a3.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a2.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a3.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a2.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a3.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a2.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a3.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a2.gif
+	frame	data/chars/baxter/a1.gif
+	frame	data/chars/baxter/a3.gif
+	frame	data/chars/baxter/a1.gif
+	fshadow 0
+	frame	data/chars/misc/empty.gif

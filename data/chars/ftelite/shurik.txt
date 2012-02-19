@@ -1,0 +1,20 @@
+name	shurik
+type	enemy
+speed 12
+candamage player npc enemy obstacle 
+nolife 1
+grabdistance 26
+noatflash 1
+flash bflash
+anim idle
+    loop 1
+	offset	-17 19
+		delay	10
+        hitflash cflash
+		hitfx	data/sounds/knifes.wav
+        bbox    10000000 0 1 1
+        frame	data/chars/ftelite/shr1.gif
+		attack   16 13 21 4 10 1 0 0 10
+        frame	data/chars/ftelite/shr2.gif
+        frame	data/chars/ftelite/shr3.gif
+        frame	data/chars/ftelite/shr3.gif

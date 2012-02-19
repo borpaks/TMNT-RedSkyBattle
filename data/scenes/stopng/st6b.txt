@@ -1,0 +1,21 @@
+name	st6b
+type	none
+setlayer 1000
+facing 1
+anim idle
+	offset	132 8
+        delay 30
+		@script
+        int iPlayer; 
+        int iMaxPlayer = 4; 
+        int iWeapon = 3; 
+        for (iPlayer = 0; iPlayer < iMaxPlayer; iPlayer++){
+			changeplayerproperty(iPlayer, "weapon", iWeapon);
+			}
+        @end_script
+        frame	data/chars/misc/empty.gif
+        delay   100
+		frame	data/scenes/stopng/6b.gif
+		@cmd changeentityproperty getlocalvar("self") "velocity" 0 -2 0
+        frame	data/scenes/stopng/6b.gif
+		

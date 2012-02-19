@@ -1,0 +1,230 @@
+music		data/music/lv5.ogg
+bossmusic	data/music/boss1.ogg
+notime 1
+settime 0
+background	data/bgs/sewer/back.gif
+panel		data/bgs/sewer/a1.gif
+frontpanel      data/bgs/sewer/p1.gif
+water           data/bgs/sewer/water.gif 1
+order	a
+spawn1 50 50 0
+spawn2 70 70 0
+spawn3 50 90 0
+spawn4 70 110 0
+#setweap 4
+wall 0 153 -1000 -1000 661 660 30 1100
+#--group1-----
+spawn	lvbegin2
+flip 1
+coords	320 240
+at	0
+spawn	st2sw
+flip 1
+coords	160 100
+at	0
+spawn	oildrm
+flip 1
+coords	450 154
+at	0
+spawn	Foot5
+map 1
+coords	380 190
+at	50
+spawn	Foot5
+map 2
+coords	380 220
+at	100
+spawn	mouser
+coords	400 190
+at	150
+spawn	Foot5
+coords	-50 220
+at	200
+spawn	Foot5
+map 1
+coords	-50 160
+at	300
+wait
+at 320
+group 6 10
+at 320
+spawn	Foot5
+map 2
+coords	250 160
+at	320
+spawn	Foot5
+coords	280 220
+at	320
+spawn	Foot5
+map 2
+coords	80 160
+at	320
+spawn	Foot5
+coords	50 220
+at	320
+spawn	robot
+coords	160 190
+at	320
+spawn	mouser
+coords	500 190
+at	400
+spawn	Foot5
+map 3
+coords	350 160
+at	500
+spawn	footsw
+aggression 120
+health 100
+map 7
+item bosslow
+coords	350 190
+at	600
+wait
+at 700
+spawn	footsw
+aggression 120
+health 100
+map 7
+item bosslow
+coords	350 190
+at	600
+spawn	footwt
+coords	320 150
+at      700
+spawn	footwt
+flip	1
+coords	0 190
+at      700
+spawn	footwt
+coords	320 230
+at      700
+group 4 5
+at 700
+spawn	wfl
+flip 1
+coords	584 130
+at	700
+spawn	Foot5
+coords	350 220
+at	700
+spawn	Foot5
+map 5
+coords	350 160
+at	800
+spawn	robot
+coords	240 190
+at	800
+spawn	Foot5
+map 2
+coords	200 220
+at	900
+spawn	Foot5
+coords	320 160
+at	1000
+group 4 4
+at 1000
+spawn	Foot5
+map 1
+coords	-50 220
+at	1000
+spawn	Foot5
+map 2
+coords	-50 160
+at	1000
+spawn	Foot5
+coords	250 220
+at	1000
+spawn	fly
+coords	350 190
+at	1000
+spawn	Foot5
+coords	350 160
+at	1000
+spawn	mouser
+coords	45 126
+at	1000
+spawn footwt
+coords 300 130
+at	1000
+spawn footwt
+coords 300 160
+at	1000
+spawn footwt
+coords 300 190
+at	1000
+spawn	letherhead
+alias _Letherhead
+2phealth 600
+3phealth 700
+4phealth 800
+aggression 40
+boss 1
+item bosf
+coords	235 135
+at	1000
+spawn	Foot5
+coords	-50 220
+at	1000
+spawn	Foot5
+coords	-50 160
+at	1000
+spawn	mouser
+coords	45 126
+at	1000
+spawn	Foot5
+coords	50 220
+at	1000
+spawn	Foot5
+coords	350 160
+at	1000
+spawn	Foot5
+coords	-50 220
+at	1000
+spawn	mouser
+coords	45 126
+at	1000
+spawn	robot
+coords	160 190
+at	1000
+spawn	Foot5
+coords	-50 160
+at	1000
+spawn	mouser
+coords	45 126
+at	1000
+spawn	Foot5
+coords	350 220
+at	1000
+spawn	mouser
+coords	45 126
+at	1000
+spawn	Foot5
+coords	150 160
+at	1000
+spawn	robot
+coords	50 200
+at	1000
+spawn	mouser
+coords	45 126
+at	1000
+spawn	mouser
+coords	45 126
+at	1000
+spawn	Foot5
+coords	-50 220
+at	1000
+spawn	fly
+coords	-50 190
+at	1000
+spawn	mouser
+coords	45 126
+at	1000
+spawn	mouser
+coords	45 126
+at	1000
+spawn	Foot5
+coords	50 220
+at	1000
+spawn	mouser
+coords	45 126
+at	1000

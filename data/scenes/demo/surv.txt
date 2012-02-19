@@ -1,0 +1,2 @@
+music           data/music/complete.ogg 0
+animation    data/scenes/demo/surv.gif 0 0

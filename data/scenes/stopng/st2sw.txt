@@ -1,0 +1,24 @@
+name	st2sw
+type	text
+subtype noskip 
+setlayer 250
+facing 1
+anim idle
+	offset	55 8
+        delay 1
+        @script
+        int iPlayer; 
+        int iMaxPlayer = 4; 
+        int iWeapon = 4; 
+        for (iPlayer = 0; iPlayer < iMaxPlayer; iPlayer++){
+            changeplayerproperty(iPlayer, "weapon", iWeapon);
+        }
+        @end_script
+        frame	data/chars/misc/empty.gif
+        delay   30
+        frame	data/chars/misc/empty.gif
+        delay   100
+	frame	data/scenes/stopng/2a.gif
+        @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 2
+        frame	data/scenes/stopng/2a.gif
+        frame	data/chars/misc/empty.gif

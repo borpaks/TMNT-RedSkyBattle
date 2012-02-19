@@ -1,0 +1,309 @@
+name	Boxer
+health	80
+speed	13
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+shadow	2
+diesound data/sounds/granat.wav
+cantgrab 1
+throw	2 4
+nolife 1
+nodrop 1
+grabdistance 20
+throwdamage	20
+noquake 1
+dust dust
+noatflash 1
+flash bflash
+falldie 1
+nodieblink 2
+risetime 500
+hostile player npc
+candamage player npc enemy obstacle 
+remap data/chars/robot/01.gif data/chars/robot/alt1.gif
+remap data/chars/robot/01.gif data/chars/robot/alt2.gif
+remap data/chars/robot/01.gif data/chars/robot/alt3.gif
+anim spawn
+    offset	30 69
+	bbox	0 0 0 0
+		delay	15
+		seta 1
+		frame	data/chars/boxer/01.gif
+        frame	data/chars/boxer/02.gif
+        offset	30 49
+       	bbox	15 5 18 46
+        frame	data/chars/boxer/01.gif
+        seta  0
+        delay 20
+        frame	data/chars/boxer/01.gif
+anim idle
+	loop	1
+	offset	14 59
+	bbox	15 5 17 46
+		delay	30
+        seta 1
+		frame	data/chars/boxer/01.gif
+anim walk
+	loop	1
+	offset	14 59
+	bbox	15 5 17 46
+		delay	4
+		seta 1
+		frame	data/chars/boxer/01.gif
+		frame	data/chars/boxer/01.gif
+		frame	data/chars/boxer/01.gif
+		frame	data/chars/boxer/01.gif
+        frame	data/chars/boxer/02.gif
+        frame	data/chars/boxer/02.gif
+        frame	data/chars/boxer/02.gif
+        frame	data/chars/boxer/02.gif
+        frame	data/chars/boxer/02.gif
+        frame	data/chars/boxer/02.gif
+        frame	data/chars/boxer/02.gif
+        frame	data/chars/boxer/02.gif
+anim up
+	loop	1
+	offset	14 59
+	bbox	12 8 17 42
+		delay	4
+		move 0 4 0
+		frame	data/chars/boxer/03.gif
+anim down
+	loop	1
+	offset	14 59
+	bbox	17 5 20 46
+		delay	4
+		move 0 -4 0
+		frame	data/chars/boxer/02.gif
+anim pain
+	offset	14 59
+        bbox	0 0 0 0
+		delay	1
+        seta 1  
+        move -3
+        sound   data/sounds/klunk.wav
+		frame	data/chars/boxer/03.gif
+        delay 2
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+        frame	data/chars/boxer/03.gif
+anim fall
+	offset	14 59
+	bbox	0 0 0 0
+	delay	100
+	move 6
+        seta 1
+        sound   data/sounds/klunk.wav
+	frame	data/chars/boxer/02.gif
+anim rise
+    offset	18 59
+	bbox	15 5 17 46
+		delay	1
+		seta 1
+		frame	data/chars/boxer/02.gif
+anim riseattack
+	range 50 110
+	offset	28 64
+	bbox	22 5 20 46
+		delay	10
+		seta 1
+		move 5
+		frame	data/chars/boxer/04.gif
+		attack	24 10 40 56 20 0 1 1
+        frame	data/chars/boxer/05.gif
+        frame	data/chars/boxer/06.gif
+        delay 5
+        frame	data/chars/boxer/06.gif
+        frame	data/chars/boxer/07.gif
+        frame	data/chars/boxer/08.gif
+		offset	28 64
+		bbox	22 5 20 46
+        frame	data/chars/boxer/09.gif
+        delay 5
+        frame	data/chars/boxer/10.gif
+anim attack1
+    range 50 110
+	offset	28 64
+	bbox	0 0 0 0
+		delay	10
+        seta 1
+		move 5
+		frame	data/chars/boxer/04.gif
+		attack	24 10 40 56 20 0 1 1
+        frame	data/chars/boxer/05.gif
+        frame	data/chars/boxer/06.gif
+        delay 5
+        frame	data/chars/boxer/06.gif
+        frame	data/chars/boxer/07.gif
+        frame	data/chars/boxer/08.gif
+		offset	28 64
+		bbox	31 7 20 46
+        frame	data/chars/boxer/09.gif
+        delay 5
+        frame	data/chars/boxer/10.gif
+anim attack2
+    range  50 120
+	offset	28 64
+	bbox	0 0 0 0
+		delay	5
+        seta 1
+        followcond 1
+        followanim 1
+		move 5
+        frame	data/chars/boxer/04.gif
+        #frame	data/chars/boxer/04.gif
+		attack	24 10 40 56 20 0 1 1
+        frame	data/chars/boxer/05.gif
+        #frame	data/chars/boxer/05.gif
+        frame	data/chars/boxer/06.gif
+        #frame	data/chars/boxer/06.gif
+        delay	3
+		frame	data/chars/boxer/07.gif
+        #frame	data/chars/boxer/07.gif
+        frame	data/chars/boxer/08.gif
+        #frame	data/chars/boxer/08.gif
+        frame	data/chars/boxer/09.gif
+        #frame	data/chars/boxer/09.gif
+        frame	data/chars/boxer/10.gif
+        #frame	data/chars/boxer/10.gif
+        frame	data/chars/boxer/04.gif
+        #frame	data/chars/boxer/04.gif
+        frame	data/chars/boxer/05.gif
+        #frame	data/chars/boxer/05.gif
+        frame	data/chars/boxer/06.gif
+        #frame	data/chars/boxer/06.gif
+	frame	data/chars/boxer/07.gif
+        #frame	data/chars/boxer/07.gif
+        frame	data/chars/boxer/08.gif
+        #frame	data/chars/boxer/08.gif
+        frame	data/chars/boxer/09.gif
+        #frame	data/chars/boxer/09.gif
+        frame	data/chars/boxer/10.gif
+        #frame	data/chars/boxer/10.gif
+anim attack3
+    range  110 120
+	offset	28 64
+	bbox	30 8 17 40
+		delay	5
+        seta 1
+        followcond 1
+        followanim 1
+		move 5
+        frame	data/chars/boxer/04.gif
+        frame	data/chars/boxer/04.gif
+		attack	36 10 40 29 20 0 1 1
+        frame	data/chars/boxer/10.gif
+        frame	data/chars/boxer/10.gif
+        frame	data/chars/boxer/09.gif
+        frame	data/chars/boxer/09.gif
+        delay	3
+		frame	data/chars/boxer/08.gif
+        frame	data/chars/boxer/08.gif
+        frame	data/chars/boxer/07.gif
+        frame	data/chars/boxer/07.gif
+        frame	data/chars/boxer/06.gif
+        frame	data/chars/boxer/06.gif
+        frame	data/chars/boxer/06.gif
+        frame	data/chars/boxer/05.gif
+        frame	data/chars/boxer/05.gif
+        frame	data/chars/boxer/04.gif
+        frame	data/chars/boxer/04.gif
+anim special
+    range  -10 60
+	offset	28 64
+	bbox	30 8 17 40
+	delay	5
+        seta 1
+        followcond 1
+        followanim 1
+		move 5
+        frame	data/chars/boxer/04.gif
+        frame	data/chars/boxer/04.gif
+		attack	39 30 40 16 14 0 1 1
+        frame	data/chars/boxer/10.gif
+        frame	data/chars/boxer/10.gif
+        frame	data/chars/boxer/09.gif
+        frame	data/chars/boxer/09.gif
+		attack	0 0 0 0 0
+        delay	3
+		attack	29 50 36 16 14 0 1 1
+		frame	data/chars/boxer/08.gif
+        frame	data/chars/boxer/08.gif
+        frame	data/chars/boxer/07.gif
+        frame	data/chars/boxer/07.gif
+		attack  0 0 0 0 0
+		attack	39 20 25 25 14 0 1 1
+		dropv	4 2 0
+        frame	data/chars/boxer/06.gif
+        frame	data/chars/boxer/06.gif
+        frame	data/chars/boxer/06.gif
+        frame	data/chars/boxer/05.gif
+        frame	data/chars/boxer/05.gif
+        frame	data/chars/boxer/04.gif
+        frame	data/chars/boxer/04.gif
+anim death
+    offset	32 54
+	bbox	0 0 0 0
+		delay	10
+		offset	18 59
+		move -5
+		frame	data/chars/boxer/02.gif
+		move 0
+		frame	data/chars/boxer/02.gif
+		delay 10
+		frame	data/chars/boxer/03.gif
+		offset	19 59
+		frame	data/chars/boxer/02.gif
+		offset	18 59
+		frame	data/chars/boxer/03.gif
+		offset	19 60
+		frame	data/chars/boxer/02.gif
+		offset	18 59
+		frame	data/chars/boxer/03.gif
+		offset	19 59
+		frame	data/chars/boxer/02.gif
+		offset	18 59
+		frame	data/chars/boxer/03.gif
+		offset	19 60
+		frame	data/chars/boxer/02.gif
+		offset	18 59
+		frame	data/chars/boxer/03.gif
+		offset	19 59
+		frame	data/chars/boxer/02.gif
+		offset	18 59
+		frame	data/chars/boxer/03.gif
+		quakeframe 8 3 1
+        offset	32 54
+		delay 5
+		frame	data/chars/wybu/c1.gif
+        frame	data/chars/wybu/c2.gif
+        frame	data/chars/wybu/c3.gif
+        frame	data/chars/wybu/c4.gif
+        frame	data/chars/wybu/c5.gif
+        frame	data/chars/wybu/c6.gif
+anim upper
+	range 50 100
+	offset	14 59
+	bbox	15 5 17 46
+		delay	5
+        seta 1
+		move 5
+		frame	data/chars/boxer/01.gif

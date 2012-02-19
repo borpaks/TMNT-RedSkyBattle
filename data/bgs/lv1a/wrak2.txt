@@ -1,0 +1,24 @@
+name	wrak2
+type	none
+nolife 1
+setlayer 1
+load wrak
+anim idle
+        delay 65
+        offset 88 147
+        custknife wrak
+        throwframe 1 -1
+        quakeframe 1 3 1
+	frame	data/bgs/lv1a/wrak1.gif
+        delay 1
+        frame	data/bgs/lv1a/wrak1.gif
+        offset	-10 49
+	delay	10
+        seta 40
+        movez 2
+        sound  data/sounds/granat.wav
+	frame	data/chars/robot/17.gif       
+        frame	data/chars/robot/18.gif 
+        frame	data/chars/robot/19.gif
+        frame	data/chars/misc/empty.gif 
+ 

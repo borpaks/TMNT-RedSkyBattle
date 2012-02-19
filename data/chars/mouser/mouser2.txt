@@ -1,0 +1,204 @@
+name	Mouser2
+health	5
+speed	8
+type	enemy
+shadow	1
+diesound data/sounds/klunk.wav
+cantgrab 1
+throw	2 4
+nolife 1
+grabdistance 20
+throwdamage	20
+noquake 1
+dust dust
+noatflash 1
+flash bflash
+falldie 2
+nodieblink 2
+hostile player npc
+candamage player npc
+remap data/chars/mouser/1.gif data/chars/mouser/alt1.gif
+anim idle
+	loop	1
+	offset	22 55
+	bbox	17 26 24 23
+	delay	30
+	frame	data/chars/mouser/1.gif
+anim walk
+	loop	1
+	offset	22 55
+	bbox	17 26 24 23
+	delay	10
+	frame	data/chars/mouser/2.gif
+        frame	data/chars/mouser/3.gif
+        frame	data/chars/mouser/4.gif
+        frame	data/chars/mouser/1.gif
+anim attack1
+        range   0 19
+	offset	22 55
+	bbox	17 26 24 23
+	delay	10
+        jumpframe 0 0 -1 0
+	frame	data/chars/mouser/2.gif
+        frame	data/chars/mouser/3.gif
+        frame	data/chars/mouser/4.gif
+        frame	data/chars/mouser/1.gif
+        frame	data/chars/mouser/2.gif
+        frame	data/chars/mouser/3.gif
+        frame	data/chars/mouser/4.gif
+        frame	data/chars/mouser/1.gif
+anim pain
+	offset	22 55
+	bbox	17 26 24 23
+	delay	1
+        jumpframe 1 2
+        sound   data/sounds/klunk.wav
+	 frame	data/chars/mouser/6.gif
+        delay 2
+        move -2
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+       frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+         frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/6.gif
+anim fall
+	offset	22 55
+	bbox	17 26 24 23
+	delay	20
+        sound   data/sounds/klunk.wav
+	frame	data/chars/mouser/6.gif
+        frame	data/chars/mouser/7.gif
+anim rise
+       offset	22 55
+	bbox	17 26 24 23
+	delay	5
+	frame	data/chars/mouser/6.gif
+anim attack2
+        range 10 20
+        offset	22 55
+        delay 1
+        followanim 1
+        followcond 3
+	bbox	17 26 24 23
+        attack6 25 18 24 38 6 0 1 0
+        hitflash  bflash
+        frame	data/chars/mouser/5.gif
+anim jump
+        range 60 62
+        offset	22 55
+        delay 1
+        frame	data/chars/mouser/5.gif
+anim jumpattack
+        offset	22 55
+        delay 1
+	bbox	17 26 24 23
+        landframe 2
+        hitflash  bflash
+        frame	data/chars/mouser/5.gif
+        delay 100
+        attack 25 18 24 38 6 0 1 0 0
+        frame	data/chars/mouser/5.gif
+        delay 1
+        attack 0 0 0 0 0
+        frame	data/chars/mouser/1.gif
+anim follow1
+        offset	22 55
+        delay 100
+        bbox	17 26 24 23
+        move -10
+        fshadow 0
+        frame	data/chars/misc/empty.gif
+        delay 10
+        move 0
+        fshadow 1
+        frame	data/chars/mouser/spw1.gif
+        frame	data/chars/mouser/spw2.gif
+        frame	data/chars/mouser/spw1.gif
+        frame	data/chars/mouser/spw2.gif 
+        frame	data/chars/mouser/spw1.gif
+        frame	data/chars/mouser/spw2.gif 
+        frame	data/chars/mouser/spw1.gif
+        frame	data/chars/mouser/spw2.gif  
+anim death
+                offset	32 54
+	bbox	0 0 0 0
+	delay	10
+        seta 1
+        quakeframe 0 6 1
+        hitfx   data/sounds/granat.wav
+	frame	data/chars/wybu/c1.gif       
+        frame	data/chars/wybu/c2.gif    
+        frame	data/chars/wybu/c3.gif 
+        frame	data/chars/wybu/c4.gif       
+        frame	data/chars/wybu/c5.gif    
+        frame	data/chars/wybu/c6.gif  
+        frame   data/chars/misc/empty.gif 
+anim spawn
+        offset	22 55
+	bbox	0 0 0 0
+	delay	1
+        jumpframe 1 1 0 0
+        movez -1
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%2;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/misc/empty.gif
+        delay 10
+        frame	data/chars/mouser/spw1.gif
+        frame	data/chars/mouser/spw2.gif
+        frame	data/chars/mouser/spw1.gif
+        frame	data/chars/mouser/spw2.gif 
+        frame	data/chars/mouser/spw1.gif
+        frame	data/chars/mouser/spw2.gif 
+        frame	data/chars/mouser/spw1.gif
+        frame	data/chars/mouser/spw2.gif 
+anim death
+        offset	64 96
+	bbox	0 0 0 0
+	delay	2
+        seta 1
+        quakeframe 0 6 1
+        fshadow 0
+        hitfx   data/sounds/granat.wav
+	frame	data/chars/wybu/d11.gif       
+        frame	data/chars/wybu/d12.gif    
+        frame	data/chars/wybu/d13.gif 
+        frame	data/chars/wybu/d14.gif       
+        frame	data/chars/wybu/d15.gif    
+        frame	data/chars/wybu/d16.gif 
+        frame	data/chars/wybu/d17.gif       
+        frame	data/chars/wybu/d18.gif    
+        frame	data/chars/wybu/d19.gif 
+        frame	data/chars/wybu/d20.gif       
+        frame	data/chars/wybu/d21.gif    
+        frame	data/chars/wybu/d22.gif 
+        frame	data/chars/wybu/d23.gif    
+        frame	data/chars/wybu/d24.gif  
+        frame   data/chars/misc/empty.gif 
+
+
+ 
+             

@@ -1,0 +1,31 @@
+name	footop2
+type	none
+setlayer 400
+load footop3
+remap data/chars/foot/01.gif data/chars/foot/alt1.gif
+remap data/chars/foot/01.gif data/chars/foot/alt2.gif
+remap data/chars/foot/01.gif data/chars/foot/alt3.gif
+remap data/chars/foot/01.gif data/chars/foot/alt4.gif
+remap data/chars/foot/01.gif data/chars/foot/alt5.gif
+remap data/chars/foot/01.gif data/chars/foot/alt6.gif
+animationscript data/scripts/escript.c  
+anim idle
+	offset	26 500
+	delay	1
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%7;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/foot/b9.gif
+        @cmd spawn02 "footop3" 0 0 0
+        frame	data/chars/misc/empty.gif
+        delay  1000000000
+        frame	data/chars/misc/empty.gif
+

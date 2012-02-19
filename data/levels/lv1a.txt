@@ -1,0 +1,311 @@
+music		data/music/lv4.ogg
+bossmusic	data/music/boss1.ogg
+notime 1
+settime 0
+background	data/bgs/lv1a/backd.gif
+panel		data/bgs/lv1a/a1da.gif
+order	a
+wall 572 692 -10 -5 45 50 15 10000
+spawn1 50 50 0
+spawn2 70 70 0
+spawn3 90 90 0
+spawn4 110 110 0
+#setweap 5
+cameratype 1
+#--group1----
+spawn	lvbegin2
+flip 1
+coords	320 240
+at	0
+spawn	tatsuop
+flip 1
+coords	103 229
+at	0
+spawn	st1 1
+coords	160 100
+at	0
+spawn	footop2a
+2pspawn 1
+map 3
+coords	60 682
+at	0
+spawn	footop2a
+coords	250 682
+at	0
+spawn	footop2
+map 2
+coords	220 692
+at	0
+spawn	prmt
+coords	100 682
+at	0
+spawn	trash
+flip 1
+coords	400 682
+at	0
+spawn	women
+coords	420 674
+at	1
+spawn	men2
+coords	430 674
+at	1
+spawn	men2
+map 1
+coords	475 674
+at	1
+spawn	znak
+flip 1
+coords	592 682
+at	0
+
+spawn	Foot 1
+coords	350 712
+at	30
+spawn	Foot4 1
+map 1
+coords	350 752
+at	150
+spawn	Foot 1
+map 3
+coords	350 712
+at	200
+spawn	auto 1
+flip 1
+map 1
+coords	-80 796
+at	200
+#################
+wait
+at 300
+spawn	Foot 1
+map	1
+coords	350 772
+at	300
+spawn	Footrog2 1
+flip 1
+coords	259 662
+at	300
+spawn	Foot4 1
+map	1
+coords	350 742
+at	450
+spawn	Foottri 1
+map	3
+coords	-30 712
+at	480
+#####################
+wait
+at	700
+group 3 3
+at 700
+spawn	Foot 1
+coords	-30 782
+at	500
+spawn	Foot 1
+map	1
+coords	350 717
+at	550
+spawn	Foot4 1
+map 1
+coords	-30 752
+at	550
+spawn	auto2 1
+flip 1
+coords	-80 796
+at	550
+##################
+group 100 100
+at 600
+spawn	Foot 1
+map	3
+coords	350 712
+at	650
+spawn	footn 1
+health  90
+coords	350 772
+at	800
+spawn	Foothk 1
+coords	350 722
+at	800
+spawn	oildrm 1
+flip 1
+coords	350 682
+at	860
+spawn	prmt 1
+coords	350 682
+at	1090
+spawn	Foot5 1
+map 5
+coords   150 668
+at	1100
+spawn	Foot5 1
+map 1
+coords	250 668
+at	1150
+#------------
+wait
+at	1200
+group 5 6
+at 1200
+spawn	Foot4a 1
+map	1
+coords	-30 712
+at	1200
+group 4 4
+at 1200
+spawn	Foot5 1
+coords	90 668
+at	1200
+spawn	Foot5 1
+map 3
+coords	180 668
+at	1200
+spawn	footddd
+coords	360 656
+at	1250
+spawn	hydr 1
+flip 1
+item hydrnn
+coords	360 682
+at	1450
+#------------------
+wait
+at	1500
+group	1 4
+at	1500
+spawn	Foot 1
+map 3
+coords	-80 692
+at	1500
+spawn	Foot 1
+map 4
+coords	-70 752
+at	1500
+spawn	auto3 
+coords	400 796
+at	1300
+spawn	footsw 
+coords	380 712
+at	1500
+spawn   pizza 
+flip 1
+coords  400 671
+at      1750
+spawn   pizza
+2pspawn pizza
+flip 1
+coords  430 671
+at      1750
+spawn   pizza
+3pspawn pizza
+flip 1
+coords  460 671
+at      1750
+spawn   pizza
+4pspawn pizza
+flip 1
+coords  490 671
+at      1750
+#-------------------
+wait
+at	1770
+group	4 4
+at	1770
+spawn	footaxe 1
+coords	380 732
+at	1770
+spawn	foottrh 1
+map 1
+coords	350 757
+at	1770
+spawn	footaxe2 1
+coords	380 782
+at	1770
+spawn	robot 1
+coords	50 712
+flip 1
+at	1770
+spawn	robot 1
+flip 1
+map 1
+coords	55 762
+at	1770
+spawn	Foot 1
+coords	-30 782
+at	1770
+spawn	footn 1
+coords	-30 712
+at	1770
+spawn	Foot4 1
+map 1
+coords	-30 782
+at	1770
+spawn	Foot 1
+map 3
+coords	-30 732
+at	1770
+spawn	footaxe 1
+coords	-30 752
+at	1770
+############
+spawn	bossnone
+boss 1
+coords	350 602
+at	1780
+spawn	men
+coords	350 677
+at	1800
+spawn	men3
+coords	360 762
+at	1800
+spawn	wrak
+flip 1
+coords	436 684
+at	1900
+spawn	rocksted
+Alias _Rocksteady
+map 1
+aggression 60
+item bosf2
+2phealth 700
+3phealth 790
+4phealth 880
+coords	450 732
+at	1900
+group	3 4
+at	1900
+spawn	footaxe 1
+coords	-50 672
+at	1900
+spawn	footn
+coords	550 782
+at	1900
+spawn	auto2
+flip 1
+map 2
+coords	-50 796
+at	1900
+spawn	Foot4
+map	1
+coords	350 775
+at	1900
+spawn	Foot2
+coords	160 668
+at	1900
+spawn	Foottri
+map	3
+coords	-30 782
+at	1900
+group 1 1
+at  1900
+spawn	norm1
+flip 1
+coords	50 783
+at	1900
+spawn	hard1
+flip 1
+coords	50 684
+at	1900
+spawn	levsel
+coords	160 700
+at	1900

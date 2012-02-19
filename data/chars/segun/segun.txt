@@ -1,0 +1,226 @@
+name	Segun
+health	400
+speed	8
+type	enemy
+aimove chase
+shadow	2
+diesound data/sounds/die1.wav
+cantgrab 1
+nodrop 1
+escapehits 3
+icon data/chars/segun/icon.gif
+throw	2 4
+grabdistance 20
+throwdamage	20
+noquake 1
+nodrop  1
+falldie 1
+nodieblink 1
+dust dust
+jumpheight 3
+score 20000 2
+hostile player npc
+candamage player npc obstacle 
+bflash bflash
+thold 30
+blockodds 1
+load wybua
+anim	attack1
+	range	0 30
+	offset	17 80
+	hitfx	data/sounds/knifes.wav
+	bbox	0 0 0 0
+	delay	10
+	frame	data/chars/segun/at1.gif
+	delay	15
+	attack	24 48 62 16 20 1 0 0 20
+	dropv	3 2
+	offset	15 70
+	frame	data/chars/segun/at2.gif
+	attack	0 0 0 0
+	delay	10
+	offset	17 80
+	frame	data/chars/segun/at1.gif
+anim	attack3
+	range	0 50
+	offset	17 80
+	hitfx	data/sounds/knifes.wav
+	bbox	0 0 0 0
+	delay	10
+	frame	data/chars/segun/at1.gif
+	delay	15
+	attack	24 48 62 16 20 1 0 0 20
+	dropv	3 2
+	offset	15 70
+	frame	data/chars/segun/at2.gif
+	attack	0 0 0 0
+	delay	10
+	offset	17 80
+	frame	data/chars/segun/at1.gif
+anim	death
+	offset	17 70
+	bbox	17 21 18 48
+    custknife wybua
+    throwframe 1 60
+	delay	50
+	frame	data/chars/segun/pain.gif
+	delay   195
+	frame	data/chars/segun/pain.gif
+	delay	40
+	frame	data/chars/segun/04.gif
+	delay	20
+	frame	data/chars/segun/05.gif
+	delay	20
+	frame	data/chars/segun/06.gif
+anim	fall
+	offset	49 91
+	bbox	0 0 0 0
+	delay	30
+	landframe	0
+	frame	data/chars/segun/pain.gif
+		
+anim	fall2
+	offset	49 91
+	bbox	34 31 18 48
+	delay	30
+	landframe	2
+	frame	data/chars/segun/pain.gif
+		
+anim	idle
+	loop	1
+	offset	17 70
+	bbox	15 15 16 52
+	delay	40
+	frame	data/chars/segun/01.gif
+	frame	data/chars/segun/01a.gif
+		
+anim	pain
+	offset	17 70
+	bbox	0 0 0 0
+	delay	10
+	sound	data/sounds/segun.wav
+	frame	data/chars/segun/pain.gif
+	frame	data/chars/segun/pain1.gif
+	frame	data/chars/segun/pain2.gif
+	frame	data/chars/segun/pain.gif
+	frame	data/chars/segun/pain1.gif
+	frame	data/chars/segun/pain2.gif
+	offset	17 80
+	hitfx	data/sounds/knifes.wav
+	bbox	0 0 0 0
+	delay	10
+	frame	data/chars/segun/at1.gif
+	delay	15
+	attack	24 48 62 16 20 1 0 0 20
+	dropv	3 2
+	offset	15 70
+	frame	data/chars/segun/at2.gif
+	attack	0 0 0 0
+	delay	10
+	offset	17 80
+	frame	data/chars/segun/at1.gif
+		
+anim	rise
+	offset	49 91
+	bbox	0 0 0 0
+	delay	15
+	frame	data/chars/segun/pain.gif
+		
+anim	spawn
+	offset	17 70
+	bbox	0 0 0 0
+	movea	0
+	movez	0
+	delay	5
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	delay	10
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+		
+anim	upper
+	range	0 60
+	offset	17 70
+	jumpframe	16 0 -5
+	landframe	17
+	bbox	0 0 0 0
+	delay	5
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/segun/01.gif
+	delay	20
+	frame	data/chars/misc/empty.gif
+	offset	17 80
+	hitfx	data/sounds/knifes.wav
+	bbox	0 0 0 0
+	delay	10
+	frame	data/chars/segun/at1.gif
+	delay	15
+	attack	44 41 44 16 20 1 0 0 20
+	dropv	3 2
+	offset	15 70
+	frame	data/chars/segun/at2.gif
+	attack	0 0 0 0
+	delay	10
+	offset	17 80
+	frame	data/chars/segun/at1.gif
+		
+anim	walk
+	loop	1
+	offset	19 65
+	bbox	18 12 16 52
+	delay	20
+	frame	data/chars/segun/02.gif
+	frame	data/chars/segun/03.gif
+		

@@ -1,0 +1,88 @@
+name	footthr
+health	2
+speed	8
+type	pshot
+nolife 1
+candamage enemy
+grabdistance 50
+nomove 1 1
+candamage enemy
+no_adjust_base 1
+anim idle
+	offset	98 92
+        delay 1
+        movez 1
+        move -1
+        hitfx data/sounds/empty.wav
+        jumpframe 1 2
+        frame	data/chars/misc/empty.gif
+        sound   data/sounds/die1.wav
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        offset	68 132
+        attack  90 20 38 40 10 0 0 1 
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        delay 300      
+        frame	data/chars/misc/empty.gif

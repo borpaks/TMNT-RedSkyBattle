@@ -1,0 +1,314 @@
+music		data/music/lv6b.ogg
+bossmusic	data/music/boss1.ogg
+notime 1
+settime 0
+background	data/bgs/constr/bg3a.gif
+panel	    data/bgs/constr/bg3a.gif
+order	a
+direction right
+wall 1240 300 76 160 250 250 90 300
+spawn1 30 70 0
+spawn2 70 70 0
+spawn3 30 110 0
+spawn4 70 110 0
+#--group1-----
+spawn	lvbegin
+coords	320 240
+at	0
+
+spawn elcage
+flip 1
+aggression 120
+coords 190 215
+at 10
+
+spawn elcage
+flip 1
+aggression 120
+coords 190 215
+at 10
+
+spawn	foot
+aggression 65
+coords 	350 220
+at 30
+
+spawn	foot
+aggression 65
+coords 	370 240
+at 30
+
+wait
+at 100
+
+spawn	foot5
+aggression 65
+coords	70 214
+at	100
+
+spawn	foot5
+aggression 65
+coords	150 214
+at	100
+
+spawn	foot5
+aggression 65
+coords	230 214
+at	100
+
+group 3 4
+at 100
+
+spawn	foot4
+aggression 65
+flip 1
+coords	-40 220
+at	100
+
+spawn	foot4
+aggression 65
+coords	400 220
+at	100
+
+spawn	foot4
+aggression 65
+flip 1
+coords	-40 240
+at	100
+
+spawn	foot4
+aggression 65
+coords	400 240
+at	100
+
+spawn	foot4
+aggression 65
+flip 1
+coords	-40 260
+at	100
+
+spawn	foot4
+aggression 65
+coords	400 260
+at	100
+#################
+wait
+at	300
+
+spawn	fly
+aggression 65
+coords	350 220
+at	300
+
+spawn	fly
+aggression 65
+coords	350 190
+at	300
+
+spawn	fly
+aggression 65
+coords	-30 160
+at	300
+
+spawn	fly
+aggression 65
+coords	-30 230
+at	300
+
+spawn	mouser
+aggression 65
+health	40
+coords	430 215
+at	300
+
+spawn	mouser
+aggression 65
+health	40
+coords	-30 215
+at	300
+
+spawn	mouser
+aggression 65
+health	40
+coords	-50 215
+at	300
+##################
+#blockade 600
+#at 700
+
+wait
+at 	600
+
+group	2 3
+at	500
+
+spawn	robot
+aggression 65
+coords	20 220
+at	600
+
+spawn	robot
+aggression 65
+coords	100 220
+at	600
+
+spawn	robot
+aggression 65
+coords	210 220
+at	600
+
+spawn elcage
+flip 1
+aggression 120
+coords 290 215
+at 600
+spawn elcage
+flip 1
+aggression 120
+coords 290 215
+at 600
+spawn elcage
+flip 1
+aggression 120
+coords 440 215
+at 600
+spawn elcage
+flip 1
+aggression 120
+coords 440 215
+at 600
+spawn elcage
+flip 1
+aggression 120
+coords 590 215
+at 600
+spawn elcage
+flip 1
+aggression 120
+coords 590 215
+at 600
+spawn	foottri
+aggression 65
+coords	450 220
+at	600
+
+spawn	foottri
+aggression 65
+coords	-100 220
+at	600
+
+spawn	robot
+aggression 65
+coords	50 220
+at	600
+
+spawn	robot
+aggression 65
+coords	100 220
+at	600
+
+spawn	robot
+aggression 65
+coords	150 220
+at	600
+
+wait
+at 800
+
+group 2 3
+
+spawn	footsw
+aggression 65
+coords	-50 220
+at	800
+
+spawn	foot
+aggression 65
+coords	-50 240
+at	800
+
+spawn	footsw
+aggression 65
+coords	350 240
+at	800
+
+spawn	foot
+aggression 65
+coords	-50 240
+at	800
+
+spawn	foot
+aggression 65
+coords	350 230
+at	800
+
+spawn	foot
+aggression 65
+coords	-50 220
+at	700
+
+wait
+at 1100
+
+group	3 5
+at 1100
+
+spawn	foot5
+aggression 65
+coords	80 220
+at	1100
+
+spawn	foot5
+aggression 65
+coords	150 220
+at	1100
+
+spawn	foot5
+aggression 65
+coords	220 220
+at	1100
+
+spawn	robot
+aggression 65
+coords	120 230
+at	1100
+
+spawn	robot
+aggression 65
+coords	170 240
+at	1100
+
+spawn	robot
+aggression 65
+coords	180 240
+at	1100
+
+spawn	foot5
+aggression 65
+coords	80 220
+at	1100
+
+spawn	foot5
+aggression 65
+coords	160 220
+at	1100
+
+spawn	foot5
+aggression 65
+coords	220 220
+at	1100
+
+spawn	foothk
+aggression 65
+coords	-50 240
+at	1100
+
+spawn	foothk
+aggression 65
+coords	-50 240
+at	1100
+
+spawn	foothk
+aggression 65
+coords	-50 240
+at	1100

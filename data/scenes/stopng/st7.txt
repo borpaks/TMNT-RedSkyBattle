@@ -1,0 +1,13 @@
+name	st7
+type	none
+setlayer 1000
+facing 1
+anim idle
+	offset	73 8
+        delay 30
+        frame	data/chars/misc/empty.gif
+        delay   100
+	frame	data/scenes/stopng/7.gif
+	@cmd changeentityproperty getlocalvar("self") "velocity" 2 0 0
+	frame	data/scenes/stopng/7.gif
+        #frame	data/chars/misc/empty.gif

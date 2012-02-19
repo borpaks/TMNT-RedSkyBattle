@@ -1,0 +1,20 @@
+name	laser2
+type	enemy
+speed 10
+candamage player npc enemy obstacle 
+nolife 1
+grabdistance 26
+noatflash 1
+flash lflash
+anim idle
+        loop 1
+	delay	10
+	offset	-22 15
+        hitflash lflash
+        hitfx data/sounds/prad.wav
+        bbox    10000000 0 1 1
+        frame	data/chars/robot/b1.gif
+	shock   16 13 21 4 6 1 0 0 10
+        frame	data/chars/robot/b2.gif
+        frame	data/chars/robot/b3.gif
+        frame	data/chars/robot/b4.gif

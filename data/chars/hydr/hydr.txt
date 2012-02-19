@@ -1,0 +1,28 @@
+name	hydr
+health	1
+type	obstacle
+diesound data/sounds/klunk.wav 
+diesound data/sounds/cooloff.wav
+nodrop 1
+nolife 1
+noatflash 1
+flash bflash
+grabdistance 6
+nodieblink 3
+jumpheight 0
+remap data/chars/hydr/1.gif data/chars/hydr/alt1.gif
+remap data/chars/hydr/1.gif data/chars/hydr/alt2.gif
+anim idle
+	loop	0
+	delay	100
+	offset	17 50
+	bbox	11 10 20 28
+	frame	data/chars/hydr/1.gif
+anim death
+	loop	1
+	delay	10
+	offset	17 50
+	bbox	11 10 20 28
+	frame	data/chars/hydr/2.gif
+        frame	data/chars/hydr/3.gif
+        frame	data/chars/hydr/4.gif

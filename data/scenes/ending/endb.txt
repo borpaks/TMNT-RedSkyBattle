@@ -1,0 +1,2 @@
+music       data/music/endb.ogg 0
+animation	data/scenes/ending/endb.gif 1 0

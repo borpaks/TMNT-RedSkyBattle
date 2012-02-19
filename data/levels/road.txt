@@ -1,0 +1,675 @@
+music		data/music/bst.ogg
+bossmusic	data/music/bakster.ogg
+notime 1
+settime 0
+background	data/bgs/road/backk.gif
+panel		data/bgs/road/a4.gif
+hole		0 158 -1000 10 1200 1200 120
+hole		0 324 -1000 10 1200 1200 90
+hole		416 278 10 98 1500 1500 120
+hole		266 228 10 123 40 150 120
+hole		222 180 10 123 250 250 120
+hole		0 284 0 0 20 158 140
+hole		0 284 -150 -150 20 158 140
+
+wall            30 234 280 354 10 70 70 6
+
+order	aaaaaaaaaaaaaaa
+order   aaaaaaaaa
+direction both
+bgspeed 20
+setweap 
+spawn1 100 70 0
+spawn2 110 90 0
+#--group1-----
+spawn	lvbegin
+flip 1
+coords	320 240
+at	0
+
+spawn	st6
+coords	230 100
+at 	0
+
+wait
+at 50
+group 3 3
+at 1
+spawn	foot5
+aggression 90
+flip 1
+coords	200 200
+at	1
+spawn	foot5
+aggression 90
+flip 1
+map 3
+coords	100 205
+at	1
+spawn	foot5
+aggression 70
+coords	50 185
+at	1
+spawn	motor3
+flip 1
+map 2
+coords	-250 160
+at	1
+spawn	foot5
+aggression 70
+flip 1
+map 1
+coords	90 200
+at	1
+spawn	foot5
+aggression 70
+flip 1
+coords	110 200
+at	1
+spawn	Foot5
+aggression 70
+map 1
+coords	120 200
+at	1
+spawn	foot5
+flip 1
+map 2
+coords	100 190
+at	1
+spawn	Foot3a
+aggression 70
+map 2
+coords	-50 160
+at	1
+spawn	Foot3a
+aggression 70
+map 3
+coords	-50 200
+at	1
+spawn	motor
+flip 1
+map 1
+coords	-150 150
+at	1
+spawn	motor3
+flip 1
+coords	-50 160
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 3
+coords	-50 150
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 3
+coords	550 150
+at	1
+spawn	fly
+aggression 70
+map 3
+coords	500 230
+at	1
+spawn	foot3a
+aggression 70
+flip 1
+map 1
+coords	-150 150
+at	1
+spawn	foot3a
+aggression 70
+flip 1
+coords	550 200
+at	1
+spawn	Foot3a
+coords	-50 220
+at	1
+spawn	foot5
+aggression 70
+flip 1
+map 1
+coords	150 220
+at	1
+spawn	foot5
+aggression 70
+flip 1
+map 2
+coords	220 220
+at	1
+spawn	foot5
+aggression 70
+flip 1
+coords	240 170
+at	1
+spawn	foot5
+aggression 70
+flip 1
+map 3
+coords	150 150
+at	1
+spawn	motor
+flip 1
+map 2
+coords	-100 150
+at	1
+spawn	Foot3a
+aggression 70
+map 3
+coords	350 190
+at	1
+spawn	foot5
+aggression 70
+flip 1
+coords	50 210
+at	1
+spawn	Foot3a
+aggression 70
+flip 1
+map 4
+coords	-30 160
+at	1
+spawn	motor3
+flip 1
+map 3
+coords	-120 160
+at	1
+spawn	motor3
+flip 1
+map 2
+coords	-50 170
+at	1
+spawn	Foot3a
+aggression 70
+flip 1
+coords	-50 160
+at	1
+spawn	Foot3a
+aggression 70
+map 2
+flip 1
+coords	-50 200
+at	1
+spawn	foot5
+aggression 70
+flip 1
+map 2
+coords	140 180
+at	1
+spawn	Foot5
+aggression 70
+map 1
+coords	200 150
+at	1
+spawn	foot3a
+aggression 70
+flip 1
+coords	350 200
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 3
+coords	-50 100
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 1
+coords	-50 150
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 2
+coords	350 190
+at	1
+spawn	Foot3a
+aggression 70
+map 4
+coords	-50 160
+at	1
+spawn	Foot3a
+aggression 70
+map 2
+coords	-50 200
+at	1
+spawn	motor3
+flip 1
+map 1
+coords	-100 166
+at	1
+#################################
+wait
+at 140
+group 2 3
+at 1
+spawn	Foot5
+aggression 70
+coords	80 160
+at	1
+spawn	Foot5
+aggression 70
+coords	80 190
+at	1
+spawn	Foot5
+aggression 70
+flip 1
+coords	80 220
+at	1
+wait
+at 1
+group 2 3
+at 1
+spawn	foot3a
+flip 1
+map 1
+item wybu
+coords	-50 214
+at	1
+spawn	heli
+aggression 70
+alias _Helicopter
+item    wybu
+health 100
+coords	550 160
+at	1
+spawn	fly
+aggression 70
+map	4
+health	50
+coords	550 190
+at	1
+spawn	fly
+aggression 70
+flip 1
+coords	550 230
+at	1
+spawn	motor3
+flip 1
+map 1
+coords	-150 160
+at	1
+spawn	motor3
+map 2
+flip 1
+coords	-60 162
+at	1
+wait
+at 1
+group 2 3
+at 1
+spawn	fly
+aggression 70
+flip 1
+map 4
+coords	-100 140
+at	1
+spawn	fly
+aggression 70
+map	4
+health	50
+coords	650 190
+at	1
+spawn	Fly
+aggression 70
+coords	-150 160
+at	1
+spawn	Fly
+aggression 70
+map 2
+coords	100 0
+at	1
+spawn	fly
+aggression 70
+flip 1
+coords	-150 230
+at	1
+spawn	Foot5
+map 3
+coords	350 160
+at	1
+wait
+at 1
+group 2 3
+at 1
+spawn	Foot3a
+aggression 70
+map	1
+coords	350 220
+at	1
+spawn	foot3a
+aggression 70
+flip 1
+map 2
+coords	-50 180
+at	1
+spawn	foot5
+aggression 70
+flip 1
+coords	140 200
+at	1
+wait
+at 1
+group 2 3
+at 1
+spawn	Foot5
+coords	70 170
+at	1
+spawn	Foot5
+map 2
+coords	100 170
+at	1
+spawn	heli
+aggression 70
+alias _Helicopter
+flip 1
+item    wybu
+health 100
+coords	-50 150
+at	1
+spawn	Foot5
+aggression 70
+map	1
+coords	250 220
+at	1
+spawn	motor3
+map	3
+flip 1
+coords	-150 160
+at	1
+wait
+at 1
+group 3 3
+at 1
+spawn	fly
+flip 1
+coords	-50 170
+at	1
+spawn	fly
+flip 1
+map 3
+coords	-50 250
+at	1
+
+spawn	baxter
+aggression 70
+2phealth 400
+3phealth 500
+4phealth 600
+Alias Baxter_Stockman
+item bosslow
+boss 1
+coords	380 200 200
+at	1
+
+spawn	fly
+aggression 70
+flip 1
+map 2
+coords	-50 170
+at	1
+spawn	Foot3a
+aggression 70
+coords	-50 160
+at	1
+spawn	foot3a
+aggression 70
+flip 1
+map 1
+coords	-50 250
+at	1
+spawn	foot3a
+aggression 70
+aggression 70
+flip 1
+coords	-50 170
+at	1
+spawn	Foot3a
+aggression 70
+coords	-50 160
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 3
+coords	-50 250
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 1
+coords	-50 256
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 2
+coords	-50 170
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 1
+coords	-50 250
+at	1
+spawn	Foot3a
+aggression 70
+coords	-50 160
+at	1
+spawn	Foot3a
+aggression 70
+map 2
+coords	-50 200
+at	1
+spawn	foot3a
+aggression 70
+flip 1
+map 1
+coords	-50 256
+at	1
+spawn	fly
+aggression 70
+flip 1
+coords	-50 170
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 3
+coords	-50 250
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 2
+coords	-50 170
+at	1
+spawn	Foot3a
+aggression 70
+coords	-50 160
+at	1
+spawn	foot3a
+aggression 70
+flip 1
+map 1
+coords	-50 250
+at	1
+spawn	fly
+aggression 70
+flip 1
+coords	-50 170
+at	1
+spawn	Foot3a
+coords	-50 160
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 3
+coords	-50 250
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 1
+coords	-50 256
+at	1
+spawn	foot3a
+aggression 70
+flip 1
+map 2
+coords	-50 170
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 1
+coords	-50 250
+at	1
+spawn	Foot3a
+aggression 70
+coords	-50 160
+at	1
+spawn	Foot3a
+aggression 70
+map 2
+coords	-50 200
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 4
+coords	-50 256
+at	1
+spawn	fly
+aggression 70
+map 4
+flip 1
+coords	-50 170
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 4
+coords	-50 250
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 4
+coords	-50 170
+at	1
+spawn	Foot3a
+coords	-50 160
+at	1
+spawn	foot3a
+flip 1
+map 1
+coords	-50 250
+at	1
+spawn	motor3
+flip 1
+coords	-50 170
+at	1
+spawn	Foot3a
+coords	-50 160
+at	1
+spawn	foot3a
+flip 1
+map 3
+coords	-50 250
+at	1
+spawn	fly
+flip 1
+map 1
+coords	-50 256
+at	1
+spawn	fly
+flip 1
+map 2
+coords	-50 170
+at	1
+spawn	fly
+flip 1
+map 1
+coords	-50 250
+at	1
+spawn	Foot3a
+coords	-50 160
+at	1
+spawn	Foot3a
+map 2
+coords	-50 200
+at	1
+spawn	fly
+flip 1
+map 1
+coords	-50 256
+at	1
+spawn	fly
+flip 1
+coords	550 170
+at	1
+spawn	fly
+flip 1
+map 3
+coords	-50 250
+at	1
+spawn	motor3
+flip 1
+map 2
+coords	-50 170
+at	1
+spawn	Foot3a
+coords	-50 160
+at	1
+spawn	foot3a
+flip 1
+map 1
+coords	650 250
+at	1
+spawn	foot3a
+flip 1
+coords	-50 170
+at	1
+spawn	Foot3a
+coords	-50 160
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 4
+coords	-50 250
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 4
+coords	-50 256
+at	1
+spawn	fly
+aggression 70
+flip 1
+map 2
+coords	-50 170
+at	1
+spawn	motor3
+flip 1
+map 1
+coords	-50 250
+at	1
+spawn	Foot3a
+coords	-50 160
+at	1
+spawn	Foot3a
+map 2
+coords	-50 200
+at	1
+spawn	motor3
+flip 1
+map 1
+item wybu
+coords	-50 158
+at	1

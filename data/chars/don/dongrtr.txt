@@ -1,0 +1,20 @@
+name	dongrtr
+health	10
+speed 5
+type	enemy
+nolife 1
+nomove 1 1
+candamage enemy obstacle player
+remove 0
+anim idle
+        delay 10
+        offset	104 92
+        hitflash bflash
+        hitfx data/sounds/empty.wav
+        frame	data/chars/misc/dustd1.gif
+        frame	data/chars/misc/dustd2.gif
+        attack  32 43 27 23 10 1 1 1 10
+        frame	data/chars/misc/dustd3.gif
+        frame	data/chars/misc/dustd4.gif
+        attack  0 0 0 0
+        frame	data/chars/misc/dustd5.gif

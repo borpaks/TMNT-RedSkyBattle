@@ -1,0 +1,80 @@
+name	hbomb
+health	1
+type	enemy
+speed 1
+candamage player npc enemy obstacle 
+nolife 1
+nomove 1 1
+jumpheight 0
+facing 2
+load wybufl
+anim idle
+	delay	10
+        offset	13 10
+        movez -5
+        frame	data/chars/misc/empty.gif
+        movez 0
+        frame	data/chars/heli/hbomb.gif
+        delay 200
+        hitflash bflash
+        hitfx data/sounds/granat.wav
+      	burn	3 6 18 6 10 0 0 0 10
+       	frame	data/chars/heli/hbomb.gif
+anim attack1
+	offset	69 68
+        delay 10
+        quakeframe 1 4 2
+        movez 3
+        hitflash bflash
+        subentity wybufl
+        spawnframe 1 160 120 0 1
+        quakeframe 0 7 -4
+        hitfx data/sounds/granat.wav
+       	sound   data/sounds/wybu1.wav
+    	frame	data/chars/wybu/b1.gif
+        move   20
+        movez 0
+	frame	data/chars/wybu/b2.gif
+        burn  17 16 97 52 6 0 1 0 10 
+        frame	data/chars/wybu/b3.gif
+        frame	data/chars/wybu/b4.gif
+         offset	81 89
+        delay 5
+        move 10
+        frame	data/chars/wybu/d02.gif
+        frame	data/chars/wybu/d03.gif
+        frame	data/chars/wybu/d04.gif
+        attack  0 0 0 0 0
+        frame	data/chars/wybu/d05.gif
+        frame	data/chars/wybu/d06.gif
+         frame	data/chars/wybu/d07.gif
+        frame	data/chars/wybu/d08.gif
+        frame	data/chars/wybu/d09.gif
+        frame	data/chars/wybu/d10.gif
+anim attack2
+	offset	69 68
+        delay 10
+        quakeframe 0 4 2
+        movez 3
+        subentity wybufl
+        spawnframe 1 160 120 0 1
+        sound   data/sounds/wybu1.wav
+    	frame	data/chars/wybu/1.gif
+        movez 0
+	frame	data/chars/wybu/2.gif
+        frame	data/chars/wybu/3.gif
+        frame	data/chars/wybu/4.gif
+       offset	83 67
+        delay 5
+        frame	data/chars/wybu/e04.gif
+        frame	data/chars/wybu/e05.gif
+        frame	data/chars/wybu/e06.gif
+        frame	data/chars/wybu/e07.gif
+        frame	data/chars/wybu/e08.gif
+        frame	data/chars/wybu/e09.gif
+        frame	data/chars/wybu/e10.gif
+        frame	data/chars/wybu/e11.gif
+        frame	data/chars/wybu/e12.gif
+        frame	data/chars/wybu/e13.gif
+        frame	data/chars/misc/empty.gif
+

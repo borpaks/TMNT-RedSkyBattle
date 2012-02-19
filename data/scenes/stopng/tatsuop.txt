@@ -1,0 +1,17 @@
+name	tatsuop
+type	panel
+nolife 1
+cantgrab 1
+setlayer 300
+anim idle
+	offset  17 92
+        delay   1
+        @cmd playmusic("data/music/intr.ogg", 0)
+        frame	data/scenes/stopng/tatsu1.gif
+        delay   30
+        frame	data/scenes/stopng/tatsu2.gif
+        frame	data/scenes/stopng/tatsu1.gif
+        delay  580
+        frame	data/scenes/stopng/tatsu1.gif
+        @cmd playmusic("data/music/lv4.ogg", 1)
+        frame	data/scenes/stopng/tatsu1.gif

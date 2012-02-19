@@ -1,0 +1,2 @@
+silence 1
+animation	data/scenes/demo/kiss.gif 0 0

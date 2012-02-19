@@ -1,0 +1,33 @@
+name	Star2
+health	1
+type	enemy
+speed 10
+nolife 1
+noatflash 1
+flash cflash
+noquake 1
+candamage nps enemy player obstacle
+anim idle
+	loop	1
+	delay	10
+	offset	-20 8
+        bbox	5 3 9 9
+	attack	5 3 9 9 4 0 0 0 15
+        hitfx   data/sounds/knifes.wav
+	frame	data/chars/foot/sttr3.gif
+	frame	data/chars/foot/sttr4.gif
+        delay 5
+        frame	data/chars/foot/sttr5.gif
+        attack	5 3 9 9 8 1 0 0 15
+        frame	data/chars/foot/sttr5.gif
+anim fall
+	delay	10
+	offset	-20 8
+        bbox	5 3 9 9
+	attack	5 3 9 9 4 0 0 0 15
+       	frame	data/chars/foot/sttr3.gif
+	frame	data/chars/foot/sttr4.gif
+        frame	data/chars/foot/sttr5.gif
+        frame	data/chars/foot/sttr3.gif
+	frame	data/chars/foot/sttr4.gif
+        frame	data/chars/foot/sttr5.gif

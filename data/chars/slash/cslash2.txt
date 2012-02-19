@@ -1,0 +1,314 @@
+name	cslash2
+health	400
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+cantgrab 1
+nodrop 1
+shadow	3
+speed  9
+icon	data/chars/slash/icon.gif
+diesound data/sounds/die2.wav
+blockodds 1
+bflash flash2
+hostile player npc
+candamage player npc enemy obstacle 
+nodieblink 1
+thold 50
+remap 	data/chars/slash/a1a.gif data/chars/slash/alt1.gif
+score 10000 2
+escapehits 1
+falldie 1
+load shurik
+anim spawn
+    offset  57 75
+    bbox    41 38 32 38
+        delay   5
+		movez 	25
+		frame	data/chars/slash/sh2.gif
+		frame	data/chars/slash/sh3.gif
+        frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh5.gif
+		frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh3.gif
+		frame	data/chars/slash/sh2.gif
+		movez 	0
+		offset	57 75
+		bbox	43 33 33 35
+		frame	data/chars/slash/r2.gif
+		offset	57 75
+		bbox	36 20 36 39
+		delay	13
+		frame	data/chars/slash/t1.gif
+        offset  28 74
+        bbox    21 28 39 37
+        attack	56 14 45 65 15 1
+		sound   data/sounds/shaah.wav
+		frame	data/chars/slash/t2.gif
+        attack	0 0 0 0 0 0
+		frame	data/chars/slash/t3.gif
+		offset	57 75
+		bbox	43 33 33 35
+		flipframe 12
+		frame	data/chars/slash/r2.gif
+		offset	57 75
+		bbox	36 20 36 39
+		delay	13
+		frame	data/chars/slash/t1.gif
+        offset  28 74
+        bbox    21 28 39 37
+        attack	56 14 45 65 15 1
+		frame	data/chars/slash/t2.gif
+        attack	0 0 0 0 0 0
+		frame	data/chars/slash/t3.gif
+anim idle
+	loop	1
+	offset	57 75
+	bbox	36 20 36 39
+	delay	15
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1a.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a2.gif
+	frame	data/chars/slash/a2.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a2.gif
+	frame	data/chars/slash/a2.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a2.gif
+	frame	data/chars/slash/a2.gif
+	frame	data/chars/slash/a1.gif
+	frame	data/chars/slash/a1.gif
+anim pain
+	loop	0
+	offset	57 75
+	bbox	43 33 33 35
+	delay	8
+	frame	data/chars/slash/pain.gif
+anim fall
+	loop	0
+	delay	20
+	seta 1
+	offset	57 75
+	bbox	43 33 33 35
+	delay	10
+	frame	data/chars/slash/d2.gif	
+anim fall2
+	loop	0
+	delay	20
+	seta 1
+	offset	57 75
+	bbox	43 33 33 35
+	delay	10
+	frame	data/chars/slash/d2.gif
+anim walk
+	loop	1
+	offset	57 75
+	bbox	36 20 36 39
+	delay	20
+	frame	data/chars/slash/w1.gif
+	frame	data/chars/slash/w2.gif
+	frame	data/chars/slash/a1a.gif
+anim rise
+	loop	0
+	offset	57 75
+	bbox	43 33 33 35
+	delay	15
+	frame	data/chars/slash/d1.gif
+	frame	data/chars/slash/r1.gif
+        delay   30
+        frame	data/chars/slash/r2.gif
+anim runattack
+	offset	57 75
+	bbox	36 20 36 39
+	delay	20
+	quakeframe 1 2 2
+	frame	data/chars/slash/t1.gif
+        offset  28 74
+        bbox    21 28 39 37
+        blast	56 14 45 65 15 1
+	frame	data/chars/slash/t2.gif
+        blast	0 0 0 0 0 0
+	frame	data/chars/slash/t3.gif
+anim attack1
+	range	0 60
+	loop	0
+	offset	57 75
+	bbox	36 20 36 39
+	delay	15
+        frame	data/chars/slash/t1.gif
+	attack	71 12 26 42 15 
+        frame	data/chars/slash/s1.gif
+        attack  0 
+	frame	data/chars/slash/s2.gif
+         frame	data/chars/slash/t1.gif
+	attack	71 12 26 42 15 
+        frame	data/chars/slash/s1.gif
+        attack  0 
+	frame	data/chars/slash/s2.gif
+anim attack2
+	range	55 90
+        sound   data/sounds/shaah.wav
+	loop	0
+	offset	57 75
+	bbox	36 20 36 39
+	delay	20
+	frame	data/chars/slash/t1.gif
+        offset  28 74
+        bbox    21 28 39 37
+        attack	56 14 45 65 15 1
+	frame	data/chars/slash/t2.gif
+        attack	0 0 0 0 0 0
+	frame	data/chars/slash/t3.gif
+anim attack3
+	range	35 80
+        sound   data/sounds/shaah.wav
+	loop	0
+	offset	57 75
+	bbox	36 20 36 39
+	delay	20
+	frame	data/chars/slash/t1.gif
+        offset  28 74
+        bbox    21 28 39 37
+        attack	56 14 45 65 15 1
+	frame	data/chars/slash/t2.gif
+        attack	0 0 0 0 0 0
+	frame	data/chars/slash/t3.gif
+anim attack4
+	range	120 250
+	offset	57 75
+	bbox	36 20 36 39
+		delay	10
+		frame	data/chars/slash/t1.gif
+        offset  28 74
+        bbox    21 28 39 37
+		custknife shurik
+		throwframe 1 27
+		delay   19
+		frame	data/chars/slash/t4.gif
+anim upper
+	sound   data/sounds/shaah.wav
+	loop	0
+	offset	57 75
+	bbox	43 33 33 35
+	delay	20
+	frame	data/chars/slash/r1.gif
+        delay	30
+        attack	30 13 52 14 10 1
+	frame	data/chars/slash/r2.gif
+        attack  0 0 0 0 0
+anim attack3
+	range	120 250
+	bbox	43 33 33 35
+	delay	15
+        offset  57 75
+	frame	data/chars/slash/sh1.gif
+	frame	data/chars/slash/t1.gif
+        bbox    41 38 32 38
+        delay   5
+	move 	15
+        attack8  41 38 32 38 15 1
+	frame	data/chars/slash/sh2.gif
+	frame	data/chars/slash/sh3.gif
+        frame	data/chars/slash/sh4.gif
+	frame	data/chars/slash/sh5.gif
+        frame	data/chars/slash/sh2.gif
+	frame	data/chars/slash/sh3.gif
+        frame	data/chars/slash/sh4.gif
+	frame	data/chars/slash/sh5.gif
+	frame	data/chars/slash/sh2.gif
+	frame	data/chars/slash/sh3.gif
+        frame	data/chars/slash/sh4.gif
+        frame	data/chars/slash/sh5.gif
+	frame	data/chars/slash/sh2.gif
+anim attack4
+	range	120 250
+	offset	57 75
+	bbox	36 20 36 39
+		delay	15
+		frame	data/chars/slash/t1.gif
+        offset  28 74
+        bbox    21 28 39 37
+		custknife shurik
+		throwframe 1 27
+		delay   19
+		frame	data/chars/slash/t4.gif
+anim special2       
+    loop	1
+	delay	8
+	offset	57 75
+	bbox	36 20 36 39
+        delay   40
+        blast	0 0 130 130 20 1
+	frame	data/chars/slash/r2.gif
+        blast	43 33 33 35 1 0 0 10
+        delay   15
+        frame	data/chars/slash/sh1.gif
+        frame	data/chars/slash/t1.gif
+anim block
+	offset	57 75
+	bbox	43 33 33 35
+	delay	5
+        move 2
+	frame	data/chars/slash/r1.gif	
+	frame	data/chars/slash/r1.gif
+        delay 25	
+	frame	data/chars/slash/r1.gif	
+anim death
+	offset	57 75
+	bbox	43 33 33 35
+	delay	20
+	frame	data/chars/slash/d2.gif	
+		move -11
+		delay 	5
+		frame	data/chars/slash/sh2.gif
+		frame	data/chars/slash/sh3.gif
+		frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh5.gif
+		frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh3.gif
+		frame	data/chars/slash/sh2.gif
+		frame	data/chars/slash/sh2.gif
+		frame	data/chars/slash/sh3.gif
+		frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh5.gif
+		frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh3.gif
+		frame	data/chars/slash/sh2.gif
+		frame	data/chars/slash/sh3.gif
+		frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh5.gif
+		frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh3.gif
+		frame	data/chars/slash/sh2.gif
+		frame	data/chars/slash/sh3.gif
+		frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh5.gif
+		frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh3.gif
+		frame	data/chars/slash/sh2.gif
+		frame	data/chars/slash/sh3.gif
+		frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh5.gif
+		frame	data/chars/slash/sh4.gif
+		frame	data/chars/slash/sh3.gif
+		frame	data/chars/slash/sh2.gif

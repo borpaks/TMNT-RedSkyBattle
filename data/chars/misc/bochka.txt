@@ -1,0 +1,54 @@
+name 	bochka
+health	900
+type	enemy
+subtype arrow
+hostile player npc
+speed 10
+shadow 2
+nolife 1
+#nomove 0 1
+shadow 3
+grabdistance 5
+candamage enemy obstacle shot player npc
+anim spawn
+	offset	28 44
+	bbox 0 0 0 0
+	jumpframe 0 7 0 0
+	quakeframe 9 5 20
+	fshadow 0
+	attack5	0 0 50 45 30 0 0 0 0
+	delay	40
+	frame   data/chars/misc/empty.gif
+	delay   13
+	frame	data/chars/misc/boch1.gif
+	fshadow 1
+	frame	data/chars/misc/boch2.gif
+	fshadow 2
+	frame	data/chars/misc/boch3.gif
+	frame	data/chars/misc/boch4.gif
+	frame	data/chars/misc/boch1.gif
+	frame	data/chars/misc/boch2.gif
+	frame	data/chars/misc/boch3.gif
+	frame	data/chars/misc/boch4.gif
+	sound	data/sounds/heavy.wav
+	frame	data/chars/misc/boch1.gif
+anim idle
+	loop	1
+	offset	28 44
+	bbox 0 0 0 0
+	delay	10
+	blast   0 0 50 45 20 0 0 0 0
+	frame	data/chars/misc/boch1.gif
+	frame	data/chars/misc/boch2.gif
+	frame	data/chars/misc/boch3.gif
+	frame	data/chars/misc/boch4.gif
+anim walk
+	loop	1
+	offset	28 44
+	bbox 0 0 0 0
+	delay	15
+	attack4	0 0 50 45 20 0 0 0 0
+	frame	data/chars/misc/boch1.gif
+	frame	data/chars/misc/boch2.gif
+	frame	data/chars/misc/boch3.gif
+	frame	data/chars/misc/boch4.gif

@@ -1,0 +1,43 @@
+name	wybu1
+type	none
+toflip 1
+nomove 1
+load wybu2
+load wybu3
+load wybufl
+nolife 1
+facing 1
+anim idle
+	offset	69 68
+        platform 1 1 1 1 1
+        delay 10
+        quakeframe 1 8 2
+        movez 1
+        throwframe 8 1
+        custknife wybu2
+        subentity wybufl
+        spawnframe 1 160 120 0 1
+        sound   data/sounds/wybu1.wav
+    	frame	data/chars/wybu/1.gif
+        movez 0
+	frame	data/chars/wybu/2.gif
+        frame	data/chars/wybu/3.gif
+        frame	data/chars/wybu/4.gif
+        offset	106 68
+        frame	data/chars/wybu/5a.gif
+        offset	69 68
+        frame	data/chars/wybu/4.gif
+        offset	83 67
+        delay 4
+        frame	data/chars/wybu/e04.gif
+        frame	data/chars/wybu/e05.gif
+        frame	data/chars/wybu/e06.gif
+        frame	data/chars/wybu/e07.gif
+        frame	data/chars/wybu/e08.gif
+        frame	data/chars/wybu/e09.gif
+        frame	data/chars/wybu/e10.gif
+        frame	data/chars/wybu/e11.gif
+        frame	data/chars/wybu/e12.gif
+        frame	data/chars/wybu/e13.gif
+        frame	data/chars/misc/empty.gif
+

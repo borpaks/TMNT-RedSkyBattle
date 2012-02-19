@@ -1,0 +1,54 @@
+name	st7b
+type	none
+setlayer 1000
+facing 1
+anim idle
+	offset	73 8
+        #delay 30
+		delay 3
+		@script
+        int iPlayer; 
+        int iMaxPlayer = 4; 
+        int iWeapon = 3; 
+        for (iPlayer = 0; iPlayer < iMaxPlayer; iPlayer++){
+			changeplayerproperty(iPlayer, "weapon", iWeapon);
+			}
+        @end_script
+		drawmethod 1056 1056
+		frame	data/scenes/stopng/7b.gif
+        drawmethod 1006 1006
+        frame	data/scenes/stopng/7b.gif
+	    drawmethod 956 956
+        frame	data/scenes/stopng/7b.gif
+	    drawmethod 906 906
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 856 856
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 806 806
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 756 756
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 706 706
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 656 656
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 606 606
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 556 556
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 506 506
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 456 456
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 406 406
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 356 356
+        frame	data/scenes/stopng/7b.gif
+        drawmethod 306 306
+        frame	data/scenes/stopng/7b.gif
+        #frame	data/chars/misc/empty.gif
+        delay   100
+		frame	data/scenes/stopng/7b.gif
+		@cmd changeentityproperty getlocalvar("self") "velocity" 2 -2 0
+		frame	data/scenes/stopng/7b.gif
+        #frame	data/chars/misc/empty.gif

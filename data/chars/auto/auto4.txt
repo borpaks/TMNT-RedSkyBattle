@@ -1,0 +1,66 @@
+name	auto4
+health	1
+speed	8
+type	enemy
+#nomove 1 1
+subtype arrow
+load foot2
+nolife 1
+setlayer -100
+remap data/chars/auto/01aa.gif data/chars/auto/alt1.gif
+remap data/chars/auto/01aa.gif data/chars/auto/alt2.gif
+remap data/chars/auto/01aa.gif data/chars/auto/alt3.gif
+candamage enemy obstacle shot player npc
+anim spawn
+	offset	94 97
+	delay	1
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%3;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/auto/01aa.gif
+anim idle
+	loop	1
+	offset	94 97
+	delay	5
+        subentity foot2
+        spawnframe 14 0 0 0 0
+        seta 1
+        bbox 0 0 0 0
+        platform 1 1 1 1 1
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif

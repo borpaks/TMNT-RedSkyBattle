@@ -1,0 +1,3 @@
+music       data/music/opening.ogg 0
+animation	data/scenes/ending/enda1.gif 1 0
+animation	data/scenes/ending/enda.gif 1 0

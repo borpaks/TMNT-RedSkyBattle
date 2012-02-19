@@ -1,0 +1,36 @@
+name	damage
+type	npc
+alpha 1
+speed 8
+anim idle
+	loop	1
+	delay	30
+	offset	50 50
+        bbox 0 0 0 0
+	frame	data/chars/misc/steam01.gif
+	frame	data/chars/misc/steam02.gif
+	frame	data/chars/misc/steam03.gif
+	frame	data/chars/misc/steam04.gif
+	frame	data/chars/misc/steam05.gif
+	frame	data/chars/misc/steam06.gif
+	frame	data/chars/misc/steam07.gif
+	frame	data/chars/misc/steam08.gif
+	frame	data/chars/misc/steam09.gif
+	frame	data/chars/misc/steam10.gif
+        frame	data/chars/misc/steam11.gif
+anim walk
+	loop	1
+	delay	30
+	offset	50 50
+        bbox 0 0 0 0
+	frame	data/chars/misc/steam01.gif
+	frame	data/chars/misc/steam02.gif
+	frame	data/chars/misc/steam03.gif
+	frame	data/chars/misc/steam04.gif
+	frame	data/chars/misc/steam05.gif
+	frame	data/chars/misc/steam06.gif
+	frame	data/chars/misc/steam07.gif
+	frame	data/chars/misc/steam08.gif
+	frame	data/chars/misc/steam09.gif
+	frame	data/chars/misc/steam10.gif
+        frame	data/chars/misc/steam11.gif

@@ -1,0 +1,57 @@
+name	bmssh4
+health	1
+type	none
+jumpheight 3
+speed 5
+nolife 1
+cantgrab 1
+remap data/chars/foot/01.gif data/chars/foot/alt1.gif
+remap data/chars/foot/01.gif data/chars/foot/alt2.gif
+remap data/chars/foot/01.gif data/chars/foot/alt3.gif
+remap data/chars/foot/01.gif data/chars/foot/alt4.gif
+remap data/chars/foot/01.gif data/chars/foot/alt5.gif 
+remap data/chars/foot/01.gif data/chars/foot/alt6.gif
+anim idle
+	offset	26 59
+	delay	1
+        bbox 0 0 0 0
+        seta 1
+        flipframe 1
+        jumpframe 1 3 -1 0
+        landframe 2
+        frame	data/chars/misc/empty.gif
+        delay 1000
+	frame	data/chars/foot/09.gif
+        delay 10
+        frame	data/chars/foot/10.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/foot/10.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/foot/10.gif
+        @script
+        if(frame == 7){
+        void self = getlocalvar("self");
+        killentity(self);
+        }
+        @end_script
+        frame	data/chars/misc/empty.gif
+anim attack1
+	offset	26 59
+	delay	10
+        seta 1
+        frame	data/chars/foot/10.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/foot/10.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/foot/10.gif
+        frame	data/chars/misc/empty.gif
+anim attack1
+	offset	26 59
+	delay	10
+        seta 1
+        frame	data/chars/foot/10.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/foot/10.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/foot/10.gif
+        frame	data/chars/misc/empty.gif

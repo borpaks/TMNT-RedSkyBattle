@@ -1,0 +1,50 @@
+name	dust
+type	none
+toflip 1
+nomove 1 0
+nolife 1
+cantgrab 1
+grabdistance 0
+anim idle
+        delay 1
+        offset 49 17
+        bbox	276 2999 1 1
+        movez -1
+        frame	data/chars/misc/empty.gif
+        movez 0
+        delay 10
+        frame	data/chars/misc/dustb1.gif
+        frame	data/chars/misc/dustb2.gif
+        frame	data/chars/misc/dustb3.gif
+        frame	data/chars/misc/dustb4.gif
+        frame	data/chars/misc/dustb5.gif
+        frame	data/chars/misc/empty.gif
+anim attack1
+        delay 1
+        offset 49 17
+        bbox	276 2999 1 1
+        movez -1
+        frame	data/chars/misc/empty.gif
+        movez 0
+        delay 10
+        frame	data/chars/misc/dustb1.gif
+        frame	data/chars/misc/dustb2.gif
+        frame	data/chars/misc/dustb3.gif
+        frame	data/chars/misc/dustb4.gif
+        frame	data/chars/misc/dustb5.gif
+        frame	data/chars/misc/empty.gif
+anim attack2
+       delay 1
+        offset 49 17
+        bbox	276 2999 1 1
+        movez -1
+        frame	data/chars/misc/empty.gif
+        movez 0
+        delay 10
+        frame	data/chars/misc/dustb1.gif
+        frame	data/chars/misc/dustb2.gif
+        frame	data/chars/misc/dustb3.gif
+        frame	data/chars/misc/dustb4.gif
+        frame	data/chars/misc/dustb5.gif
+        frame	data/chars/misc/empty.gif
+

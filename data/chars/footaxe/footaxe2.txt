@@ -1,0 +1,553 @@
+name	FootAxe2
+health	80
+speed	7
+type	enemy
+shadow	1
+diesound data/sounds/die1.wav
+paingrab 1
+throw	2 4
+grabdistance 20
+throwdamage	20
+nolife 1
+noquake 1
+dust dust
+hostile player npc
+candamage player npc enemy obstacle 
+blockodds 7
+thold 10
+bflash bflash
+remap data/chars/foot/01.gif data/chars/foot/alt1.gif
+remap data/chars/foot/01.gif data/chars/foot/alt2.gif
+remap data/chars/foot/01.gif data/chars/foot/alt3.gif
+remap data/chars/foot/01.gif data/chars/foot/alt4.gif
+remap data/chars/foot/01.gif data/chars/foot/alt5.gif
+remap data/chars/foot/01.gif data/chars/foot/alt6.gif
+gfxshadow 1
+anim spawn
+	offset	26 62
+	bbox	19 9 16 41
+	delay	1
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%6;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/foot/b8.gif
+anim idle
+	loop	1
+	offset	26 60
+	bbox	19 9 16 41
+	delay	10
+	frame	data/chars/footaxe/e1.gif
+anim walk
+	loop	1
+	offset	26 59
+	bbox	19 9 16 41
+        delay   19
+	frame	data/chars/footaxe/e2.gif
+	frame	data/chars/footaxe/e3.gif
+        frame	data/chars/footaxe/e4.gif
+        frame	data/chars/footaxe/e3.gif
+anim backwalk
+	loop	1
+	offset	26 59
+	bbox	19 9 16 41
+        delay   19
+	frame	data/chars/footaxe/e2.gif
+	frame	data/chars/footaxe/e3.gif
+        frame	data/chars/footaxe/e4.gif
+        frame	data/chars/footaxe/e3.gif
+anim pain
+	bbox	19 9 16 41
+	delay	5
+        offset	26 60
+	frame	data/chars/footaxe/05.gif
+        offset	27 60
+        frame	data/chars/footaxe/05.gif
+        offset	26 60
+	frame	data/chars/footaxe/05.gif
+        offset	27 60
+        frame	data/chars/footaxe/05.gif
+        offset	26 60
+	frame	data/chars/footaxe/05.gif
+        offset	27 60
+        frame	data/chars/footaxe/05.gif
+        offset	26 60
+	frame	data/chars/footaxe/05.gif
+        offset	27 60
+        frame	data/chars/footaxe/05.gif
+anim pain8
+        offset	15 95
+	delay	5
+        bbox	276 2999 1 1
+	frame	data/chars/footaxe/a1.gif
+        delay 14
+        move 27
+        offset	53 92
+        frame	data/chars/footaxe/a2.gif
+        delay 10
+        move 20
+        bbox	70 0 8 7
+        offset	91 92
+        frame	data/chars/footaxe/a6.gif
+        move  15
+        offset	98 92
+        bbox    54 21 32 39
+        frame	data/chars/footaxe/a7.gif
+anim death8
+        offset	98 92
+        delay 1
+        movez 2
+        movea 1
+        dropframe 52
+        bbox	276 2999 1 1
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        sound   data/sounds/die1.wav
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+         frame	data/chars/footaxe/a7.gif
+        offset	68 132
+         frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc1.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc2.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        frame	data/chars/footaxe/cc3.gif
+        move -500
+        movez 0
+        delay 200
+        frame	data/chars/misc/empty.gif
+anim fall8
+         offset	98 92
+        delay 1
+        movez 1
+        movea 1
+        dropframe 48
+        bbox	276 2999 1 1
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        sound   data/sounds/die1.wav
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        frame	data/chars/footaxe/a7.gif
+        offset	71 130
+        frame	data/chars/footaxe/dd1.gif
+        frame	data/chars/footaxe/dd1.gif
+        frame	data/chars/footaxe/dd1.gif
+        frame	data/chars/footaxe/dd1.gif
+        frame	data/chars/footaxe/dd1.gif
+        frame	data/chars/footaxe/dd1.gif
+       frame	data/chars/footaxe/dd1.gif
+        frame	data/chars/footaxe/dd1.gif
+       frame	data/chars/footaxe/dd2.gif
+        frame	data/chars/footaxe/dd2.gif
+        frame	data/chars/footaxe/dd2.gif
+        frame	data/chars/footaxe/dd2.gif
+        frame	data/chars/footaxe/dd2.gif
+        frame	data/chars/footaxe/dd2.gif
+       frame	data/chars/footaxe/dd2.gif
+        frame	data/chars/footaxe/dd2.gif
+        frame	data/chars/footaxe/dd3.gif
+        frame	data/chars/footaxe/dd3.gif
+        frame	data/chars/footaxe/dd3.gif
+        frame	data/chars/footaxe/dd3.gif
+        frame	data/chars/footaxe/dd3.gif
+        frame	data/chars/footaxe/dd3.gif
+       frame	data/chars/footaxe/dd3.gif
+        frame	data/chars/footaxe/dd3.gif
+        frame	data/chars/footaxe/dd4.gif
+        frame	data/chars/footaxe/dd4.gif
+        frame	data/chars/footaxe/dd4.gif
+        frame	data/chars/footaxe/dd4.gif
+        frame	data/chars/footaxe/dd4.gif
+        frame	data/chars/footaxe/dd4.gif
+       frame	data/chars/footaxe/dd4.gif
+        frame	data/chars/footaxe/dd4.gif
+         frame	data/chars/footaxe/dd5.gif
+        frame	data/chars/footaxe/dd5.gif
+        frame	data/chars/footaxe/dd5.gif
+        frame	data/chars/footaxe/dd5.gif
+        frame	data/chars/footaxe/dd5.gif
+        frame	data/chars/footaxe/dd5.gif
+       frame	data/chars/footaxe/dd5.gif
+        frame	data/chars/footaxe/dd5.gif
+        move -500
+        movez 0
+        delay 200
+        frame	data/chars/misc/empty.gif
+anim pain10
+        offset	15 95
+	bbox	276 2999 1 1
+	delay	1
+	frame	data/chars/footaxe/a1.gif
+        delay 9
+        move 27
+        offset	53 92
+        frame	data/chars/footaxe/a2.gif
+        move 46
+        delay 10
+        offset	99 92
+        frame	data/chars/footaxe/a3.gif
+        move  19
+        offset	118 92
+        bbox	12 45 21 39
+        frame	data/chars/footaxe/a4.gif
+        move 0
+        frame	data/chars/footaxe/a5.gif
+anim death10
+        offset	15 95
+	bbox	12 45 21 39
+	delay	1
+	frame	data/chars/footaxe/a1.gif
+        delay 9
+        move 27
+        offset	53 92
+        frame	data/chars/footaxe/a2.gif
+        move 46
+        delay 10
+        offset	99 92
+        frame	data/chars/footaxe/a3.gif
+        move  19
+        offset	118 92
+        frame	data/chars/footaxe/a4.gif
+        move 0
+        bbox	12 45 21 39
+        frame	data/chars/footaxe/a5.gif
+anim grabbed
+	offset	15 95
+	bbox	12 45 21 39
+	delay	5
+	frame	data/chars/footaxe/a1a.gif
+anim pain5
+        offset	26 60
+	delay	200
+        frame	data/chars/footaxe/07.gif
+        offset	26 60
+	delay	20
+	frame	data/chars/footaxe/08.gif
+anim fall
+	offset	26 60
+	delay	30
+        hitflash bflash
+        bbox 0 0 0 0
+        landframe 2
+	frame	data/chars/footaxe/06.gif
+        delay 1000
+        attack  10 23 19 32 6 1 0 0 10
+	frame	data/chars/footaxe/06.gif
+        delay 11
+        attack  0
+        frame	data/chars/footaxe/07.gif
+anim fall2
+	offset	26 60
+	delay	1
+        jumpframe 1 4 -1 0
+        bbox    11 23 23 28
+        landframe 2
+	frame	data/chars/footaxe/06.gif
+        delay 1000
+	frame	data/chars/footaxe/06.gif
+        bbox    0 0 0 0
+        delay 11
+        frame	data/chars/footaxe/07.gif
+anim bpain
+	offset	26 60
+	delay	1
+        jumpframe 1 4 -1 0
+        bbox    11 23 23 28
+        landframe 2
+	frame	data/chars/footaxe/06.gif
+        delay 1000
+	frame	data/chars/footaxe/06.gif
+        bbox    0 0 0 0
+        delay 11
+        frame	data/chars/footaxe/07.gif
+anim rise
+        offset	26 60
+	delay	20
+	frame	data/chars/footaxe/08.gif
+anim attack1
+	range	40 60
+	offset	26 80
+	delay	20
+        bbox    19 22 16 44
+        quakeframe 1 3 -1
+        hitflash bflash
+        hitfx   data/sounds/knifes.wav
+	frame	data/chars/footaxe/e6.gif
+        offset	21 75
+        offset	21 75
+        attack4  28 40 49 38 14 1 1 0 30
+        delay 10
+        frame	data/chars/footaxe/e7.gif
+        attack4 0 0 0
+        frame	data/chars/footaxe/e7.gif
+        frame	data/chars/footaxe/e7.gif
+anim attack2
+	range	40 60
+	offset	26 80
+	delay	10
+        bbox    19 22 16 44
+        quakeframe 2 3 -1
+        jumpframe 1 1 0 0
+        hitflash bflash
+        hitfx   data/sounds/knifes.wav
+	frame	data/chars/footaxe/e6.gif
+        delay 20
+        frame	data/chars/footaxe/e6.gif
+        offset	21 75
+        attack  28 40 49 38 14 1 1 0 30
+        delay 10
+        frame	data/chars/footaxe/e7.gif
+        attack 0 0 0
+        frame	data/chars/footaxe/e7.gif
+        frame	data/chars/footaxe/e7.gif
+anim block
+        offset	26 60
+	bbox	19 9 16 41
+	delay	5
+        move -6
+	frame	data/chars/footaxe/e1.gif
+        frame	data/chars/footaxe/e1.gif
+        frame	data/chars/footaxe/e1.gif
+        move -4
+        frame	data/chars/footaxe/e1.gif
+        move -2
+        frame	data/chars/footaxe/e1.gif
+        move 0
+        frame	data/chars/footaxe/e1.gif
+anim spain
+        offset	26 60
+	bbox	19 9 16 41
+        delay   5
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+         frame	data/chars/foot/sh1.gif
+anim shock
+        offset	26 60
+	bbox	19 9 16 41
+        delay   5
+        landframe 17
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/10.gif
+anim sdie
+        offset	26 60
+	bbox	19 9 16 41
+        delay   5
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+        frame	data/chars/foot/sh2.gif
+        frame	data/chars/foot/sh1.gif
+anim pain3
+        offset	98 92
+        delay 1
+        movez 1
+        movea 1
+        bbox	0 0 0 0
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        offset	71 130
+        frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+       frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+       frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+       frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+       frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+       frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+         frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+       frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+        move -500
+        movez 0
+        delay 200
+        frame	data/chars/misc/empty.gif
+anim pain4
+        offset	98 92
+        delay 1
+        movez 1
+        movea 1 
+        bbox	0 0 0 0
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        frame	data/chars/foot/a7.gif
+        offset	71 130
+        frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+       frame	data/chars/foot/dd1.gif
+        frame	data/chars/foot/dd1.gif
+       frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+       frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd2.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+       frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd3.gif
+        frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+       frame	data/chars/foot/dd4.gif
+        frame	data/chars/foot/dd4.gif
+         frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+       frame	data/chars/foot/dd5.gif
+        frame	data/chars/foot/dd5.gif
+        move -500
+        movez 0
+        delay 200
+        frame	data/chars/misc/empty.gif
+        

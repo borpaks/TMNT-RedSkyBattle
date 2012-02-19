@@ -1,0 +1,9 @@
+name	rocktlk
+type	enemy
+speed 1
+hitenemy 1
+nolife 1
+anim idle
+	delay	10
+	sound   data/sounds/bostlk1.wav
+	frame	data/chars/misc/empty.gif

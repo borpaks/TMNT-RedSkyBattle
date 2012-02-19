@@ -1,0 +1,40 @@
+name	splinter
+health	1
+type	enemy
+subtype arrow
+shadow 6
+speed 6
+nodrop 1
+nolife 1
+noatflash 1
+flash bflash
+grabdistance 20
+nodieblink 1
+anim idle
+        loop 1
+	delay	8
+	offset	38 68
+	bbox	276 2999 1 1
+	frame	data/chars/splinter/1.gif
+        frame	data/chars/splinter/2.gif
+        frame	data/chars/splinter/3.gif
+        frame	data/chars/splinter/4.gif
+        frame	data/chars/splinter/5.gif
+        frame	data/chars/splinter/6.gif
+        frame	data/chars/splinter/7.gif
+        frame	data/chars/splinter/8.gif
+anim walk
+       loop 1
+	delay	8
+	offset	38 68
+        bbox	276 2999 1 1
+	#bbox	9 -13 19 50
+	frame	data/chars/splinter/1.gif
+        frame	data/chars/splinter/2.gif
+        frame	data/chars/splinter/3.gif
+        frame	data/chars/splinter/4.gif
+        frame	data/chars/splinter/5.gif
+        frame	data/chars/splinter/6.gif
+        frame	data/chars/splinter/7.gif
+        frame	data/chars/splinter/8.gif
+

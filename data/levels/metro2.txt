@@ -1,0 +1,150 @@
+music		data/music/lv1.ogg
+bossmusic	data/music/boss1.ogg
+notime 1
+settime 0
+background	data/bgs/metro/a1.gif
+panel		data/bgs/metro2/a1.gif
+order	a
+bgspeed 15
+direction both
+rock 3
+spawn1 50 2 0
+spawn2 70 10 0
+spawn3 90 18 0
+spawn4 110 26 0
+wall 0 213 -1000 -1000 45 28 54 1000
+wall 1264 213 -43 -15 1000 1000 54 1000
+#--group1-----
+spawn	lvbegin
+flip 1
+coords	320 240
+at	0
+spawn	pal2
+flip 1
+coords	86 180
+at	0
+spawn	pal2
+flip 1
+coords	262 180
+at	0
+spawn	pal1
+flip 1
+coords	301 195
+at	0
+
+spawn	pal2
+flip 1
+coords	374 180
+at	0
+spawn	pal2
+flip 1
+coords	550 180
+at	0
+spawn	pal1
+flip 1
+coords	621 195
+at	0
+
+spawn	pal2
+flip 1
+coords	694 180
+at	0
+spawn	pal2
+flip 1
+coords	870 180
+at	0
+spawn	pal1
+flip 1
+coords	941 195
+at	0
+
+spawn	pal2
+flip 1
+coords	982 180
+at	0
+
+spawn	pal2
+flip 1
+coords	1000 180
+at	158
+
+spawn	footaxe
+coords	350 160
+at	160
+
+spawn	footn
+map 2
+coords	395 200
+at	160
+
+wait
+at 315
+group 4 4
+at 315
+
+
+spawn	footsw
+map 3
+coords	610 160
+at	315
+spawn	foot2
+coords	350 160
+at	315
+spawn	foot4
+map 2
+coords	395 200
+at	315
+spawn	robot
+map 3
+coords	610 200
+at	315
+spawn	footsw
+map 3
+coords	610 160
+at	315
+spawn	foot2
+coords	350 160
+at	315
+spawn	foot4
+map 2
+coords	395 200
+at	315
+spawn	robot
+map 3
+coords	610 200
+at	315
+
+spawn	men2
+coords	350 165
+at	323
+spawn	men2
+map 1
+coords	395 200
+at	323
+spawn	men2
+map 2
+coords	610 165
+at	323
+
+spawn	punk
+aggression 40
+2phealth 500
+3phealth 600
+4phealth 700
+alias _Kipelov
+map	4
+boss 1
+item bosslow
+coords	530 160
+at	323
+spawn	mankn
+aggression 40
+2phealth 500
+3phealth 600
+4phealth 700
+alias _Butcher
+map	4
+boss 1
+item bosslow
+coords	530 200
+at	323

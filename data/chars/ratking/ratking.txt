@@ -1,0 +1,435 @@
+name	Rat_King
+health	399
+speed	12
+type	enemy
+subtype chase
+escapehits 3
+icon data/chars/ratking/icon.gif
+hostile enemy 
+diesound data/sounds/bossdie.wav
+throw	2 4
+grabdistance 50
+cantgrab 1
+noatflash 1
+flash bflash
+throwdamage	20
+risetime 500
+noquake	1
+nodrop	1
+falldie 1
+nomove 0 1
+nodieblink 2
+facing 2
+load rtrok2
+hostile enemy
+candamage player npc obstacle 
+score 5000 2
+#pierwotny offset	64 129
+anim idle
+	loop	1
+	offset	64 129
+	bbox	17 16 114 98
+	delay	5
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+anim walk
+	loop	1
+	offset	64 129
+	bbox	17 16 114 98
+        delay 5
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+anim backwalk 
+        loop	1
+	offset	64 129
+	bbox	17 16 114 98
+	delay	5
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+anim special
+	offset	64 129
+	bbox	0 0 0 0
+	delay	2
+        move 5
+        attackone 0
+        blast	17 16 114 98 10 1 0 30 57
+        frame	data/chars/ratking/03.gif
+anim special2
+        range -100 100
+	offset	64 129
+	bbox	0 0 0 0
+	delay	2
+        move 5
+        attackone 0
+        #blast	17 16 114 98 10 1 0 30
+        blast	63 92 62 36 10 1 0 30 57
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        move -2
+        delay 5
+        bbox	17 16 114 98
+        attack  0 0 0 0 0
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+anim pain
+       offset	64 129
+	bbox	17 16 114 98
+	delay	1
+        move -2
+        frame	data/chars/ratking/01.gif
+	frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        offset	65 129
+        frame	data/chars/ratking/01.gif
+	frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        offset	64 129
+        frame	data/chars/ratking/01.gif
+	frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        offset	65 129
+        frame	data/chars/ratking/01.gif
+	frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        offset	64 129
+        frame	data/chars/ratking/01.gif
+	frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        offset	65 129
+        frame	data/chars/ratking/01.gif
+	frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        offset	64 129
+        frame	data/chars/ratking/01.gif
+	frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        offset	65 129
+        frame	data/chars/ratking/01.gif
+	frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/01.gif
+anim death
+       offset	64 129
+	bbox	17 16 114 98
+	delay	5
+        custknife wybu1
+        throwframe 3 1
+        frame	data/chars/ratking/01.gif
+        offset	65 129
+	frame	data/chars/ratking/11.gif
+        offset	64 129
+        frame	data/chars/ratking/11.gif
+         offset	65 129
+        frame	data/chars/ratking/11.gif
+        offset	64 129
+        frame	data/chars/ratking/11.gif
+         offset	65 129
+        frame	data/chars/ratking/11.gif
+        offset	64 129
+        frame	data/chars/ratking/11.gif
+         offset	65 129
+        frame	data/chars/ratking/11.gif
+        offset	64 129
+        frame	data/chars/ratking/11.gif
+         offset	65 129
+        frame	data/chars/ratking/11.gif
+        offset	64 129
+        frame	data/chars/ratking/11.gif
+         offset	65 129
+        frame	data/chars/ratking/11.gif
+         offset	64 129
+        frame	data/chars/ratking/11.gif
+         offset	65 129
+        frame	data/chars/ratking/11.gif
+        offset	64 129
+        frame	data/chars/ratking/11.gif
+         offset	65 129
+        frame	data/chars/ratking/11.gif
+        offset	64 129
+        frame	data/chars/ratking/11.gif
+        delay 30
+        offset  1000 444
+        frame	data/chars/bosf/b2.gif
+         offset	65 129
+        delay   200
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+anim fall
+	offset	64 129
+	bbox	17 16 114 98
+	delay	15
+        frame	data/chars/ratking/01.gif
+anim rise
+        offset	64 129
+	bbox	41 71 71 54
+	delay	1
+	frame	data/chars/ratking/01.gif
+        frame	data/chars/ratking/02.gif
+anim attack1
+        range -10 10
+         offset	64 129
+	bbox	17 16 114 98
+	delay	15
+        custknife rtrok2
+        throwframe 1 21
+        movez -2
+        frame	data/chars/ratking/02.gif
+        sound   data/sounds/tankshot.wav
+        frame	data/chars/ratking/09.gif
+        frame	data/chars/ratking/09.gif
+anim attack2
+        range -5 10
+	offset	64 129
+	bbox	17 16 114 98
+        delay 5
+        followcond 1
+        followanim 1
+        attackone 0
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+	delay	2 
+        move 5
+        #blast	17 16 114 98 10 1 0 30
+        blast	63 92 62 36 10 1 0 30 57
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        move    0
+        blast   0 0 0 0 0
+        move -2
+        delay 5
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+anim attack3
+        range -5 10
+         offset	64 129
+	bbox	0 0 0 0
+	delay	50
+        subentity tram
+        spawnframe 25 450 254 0 1
+        sound   data/sounds/die1.wav
+        frame	data/chars/ratking/12.gif
+        delay 5
+        move -5
+        movez -2
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        movez 0
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        delay   200
+        frame	data/chars/ratking/04.gif
+anim attack4
+        range 80 1000
+	offset	64 129
+	bbox	0 0 0 0
+        delay 5
+        followcond 1
+        followanim 1
+        attackone 0
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+	delay	2 
+        move 8
+        blast	63 92 62 36 10 1 0 30 57
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        bbox	17 16 114 98
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/03.gif
+        frame	data/chars/ratking/03.gif
+anim follow1
+        range 0 5
+	offset	64 129
+	bbox	17 16 114 98
+        delay 5
+        move -2
+        attackone 0
+        sound   data/sounds/alenha.wav
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+	frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif
+        frame	data/chars/ratking/02.gif
+        frame	data/chars/ratking/04.gif

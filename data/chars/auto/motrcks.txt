@@ -1,0 +1,150 @@
+name	motrcks
+health	100
+speed	9
+type	enemy
+subtype arrow
+nolife 1
+jumpheight 0
+grabdistance 20
+nodrop 1
+nomove 0 1
+risetime 500
+falldie 1
+nodieblink 3
+noatflash 1
+flash bflash
+candamage enemy obstacle shot player npc
+anim idle
+	loop	1
+	offset	78 128
+	delay	5
+        bbox    0 0 0 0
+        attack5 43 70 85 42 10 0 1 1 0 
+        #sound   data/sounds/bike.wav
+	frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+        frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+anim walk
+	loop	1
+	offset	78 128
+	delay	5
+        bbox    0 0 0 0
+        attack5 43 70 85 42 10 0 1 1 0 
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+        frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+anim pain
+	offset	78 128
+	delay	5
+        bbox    0 0 0 0
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+        frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+anim fall
+	offset	78 128
+	delay	5
+        bbox   0 0 0 0
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/motrcks1.gif
+anim rise
+	offset	78 128
+	delay	5
+        bbox    0 0 0 0
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/motrcks1.gif
+anim death
+        loop 1
+	offset	78 128
+	delay	5
+        bbox 0 0 0 0
+        move 6
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+        frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+      frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif
+       frame	data/chars/auto/motrcks1.gif
+        frame	data/chars/auto/motrcks2.gif

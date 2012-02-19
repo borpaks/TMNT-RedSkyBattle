@@ -1,0 +1,51 @@
+name	st1
+type	text
+subtype noskip
+setlayer 1000
+anim idle
+	offset	79 8
+        delay   100
+        @script
+        int iPlayer; 
+        int iMaxPlayer = 4; 
+        int iWeapon = 5; 
+        for (iPlayer = 0; iPlayer < iMaxPlayer; iPlayer++){
+            changeplayerproperty(iPlayer, "weapon", iWeapon);
+        }
+        @end_script
+	frame	data/scenes/stopng/1.gif
+        delay 3
+        drawmethod 306 306
+        frame	data/scenes/stopng/1.gif
+        drawmethod 356 356
+        frame	data/scenes/stopng/1.gif
+        drawmethod 406 406
+        frame	data/scenes/stopng/1.gif
+        drawmethod 456 456
+        frame	data/scenes/stopng/1.gif
+        drawmethod 506 506
+        frame	data/scenes/stopng/1.gif
+        drawmethod 556 556
+        frame	data/scenes/stopng/1.gif
+        drawmethod 606 606
+        frame	data/scenes/stopng/1.gif
+        drawmethod 656 656
+        frame	data/scenes/stopng/1.gif
+        drawmethod 706 706
+        frame	data/scenes/stopng/1.gif
+        drawmethod 756 756
+        frame	data/scenes/stopng/1.gif
+        drawmethod 806 806
+        frame	data/scenes/stopng/1.gif
+        drawmethod 856 856
+        frame	data/scenes/stopng/1.gif
+        drawmethod 906 906
+        frame	data/scenes/stopng/1.gif
+        drawmethod 956 956
+        frame	data/scenes/stopng/1.gif
+        drawmethod 1006 1006
+        frame	data/scenes/stopng/1.gif
+        drawmethod 1056 1056
+        frame	data/scenes/stopng/1.gif
+        delay 1
+        frame	data/chars/misc/empty.gif

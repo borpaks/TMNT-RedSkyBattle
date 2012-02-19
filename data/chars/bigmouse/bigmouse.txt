@@ -1,0 +1,247 @@
+name	bigmouse
+health	40
+speed	8
+type	enemy
+shadow	2
+diesound data/sounds/klunk.wav
+cantgrab 1
+throw	2 4
+nolife 1
+nodrop 1
+grabdistance 20
+throwdamage	20
+escapehits 1
+noquake 1
+dust dust
+noatflash 1
+flash bflash
+falldie 1
+nodieblink 2
+load bmssh1
+load bmssh4
+risetime 500
+hostile player npc
+candamage player npc obstacle
+remap  data/chars/bigmouse/1.gif data/chars/bigmouse/alt1.gif
+remap  data/chars/bigmouse/1.gif data/chars/bigmouse/alt2.gif
+jumpheight 2
+jumpmove 1 1
+animationscript data/scripts/escript.c
+anim spawn
+	offset	32 60
+	bbox	17 11 40 40
+	delay	1
+        seta 1
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%7;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/bigmouse/1.gif
+anim idle
+	loop	1
+	offset	32 60
+	bbox	17 11 40 40
+	delay	30
+        seta 1
+	frame	data/chars/bigmouse/1.gif
+anim walk
+	loop	1
+	offset	32 60
+	bbox	17 11 40 40
+	delay	14
+        seta 1
+	frame	data/chars/bigmouse/2.gif
+        frame	data/chars/bigmouse/1.gif
+        frame	data/chars/bigmouse/3.gif
+        frame	data/chars/bigmouse/1.gif
+anim pain
+	offset	32 60
+	bbox	17 11 40 40
+	delay	5
+        seta 1
+	frame	data/chars/bigmouse/1.gif
+        offset	33 60
+        frame	data/chars/bigmouse/1.gif
+        offset	32 60
+        frame	data/chars/bigmouse/1.gif
+        offset	33 60
+        frame	data/chars/bigmouse/1.gif
+        offset	32 60
+        frame	data/chars/bigmouse/1.gif
+        offset	33 60
+        frame	data/chars/bigmouse/1.gif
+anim fall
+	offset	32 60
+	bbox	17 11 40 40
+	delay	1
+	flipframe 1
+        seta 1
+	frame	data/chars/bigmouse/7.gif
+anim rise
+        offset	32 60
+	bbox	17 11 40 40
+	delay	1
+        seta 1
+	frame	data/chars/bigmouse/1.gif
+anim attack1
+        range  0 20
+	offset	32 60
+	bbox	17 11 40 40
+	delay	10
+        seta 1
+	frame	data/chars/bigmouse/1.gif
+        frame	data/chars/bigmouse/4.gif
+        attack  34 21 23 25 10 1 0 0 0 30
+        frame	data/chars/bigmouse/1.gif
+anim attack2
+        range  0 50
+	offset	32 60
+	bbox	17 11 40 40
+	delay	7
+        move 5
+        seta 1
+	frame	data/chars/bigmouse/2.gif
+        frame	data/chars/bigmouse/2.gif
+        frame	data/chars/bigmouse/4.gif
+        frame	data/chars/bigmouse/4.gif
+        attack  34 21 23 25 10 1 0 0 0 7
+        frame	data/chars/bigmouse/3.gif
+        frame	data/chars/bigmouse/3.gif
+        attack 0 0 0 0 
+        frame	data/chars/bigmouse/4.gif
+        frame	data/chars/bigmouse/4.gif
+        attack  34 21 23 25 10 1 0 0 0 20
+        frame	data/chars/bigmouse/2.gif
+        frame	data/chars/bigmouse/2.gif
+        attack  0 0 0
+        frame	data/chars/bigmouse/4.gif
+        frame	data/chars/bigmouse/4.gif
+        attack  34 21 23 25 10 1 0 0 0 7
+        frame	data/chars/bigmouse/3.gif
+        frame	data/chars/bigmouse/3.gif
+        attack 0 0 0 0 
+        frame	data/chars/bigmouse/4.gif
+        frame	data/chars/bigmouse/4.gif
+        attack  34 21 23 25 10 1 0 0 0 20
+        frame	data/chars/bigmouse/2.gif
+        frame	data/chars/bigmouse/2.gif
+        attack  0 0 0
+        frame	data/chars/bigmouse/4.gif
+        frame	data/chars/bigmouse/4.gif
+        attack  34 21 23 25 10 1 0 0 0 7
+        frame	data/chars/bigmouse/3.gif
+        frame	data/chars/bigmouse/3.gif
+        attack  0 0 0 0
+        move 0
+        delay 14
+        frame	data/chars/bigmouse/1.gif
+anim attack3
+        range  -150 100
+	offset	32 60
+	bbox	17 11 40 40
+	delay	20
+        seta 1
+	frame	data/chars/bigmouse/1.gif
+        delay   10
+		custknife bmssh1
+		throwframe 1 31
+        #@cmd shoot "bmssh1" 0 31 0 0 0 0 
+        frame	data/chars/bigmouse/4.gif
+        #@cmd shoot "bmssh1" 0 31 0 0 0 0
+        frame	data/chars/bigmouse/4.gif
+        #@cmd shoot "bmssh1" 0 31 0 0 0 0
+        frame	data/chars/bigmouse/4.gif
+        delay 20
+        frame	data/chars/bigmouse/1.gif
+anim upper
+	offset	22 60
+    bbox	17 11 40 40
+		delay	7
+		jumpframe 1 2
+		frame	data/chars/bigmouse/4.gif
+        attack2  34 21 23 25 15 1 1 1 0 30
+		frame	data/chars/bigmouse/5.gif
+		frame	data/chars/bigmouse/5.gif
+		frame	data/chars/bigmouse/5.gif
+		frame	data/chars/bigmouse/5.gif
+        frame	data/chars/bigmouse/5.gif
+		frame	data/chars/bigmouse/5.gif
+		frame	data/chars/bigmouse/5.gif
+		attack 0 0 0 0 0
+       	frame	data/chars/bigmouse/5.gif
+anim riseattack
+    range  -50 50
+	offset	32 60
+	bbox	17 11 40 40
+		delay	7
+        move 5
+        seta 1
+		frame	data/chars/bigmouse/2.gif
+        frame	data/chars/bigmouse/2.gif
+        frame	data/chars/bigmouse/4.gif
+        frame	data/chars/bigmouse/4.gif
+        attack  34 21 23 25 10 1 0 0 0 7
+        frame	data/chars/bigmouse/3.gif
+        frame	data/chars/bigmouse/3.gif
+        attack 0 0 0 0 
+        frame	data/chars/bigmouse/4.gif
+        frame	data/chars/bigmouse/4.gif
+        attack  34 21 23 25 10 1 0 0 0 20
+        frame	data/chars/bigmouse/2.gif
+        frame	data/chars/bigmouse/2.gif
+        attack  0 0 0
+        frame	data/chars/bigmouse/4.gif
+        frame	data/chars/bigmouse/4.gif
+        attack  34 21 23 25 10 1 0 0 0 7
+        frame	data/chars/bigmouse/3.gif
+        frame	data/chars/bigmouse/3.gif
+        attack 0 0 0 0 
+        frame	data/chars/bigmouse/4.gif
+        frame	data/chars/bigmouse/4.gif
+        attack  34 21 23 25 10 1 0 0 0 20
+        frame	data/chars/bigmouse/2.gif
+        frame	data/chars/bigmouse/2.gif
+        attack  0 0 0
+        frame	data/chars/bigmouse/4.gif
+        frame	data/chars/bigmouse/4.gif
+        attack  34 21 23 25 10 1 0 0 0 7
+        frame	data/chars/bigmouse/3.gif
+        frame	data/chars/bigmouse/3.gif
+        attack  0 0 0 0
+        move 0
+        delay 14
+        frame	data/chars/bigmouse/1.gif
+anim death
+        offset	71 72
+	bbox	10000000 0 1 1
+	delay	1
+        seta 1
+        quakeframe 1 5 -2
+        hitfx   data/sounds/granat.wav
+        @cmd    spawn02 "bmssh4" 0 10 0
+	frame	data/chars/wybu/b1.gif
+        delay 10 
+        frame	data/chars/wybu/b1.gif        
+        frame	data/chars/wybu/b2.gif 
+        frame	data/chars/wybu/b3.gif 
+        frame	data/chars/wybu/b4.gif        
+       offset	81 89
+        delay 5
+        frame	data/chars/wybu/d02.gif
+        frame	data/chars/wybu/d03.gif
+        frame	data/chars/wybu/d04.gif
+        attack  0 0 0 0 0
+        frame	data/chars/wybu/d05.gif
+        frame	data/chars/wybu/d06.gif
+         frame	data/chars/wybu/d07.gif
+        frame	data/chars/wybu/d08.gif
+        frame	data/chars/wybu/d09.gif
+        frame	data/chars/wybu/d10.gif
+        frame   data/chars/misc/empty.gif 

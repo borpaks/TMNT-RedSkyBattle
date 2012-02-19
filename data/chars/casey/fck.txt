@@ -1,0 +1,11 @@
+name	fck
+health	5
+type	pshot
+nomove 1 1
+facing 1
+nolife 1
+anim idle
+	delay	200
+        offset	54 93
+        bbox    0 0 0 0
+        frame	data/chars/casey/fck.gif

@@ -1,0 +1,29 @@
+name	ftrh2
+health	100
+type	pshot
+speed 12
+nolife 1
+noatflash 1
+flash bflash
+jumpheight 3
+cantgrab 1
+remove 1
+candamage nps enemy player obstacle
+anim idle
+        loop 1
+        seta 1
+        delay 100
+	offset 0 10
+        bbox 6 1 20 19
+        attack  6 1 20 19 20 1 0 0 10
+        frame	data/chars/foot/y8a.gif
+anim fall
+	loop 1
+	delay 100
+	seta 1
+	offset 0 10
+        bbox 6 1 20 19
+	attack  6 1 20 19 20 1 0 0 10
+        frame	data/chars/foot/y8a.gif
+
+

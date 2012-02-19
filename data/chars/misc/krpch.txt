@@ -1,0 +1,66 @@
+name	Kirpich
+health	1
+type	obstacle
+toflip 
+nolife 1
+shadow 1
+nomove 1
+noatflash 1
+hostile player npc
+flash bflash
+grabdistance 20
+nodieblink 3
+jumpheight 3
+anim spawn
+	delay	10
+	offset	7 14
+	bbox	0 0 0 0
+	attack	0 -5 21 30 10 1 0 1
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/krpch.gif
+anim idle
+	loop	0
+	delay	10
+	offset	7 14
+	bbox	0 0 0 0
+	delay   5
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/krpch.gif
+	frame	data/chars/misc/empty.gif
+    fshadow 0
+	frame	data/chars/misc/empty.gif

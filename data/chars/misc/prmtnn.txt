@@ -1,0 +1,15 @@
+name	prmtnn
+type	none
+load prmtsh
+toflip 1
+anim idle
+        custknife prmtsh
+        throwframe 1 0
+      	bbox	100000000 0 1 1
+	offset	33 42
+        delay 10
+    	frame	data/chars/misc/bflsh1.gif
+	frame	data/chars/misc/bflsh2.gif
+	frame	data/chars/misc/bflsh3.gif
+        frame	data/chars/misc/bflsh4.gif
+

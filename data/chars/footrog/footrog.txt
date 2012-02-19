@@ -1,0 +1,49 @@
+name	footrog
+type	none
+nolife 1
+nomove 1 1
+load dynamrg
+setlayer 5
+remap data/chars/foot/01.gif data/chars/foot/alt1.gif
+remap data/chars/foot/01.gif data/chars/foot/alt2.gif
+remap data/chars/foot/01.gif data/chars/foot/alt3.gif
+remap data/chars/foot/01.gif data/chars/foot/alt4.gif
+remap data/chars/foot/01.gif data/chars/foot/alt5.gif 
+remap data/chars/foot/01.gif data/chars/foot/alt6.gif 
+anim idle
+	delay	500
+	offset	10 67
+        bbox    0 0 0 0
+        seta 1
+        bbox    1 1 1 1
+        custbomb dynamrg
+        tossframe  12 37
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%6;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+        frame	data/chars/misc/empty.gif
+        delay 15
+	frame	data/chars/footrog/01.gif
+        frame	data/chars/footrog/02.gif
+        frame	data/chars/footrog/03.gif
+        frame	data/chars/footrog/04.gif
+        frame	data/chars/footrog/05.gif
+        frame	data/chars/footrog/06.gif
+        frame	data/chars/footrog/07.gif
+        frame	data/chars/footrog/08.gif
+        frame	data/chars/footrog/09.gif
+        frame	data/chars/footrog/10.gif
+        frame	data/chars/footrog/11.gif
+        frame	data/chars/footrog/12.gif
+        frame	data/chars/footrog/03.gif
+        frame	data/chars/footrog/02.gif
+        frame	data/chars/footrog/01.gif
+        frame	data/chars/misc/empty.gif

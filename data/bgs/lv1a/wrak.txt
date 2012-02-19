@@ -1,0 +1,13 @@
+name	wrak
+type	none
+nolife 1
+setlayer 1
+nomove 1 1
+anim idle
+        loop 1
+        delay 10
+        #offset 88 147
+        offset 55 189
+        frame	data/bgs/lv1a/wraka1.gif
+        frame	data/bgs/lv1a/wraka2.gif
+        frame	data/bgs/lv1a/wraka3.gif

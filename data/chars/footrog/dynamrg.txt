@@ -1,0 +1,113 @@
+name	dynamrg
+health	1
+type	enemy
+subtype chase
+speed 0
+nomove 1 1
+nolife 1
+noatflash 1
+flash bflash
+jumpheight 3
+cantgrab 1
+candamage nps enemy player obstacle
+no_adjust_base 1
+anim idle
+        delay 5
+	offset 3 19
+        movez 4
+        seta 1
+        bbox 0 0 0 0
+        frame	data/chars/foot/dnm1.gif
+        frame	data/chars/foot/dnm2.gif
+        frame	data/chars/foot/dnm1.gif
+        frame	data/chars/foot/dnm2.gif
+        frame	data/chars/foot/dnm1.gif
+        frame	data/chars/foot/dnm2.gif
+        frame	data/chars/foot/dnm4.gif
+        frame	data/chars/foot/dnm3.gif
+        frame	data/chars/foot/dnm4.gif
+        frame	data/chars/foot/dnm3.gif
+        frame	data/chars/foot/dnm4.gif
+        frame	data/chars/foot/dnm3.gif
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+anim attack1
+        delay 1
+	offset 3 19
+        seta 1
+        jumpframe 1 1 0 0
+        bbox 0 0 0 0
+        frame	data/chars/foot/dnm3.gif
+        delay 5
+        movez 2
+        frame	data/chars/foot/dnm4.gif
+        frame	data/chars/foot/dnm3.gif
+        frame	data/chars/foot/dnm4.gif
+        frame	data/chars/foot/dnm3.gif
+        frame	data/chars/foot/dnm4.gif
+        movez 0
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+        frame	data/chars/foot/dnm5.gif
+        frame	data/chars/foot/dnm6.gif
+        offset	69 67
+        delay 10
+        hitflash bflash
+       	sound   data/sounds/wybu1.wav
+    	frame	data/chars/wybu/b1.gif
+	frame	data/chars/wybu/b2.gif
+        attack  17 16 97 52 10 1 1 0 10 
+        dropv 5 2 0
+        frame	data/chars/wybu/b3.gif
+        frame	data/chars/wybu/b4.gif
+        offset	81 89
+        delay 5
+        frame	data/chars/wybu/d02.gif
+        frame	data/chars/wybu/d03.gif
+        frame	data/chars/wybu/d04.gif
+        attack  0 0 0 0 0
+        frame	data/chars/wybu/d05.gif
+        frame	data/chars/wybu/d06.gif
+        frame	data/chars/wybu/d07.gif
+        frame	data/chars/wybu/d08.gif
+        frame	data/chars/wybu/d09.gif
+        frame	data/chars/wybu/d10.gif
+anim attack2
+        seta 1
+        offset	69 67
+        delay 10
+        hitflash bflash
+       	sound   data/sounds/wybu1.wav
+    	frame	data/chars/wybu/b1.gif
+	frame	data/chars/wybu/b2.gif
+        frame	data/chars/wybu/b3.gif
+        frame	data/chars/wybu/b4.gif
+        offset	81 89
+        delay 5
+        frame	data/chars/wybu/d02.gif
+        frame	data/chars/wybu/d03.gif
+        frame	data/chars/wybu/d04.gif
+        frame	data/chars/wybu/d05.gif
+        frame	data/chars/wybu/d06.gif
+         frame	data/chars/wybu/d07.gif
+        frame	data/chars/wybu/d08.gif
+        frame	data/chars/wybu/d09.gif
+        frame	data/chars/wybu/d10.gif

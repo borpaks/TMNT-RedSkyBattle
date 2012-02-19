@@ -1,0 +1,17 @@
+name	aprtgt
+health	1000
+type	none
+shadow 1
+setlayer 10
+nodrop 1
+nolife 1
+noatflash 1
+flash bflash
+anim idle
+        loop 1
+	delay	20
+	offset	21 46
+	bbox	0 10000 1 1
+	frame	data/chars/splinter/aprtgt1.gif
+        frame	data/chars/splinter/aprtgt2.gif
+        

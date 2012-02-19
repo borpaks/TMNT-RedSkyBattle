@@ -1,0 +1,843 @@
+name	michen
+health	303
+speed	10
+type	enemy
+subtype chase
+shadow	3
+running  20 4 2 1 0
+throw	2 4
+grabdistance 10
+bflash bflash
+blockodds 1
+thold 30
+noquake 1
+throwdamage	20
+parrow	data/sprites/parow.gif	-5 -90
+parrow2	data/sprites/parow2.gif	-5 -90
+remap data/chars/mich/a1.gif data/chars/mich/alt1.gif
+remap data/chars/mich/a1.gif data/chars/mich/alt2.gif
+remap data/chars/mich/a1.gif data/chars/mich/alt3.gif
+remap data/chars/mich/a1.gif data/chars/mich/alt4.gif
+dust dust
+escapehits 4
+cantgrab 1
+falldie 1
+nodieblink 2
+nolife 1
+jumpheight 3
+atchain 1 2 3 4 0 2 3 4 0 3 4 0 4
+anim idle
+        range   100 1000
+	loop	1
+	delay	120
+	offset	24 64
+	bbox	19 13 22 38
+	frame	data/chars/mich/a1.gif
+        delay   15
+        frame	data/chars/mich/a2.gif
+        delay   50
+        frame	data/chars/mich/a1.gif
+        delay   10
+        frame	data/chars/mich/a3.gif
+        offset	29 64
+        bbox    23 10 27 41
+        frame	data/chars/mich/a4.gif
+        offset	24 64
+	bbox	19 13 22 38
+        frame	data/chars/mich/a5.gif
+        frame	data/chars/mich/a3.gif
+        offset	29 64
+        bbox    23 10 27 41
+        frame	data/chars/mich/a4.gif
+        offset	24 64
+	bbox	19 13 22 38
+        frame	data/chars/mich/a5.gif
+        frame	data/chars/mich/a3.gif
+        offset	29 64
+        bbox    23 10 27 41
+        frame	data/chars/mich/a4.gif
+        offset	24 64
+	bbox	19 13 22 38
+        frame	data/chars/mich/a5.gif
+        frame	data/chars/mich/a3.gif
+        offset	29 64
+        bbox    23 10 27 41
+        frame	data/chars/mich/a4.gif
+        offset	24 64
+	bbox	19 13 22 38
+        frame	data/chars/mich/a5.gif
+        frame	data/chars/mich/a3.gif
+        offset	29 64
+        bbox    23 10 27 41
+        frame	data/chars/mich/a4.gif
+        offset	24 64
+	bbox	19 13 22 38
+        frame	data/chars/mich/a5.gif
+        frame	data/chars/mich/a3.gif
+anim walk
+        range -1000 1000
+	loop	1
+	delay	14
+	offset	41 63
+	bbox	34 12 22 41
+	frame	data/chars/mich/ww01.gif
+	frame	data/chars/mich/ww02.gif
+	frame	data/chars/mich/ww03.gif
+        frame	data/chars/mich/ww04.gif
+anim up
+	loop	1
+	delay	14
+	offset	28 61
+	bbox	23 5 19 44
+	frame	data/chars/mich/ww05.gif
+	frame	data/chars/mich/ww06.gif
+      	frame	data/chars/mich/ww07.gif
+        frame	data/chars/mich/ww08.gif
+anim down
+	loop	1
+	delay	14
+	offset	41 63
+	bbox	34 12 22 41
+	frame	data/chars/mich/ww01.gif
+	frame	data/chars/mich/ww02.gif
+	frame	data/chars/mich/ww03.gif
+        frame	data/chars/mich/ww04.gif
+anim run
+        loop	1
+	delay	12
+	offset	27 75
+	bbox	21 24 24 42
+	frame	data/chars/mich/ww09.gif
+        frame	data/chars/mich/ww10.gif
+	frame	data/chars/mich/ww11.gif
+        frame	data/chars/mich/ww12.gif
+#anim jumpattack
+#        range   70 80
+#        offset	24 62
+#        delay 2
+#        bbox  15 8 32 43
+#        move 2
+#        frame	data/chars/mich/sf5.gif
+#        frame	data/chars/mich/sf5.gif
+#        frame	data/chars/mich/sf5.gif
+#        frame	data/chars/mich/sf5.gif
+#        frame	data/chars/mich/sf5.gif
+#        frame	data/chars/mich/sf5.gif
+#        offset	33 65
+#        bbox    23 13 41 45
+#        attack  23 0 67 63 10 1 1 0 20 
+#        frame	data/chars/mich/sf6.gif 
+#        frame	data/chars/mich/sf6.gif
+#        frame	data/chars/mich/sf6.gif 
+#       frame	data/chars/mich/sf6.gif
+#        frame	data/chars/mich/sf6.gif
+#        frame	data/chars/mich/sf7.gif
+#        frame	data/chars/mich/sf7.gif
+#        frame	data/chars/mich/sf7.gif
+#        frame	data/chars/mich/sf7.gif
+#        frame	data/chars/mich/sf7.gif
+#        frame	data/chars/mich/sf7.gif
+#        frame	data/chars/mich/sf7.gif
+#        frame	data/chars/mich/sf7.gif
+#        frame	data/chars/mich/sf7.gif
+anim upper
+        offset	24 62
+        delay 1
+        bbox  15 8 32 43
+        jumpframe 1 2
+        frame	data/chars/mich/sf5.gif
+        delay 2
+        move 2
+        frame	data/chars/mich/sf5.gif
+        frame	data/chars/mich/sf5.gif
+        frame	data/chars/mich/sf5.gif
+        frame	data/chars/mich/sf5.gif
+        frame	data/chars/mich/sf5.gif
+        offset	33 65
+        bbox    23 14 40 31
+        attack  23 0 67 63 10 1 1 0 20 
+        frame	data/chars/mich/sf6.gif 
+        frame	data/chars/mich/sf6.gif
+        frame	data/chars/mich/sf6.gif 
+        frame	data/chars/mich/sf6.gif
+        frame	data/chars/mich/sf6.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+anim riseattack
+        range   0 100
+        offset	39 79
+	delay	5
+	frame	data/chars/mich/r1.gif
+	frame	data/chars/mich/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        move 3
+	frame	data/chars/mich/r4.gif
+        move 2
+        frame	data/chars/mich/r4.gif
+        move 1
+        frame	data/chars/mich/r4.gif
+        move 0
+        frame	data/chars/mich/r4.gif
+        frame	data/chars/mich/r4.gif
+        delay	5
+        bbox    99 47 24 45
+	offset	106 103
+        attack  127 50 55 59 2 0 0 0 5
+        sound   data/sounds/pizpow.wav
+        move    2
+        movez   2
+	frame	data/chars/mich/z1.gif
+        attack  0
+        frame	data/chars/mich/z2.gif
+        move -2
+        attack  40 34 48 56 2 0 0 0 5 
+	frame	data/chars/mich/z3.gif
+        attack  0
+	frame	data/chars/mich/z4.gif
+        attack  127 50 55 59 2 0 0 0 5
+        movez -2
+	frame	data/chars/mich/z1.gif
+        attack  0
+        frame	data/chars/mich/z2.gif
+        move 2
+        attack  40 34 48 56 2 0 0 0 5 
+	frame	data/chars/mich/z3.gif
+        attack  0
+	frame	data/chars/mich/z4.gif
+        attack  127 50 55 59 2 0 0 0 5
+        movez 2
+	frame	data/chars/mich/z1.gif
+        attack  0
+        frame	data/chars/mich/z2.gif
+        move -2
+        attack  40 34 48 56 2 0 0 0 5 
+	frame	data/chars/mich/z3.gif
+        attack  0
+	frame	data/chars/mich/z4.gif
+        movez   -2
+        move    -2
+        attack  127 50 55 59 2 0 0 0 5
+	frame	data/chars/mich/z1.gif
+        attack  0
+	frame	data/chars/mich/z2.gif
+	blast	40 34 126 77 10 1 0 0 0 5
+        move    2
+	frame	data/chars/mich/z3.gif
+	blast	40 34 126 77 12 1 0 0 0 5
+	frame	data/chars/mich/z4.gif
+	blast	40 34 126 77 14 1 0 0 0 10
+        movez   0
+        move    0
+	frame	data/chars/mich/z1.gif
+anim attack1
+        range   10 50
+	delay	10
+	bbox	58 53 21 41
+	offset	62 107
+	frame	data/chars/mich/at01.gif
+	bbox	64 56 31 38
+       	frame	data/chars/mich/at02.gif
+        attack	63 30 39 61 6 0 0 0 5
+        frame	data/chars/mich/at03.gif
+        frame	data/chars/mich/at04.gif 
+anim attack2
+	range   10 50
+	delay	10
+	bbox	58 53 21 41
+	offset	62 109
+	frame	data/chars/mich/at07.gif
+	bbox	64 56 31 38
+        attack  63 40 68 52 6 0 0 0 5
+       	frame	data/chars/mich/at08.gif
+        attack	0 0 0 0 
+        frame	data/chars/mich/at05.gif
+        frame	data/chars/mich/at06.gif 
+        attack  64 48 67 38 6 0 0 0 5
+        frame	data/chars/mich/at09.gif
+        attack  0 0 0 0 0
+        frame	data/chars/mich/at10.gif 
+        frame	data/chars/mich/at11.gif
+#anim attack3
+#	range   10 70
+#	delay  5
+#	bbox	51 54 28 36
+#	offset	62 109
+#	frame	data/chars/mich/at12.gif
+#       	frame	data/chars/mich/at13.gif
+#        frame	data/chars/mich/at14.gif
+##        attack  66 35 73 51 6 0 0 0 5
+#        frame	data/chars/mich/at15.gif 
+#        frame	data/chars/mich/at16.gif
+#        attack  0 0 0 0 0
+#        frame	data/chars/mich/at14.gif
+#        attack  66 35 73 51 6 0 0 0 5
+#        frame	data/chars/mich/at15.gif 
+#        frame	data/chars/mich/at16.gif
+#        attack  0 0 0 0 0
+#        frame	data/chars/mich/at14.gif
+#        attack  66 35 73 51 6 0 0 0 5
+#        frame	data/chars/mich/at15.gif 
+##        frame	data/chars/mich/at16.gif
+#        attack  0 0 0 0 0
+#        frame	data/chars/mich/at14.gif
+anim attack3
+        range   10 50
+	delay	10
+	bbox	58 53 21 41
+	offset	62 107
+	frame	data/chars/mich/at01.gif
+	bbox	64 56 31 38
+       	frame	data/chars/mich/at02.gif
+        attack	63 30 39 61 6 0 0 0 5
+        frame	data/chars/mich/at03.gif
+        frame	data/chars/mich/at04.gif
+        offset	62 109
+        bbox	58 53 21 41
+        attack  0 0 0 0 0
+	frame	data/chars/mich/at07.gif
+	bbox	64 56 31 38
+        attack  63 40 68 52 6 0 0 0 5
+       	frame	data/chars/mich/at08.gif
+        attack	0 0 0 0 
+        frame	data/chars/mich/at05.gif
+        frame	data/chars/mich/at06.gif 
+        attack  64 48 67 38 6 0 0 0 5
+        frame	data/chars/mich/at09.gif
+        attack  0 0 0 0 0
+        frame	data/chars/mich/at10.gif 
+        frame	data/chars/mich/at11.gif 
+	delay  5
+	bbox	51 54 28 36
+	frame	data/chars/mich/at12.gif
+       	frame	data/chars/mich/at13.gif
+        frame	data/chars/mich/at14.gif
+        attack  66 35 73 51 6 0 0 0 5
+        frame	data/chars/mich/at15.gif 
+        frame	data/chars/mich/at16.gif
+        attack  0 0 0 0 0
+        frame	data/chars/mich/at14.gif
+        attack  66 35 73 51 6 0 0 0 5
+        frame	data/chars/mich/at15.gif 
+        frame	data/chars/mich/at16.gif
+anim attack4
+        offset	24 62
+        delay 1
+        bbox  15 8 32 43
+        jumpframe 1 2
+        frame	data/chars/mich/sf5.gif
+        delay 2
+        move 2
+        frame	data/chars/mich/sf5.gif
+        frame	data/chars/mich/sf5.gif
+        frame	data/chars/mich/sf5.gif
+        frame	data/chars/mich/sf5.gif
+        frame	data/chars/mich/sf5.gif
+        offset	33 65
+        bbox    23 14 40 31
+        attack  23 0 67 63 10 1 1 0 20 
+        frame	data/chars/mich/sf6.gif 
+        frame	data/chars/mich/sf6.gif
+        frame	data/chars/mich/sf6.gif 
+        frame	data/chars/mich/sf6.gif
+        frame	data/chars/mich/sf6.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+        frame	data/chars/mich/sf7.gif
+anim special2
+        mponly  2
+        energycost 6
+	delay	5
+	offset	106 103
+        attack  127 50 55 59 2 0 0 0 5
+        sound   data/sounds/pizpow.wav
+        move    2
+        movez   2
+	frame	data/chars/mich/z1.gif
+        attack  0
+        frame	data/chars/mich/z2.gif
+        move -2
+        attack  40 34 48 56 2 0 0 0 5 
+	frame	data/chars/mich/z3.gif
+        attack  0
+	frame	data/chars/mich/z4.gif
+        attack  127 50 55 59 2 0 0 0 5
+        movez -2
+	frame	data/chars/mich/z1.gif
+        attack  0
+        frame	data/chars/mich/z2.gif
+        move 2
+        attack  40 34 48 56 2 0 0 0 5 
+	frame	data/chars/mich/z3.gif
+        attack  0
+	frame	data/chars/mich/z4.gif
+        attack  127 50 55 59 2 0 0 0 5
+        movez 2
+	frame	data/chars/mich/z1.gif
+        attack  0
+        frame	data/chars/mich/z2.gif
+        move -2
+        attack  40 34 48 56 2 0 0 0 5 
+	frame	data/chars/mich/z3.gif
+        attack  0
+	frame	data/chars/mich/z4.gif
+        movez   -2
+        move    -2
+        attack  127 50 55 59 2 0 0 0 5
+	frame	data/chars/mich/z1.gif
+        attack  0
+	frame	data/chars/mich/z2.gif
+	blast	40 34 126 77 10 1 0 0 0 5
+        move    2
+	frame	data/chars/mich/z3.gif
+	blast	40 34 126 77 12 1 0 0 0 5
+	frame	data/chars/mich/z4.gif
+	blast	40 34 126 77 14 1 0 0 0 10
+        movez   0
+        move    0
+	frame	data/chars/mich/z1.gif
+anim throw
+        delay   15
+        offset	24 62
+	bbox	0 0 0 0
+        throwframewait 1
+	frame	data/chars/mich/th3.gif
+         delay   8
+	offset	48 56
+	sound	data/sounds/aya.wav
+        frame	data/chars/mich/th1.gif
+	delay	35
+	frame	data/chars/mich/th2.gif
+        offset	39 79
+	delay	15
+	frame	data/chars/mich/r1.gif
+	frame	data/chars/mich/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        move 3
+	frame	data/chars/mich/r4.gif
+        move 2
+        frame	data/chars/mich/r4.gif
+        move 1
+        frame	data/chars/mich/r4.gif
+        move 0
+        frame	data/chars/mich/r4.gif
+        frame	data/chars/mich/r4.gif
+anim pain
+	offset	55 76
+	bbox	36 24 24 42
+	delay	12
+	frame	data/chars/mich/p1.gif
+        frame	data/chars/mich/p2.gif
+        frame	data/chars/mich/p3.gif
+        frame	data/chars/mich/p2.gif
+anim pain2
+	offset	24 62
+	bbox	19 13 22 38
+	delay	5
+	frame	data/chars/mich/pe3.gif
+        offset	25 62
+        frame	data/chars/mich/pe3.gif
+        offset	24 62
+        frame	data/chars/mich/pe3.gif
+        offset	25 62
+        frame	data/chars/mich/pe3.gif
+         offset	24 62
+        frame	data/chars/mich/pe3.gif
+anim pain3
+	offset	24 62
+	bbox	0 0 0 0 
+	delay	5
+        move    2
+        movez   2
+	frame	data/chars/mich/pe1.gif
+        frame	data/chars/mich/pe2.gif
+        move -2
+        frame	data/chars/mich/pe1.gif
+        frame	data/chars/mich/pe2.gif
+         movez -2
+        frame	data/chars/mich/pe1.gif
+        bbox	19 13 22 38
+        frame	data/chars/mich/pe2.gif
+        move 2
+        frame	data/chars/mich/pe1.gif
+        frame	data/chars/mich/pe2.gif
+        movez 2
+        frame	data/chars/mich/pe1.gif
+        frame	data/chars/mich/pe2.gif
+        move -2
+        delay 6
+        frame	data/chars/mich/pe1.gif
+        delay 7
+        frame	data/chars/mich/pe2.gif
+        movez -2
+        move -2
+        delay 8
+        frame	data/chars/mich/pe1.gif
+        delay 9
+        frame	data/chars/mich/pe2.gif
+        move 2
+        delay 10
+        frame	data/chars/mich/pe1.gif
+        frame	data/chars/mich/pe2.gif
+anim pain4
+	offset	24 62
+	bbox	0 0 0 0 
+	delay	10
+        movea 10
+        move -5
+        movez -2
+        sound   data/sounds/mytoss.wav
+	frame	data/chars/mich/pe5.gif
+        movea -5
+        frame	data/chars/mich/pe6.gif
+        move  -5
+        frame	data/chars/mich/pe7.gif
+        movea 10
+	frame	data/chars/mich/pe5.gif
+        movea -5
+        frame	data/chars/mich/pe6.gif
+        movea  -5
+        frame	data/chars/mich/pe7.gif
+        movea 10
+        bbox	19 13 22 38
+	frame	data/chars/mich/pe5.gif
+        movea -5
+        frame	data/chars/mich/pe6.gif
+        movea  -5
+        frame	data/chars/mich/pe7.gif
+        movea 0
+        move  0
+        delay 5
+        movez 0
+        offset	25 62
+        frame	data/chars/mich/pe7.gif
+        offset	24 62
+        frame	data/chars/mich/pe7.gif
+        offset	25 62
+        frame	data/chars/mich/pe7.gif
+anim pain5
+	offset	24 62
+	bbox	0 0 0 0 
+	delay	200
+        sound   data/sounds/mynose.wav
+	frame	data/chars/mich/pe8.gif
+        offset	39 79
+	delay	5
+	frame	data/chars/mich/r1.gif
+	frame	data/chars/mich/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        move 3
+	frame	data/chars/mich/r4.gif
+        move 2
+        frame	data/chars/mich/r4.gif
+        move 1
+        frame	data/chars/mich/r4.gif
+        move 0
+        frame	data/chars/mich/r4.gif
+        frame	data/chars/mich/r4.gif
+anim pain6
+	offset	24 62
+	bbox	19 13 22 38
+	delay	10
+        sound   data/sounds/cooloff.wav
+	frame	data/chars/mich/mous1.gif
+        frame	data/chars/mich/mous2.gif
+        frame	data/chars/mich/mous1.gif
+        frame	data/chars/mich/mous2.gif
+        frame	data/chars/mich/mous1.gif
+        frame	data/chars/mich/mous2.gif
+        frame	data/chars/mich/mous1.gif
+        frame	data/chars/mich/mous2.gif
+        frame	data/chars/mich/mous1.gif
+        frame	data/chars/mich/mous2.gif
+anim pain7
+        delay	10
+	offset	24 62
+	bbox	0 0 0 0
+	frame	data/chars/mich/q1.gif
+	frame	data/chars/mich/q2.gif
+        delay   100
+        frame	data/chars/mich/q3.gif
+        delay 10
+        frame	data/chars/mich/q4.gif
+        frame	data/chars/mich/q5.gif
+        frame	data/chars/mich/q6.gif
+anim pain7
+        delay	100
+	offset	24 62
+	bbox	0 0 0 0
+	frame	data/chars/don/freze.gif
+        delay 10
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 9
+        offset	24 62
+        frame	data/chars/don/freze.gif
+        delay 8
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 7
+        offset	24 62
+        frame	data/chars/don/freze.gif
+        delay 6
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 5
+        offset	24 62
+        frame	data/chars/don/freze.gif
+         delay 4
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 3
+        offset	24 62
+        frame	data/chars/don/freze.gif
+        delay 2
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 1
+        offset	24 62
+        frame	data/chars/don/freze.gif
+anim death7
+        delay	200
+	offset	24 62
+	bbox	0 0 0 0
+	frame	data/chars/don/freze.gif
+        delay 10
+        frame	data/chars/don/freze.gif
+anim  bpain
+        delay 100
+        offset	24 62
+	bbox	0 0 0 0
+	frame	data/chars/mich/burn.gif
+anim spain
+        offset	24 62
+	bbox	19 13 22 38
+        delay   5
+        frame	data/chars/mich/spain1.gif
+        frame	data/chars/mich/spain2.gif
+        frame	data/chars/mich/spain1.gif
+        frame	data/chars/mich/spain2.gif
+        frame	data/chars/mich/spain1.gif
+        frame	data/chars/mich/spain2.gif
+        frame	data/chars/mich/spain1.gif
+        frame	data/chars/mich/spain2.gif
+        frame	data/chars/mich/spain1.gif
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/shock1.gif
+        frame	data/chars/mich/spain2.gif
+        frame	data/chars/mich/shock1.gif
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/spain1.gif    
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/shock1.gif
+anim shock
+        delay 5
+        offset	24 62
+	bbox	0 0 0 0
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/shock1.gif
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/shock1.gif
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/shock1.gif
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/shock1.gif
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/shock1.gif
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/shock1.gif
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/shock1.gif
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/shock1.gif
+        frame	data/chars/mich/shock2.gif
+        frame	data/chars/mich/shock1.gif
+anim fall
+	offset	24 62
+	delay	15
+	frame	data/chars/mich/pe4.gif
+        delay 45
+        hitflash bflash
+        attack  10 41 16 25 8 1 0 0 0 10
+        frame	data/chars/mich/fl1.gif
+        attack  0
+        delay   80
+       	frame	data/chars/mich/fl2.gif
+anim fall2
+	offset	24 62
+        delay 1
+        jumpframe 1 4 -1 0
+        frame	data/chars/mich/fl1.gif
+	delay	29
+        bbox    10 37 38 26
+	frame	data/chars/mich/fl1.gif
+        frame	data/chars/mich/fl1.gif
+        attack  0
+        delay   80
+       	frame	data/chars/mich/fl2.gif
+anim rise
+	offset	39 79
+	delay	15
+	frame	data/chars/mich/r1.gif
+	frame	data/chars/mich/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        frame	data/chars/mich/r3.gif
+        move 3
+	frame	data/chars/mich/r4.gif
+        move 2
+        frame	data/chars/mich/r4.gif
+        move 1
+        frame	data/chars/mich/r4.gif
+        move 0
+        frame	data/chars/mich/r4.gif
+        frame	data/chars/mich/r4.gif
+anim block
+        delay 10
+        offset	24 62
+	bbox	19 13 22 38
+	frame	data/chars/mich/bl1.gif
+        frame	data/chars/mich/bl2.gif
+        delay 100
+        frame	data/chars/mich/bl3.gif
+        delay 10
+        frame	data/chars/mich/bl2.gif
+anim spawn
+       delay	10
+        move 13
+        flipframe 1
+	offset	27 75
+	bbox	21 24 24 42
+	frame	data/chars/mich/ww09.gif
+        frame	data/chars/mich/ww10.gif
+	frame	data/chars/mich/ww11.gif
+        frame	data/chars/mich/ww12.gif
+        frame	data/chars/mich/ww09.gif
+        frame	data/chars/mich/ww10.gif
+	frame	data/chars/mich/ww11.gif
+        frame	data/chars/mich/ww12.gif
+        frame	data/chars/mich/ww09.gif
+        frame	data/chars/mich/ww10.gif
+	frame	data/chars/mich/ww11.gif
+        frame	data/chars/mich/ww12.gif
+        frame	data/chars/mich/ww09.gif
+        frame	data/chars/mich/ww10.gif
+	frame	data/chars/mich/ww11.gif
+        frame	data/chars/mich/ww12.gif
+        move 0
+        delay   50
+        offset	31 100
+	bbox	26 46 25 42
+	frame	data/chars/mich/a1b.gif
+anim respawn
+       delay	10
+        move 13
+        flipframe 1
+	offset	27 75
+	bbox	21 24 24 42
+	frame	data/chars/mich/ww09.gif
+        frame	data/chars/mich/ww10.gif
+	frame	data/chars/mich/ww11.gif
+        frame	data/chars/mich/ww12.gif
+        frame	data/chars/mich/ww09.gif
+        frame	data/chars/mich/ww10.gif
+	frame	data/chars/mich/ww11.gif
+        frame	data/chars/mich/ww12.gif
+        frame	data/chars/mich/ww09.gif
+        frame	data/chars/mich/ww10.gif
+	frame	data/chars/mich/ww11.gif
+        frame	data/chars/mich/ww12.gif
+        frame	data/chars/mich/ww09.gif
+        frame	data/chars/mich/ww10.gif
+	frame	data/chars/mich/ww11.gif
+        frame	data/chars/mich/ww12.gif
+        move 0
+        delay   30
+        offset	31 100
+	bbox	26 46 25 42
+	frame	data/chars/mich/a1a.gif
+anim death
+        delay	15
+	offset	39 101
+        sound   data/sounds/cbunga.wav
+	frame	data/chars/mich/esc1.gif
+        movea 5
+        move 3
+        delay 2
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+        fshadow 2
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+       frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        fshadow 1
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+        fshadow 0
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+        frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+       frame	data/chars/mich/esc2.gif
+         frame	data/chars/mich/esc2.gif
+
+

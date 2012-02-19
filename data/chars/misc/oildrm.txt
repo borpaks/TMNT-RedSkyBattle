@@ -1,0 +1,76 @@
+name	oildrm
+health 1
+type	obstacle
+diesound data/sounds/klunk.wav
+nodrop 1
+shadow 2
+nolife 1
+noatflash 1
+flash bflash
+nodieblink 1
+load wybua
+score 0 0
+anim idle
+	delay	100
+	offset	12 59
+	bbox	2 0 27 54
+	frame	data/chars/misc/ioldrm1.gif
+anim death
+	delay	10
+	offset	12 59
+	bbox	2 0 27 54
+        custknife wybua
+        throwframe 20 60
+	frame	data/chars/misc/ioldrm2.gif
+        offset	13 59
+        frame	data/chars/misc/ioldrm3.gif
+        offset	12 59
+        frame	data/chars/misc/ioldrm4.gif
+        offset	13 59
+        frame	data/chars/misc/ioldrm5.gif
+        delay 9
+        offset	12 59
+        frame	data/chars/misc/ioldrm2.gif
+        offset	13 59
+        frame	data/chars/misc/ioldrm3.gif
+        offset	12 59
+        frame	data/chars/misc/ioldrm4.gif
+        offset	13 59
+        frame	data/chars/misc/ioldrm5.gif
+        delay 8
+        offset	12 59
+        frame	data/chars/misc/ioldrm2.gif
+        offset	13 59
+        frame	data/chars/misc/ioldrm3.gif
+        offset	12 59
+        frame	data/chars/misc/ioldrm4.gif
+        offset	13 59
+        frame	data/chars/misc/ioldrm5.gif
+        delay 7
+        offset	12 59
+        frame	data/chars/misc/ioldrm2.gif
+        offset	13 59
+        frame	data/chars/misc/ioldrm3.gif
+        offset	12 59
+        frame	data/chars/misc/ioldrm4.gif
+        offset	13 59
+        frame	data/chars/misc/ioldrm5.gif
+        delay 6
+        offset	12 59
+        frame	data/chars/misc/ioldrm2.gif
+        offset	13 59
+        frame	data/chars/misc/ioldrm3.gif
+        offset	12 59
+        frame	data/chars/misc/ioldrm4.gif
+        offset	13 59
+        frame	data/chars/misc/ioldrm5.gif
+        delay 140
+        offset	12 59
+        bbox    0 0 0 0 
+        frame	data/chars/misc/ioldrm6.gif
+        delay 10
+        frame	data/chars/misc/ioldrm6.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/ioldrm6.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/ioldrm6.gif

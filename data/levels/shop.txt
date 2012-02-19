@@ -1,0 +1,167 @@
+music		data/music/bosses.ogg
+notime 1
+settime 0
+background	data/bgs/shop/a1.gif
+panel		data/bgs/shop/a1.gif
+frontpanel	data/bgs/shop/p1.gif
+order	a
+direction both
+wall 0 160 -1000 -1000 2372 2354 88 1100
+spawn1 10 50 0
+spawn2 10 70 0
+spawn3 10 90 0
+spawn4 10 110 0
+#--group1-----
+spawn	lvbegin
+coords	320 240
+at	0
+spawn	aprtgt
+coords	160 151
+at	0
+spawn	bebop
+aggression 90
+alias _Bebop
+2phealth 600
+3phealth 730
+4phealth 850
+boss	1
+item bosslow
+coords	160 165
+at	0
+spawn	pizza
+flip 1
+coords	280 165
+at	0
+spawn	pizzamp
+2pspawn pizzamp
+flip 1
+coords	310 165
+at	0
+spawn	pizzamp
+flip 1
+coords	80 165
+at	0
+spawn	pizza
+3pspawn pizza
+flip 1
+coords	110 165
+at	0
+spawn	rocksted
+aggression 80
+alias _Rocksteady
+boss	1
+2phealth 720
+3phealth 840
+4phealth 950
+map 1
+item bosslow
+coords	280 180
+at	0
+spawn	Foottri
+coords	-500 160
+at	0
+spawn	Foot
+map 2
+coords	-500 220
+at	0
+spawn	Footaxe
+map 3
+coords	500 180
+at	0
+spawn	Footn
+map	4
+health	50
+coords	500 240
+at	0
+group 3 4
+at 0
+spawn	Foot
+coords	-50 160
+at	0
+spawn	Footn
+map 2
+coords	-50 200
+at	0
+spawn	Foot
+map 3
+coords	350 160
+at	0
+spawn	Footaxe
+map	1
+coords	-50 220
+at	0
+spawn	Foot
+map	4
+coords	350 190
+at	0
+spawn	Foottri
+coords	-50 160
+at	0
+spawn	Footn
+map 2
+coords	350 200
+at	0
+spawn	Foot
+map 3
+coords	-50 160
+at	0
+spawn	Footaxe
+map	1
+coords	350 220
+at	0
+spawn	Foot
+map	4
+coords	-50 190
+at	0
+spawn	Foot
+coords	350 160
+at	0
+spawn	Footaxe2
+map 2
+coords	-50 200
+at	1
+spawn	Foot
+map 3
+coords	350 160
+at	1
+spawn	Footn
+map	1
+coords	-50 220
+at	1
+spawn	Foottri
+map	4
+health	50
+coords	350 190
+at	1
+spawn	Foot
+coords	-50 160
+at	1
+spawn	Foothk
+map 2
+coords	350 200
+at	1
+spawn	Foot
+map 3
+coords	-50 160
+at	1
+spawn	Foot
+map	1
+coords	350 220
+at	1
+spawn	Footn
+map	4
+health	50
+coords	-50 190
+at	1
+spawn  rock2
+map 1
+coords	-60 380
+at	1
+spawn rock
+map 2
+coords  -50 200
+at 1
+spawn rock
+map 3
+coords  450 200
+at 1

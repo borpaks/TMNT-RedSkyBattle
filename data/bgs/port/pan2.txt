@@ -1,0 +1,10 @@
+name	pan2
+type	none
+setlayer 215
+nolife 1
+anim idle
+        loop 0
+	offset	56 119
+	bbox	0 0 0 0
+        delay 500
+	frame	data/bgs/port/pan2.gif

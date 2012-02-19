@@ -1,0 +1,10 @@
+name	pal1
+type	none
+nolife 1
+setlayer 100
+anim idle
+        loop 1
+	offset	15 157
+        delay 500
+	frame	data/bgs/metro2/b1.gif
+      

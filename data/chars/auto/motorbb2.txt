@@ -1,0 +1,60 @@
+name	motorbb2
+health	499
+speed	10
+type	enemy
+subtype biker
+noatflash 1
+flash bflash
+hostile player npc
+candamage enemy obstacle shot player npc
+load bebop2
+load hshtfl
+load wybu1
+rider bebop2
+nolife 1
+cantgrab 1
+icon data/chars/bepop/icon.gif
+anim idle
+	loop	1
+	offset	69 99
+        seta 1
+        movez 1
+	delay	5
+        bbox    53 21 41 72
+        attack3 37 60 100 40 10 0 1 1 0 
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+        frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+        frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+        frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+        attack4 37 60 100 40 10 0 1 1 0 
+        frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+        frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+        frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+        frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+        attack5 37 60 100 40 10 0 1 1 0 
+        frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+        frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+        frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+        frame	data/chars/auto/motorbb1.gif
+        frame	data/chars/auto/motorbb3.gif
+anim pain
+	offset	69 99
+        seta 1
+	delay	1
+        custknife wybu1
+        throwframe 0 20
+        bbox    0 0 0 0
+	frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif

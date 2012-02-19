@@ -1,0 +1,19 @@
+name	hydrsh
+health	1
+type	enemy
+speed 10
+noatflash 1
+nolife 1
+flash bflash
+candamage nps enemy player obstacle
+anim idle
+	delay	5
+	offset	43 11
+        bbox    0 0 0 0
+	blast	57 5 20 13 50 1 0 15
+        seta  20
+        hitfx   data/sounds/knifes.wav
+	frame	data/chars/hydr/7.gif
+	frame	data/chars/hydr/6.gif
+        delay 1000
+        frame	data/chars/hydr/5.gif

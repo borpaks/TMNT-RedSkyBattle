@@ -1,0 +1,88 @@
+name	pic1
+health	1000
+type	trap
+nolife 1
+facing 1
+hostile player npc
+candamage player npc
+anim spawn
+	delay	1
+	offset	41 69
+	frame	data/chars/misc/pc1.gif
+anim idle 
+    loop 1
+	seta 34
+	delay   400
+	offset	41 69
+        followanim 1
+        followcond 1
+        hitflash bflash
+        bbox    100000000000 0 0 0
+        attack   32 14 23 80 0 0 0 20
+		frame	data/chars/misc/pc4.gif
+        delay 	10
+        frame	data/chars/misc/pc3.gif
+		frame	data/chars/misc/pc2.gif
+		frame	data/chars/misc/pc1.gif
+		frame	data/chars/misc/pc2.gif
+		frame	data/chars/misc/pc3.gif
+anim follow1
+    range -10 10
+    delay   10
+		seta 34
+		offset	41 69
+        bbox    1 1 1 1
+		frame	data/chars/misc/pc4.gif
+		offset	41 70
+		frame	data/chars/misc/pc5.gif
+		offset	41 69
+		frame	data/chars/misc/pc4.gif
+		offset	41 69
+		frame	data/chars/misc/pc5.gif
+		offset	41 70
+		frame	data/chars/misc/pc4.gif
+		offset	41 69
+		frame	data/chars/misc/pc5.gif
+		offset	41 70
+		frame	data/chars/misc/pc4.gif
+		seta 0
+		offset	41 69
+        bbox    0 0 0 0
+		movez 	11
+		delay 	3
+        #attack5 32 14 23 50 30 0 1 20
+        frame	data/chars/misc/pc6.gif
+        attack5	0 2 110 52 30 0 1 20
+        frame	data/chars/misc/pc6.gif
+        attack5	0 2 110 52 30 0 1 20
+        frame	data/chars/misc/pc6.gif
+        attack5   0 0 0 0  
+        delay 	10
+        frame	data/chars/misc/pc6.gif
+        frame	data/chars/misc/pc7.gif
+		delay   25
+		movez   0
+		frame	data/chars/misc/pc7.gif
+		delay   3
+		frame	data/chars/misc/empty.gif
+		frame	data/chars/misc/pc7.gif
+		frame	data/chars/misc/empty.gif
+		frame	data/chars/misc/pc7.gif
+		frame	data/chars/misc/empty.gif
+		frame	data/chars/misc/pc7.gif
+		frame	data/chars/misc/empty.gif
+		frame	data/chars/misc/pc7.gif
+		frame	data/chars/misc/empty.gif
+		frame	data/chars/misc/pc7.gif
+		frame	data/chars/misc/empty.gif
+		frame	data/chars/misc/pc7.gif
+		frame	data/chars/misc/empty.gif
+		frame	data/chars/misc/pc7.gif
+		frame	data/chars/misc/empty.gif
+		frame	data/chars/misc/pc7.gif
+		frame	data/chars/misc/empty.gif
+		frame	data/chars/misc/pc7.gif
+		frame	data/chars/misc/empty.gif
+		frame	data/chars/misc/pc7.gif
+		frame	data/chars/misc/empty.gif
+		

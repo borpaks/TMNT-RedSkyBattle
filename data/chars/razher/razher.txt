@@ -1,0 +1,268 @@
+name	Razher
+health	500
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+speed  8
+diesound data/sounds/die2.wav
+icon data/chars/razher/icon.gif
+throw 2 3
+jumpheight 3
+cantgrab 1
+nodrop 1
+shadow 3
+escapehits 2
+falldie 1
+nodieblink 1
+throwdamage	20
+risetime 500
+hostile player npc
+candamage player npc enemy 
+score 15000 2
+blockodds 5
+running  16 4 2 1 0
+#gfxshadow 1
+#atchain 1 1 2 3
+aggression 80
+anim idle
+	loop	1
+	offset	48 84
+	bbox	36 15 25 45
+		delay	20
+		frame	data/chars/razher/01.gif
+		frame	data/chars/razher/02.gif
+anim spawn
+	offset	48 84
+		delay	5
+		move	15
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+	    frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+		move	0
+		delay   10
+		frame	data/chars/razher/10.gif
+        blast   57 10 33 47 12 1 0 0 20
+		frame	data/chars/razher/12.gif
+		blast	0
+		frame	data/chars/razher/10.gif
+        blast   57 10 33 47 12 1 0 0 20
+		frame	data/chars/razher/12.gif
+		blast	0
+		frame	data/chars/razher/10.gif
+        blast  	57 10 33 47 12 1 0 0 20
+		frame	data/chars/razher/12.gif
+anim walk
+	loop	1
+	offset	48 88
+	bbox	36 15 25 45
+	    delay 15
+		frame	data/chars/razher/08.gif
+		offset	48 84
+		frame	data/chars/razher/07.gif
+anim run
+	loop	1
+	offset	48 88
+	bbox	36 15 25 45
+		delay	10
+		frame	data/chars/razher/07.gif
+		offset	48 84
+		frame	data/chars/razher/08.gif
+anim runattack
+    range 150 180
+	offset	48 84
+	bbox	36 15 25 45
+        frame	data/chars/razher/05.gif
+		delay	30
+        frame	data/chars/razher/06.gif
+		delay	5
+		move	20
+		offset	48 84
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+		move	0
+		delay   10
+		frame	data/chars/razher/10.gif
+        blast   57 10 33 47 12 1 0 0 20
+		frame	data/chars/razher/12.gif
+		blast	0
+		frame	data/chars/razher/10.gif
+        blast   57 10 33 47 12 1 0 0 20
+		frame	data/chars/razher/12.gif
+		blast	0
+		frame	data/chars/razher/10.gif
+        blast   57 10 33 47 12 1 0 0 20
+		frame	data/chars/razher/12.gif
+anim pain
+	offset	48 84
+		delay	5
+        #move -1
+		frame	data/chars/razher/06.gif
+        offset	49 84
+        frame	data/chars/razher/06.gif
+        offset	48 84
+        frame	data/chars/razher/06.gif
+        offset	49 84
+        frame	data/chars/razher/06.gif
+anim fall
+	offset	48 84
+	#jumpframe 0 -2 -1 0
+		delay	20
+		frame	data/chars/razher/06.gif
+anim fall2
+	offset	48 84
+	bbox	44 15 31 55
+		delay	1
+        #jumpframe 1 -2 -1 0
+		frame	data/chars/razher/06.gif
+        delay 60
+        frame	data/chars/razher/06.gif
+anim rise
+	offset	59 81
+	bbox	36 15 25 45
+		delay	10
+		frame	data/chars/razher/03.gif
+anim riseattack
+    range -170 170
+    offset	48 84
+		delay	15
+		frame	data/chars/razher/08.gif
+        blast 	65 50 20 18 10 0 0 5 5
+		frame	data/chars/razher/09.gif
+anim special2
+    range 0 100
+	offset	48 84
+	bbox	36 15 25 45
+    hitflash bflash
+		delay	15
+		frame	data/chars/razher/08.gif
+        blast 	65 50 20 18 10 0 0 5 5
+		frame	data/chars/razher/09.gif
+anim attack1
+    range 20 40
+	hitfx	data/sounds/knifes.wav
+	offset	48 84
+	bbox	36 15 25 45
+		delay	15
+        hitflash bflash
+		frame	data/chars/razher/10.gif
+        attack  57 10 33 47 6 0 0 0 20
+		frame	data/chars/razher/12.gif
+anim attack2
+    range 20 40
+	offset	48 84
+	bbox	36 15 25 45
+		delay	15
+		frame	data/chars/razher/03.gif
+		frame	data/chars/razher/08.gif
+        attack2 65 50 20 18 12 1 0 0 20
+        frame	data/chars/razher/09.gif
+anim attack3
+    range 20 40
+	hitfx	data/sounds/knifes.wav
+	offset	48 84
+	bbox	36 15 25 45
+		delay	15
+        hitflash bflash
+		move	2
+		frame	data/chars/razher/10.gif
+        attack  57 10 33 47 6 0 0 0 20
+		frame	data/chars/razher/12.gif
+anim attack4
+    range 100 120
+	offset	48 84
+	bbox	36 15 25 45
+        frame	data/chars/razher/05.gif
+		delay	30
+        frame	data/chars/razher/06.gif
+		delay	5
+		move	15
+		offset	48 84
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+		move	0
+		delay   10
+		frame	data/chars/razher/10.gif
+        blast   57 10 33 47 12 1 0 0 20
+		frame	data/chars/razher/12.gif
+		blast	0
+		frame	data/chars/razher/10.gif
+        blast   57 10 33 47 12 1 0 0 20
+		frame	data/chars/razher/12.gif
+		blast	0
+		frame	data/chars/razher/10.gif
+        blast   57 10 33 47 12 1 0 0 20
+		frame	data/chars/razher/12.gif
+anim death
+    offset	48 84
+	bbox	36 15 25 45
+	flipframe 15
+		delay	5
+        frame	data/chars/razher/06.gif
+		offset	49 84
+        frame	data/chars/razher/06.gif
+		offset	48 84
+        frame	data/chars/razher/06.gif
+		offset	49 84
+        frame	data/chars/razher/06.gif
+		offset	48 84
+        frame	data/chars/razher/06.gif
+		offset	49 84
+        frame	data/chars/razher/06.gif
+		offset	48 84
+        frame	data/chars/razher/06.gif
+		offset	49 84
+        frame	data/chars/razher/06.gif
+		offset	48 84
+        frame	data/chars/razher/06.gif
+		offset	49 84
+        frame	data/chars/razher/06.gif
+		offset	48 84
+        frame	data/chars/razher/06.gif
+		offset	49 84
+        frame	data/chars/razher/06.gif
+		offset	48 84
+        frame	data/chars/razher/06.gif
+		offset	49 84
+        frame	data/chars/razher/06.gif
+		offset	48 84
+        frame	data/chars/razher/06.gif
+		offset	49 84
+        frame	data/chars/razher/06.gif
+		offset	48 84
+        frame	data/chars/razher/06.gif
+		offset	49 84
+        frame	data/chars/razher/06.gif
+		move 20
+		delay	5
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif
+        frame	data/chars/razher/07.gif
+        frame	data/chars/razher/08.gif

@@ -1,0 +1,237 @@
+name	leo5
+health	103
+speed	10
+mp 187
+mprate 1
+nolife 1
+chargerate 2
+type	none
+makeinv 4 
+running  20 4 2 1 0
+throw	2 4
+grabdistance 34
+com d u j freespecial3
+com u d j freespecial4
+com d f a freespecial5
+com d u s freespecial6
+bflash bflash
+thold 1
+noquake 1
+throwdamage	20
+icon data/chars/leo/icon.gif
+iconpain data/chars/leo/icon1.gif
+icondie data/chars/leo/icon2.gif
+iconmphigh data/sprites/mp2.gif
+iconmphalf data/sprites/mp1.gif
+iconmplow data/chars/misc/empty.gif
+parrow	data/sprites/parow.gif	-5 -90
+parrow2	data/sprites/parow2.gif	-5 -90
+#remap data/chars/leo/a1.gif data/chars/leo/alt1.gif
+remap data/chars/leo/a1.gif data/chars/leo/alt2.gif
+remap data/chars/leo/a1.gif data/chars/leo/alt3.gif
+weapons leo1 leo2 leo3 leo4 leo5 Leonardo
+dust dust
+load dongrtr
+load leosp
+typeshot 2
+summonkill 1
+load mich2
+load cowa
+weaploss 2
+falldie 1
+nodieblink 1
+load footthr
+jumpmove 1 1
+jumpheight 4
+atchain 1 1 2 3
+didhitscript 	 data/scripts/hit1.c 
+anim respawn
+	delay	2
+	offset	24 62
+	bbox	19 13 22 38
+       	frame	data/chars/misc/empty.gif
+        sound   data/sounds/lkicksh.wav
+        frame	data/chars/leo/a1.gif
+anim spawn
+	delay	275
+	offset	24 62
+	bbox	19 13 22 38
+       	frame	data/chars/leo/a1.gif
+        sound   data/sounds/lkicksh.wav
+        delay 100
+        offset	22 94
+        bbox    12 46 28 37
+        frame	data/chars/leo/a1a.gif
+        offset	24 62
+        delay 1
+	frame	data/chars/leo/a1.gif
+anim death
+        offset	24 62
+	bbox	0 0 0 0
+	delay	10
+        custknife sshc
+        throwframe 12 40
+	frame	data/chars/leo/pe3.gif
+        sound data/sounds/shellsh.wav
+        frame	data/chars/leo/pe4.gif
+        offset	106 80
+	delay	10
+        move -10
+	frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j5.gif
+	frame	data/chars/leo/j4.gif
+	frame	data/chars/leo/j3.gif
+        frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j5.gif
+        frame	data/chars/leo/j4.gif
+	frame	data/chars/leo/j3.gif
+        frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j5.gif
+        move 0
+	delay	120
+	offset	24 98
+	bbox	0 0 0 0
+       	frame	data/chars/leo/fl4.gif
+        delay 10
+        frame	data/chars/leo/fl4.gif
+anim freespecial6
+        energycost 123
+	mponly  1
+        delay	10
+	offset	39 101
+        custknife cowa
+        throwframe  1 -1
+        summonframe 2 -50 200 1 1
+        subentity mich2
+        sound   data/sounds/cbunga.wav
+        jumpframe 2 3
+	frame	data/chars/leo/sel1.gif
+       delay 1
+       frame	data/chars/leo/sel1.gif
+        delay 49
+        offset	39 106
+	frame	data/chars/leo/sel2a.gif 
+anim sdie
+        delay 5
+        offset	24 62
+         custknife sshc
+      throwframe 29 40
+	bbox	100000000 0 1 1
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+        frame	data/chars/leo/shock2.gif
+        frame	data/chars/leo/shock1.gif
+          offset	24 62
+	delay	10
+	frame	data/chars/leo/pe3.gif
+        sound data/sounds/shellsh.wav
+        frame	data/chars/leo/pe4.gif
+        offset	106 80
+	delay	10
+        move -10
+	frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j5.gif
+	frame	data/chars/leo/j4.gif
+	frame	data/chars/leo/j3.gif
+        frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j5.gif
+        frame	data/chars/leo/j4.gif
+	frame	data/chars/leo/j3.gif
+        frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j5.gif
+        move 0
+	delay	120
+	offset	24 98
+       	frame	data/chars/leo/fl3.gif
+        delay 10
+        frame	data/chars/leo/fl4.gif
+anim follow5
+      offset	108 82
+	delay	8
+      bbox	0 0 0 0
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 1 0
+	frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j3.gif
+	frame	data/chars/leo/j4.gif
+	frame	data/chars/leo/j5.gif
+        frame	data/chars/leo/j2.gif
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 0
+offset	39 79
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        move 3
+	frame	data/chars/leo/r4.gif
+        move 2
+        frame	data/chars/leo/r4.gif
+        move 1
+        frame	data/chars/leo/r4.gif
+        move 0
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+anim follow6
+      offset	108 82
+	delay	8
+      bbox	0 0 0 0
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 -1 0
+	frame	data/chars/leo/j2.gif
+	frame	data/chars/leo/j3.gif
+	frame	data/chars/leo/j4.gif
+	frame	data/chars/leo/j5.gif
+        frame	data/chars/leo/j2.gif
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 0
+      offset	39 79
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        frame	data/chars/leo/r3.gif
+        move 3
+	frame	data/chars/leo/r4.gif
+        move 2
+        frame	data/chars/leo/r4.gif
+        move 1
+        frame	data/chars/leo/r4.gif
+        move 0
+        frame	data/chars/leo/r4.gif
+        frame	data/chars/leo/r4.gif
+anim follow7
+        delay   5
+        bbox    0 0 0 0
+        hitflash bflash
+        offset	39 79
+        jumpframe 4 2 2 0
+	frame	data/chars/leo/r1.gif
+	frame	data/chars/leo/r2.gif
+	frame	data/chars/leo/r3.gif
+      frame	data/chars/leo/r4.gif
+      offset	35 76
+        bbox  0 0 0 0
+        blast   41 38 21 30 50 1 0 30
+        delay   40
+        frame	data/chars/leo/sf7.gif
+

@@ -1,0 +1,38 @@
+name	tram2
+health	100000
+speed	10
+type	endlevel
+branch hard1a
+grabdistance 50
+nolife 1
+setlayer 250
+anim idle
+	loop	1
+	offset	862 107
+	delay	5
+        move    20
+        bbox   10000000000 0 1 1
+        attack3 0 0 862 107 10 0 1 1 0 
+        sound   data/sounds/metro.wav
+	frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        attack3 0 0 0 0 0 0
+        frame	data/bgs/metro/tram.gif
+        attack3 0 0 862 107 10 0 1 1 0 
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif
+        frame	data/bgs/metro/tram.gif

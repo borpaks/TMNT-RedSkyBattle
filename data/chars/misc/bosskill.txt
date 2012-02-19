@@ -1,0 +1,15 @@
+name	bosskill
+health	1
+type	enemy
+speed 1
+nolife 1
+setlayer 1
+nomove 1 1
+grabdistance 10000
+candamage enemy
+anim idle
+        delay 100
+	offset  500 294
+        attack  0 0 1000 488 1000000 1 
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif

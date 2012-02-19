@@ -1,0 +1,2 @@
+music           data/music/haha.ogg 0
+animation	data/scenes/demo/shred4.gif 0 0

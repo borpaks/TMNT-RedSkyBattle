@@ -1,0 +1,416 @@
+music		data/music/lv7.ogg
+bossmusic	data/music/boss1.ogg
+notime 1
+settime 0
+background	data/bgs/cafe1/back.gif
+panel		data/bgs/cafe1/a1a.gif
+frontpanel	data/bgs/cafe1/p2.gif
+frontpanel	data/bgs/cafe1/p1.gif
+frontpanel	data/bgs/cafe1/p2.gif
+order	a
+wall 2815 135 -25 0 1000 1000 25 10000
+wall 2815 135 -25 0 1000 1000 25 10000
+wall 2815 135 -25 0 1000 1000 25 10000
+
+spawn1 50 50 0
+spawn2 70 70 0
+spawn3 50 70 0
+spawn4 70 50 0
+
+#--group1-----
+spawn	lvbegin
+coords	320 240
+at	0
+
+spawn	st3
+coords	160 100
+at	0
+
+
+spawn	trash
+flip 1
+coords	50 130
+at	0
+
+spawn	footrog
+flip 1
+coords	271 110
+at	0
+
+
+spawn	prmt
+coords	300 130
+at	0
+
+
+
+spawn	Foot
+map 2
+coords	350 160
+at	30
+
+spawn	Foot4
+alias	Foot_G
+map 1
+coords	350 200
+at	150
+
+spawn	Foot
+alias	Foot_Y
+map 3
+coords	350 160
+at	200
+
+spawn	transp
+coords	160 119
+at	340
+
+spawn	auto
+flip 1
+map 1
+coords	-80 244
+at	350
+
+#################
+wait
+at	351
+group 4 4
+at 351
+
+
+spawn	Footsw
+map 3
+coords	350 170
+at	351
+
+#####################
+
+group 1 2
+at 700
+wait
+at	700
+
+
+spawn	auto
+map 2
+coords	400 170
+at	700
+
+spawn	prmt
+coords	350 125
+at	700
+
+##################
+wait 
+at 900
+
+group	2 2
+at	900
+
+spawn	footn
+alias	Nonchako
+health  90
+coords	350 195
+at	900
+
+spawn	mouser2
+coords	280 120
+at	900
+
+spawn	Foot
+alias	Foot
+health  60
+map 5
+coords   -30 220
+at	900
+
+
+spawn	mouser2
+coords	280 120
+at	900
+
+
+#------------
+wait
+at	1200
+group	1 3
+at	900
+
+spawn	Foot4
+map	1
+coords	-30 160
+at	1200
+
+spawn	Foot3a
+alias	foot
+coords	-30 230
+at	1200
+
+spawn	Foot3a
+alias	foot
+coords	350 290
+at	1200
+
+spawn	Foot
+alias	Foot_P
+MAP     3
+coords	350 195
+at	1200
+
+spawn	prmt
+coords	500 125
+at	1200
+
+#------------------
+
+
+wait
+at	1500
+group	1 4
+at	1500
+
+spawn	Footrog
+map 1
+flip 1
+coords	203 110
+at	1500
+
+spawn	Foot
+alias	Foot
+map 3
+coords	380 180
+at	1500
+
+spawn	Foot
+map 4
+coords	380 220
+at	1500
+
+spawn	auto3
+coords	400 244
+at	1500
+
+spawn	footaxe2
+coords	-30 230
+at	1500
+
+spawn	Footaxe
+coords	-30 180
+at	1500
+
+
+spawn   pizza
+flip 1
+coords  400 120
+at      1750
+
+spawn   pizza
+2pspawn pizza
+flip 1
+coords  430 120
+at      1750
+
+spawn   pizza
+3pspawn pizza
+flip 1
+coords  400 140
+at      1750
+
+spawn   pizza
+4pspawn pizza
+flip 1
+coords  430 140
+at      1750
+
+#-------------------
+wait
+at	1770
+
+group	4 4
+at	1770
+
+
+
+spawn	robot
+coords	280 180
+at	1770
+
+spawn	robot
+coords	300 210
+at	1770
+
+
+spawn	fly
+coords	-60 160
+at	1770
+
+spawn	fly
+coords	-40 230
+at	1770
+
+spawn	bigmouse
+coords	360 195
+at	1770
+
+spawn	footn
+coords	-30 160
+at	1770
+
+spawn	Foot4
+map 1
+coords	-30 230
+at	1770
+
+spawn	Foot
+map 3
+coords	-30 180
+at	1770
+
+spawn	footaxe
+coords	-30 200
+at	1770
+
+########################
+group 100 100
+at 1800
+
+spawn	Foot
+health  60
+map 2
+coords	-30 170
+at	2000
+
+spawn	robot
+coords   300 180
+at	2200
+
+spawn	robot
+coords	290 200
+at	2200
+
+spawn	prmt
+coords	352 125
+at	2230
+
+spawn	Foot
+health  60
+map 4
+coords  350 220
+at	2250
+
+spawn	Foot
+map 1
+coords	350 195
+at	2250
+
+wait 
+at 2400
+
+spawn	motorbb
+flip 1
+coords	-50 195
+at	2350
+
+spawn	motrcks
+flip 1
+coords	-80 210
+at	2350
+
+spawn	motor
+flip 1
+coords	-100 170
+at	2350
+
+spawn	motor
+flip 1
+map 1
+coords	-100 245
+at	2350
+
+spawn	bossnone
+boss 1
+coords	-100 245
+at	2500
+
+
+###########
+
+spawn	motorbb2
+alias  _Bebop
+item bosslow
+coords	550 200
+at	2650
+
+group	2 3
+at	2600
+
+spawn	Foot
+map 3
+coords	-30 230
+at	2500
+
+spawn	Foot
+map	4
+coords	-30 160
+at	2500
+
+spawn	footn
+coords	-30 230
+at	2500
+
+spawn	Foottri
+map	3
+coords	-30 230
+at	2500
+
+spawn	motor
+flip 1
+map 1
+coords	-100 200
+at	2350
+
+spawn	Foot5
+map	1
+coords	150 138
+at	2500
+
+spawn	auto2
+flip 1
+map 2
+coords	-50 244
+at	2500
+
+spawn	footaxe
+coords	-30 230
+at	2500
+
+spawn	Foot
+map	4
+coords	-30 230
+at	2500
+
+spawn	auto
+flip 1
+coords	-50 244
+at	2500
+
+spawn	Foothk
+coords	-30 230
+at	2500
+
+group 1 1
+at 2500
+
+spawn	hard2
+flip 1
+coords	270 138
+at	2500
+
+spawn	hard3
+flip 1
+coords	30 138
+at	2500
+
+spawn	levsel
+coords	160 150
+at	2500

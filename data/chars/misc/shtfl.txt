@@ -1,0 +1,10 @@
+name	shtfl
+type	none
+toflip 1
+anim idle
+	delay	10
+	offset	5 11
+        hitfx   data/sounds/hit.wav
+    	frame	data/chars/misc/shtfl1.gif
+	frame	data/chars/misc/shtfl2.gif
+        frame	data/chars/misc/shtfl3.gif

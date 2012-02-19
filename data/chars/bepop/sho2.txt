@@ -1,0 +1,21 @@
+name	Sho2
+health	1
+type	enemy
+speed 10
+candamage player npc enemy obstacle 
+nolife 1
+anim idle
+	delay	10
+	offset	-36 29
+        hitflash cflash
+        bbox	276 2999 1 1
+        hitfx   data/sounds/prad.wav
+	frame	data/chars/bepop/sho1.gif
+        shock	23 22 4 15 4 1 0 0 10
+        frame	data/chars/bepop/sho2.gif
+        shock	23 26 4 8 6 1 0 0 10
+        frame	data/chars/bepop/sho3.gif
+        shock	23 17 5 24 8 1 0 0 10
+        frame	data/chars/bepop/sho4.gif
+        shock	23 0 5 50  10 1 0 0 10
+        frame	data/chars/bepop/sho5.gif

@@ -1,0 +1,56 @@
+name	bmssh1
+health	1
+type	enemy
+speed 10
+candamage player npc enemy obstacle 
+nolife 1
+anim idle
+	delay	5
+	offset	0 29
+        hitflash cflash
+        bbox	276 2999 1 1
+        hitfx   data/sounds/prad.wav
+        frame	data/chars/bigmouse/sh1.gif
+        shock	23 22 4 15 4 1 0 0 10
+        frame	data/chars/bigmouse/sh2.gif
+        shock	23 26 4 8 6 1 0 0 10
+        frame	data/chars/bigmouse/sh3.gif
+        shock	23 17 5 24 8 1 0 0 10
+        frame	data/chars/bigmouse/sh4.gif
+        shock	23 0 5 50  10 1 0 0 10
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+         frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+         frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+         frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+         frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+         frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+         frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+         frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif
+        frame	data/chars/bigmouse/sh5.gif

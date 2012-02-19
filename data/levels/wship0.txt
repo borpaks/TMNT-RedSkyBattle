@@ -1,0 +1,511 @@
+music		data/music/wship0.ogg
+bossmusic	data/music/bosses.ogg
+notime 1
+settime 0
+rock 1
+background		data/bgs/ship/a1a.gif
+panel	        data/bgs/ship/a1a.gif
+frontpanel		data/bgs/ship/p1a.gif
+wall 0 60 0 0 620 200 0 150
+wall 636 90 -28 0 1600 1600 30 150
+order	a
+direction right
+
+spawn1 20 30 0
+spawn2 30 50 0
+spawn3 40 70 0
+spawn4 50 90 0
+
+#--group1-----
+spawn	lvbegin
+coords	320 240
+at	0
+spawn	pic1
+coords 760 90
+at 0
+spawn bonus
+coords 50 260
+at 0
+2pspawn bonus
+coords 55 260
+at 0
+spawn   fish
+flip 1
+coords	760 92
+at 0
+spawn foot4
+aggression 120
+map 1
+coords 450 110
+at 150
+spawn foot4
+aggression 120
+map 1
+coords 450 150
+at 150
+spawn foot4
+aggression 120
+map 1
+coords 450 190
+at 150
+spawn fwrks
+coords 400 90
+at 200
+spawn foot
+aggression 120
+map 2
+coords -30 120
+at 400
+spawn foot
+aggression 120
+map 2
+coords 350 120
+at 400
+spawn foot
+aggression 120
+map 2
+coords -30 140
+at 400
+spawn foot
+aggression 120
+map 2
+coords 350 140
+at 400
+wait
+at 400
+
+wait
+at 570
+spawn foota
+aggression 120
+map 2
+coords -30 100
+at 550
+spawn foota
+aggression 120
+map 2
+coords -30 130
+at 550
+spawn foota
+aggression 120
+map 2
+coords -30 160
+at 550
+spawn foota
+aggression 120
+map 2
+coords 350 100
+at 550
+spawn foota
+aggression 120
+map 2
+coords 350 130
+at 550
+spawn foota
+aggression 120
+map 2
+coords 350 160
+at 550
+spawn foot
+aggression 120
+map 2
+coords 350 130
+at 570
+spawn foot
+aggression 120
+map 2
+coords 350 150
+at 570
+
+spawn foot
+aggression 120
+coords 350 110
+at 700
+spawn foot
+aggression 120
+coords 350 150
+at 700
+wait
+at 870
+group 2 6
+at 600
+spawn foot4
+aggression 120
+map 1
+coords 350 210
+at 700
+spawn foot4
+aggression 120
+map 1
+coords 350 110
+at 700
+spawn foot
+aggression 120
+coords -30 150
+at 700
+spawn foot
+aggression 120
+coords -30 240
+at 700
+spawn foot5
+aggression 120
+map 2
+coords 30 150
+at 700
+spawn foot5
+aggression 120
+map 2
+coords 160 170
+at 700
+spawn foot5
+aggression 120
+map 2
+coords 300 150
+at 700
+spawn foot5
+aggression 120
+map 2
+coords 30 230
+at 700
+spawn foot5
+aggression 120
+map 2
+coords 300 230
+at 700
+
+group 3 5
+at 900
+spawn footsw
+aggression 120
+map 5
+coords 350 150
+at 940
+spawn footsw
+aggression 120
+map 5
+coords 350 190
+at 940
+wait
+at 1100
+spawn footsw
+aggression 120
+map 5
+coords -30 180
+at 970
+spawn foota
+aggression 120
+map 5
+coords -30 130
+at 970
+spawn foota
+aggression 120
+map 2
+coords 350 130
+at 970
+spawn foot4
+aggression 120
+flip 1
+map 1
+coords -70 120
+at 970
+spawn foot4
+aggression 120
+flip 1
+map 1
+coords -40 140
+at 970
+spawn foot4
+aggression 120
+flip 1
+map 1
+coords -10 160
+at 970
+spawn foot4
+aggression 120
+map 1
+coords 350 130
+at 970
+spawn foot4
+aggression 120
+map 1
+coords 370 160
+at 970
+spawn foot4
+aggression 120
+map 1
+coords 400 190
+at 970
+
+spawn foot
+aggression 120
+map 2
+coords 350 140
+at 1020
+spawn foot
+aggression 120
+map 2
+coords 350 180
+at 1030
+spawn foot
+aggression 120
+map 2
+coords 350 220
+at 1040
+wait
+at 1400
+group 1 4
+spawn footsw
+aggression 120
+map 5
+coords -30 140
+at 1200
+spawn footsw
+aggression 120
+map 5
+coords 350 150
+at 1200
+spawn foottri
+aggression 120
+map 5
+coords -30 190
+at 1200
+spawn foottri
+aggression 120
+map 5
+coords 350 200
+at 1200
+spawn foota
+aggression 120
+map 5
+coords 380 190
+at 1200
+spawn footop3
+aggression 120
+map 2
+coords 40 110
+at 1200
+spawn footop3
+aggression 120
+map 2
+coords 170 130
+at 1200
+spawn footop3
+aggression 120
+map 2
+coords 270 110
+at 1200
+spawn footop3
+aggression 120
+map 2
+coords 180 180
+at 1200
+
+wait
+at 1570
+group 2 7
+at 1570
+spawn bochka
+coords 310 110
+at 1570
+spawn bochka
+coords 310 150
+at 1570
+spawn bochka
+coords 310 190
+at 1570
+
+spawn footbw
+aggression 120
+map 1
+coords -30 120
+at 1570
+spawn footbw
+aggression 120
+map 1
+coords -30 170
+at 1570
+spawn footf
+aggression 120
+map 1
+coords 350 120
+at 1570
+spawn footf
+aggression 120
+map 1
+coords 350 170
+at 1570
+
+spawn bochka
+flip 1
+coords -30 110
+at 1570
+spawn bochka
+flip 1
+coords -30 150
+at 1570
+spawn bochka
+flip 1
+coords -30 190
+at 1570
+spawn foot5
+aggression 120
+coords 280 120
+at 1570
+spawn foot5
+aggression 120
+coords 280 170
+at 1570
+spawn foot5
+aggression 120
+coords 280 220
+at 1570
+
+
+spawn bochka
+coords 300 110
+at 1650
+spawn bochka
+flip 1
+coords 300 140
+at 1650
+spawn bochka
+coords 300 170
+at 1650
+spawn bochka
+flip 1
+coords 300 210
+at 1650
+wait
+at 2000
+group 3 6
+at 1650
+spawn footsw
+aggression 120
+map 5
+coords 350 130
+at 1700
+spawn footn
+aggression 120
+map 2
+coords 350 160
+at 1750
+spawn footsw
+aggression 120
+map 5
+coords 350 190
+at 1750
+spawn foottri
+aggression 120
+map 5
+coords -60 110
+at 1800
+spawn footaxe
+aggression 120
+map 2
+coords -50 150
+at 1800
+spawn foottri
+aggression 120
+map 5
+coords -60 190
+at 1800
+spawn rock1
+aggression 120
+flip 1
+coords -30 120
+at 1800
+spawn rock1
+aggression 120
+flip 1
+coords -30 160
+at 1800
+spawn rock1
+aggression 120
+flip 1
+coords -30 200
+at 1800
+spawn rock2
+aggression 120
+map 2
+coords -60 160
+at 1800
+spawn rock1
+aggression 120
+map 3
+flip 1
+coords -30 130
+at 1800
+spawn rock3
+aggression 120
+map 2
+flip 1
+coords -30 170
+at 1800
+spawn rock1
+aggression 120
+map 3
+flip 1
+coords -30 210
+at 1800
+spawn footf
+aggression 120
+map 1
+coords -60 120
+at 1800
+spawn footn
+aggression 120
+map 2
+coords -60 130
+at 1800
+
+spawn segun
+aggression 120
+health 500
+2phealth 700
+3phealth 900
+4phealth 1001
+item bosf
+boss 1
+coords 170 170
+at 2000
+spawn footspr
+health 300
+aggression 120
+coords -30 240
+at	2000
+spawn footspr
+health 300
+aggression 120
+map 1
+coords -30 130
+at	2000
+spawn footop3
+aggression 120
+map 2
+coords 20 120
+at 1800
+spawn footop3
+aggression 120
+map 2
+coords 110 160
+at 1800
+spawn footop3
+aggression 120
+map 2
+coords 210 200
+at 1800
+spawn footf
+aggression 120
+map 1
+coords -30 210
+at 1800
+spawn footf
+aggression 120
+map 1
+coords -30 160
+at 1800
+spawn footf
+aggression 120
+map 1
+coords -30 210
+at 1800

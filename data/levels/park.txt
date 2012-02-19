@@ -1,0 +1,599 @@
+music		data/music/park.ogg
+bossmusic	data/music/bosses.ogg
+notime 1
+settime 0
+#setweap 3
+background	data/bgs/park/a1.gif
+panel		data/bgs/park/a1.gif
+wall  30 120 90 90 904 904 140 500
+wall  -36 144 82 82 134 134 24 500
+wall  522 146 98 98 196 196 40 500
+wall  830 144 79 79 134 134 22 500
+wall  1140 144 80 80 140 140 24 500
+wall  1442 132 76 76 144 144 16 500
+wall  1552 132 76 76 144 144 16 500
+wall  1662 132 76 76 144 144 16 500
+wall  1330 100 0 100 860 860 110 500
+wall  1930 120 -6 94 234 234 110 500
+wall  2200 100 24 24 834 834 110 500
+order	a
+spawn1 40 110 0
+spawn2 60 130 0
+spawn3 80 150 0
+spawn4 100 170 0
+#--group1-----
+spawn	lvbegin
+flip 1
+coords	320 240
+at	0
+spawn	sgn
+flip 1
+coords	96 130
+at	0
+spawn	st7b
+coords  180 130
+at	0
+spawn	znk
+flip	1
+coords	940 130
+at	0
+spawn	znk
+coords	1250 130
+at	0
+spawn raind
+flip 1
+coords 0 120
+at 0
+spawn raind
+flip 1
+coords 0 240
+at 0
+spawn rain
+flip 1
+coords 0 240
+at 0
+spawn raind
+flip 1
+coords 350 120
+at 0
+spawn rain
+flip 1
+coords 350 240
+at 0
+spawn rain
+flip 1
+coords 350 240
+at 0
+spawn raind
+flip 1
+coords 700 120
+at 0
+spawn rain
+flip 1
+coords 700 240
+at 0
+spawn rain
+flip 1
+coords 700 240
+at 0
+spawn raind
+flip 1
+coords 1050 120
+at 0
+spawn rain
+flip 1
+coords 1050 240
+at 0
+spawn rain
+flip 1
+coords 1050 240
+at 0
+spawn raind
+flip 1
+coords 1400 120
+at 0
+spawn rain
+flip 1
+coords 1400 240
+at 0
+spawn raind
+flip 1
+coords 1650 120
+at 0
+spawn rain
+flip 1
+coords 1650 240
+at 0
+spawn raind
+flip 1
+coords 1900 120
+at 0
+spawn rain
+flip 1
+coords 1900 240
+at 0
+spawn raind
+flip 1
+coords 2150 120
+at 0
+spawn rain
+flip 1
+coords 2150 240
+at 0
+spawn tree
+coords 1550 125
+at 0
+spawn gold
+coords 1670 110
+at 0
+spawn tree
+coords 1660 125
+at 0
+spawn tree
+coords 1770 125
+at 0
+spawn	auto
+flip 1
+map 1
+coords	-80 244
+at	30
+spawn	Foot
+aggression 120
+coords	350 160
+at	30
+spawn	Foot
+aggression 120
+coords	350 190
+at	30
+spawn	Foot4
+aggression 120
+map 5
+coords	350 210
+at	150
+spawn	Foot4
+aggression 120
+map 3
+coords	350 250
+at	200
+spawn	Foot4
+aggression 120
+map 3
+coords	350 280
+at	250
+
+wait
+at	500
+group 1 6
+at 100
+spawn	footsw
+aggression 120
+map	1
+coords	350 190
+at	310
+spawn	footsw
+aggression 120
+map 6
+coords	350 150
+at	400
+spawn	footsw
+aggression 120
+map 6
+coords	350 230
+at	400
+spawn	footsw
+aggression 120
+map 7
+coords	-30 210
+at	400
+spawn	footsw
+aggression 120
+map 6
+coords	-30 170
+at	400
+spawn	footsw
+aggression 120
+map 6
+coords	-30 250
+at	400
+#####################
+group 1 3
+at 500
+wait
+at	700
+spawn	robot
+aggression 120
+map 3
+coords	250 180
+at	500
+spawn	robot
+aggression 120
+map	3
+flip 1
+coords	250 220
+at	500
+spawn	robot
+aggression 120
+map 3
+coords	250 260
+at	500
+spawn	auto
+aggression 120
+map 3
+flip 1
+coords	-80 244
+at	550
+spawn	Foot
+aggression 120
+map	5
+coords	350 160
+at	550
+spawn	Foot
+aggression 120
+map	5
+coords	350 200
+at	550
+
+group 1 6
+at 500
+wait
+at	935
+spawn fly
+aggression 120
+map 3
+coords -30 180
+at	935
+spawn robot
+aggression 120
+map 3
+coords -30 220
+at	935
+spawn fly
+aggression 120
+map 3
+coords -30 260
+at	935
+spawn robot
+aggression 120
+flip 1
+map 1
+coords 350 140
+at	935
+spawn fly
+aggression 120
+flip 1
+map 2
+coords 350 180
+at	935
+spawn fly
+aggression 120
+flip 1
+map 2
+coords 350 220
+at	935
+spawn foothk
+aggression 120
+map 4
+coords 350 100
+at	935
+spawn footn
+aggression 120
+map 4
+coords 350 150
+at	935
+spawn foothk
+aggression 120
+map 4
+coords 350 200
+at	935
+spawn foottri
+aggression 120
+map 4
+coords -30 190
+at	935
+spawn footspr
+map 1
+aggression 120
+coords -30 210
+at	935
+spawn footspr
+map 1
+aggression 120
+coords -30 210
+at	935
+spawn autoa
+coords 40 0
+at 935
+spawn autob
+coords 50 -100
+at 935
+spawn autob
+map 1
+coords -30 -210
+at 935
+spawn autoc
+coords -110 -410
+at 935
+
+wait
+at 1500
+group 1 7
+at 1000
+spawn foot5
+aggression 120
+map 6
+coords 20 110
+at 1500
+spawn foot5
+aggression 120
+map 6
+coords 160 110
+at 1500
+spawn foot5
+aggression 120
+map 6
+coords 300 110
+at 1500
+spawn footn2
+aggression 120
+map 1
+coords 390 150
+at 1500
+spawn footn2
+aggression 120
+map 1
+coords -70 150
+at 1500
+spawn footn
+aggression 120
+map 5
+coords 390 210
+at 1500
+spawn footn
+aggression 120
+map 5
+coords -70 210
+at 1500
+spawn footaxe
+aggression 120
+map 6
+coords 350 190
+at 1500
+spawn footaxe
+aggression 120
+map 6
+coords -30 220
+at 1500
+spawn footsw
+aggression 120
+map 6
+coords 350 220
+at 1500
+spawn footsw
+aggression 120
+map 6
+coords -30 190
+at 1500
+
+wait
+at 1800
+
+spawn motor
+aggression 120
+flip 1
+coords -100 160
+at 1800
+spawn motor3
+aggression 120
+coords 390 190
+at 1800
+spawn motor
+aggression 120
+flip 1
+coords -100 230
+at 1800
+spawn auto
+aggression 120
+flip 1
+coords -300 160
+at 1800
+spawn motor
+aggression 120
+flip 1
+coords -300 190
+at 1800
+spawn auto
+aggression 120
+flip 1
+coords -300 230
+at 1800
+spawn motor
+aggression 120
+flip 1
+coords -300 270
+at 1800
+
+spawn pizza
+coords 320 130
+at 1900
+spawn pizza
+2pspawn pizza
+coords 350 150
+at 1900
+spawn pizza
+3pspawn pizza
+coords 360 110
+at 1900
+spawn pizza
+4pspawn pizza
+coords 380 130
+at 1900
+
+group	1 6
+at	2500
+wait
+at 2500
+spawn footsw
+aggression 120
+map 6
+coords -30 170
+at 2500
+spawn footn
+aggression 120
+map 6
+coords -30 190
+at 2500
+spawn foottri
+aggression 120
+map 6
+coords -30 210
+at 2500
+spawn foothk
+aggression 120
+map 6
+coords -30 230
+at 2500
+spawn foot5
+aggression 120
+coords 20 125
+at 2500
+spawn foot5
+aggression 120
+coords 300 120
+at 2500
+spawn robot
+aggression 120
+map 1
+coords 280 140
+at 2500
+spawn robot
+aggression 120
+map 2
+coords 280 170
+at 2500
+spawn robot
+aggression 120
+map 3
+coords 280 200
+at 2500
+spawn robot
+aggression 120
+map 1
+coords 30 130
+at 2500
+spawn robot
+aggression 120
+map 2
+coords 120 170
+at 2500
+spawn robot
+aggression 120
+map 3
+coords 180 210
+at 2500
+spawn fly
+aggression 120
+map 3
+coords -30 170
+at 2500
+spawn fly
+aggression 120
+map 3
+coords 350 190
+at 2500
+spawn fly
+aggression 120
+map 3
+coords -30 210
+at 2500
+spawn mouser
+aggression 120
+map 2
+coords 350 170
+at 2500
+spawn bigmouse
+aggression 120
+map 2
+coords -30 200
+at 2500
+spawn mouser
+aggression 120
+map 1
+coords 350 180
+at 2500
+spawn rock1
+aggression 120
+flip 1
+coords -30 140
+at 2500
+spawn rock2a
+aggression 120
+flip 1
+coords -30 160
+at 2500
+spawn rock1
+aggression 120
+flip 1
+coords -30 180
+at 2500
+spawn boxer
+aggression 120
+map 3
+coords 250 130 500
+at 2500
+spawn boxer
+aggression 120
+flip 1
+coords 150 220 500
+at 2500
+spawn bigmouse
+aggression 120
+map 3
+coords 350 190
+at 2500
+
+spawn footop3
+aggression 120
+health 120
+map 6
+coords 20 120
+at 2500
+spawn footop3
+aggression 120
+health 120
+map 6
+coords 300 120
+at 2500
+spawn	cslash2
+alias Crazy_Slash
+aggression 120
+2phealth 500
+3phealth 600
+4phealth 750
+map 1
+item bosslow
+boss 1
+coords 230 10
+at	2500
+spawn	robo2
+alias Metal_Head_v.2
+aggression 120
+item bosf
+2phealth 500
+3phealth 600
+4phealth 750
+boss 1
+flip 1
+map 2
+coords -30 190 200
+at	2500
+spawn	transp2
+aggression 120
+coords	130 124
+at	2500
+spawn pizzapow
+coords 300 130 500
+at 2500
+spawn pizzapow
+4pspawn pizzamp
+coords 300 230 500
+at 2500

@@ -1,0 +1,28 @@
+name	wtrp
+health	1
+type	trap
+nolife 1
+nomove 1 1
+facing 1
+hostile player npc
+candamage player npc
+#shadow 1
+anim idle 
+	loop 1
+		delay   5
+		followanim 1
+        followcond 1
+        hitflash bflash
+		attack10	0 -5 9 7 10 0 0 0 0
+		offset	13 2
+		frame	data/chars/misc/empty.gif
+anim follow1
+		delay	10
+		offset	13 2
+		delay   100
+		attack10	0 -5 9 7 10 0 0 0 0
+		frame	data/bgs/ship/wtrp1.gif
+		delay 5
+		offset	41 69
+		fshadow 0
+		frame	data/chars/misc/empty.gif

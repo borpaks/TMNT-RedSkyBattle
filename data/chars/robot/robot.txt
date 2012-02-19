@@ -1,0 +1,322 @@
+name	Robot
+health	40
+speed	16
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+shadow	1
+diesound data/sounds/klunk.wav
+cantgrab 1
+throw	2 4
+nolife 1
+grabdistance 20
+throwdamage	20
+noquake 1
+dust dust
+noatflash 1
+flash bflash
+falldie 2
+nodieblink 2
+load laser2
+risetime 500
+hostile player npc
+candamage player npc enemy obstacle 
+remap data/chars/robot/01.gif data/chars/robot/alt1.gif
+remap data/chars/robot/01.gif data/chars/robot/alt2.gif
+anim idle
+	loop	1
+	offset	30 49
+	bbox	22 5 20 46
+	delay	30
+        seta 1
+	frame	data/chars/robot/02.gif
+anim walk
+	loop	1
+	offset	30 49
+	bbox	22 5 20 46
+	delay	1
+        seta 1
+	frame	data/chars/robot/01.gif
+        frame	data/chars/robot/01.gif
+        frame	data/chars/robot/01.gif
+        frame	data/chars/robot/01.gif
+        frame	data/chars/robot/01a.gif
+        frame	data/chars/robot/01a.gif
+        frame	data/chars/robot/01a.gif
+        frame	data/chars/robot/01a.gif
+        frame	data/chars/robot/01b.gif
+        frame	data/chars/robot/01b.gif
+        frame	data/chars/robot/01b.gif
+        frame	data/chars/robot/01b.gif
+anim pain
+	offset	30 49
+        bbox	0 0 0 0
+	delay	1
+        seta 1  
+        jumpframe 1 2 -2 0
+        sound   data/sounds/klunk.wav
+	frame	data/chars/robot/16.gif
+        delay 2
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+        frame	data/chars/robot/16.gif
+anim fall
+	offset	30 49
+	bbox	0 0 0 0
+	delay	100
+        seta 1
+        sound   data/sounds/klunk.wav
+	frame	data/chars/robot/16.gif
+anim rise
+        offset	30 49
+	bbox	22 5 20 46
+	delay	1
+        seta 1
+	frame	data/chars/robot/02.gif
+anim attack1
+        range -50 110
+	offset	30 49
+	bbox	22 5 20 46
+	delay	10
+        seta 1
+        custknife laser2
+        throwframe 7 25
+	frame	data/chars/robot/03.gif
+        frame	data/chars/robot/04.gif
+        frame	data/chars/robot/05.gif
+        delay 5
+        frame	data/chars/robot/06.gif
+        frame	data/chars/robot/07.gif
+        frame	data/chars/robot/06.gif
+        frame	data/chars/robot/07.gif
+        delay 10
+        frame	data/chars/robot/07a.gif
+        frame	data/chars/robot/05.gif
+        frame	data/chars/robot/04.gif
+        frame	data/chars/robot/03.gif
+anim attack2
+        range  50 120
+	offset	30 49
+	bbox	22 5 20 46
+	delay	5
+        seta 1
+        followcond 1
+        followanim 1
+        frame	data/chars/robot/a12.gif
+        frame	data/chars/robot/a13.gif
+        frame	data/chars/robot/a14.gif
+        frame	data/chars/robot/a15.gif
+        frame	data/chars/robot/a16.gif
+         frame	data/chars/robot/a12.gif
+        delay	5
+	frame	data/chars/robot/08.gif
+        frame	data/chars/robot/09.gif
+        frame	data/chars/robot/10.gif
+        frame	data/chars/robot/11.gif
+        frame	data/chars/robot/12.gif
+        frame	data/chars/robot/13.gif
+        frame	data/chars/robot/14.gif
+        shock   99 10 40 16 30 0 1 1 
+        frame	data/chars/robot/15.gif
+        shock 0 0 0 0 0
+        frame	data/chars/robot/14.gif
+        frame	data/chars/robot/13.gif
+        frame	data/chars/robot/12.gif
+        frame	data/chars/robot/11.gif
+        frame	data/chars/robot/10.gif
+        frame	data/chars/robot/09.gif
+        frame	data/chars/robot/08.gif
+anim attack3
+        range  110 120
+	offset	30 49
+	bbox	22 5 20 46
+	delay	5
+        seta 1
+        followcond 1
+        followanim 1
+        frame	data/chars/robot/a12.gif
+        frame	data/chars/robot/a13.gif
+        frame	data/chars/robot/a14.gif
+        frame	data/chars/robot/a15.gif
+        frame	data/chars/robot/a16.gif
+         frame	data/chars/robot/a12.gif
+        delay	5
+	frame	data/chars/robot/08.gif
+        frame	data/chars/robot/09.gif
+        frame	data/chars/robot/10.gif
+        frame	data/chars/robot/11.gif
+        frame	data/chars/robot/12.gif
+        frame	data/chars/robot/13.gif
+        frame	data/chars/robot/14.gif
+        shock   99 10 40 16 30 0 1 1 
+        frame	data/chars/robot/15.gif
+        shock 0 0 0 0 0
+        frame	data/chars/robot/14.gif
+        frame	data/chars/robot/13.gif
+        frame	data/chars/robot/12.gif
+         frame	data/chars/robot/11.gif
+        frame	data/chars/robot/10.gif
+        frame	data/chars/robot/09.gif
+        frame	data/chars/robot/08.gif
+anim attack4
+        range  110 120
+	offset	30 49
+	bbox	22 5 20 46
+	delay	5
+        seta 1
+        followcond 1
+        followanim 1
+        frame	data/chars/robot/a12.gif
+        frame	data/chars/robot/a13.gif
+        frame	data/chars/robot/a14.gif
+        frame	data/chars/robot/a15.gif
+        frame	data/chars/robot/a16.gif
+        frame	data/chars/robot/a12.gif
+        delay	5
+        frame	data/chars/robot/08.gif
+        frame	data/chars/robot/09.gif
+        frame	data/chars/robot/10.gif
+        frame	data/chars/robot/11.gif
+        frame	data/chars/robot/12.gif
+        frame	data/chars/robot/13.gif
+        frame	data/chars/robot/14.gif
+        shock   99 10 40 16 50 0 1 1 
+        frame	data/chars/robot/15.gif
+        shock   0 0 0 0 0
+        frame	data/chars/robot/14.gif
+        frame	data/chars/robot/13.gif
+        frame	data/chars/robot/12.gif
+         frame	data/chars/robot/11.gif
+        frame	data/chars/robot/10.gif
+        frame	data/chars/robot/09.gif
+        frame	data/chars/robot/08.gif
+anim follow1
+    offset	30 49
+	bbox	22 5 20 46
+		delay	5
+        seta 1
+        movez -1
+        hitfx   data/sounds/prad.wav
+        sound   data/sounds/prad.wav
+		frame	data/chars/robot/15a.gif
+        movez   0
+        frame	data/chars/robot/15b.gif
+        shock   0 0 0 0
+        frame	data/chars/robot/15.gif
+        shock   99 10 40 16 2 0 1 1 
+        frame	data/chars/robot/15a.gif
+        frame	data/chars/robot/15b.gif
+        shock   0 0 0 0
+        frame	data/chars/robot/15.gif
+        shock   99 10 40 16 2 0 1 1 
+        frame	data/chars/robot/15a.gif
+        frame	data/chars/robot/15b.gif
+        shock   0 0 0 0
+        frame	data/chars/robot/15.gif
+        shock   99 10 40 16 2 0 1 1 
+        frame	data/chars/robot/15a.gif
+        shock   0 0 0 0
+        frame	data/chars/robot/15.gif
+        shock   99 10 40 16 2 0 1 1 
+        frame	data/chars/robot/15a.gif
+        frame	data/chars/robot/15b.gif
+        shock   0 0 0 0
+        frame	data/chars/robot/15.gif
+        shock   99 10 40 16 6 1 1 1 20
+        frame	data/chars/robot/15a.gif
+        shock 0 0 0 0 0
+        frame	data/chars/robot/14.gif
+        frame	data/chars/robot/13.gif
+        frame	data/chars/robot/12.gif
+         frame	data/chars/robot/11.gif
+        frame	data/chars/robot/10.gif
+        frame	data/chars/robot/09.gif
+        frame	data/chars/robot/08.gif
+anim death
+    offset	32 54
+	bbox	0 0 0 0
+	delay	5
+        seta 1
+        quakeframe 0 6 1
+        hitfx   data/sounds/granat.wav
+		frame	data/chars/wybu/c1.gif       
+        frame	data/chars/wybu/c2.gif    
+        frame	data/chars/wybu/c3.gif 
+        frame	data/chars/wybu/c4.gif       
+        frame	data/chars/wybu/c5.gif    
+        frame	data/chars/wybu/c6.gif   
+anim death
+    offset	64 96
+	bbox	0 0 0 0
+	delay	2
+        seta 1
+        quakeframe 0 6 1
+        hitfx   data/sounds/granat.wav
+		frame	data/chars/wybu/d11.gif       
+        frame	data/chars/wybu/d12.gif    
+        frame	data/chars/wybu/d13.gif 
+        frame	data/chars/wybu/d14.gif       
+        frame	data/chars/wybu/d15.gif    
+        frame	data/chars/wybu/d16.gif 
+        frame	data/chars/wybu/d17.gif       
+        frame	data/chars/wybu/d18.gif    
+        frame	data/chars/wybu/d19.gif 
+        frame	data/chars/wybu/d20.gif       
+        frame	data/chars/wybu/d21.gif    
+        frame	data/chars/wybu/d22.gif 
+        frame	data/chars/wybu/d23.gif    
+        frame	data/chars/wybu/d24.gif  
+        frame   data/chars/misc/empty.gif 
+anim spawn
+        offset	30 69
+	bbox	0 0 0 0
+	delay	15
+        seta 1
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%2;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/robot/a01.gif
+        frame	data/chars/robot/a02.gif
+        frame	data/chars/robot/a03.gif
+        frame	data/chars/robot/a04.gif
+        frame	data/chars/robot/a05.gif
+        frame	data/chars/robot/a06.gif
+        frame	data/chars/robot/a07.gif
+        frame	data/chars/robot/a08.gif
+        frame	data/chars/robot/a09.gif
+        frame	data/chars/robot/a10.gif
+        frame	data/chars/robot/a11.gif
+        seta 20
+        offset	30 49
+        bbox	22 5 20 46
+        frame	data/chars/robot/01.gif
+        seta  0
+        delay 20
+        frame	data/chars/robot/01.gif
+

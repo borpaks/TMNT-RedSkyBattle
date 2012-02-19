@@ -1,0 +1,8 @@
+name	tree
+type	none
+nolife 1
+anim idle
+	offset	23 69
+	bbox	0 0 0 0
+		delay 500
+		frame	data/bgs/park/tree.gif

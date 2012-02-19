@@ -1,0 +1,150 @@
+music		data/music/lv4a.ogg
+bossmusic	data/music/boss1.ogg
+notime 1
+settime 0
+background	data/bgs/cafe/back2.gif
+panel		data/bgs/cafe/a2.gif
+frontpanel	data/bgs/cafe/p1.gif
+order	a
+spawn1 50 50 0
+spawn2 70 70 0
+#--group1-----
+spawn	lvbegin
+coords	320 240
+at	0
+spawn women
+coords 448 180
+at 0
+spawn	men3
+coords 500 200
+at 0
+spawn	men
+coords	470 220
+at	0
+spawn	Footaxe
+map 2
+coords 350 198
+at 150
+spawn   Foot
+map 2
+coords	350 200
+at	150
+spawn	Foot4
+map 3
+coords	350 160
+at	200
+#################
+wait
+at	500
+spawn Foot
+map 1
+coords -52 219
+at 310
+spawn Foothk
+map 1
+coords -52 219
+at 310
+spawn rock
+coords 349 160
+at 400
+spawn	Foot2
+map	3
+coords	-50 160
+at	400
+####################
+group 4 4
+at 500
+wait
+at	700
+spawn	Footsw
+coords	-30 230
+at	500
+spawn	Foot
+map 2
+coords -30 195
+at 550
+spawn	Footn
+map 2
+coords	-30 200
+at	550
+spawn robot
+coords 250 180
+at 550
+spawn robot
+coords 277 224
+at 550
+##################
+group 100 100
+at 750
+spawn footaxe2
+coords 352 195
+at 800
+spawn Foot2
+map 3
+coords 255 145
+at 800
+at	800
+spawn	rock
+map 1
+coords	-30 195
+at	800
+#------------
+wait
+at	1200
+group	5 6
+at	1200
+spawn	Foot
+map	2
+coords	-30 160
+at	1200
+group	4 4
+at	1200
+spawn	Foot2
+coords	40 148
+at	1200
+spawn	mouser
+coords	350 148
+at	1200
+#------------------
+wait
+at	1500
+group	1 4
+at	1500
+spawn	Footrog
+coords	227 115
+at	1500
+spawn	Foot
+map 3
+coords	380 180
+at	1500
+spawn	Foothk
+map 4
+coords	-50 220
+at 1500
+spawn footaxe
+coords -50 230
+at 1500
+spawn	mouser
+coords	350 148
+at	1500
+spawn	footaxe2
+coords -50 177
+at 1500
+spawn	Foot
+coords	-50 180
+at	1500
+spawn	mouser
+coords	350 148
+at	1500
+spawn	fly
+coords	350 148
+at	1500
+spawn	rock2
+coords	-50 180
+at	1500
+spawn robot
+coords 250 180
+at 1500
+spawn robot
+coords 277 224
+at 1500

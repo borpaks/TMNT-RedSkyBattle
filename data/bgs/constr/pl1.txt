@@ -1,0 +1,10 @@
+name	pl1
+type	none
+nolife 1
+setlayer 1000
+anim idle
+        loop 0
+	offset	15 157
+        delay 500
+	frame	data/bgs/constr/pl1.gif
+      

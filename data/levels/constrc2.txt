@@ -1,0 +1,254 @@
+music		data/music/lv2.ogg
+bossmusic   data/music/boss3.ogg
+background	data/bgs/constr/bg3c.gif
+panel		data/bgs/constr/bg3c.gif
+order	a
+direction right
+notime 1
+settime 0
+spawn1 110 10 0
+spawn2 140 30 0
+spawn3 130 40 0
+spawn4 160 50 0
+wall 0 106 0 0 1270 1270 5 1000
+wall 18 150 -100 -100 45 110 68 900
+wall 18 216 -100 -100 110 110 68 900
+hole 0 292 0 0 1440 1440 94
+hole 1210 124 0 30 270 270 34
+hole 1240 200 0 0 240 240 104
+
+#--group1-----
+spawn	lvbegin
+flip 1
+coords	320 240
+at	0
+
+wait
+at 100
+
+spawn	Foot5
+aggression 100
+map 1
+coords	30 120
+at	100
+spawn	Foot5
+aggression 100
+map 2
+coords	120 120
+at	100
+spawn	Foot5
+aggression 100
+map 3
+coords	210 120
+at	100
+spawn	Foot5
+aggression 100
+map 4
+coords	300 120
+at	100
+spawn	Foot
+aggression 100
+coords	550 170
+at	100
+spawn	Foot
+aggression 100
+map 1
+coords	550 140
+at	100
+
+spawn	Footsw
+aggression 120
+map 2
+coords	350 120
+at	200
+
+spawn	Footsw
+aggression 120
+map 2
+coords	350 150
+at	200
+
+spawn	Footsw
+aggression 120
+map 2
+coords	350 180
+at	200
+
+wait
+at	300
+
+spawn	Footsw
+aggression 120
+coords	550 120
+at	290
+
+spawn	Footsw
+aggression 120
+coords	550 140
+at	290
+
+spawn	Foot
+aggression 100
+map 4
+coords	350 160
+at	450
+
+spawn	Foot
+aggression 100
+map 4
+coords	350 170
+at	450
+
+spawn	Foot
+aggression 120
+coords	350 140
+at	450
+
+wait
+at	600
+
+group	3 3
+at 	600
+
+spawn	Foot5
+aggression 100
+map 3
+coords	100 120
+at	600
+
+spawn	Foot5
+aggression 100
+map 3
+coords	190 120
+at	600
+
+spawn	Foot5
+aggression 100
+map 3
+coords	280 120
+at	600
+
+spawn	Foota
+aggression 100
+coords	400 160
+at	600
+
+spawn	Foota
+aggression 100
+coords	400 170
+at	600
+
+spawn	Foota
+aggression 100
+coords	400 140
+at	600
+
+group	3 4
+at	800
+
+spawn pizza
+flip 1
+coords 350 170
+at	800
+spawn pizza
+2pspawn pizza
+flip 1
+coords 380 170
+at	800
+spawn pizza
+3pspawn pizza
+flip 1
+coords 350 150
+at	800
+spawn pizza
+4pspawn pizza
+flip 1
+coords 380 150
+at	800
+
+spawn	Footn
+aggression 120
+map 4
+coords	350 160
+at	800
+
+spawn	Footn
+aggression 120
+map 4
+coords	350 150
+at	800
+
+spawn	Footn
+aggression 120
+map 4
+coords	350 140
+at	800
+
+wait
+at 	820
+
+spawn	Footn
+aggression 120
+map 4
+coords	-50 160
+at	800
+
+spawn	Footn
+map 4
+coords	-50 150
+at	800
+
+spawn	Footn
+aggression 120
+map 4
+coords	-50 140
+at	800
+
+spawn	Footn
+aggression 120
+map 4
+coords	-50 160
+at	800
+
+spawn	Footn
+aggression 120
+map 4
+coords	-50 150
+at	800
+
+spawn	Footn
+aggression 120
+map 4
+coords	-50 140
+at	800
+
+spawn	razher
+alias Razher
+flip 1
+aggression 100
+health	500
+2phealth	630
+3phealth	750
+4phealth	900
+item	bosslow
+boss	1
+coords	-30 140
+at	800
+
+spawn	Footn
+aggression 120
+map 4
+coords	-50 160
+at	800
+
+spawn	Footn
+aggression 120
+map 4
+coords	-50 150
+at	800
+
+spawn	Footn
+aggression 120
+map 4
+coords	-50 140
+at	800

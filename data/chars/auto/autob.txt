@@ -1,0 +1,82 @@
+name	autob
+health	50
+speed	12
+type	enemy
+subtype arrow
+grabdistance 50
+jumpheight 0
+noatflash 1
+flash bflash
+nolife 1
+falldie 1
+nodieblink 2
+remap data/chars/auto/03.gif data/chars/auto/03a.gif
+candamage enemy obstacle shot npc player
+anim spawn
+	offset	94 97
+	delay	5
+	bbox	0 0 0 0
+	move -10
+	movez 20
+	attack5	-30 34 160 68 20 0 1 1 0 0
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+	frame	data/chars/auto/03.gif
+anim	walk
+	offset	94 108
+	delay	20
+	bbox	52 112 260 68
+	attack5	52 82 260 68 10 0 1 1 0 0
+	fshadow 0
+	frame	data/chars/misc/empty.gif
+anim idle
+	loop	1
+	offset	94 108
+	delay	200
+	bbox	52 112 260 68
+	attack	52 82 260 68 10 0 1 1 0 0
+	fshadow 0
+	frame	data/chars/misc/empty.gif
+anim pain
+	offset	94 108
+	delay	200
+    bbox 52 36 136 68 
+	frame	data/chars/auto/03.gif

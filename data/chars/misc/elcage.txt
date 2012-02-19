@@ -1,0 +1,22 @@
+name	elcage
+health	1
+type	trap
+nolife 1
+nomove 1 1
+#facing 1
+hostile player npc
+candamage player npc
+#shadow 4
+anim spawn
+	delay	1
+	offset	41 69
+	frame	data/chars/misc/empty.gif
+anim idle 
+	loop 1
+	offset	41 69
+		delay   5
+		hitfx	data/sounds/shock.wav
+		shock   15 4 145 75 10 2 1 0 1
+		dropv 3 0 1
+		frame	data/chars/misc/empty.gif
+	

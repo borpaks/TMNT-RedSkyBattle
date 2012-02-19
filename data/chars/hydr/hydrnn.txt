@@ -1,0 +1,15 @@
+name	hydrnn
+type	none
+load hydrsh
+nolife 1
+anim idle
+	loop	0
+	delay	5
+	offset	17 50
+        throwframe 2 -1
+        custknife hydrsh
+        #flipframe 1
+        movez -1
+	frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif

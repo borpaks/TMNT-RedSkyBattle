@@ -1,0 +1,9 @@
+name	bossnone
+type	none
+nolife 1
+cantgrab 1
+anim idle
+	offset	133 183
+	delay	1
+        move  200000
+	frame	data/chars/misc/empty.gif

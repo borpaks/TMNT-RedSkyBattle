@@ -1,0 +1,21 @@
+name	bosf2
+type	none
+setlayer  15
+load vict
+load bosslow
+nolife 1
+cantgrab 1
+nolife 1
+anim idle
+        offset  1000 444
+        delay   10
+        subentity bosslow
+        spawnframe 1 160 160 1 1
+        custknife vict
+        throwframe 1 30
+        sound   data/sounds/bosfinsh.wav
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+ 
+      

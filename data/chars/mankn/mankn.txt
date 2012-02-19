@@ -1,0 +1,259 @@
+name	mankn
+health	400
+speed	8
+type	enemy
+aimove chase
+shadow	1
+diesound data/sounds/die1.wav
+cantgrab 1
+nodrop 1
+escapehits 3
+icon data/chars/mankn/icon.gif
+throw	2 4
+grabdistance 20
+throwdamage	20
+noquake 1
+falldie 1
+nodieblink 1
+dust dust
+jumpheight 3
+score 10000 2
+hostile player npc
+candamage player npc enemy obstacle 
+bflash bflash
+thold 30
+blockodds 1
+gfxshadow 1
+anim spawn
+	offset	49 91
+	bbox	39 27 20 52
+	delay	100
+	frame	data/chars/mankn/01.gif
+anim idle
+	loop	1
+	offset	49 91
+	bbox	39 27 20 52
+	delay	30
+	frame	data/chars/mankn/01.gif
+anim walk
+	loop	1
+	offset	49 91
+	bbox	39 27 20 52
+	delay	20
+	frame	data/chars/mankn/02.gif
+        frame	data/chars/mankn/05.gif
+        frame	data/chars/mankn/03.gif
+        frame	data/chars/mankn/04.gif
+anim pain
+	offset	26 60
+	offset	49 91
+	bbox	34 31 18 48
+	delay	5
+	frame	data/chars/mankn/13.gif
+        offset	50 91
+        frame	data/chars/mankn/13.gif
+        offset	49 91
+	frame	data/chars/mankn/13.gif
+        offset	50 91
+        frame	data/chars/mankn/13.gif
+        offset	49 91
+	frame	data/chars/mankn/13.gif
+        offset	50 91
+        frame	data/chars/mankn/13.gif
+        offset	49 91
+	frame	data/chars/mankn/13.gif
+anim death
+        offset	49 91
+	bbox	34 31 18 48
+	delay	40
+	frame	data/chars/mankn/14.gif
+        frame	data/chars/mankn/15.gif
+        frame	data/chars/mankn/16.gif
+anim fall
+	offset	49 91
+	bbox	0 0 0 0
+	delay	30
+        landframe 2
+	frame	data/chars/mankn/14.gif
+        frame	data/chars/mankn/15.gif
+        frame	data/chars/mankn/16.gif
+anim fall2
+	offset	49 91
+	bbox	34 31 18 48
+	delay	30
+        landframe 2
+	frame	data/chars/mankn/14.gif
+        frame	data/chars/mankn/15.gif
+        frame	data/chars/mankn/16.gif
+anim rise
+        offset	49 91
+	bbox	0 0 0 0
+	delay	15
+	frame	data/chars/mankn/15.gif
+        frame	data/chars/mankn/14.gif
+anim attack1
+	range	0 30
+	offset	49 91
+	bbox	39 27 20 52
+	delay	10
+	frame	data/chars/mankn/10.gif
+        delay 5
+        frame	data/chars/mankn/11.gif
+        delay 20
+        attack  44 41 44 16 10 0 0 0 20
+        frame	data/chars/mankn/12.gif
+        delay 10
+        attack  0 0 0 0
+        frame	data/chars/mankn/11.gif
+anim attack2
+	range	0 40
+	offset	49 91
+	bbox	39 27 20 52
+	delay	10
+	frame	data/chars/mankn/06.gif
+        frame	data/chars/mankn/07.gif
+        attack  47 40 40 16 10 1 0 0 20
+        frame	data/chars/mankn/08.gif
+        attack  0 0 0 0
+        frame	data/chars/mankn/09.gif
+anim attack3
+        range	0 30
+	offset	49 91
+	bbox	39 27 20 52
+	delay	10
+	frame	data/chars/mankn/10.gif
+        delay 5
+        frame	data/chars/mankn/11.gif
+        delay 20
+        attack  44 41 44 16 10 0 0 0 20
+        frame	data/chars/mankn/12.gif
+        delay 10
+        attack  0 0 0 0
+        frame	data/chars/mankn/11.gif
+	frame	data/chars/mankn/06.gif
+        frame	data/chars/mankn/07.gif
+        attack  47 40 40 16 10 1 0 0 20
+        frame	data/chars/mankn/08.gif
+        attack  0 0 0 0
+        frame	data/chars/mankn/09.gif
+anim special
+        range 0 100
+	offset	49 91
+	bbox	39 27 20 52
+	delay	10
+	frame	data/chars/mankn/10.gif
+        delay 3
+        frame	data/chars/mankn/11.gif
+        delay 3
+        attack  44 41 44 16 15 0 0 0 20
+        frame	data/chars/mankn/12.gif
+        delay 3
+        frame	data/chars/mankn/11.gif
+        attack  44 41 44 16 15 0 0 0 20
+        delay 3
+        frame	data/chars/mankn/12.gif
+	offset	49 91
+	bbox	39 27 20 52
+	delay	3
+	frame	data/chars/mankn/06.gif
+        frame	data/chars/mankn/07.gif
+        attack  47 40 40 16 10 1 0 0 20
+        frame	data/chars/mankn/08.gif
+        attack  0 0 0 0
+        frame	data/chars/mankn/09.gif
+anim special2
+        range 0 100
+	offset	49 91
+	bbox	39 27 20 52
+	delay	10
+	frame	data/chars/mankn/10.gif
+        delay 5
+        frame	data/chars/mankn/11.gif
+        delay 20
+        attack  44 41 44 16 10 0 0 0 20
+        frame	data/chars/mankn/12.gif
+        delay 10
+        attack  0 0 0 0
+        frame	data/chars/mankn/11.gif
+        offset	49 91
+	bbox	39 27 20 52
+	delay	10
+	frame	data/chars/mankn/10.gif
+        delay 5
+        frame	data/chars/mankn/11.gif
+        delay 20
+        attack  44 41 44 16 10 0 0 0 20
+        frame	data/chars/mankn/12.gif
+        delay 10
+        attack  0 0 0 0
+        frame	data/chars/mankn/11.gif
+        offset	49 91
+	bbox	39 27 20 52
+	delay	10
+	frame	data/chars/mankn/10.gif
+        delay 5
+        frame	data/chars/mankn/11.gif
+        delay 5
+        move 5
+        blast  44 41 44 16 10 0 0  20
+        frame	data/chars/mankn/12.gif
+        frame	data/chars/mankn/12.gif
+        frame	data/chars/mankn/12.gif
+        frame	data/chars/mankn/12.gif
+        delay 5
+        move  3
+        blast  0 0 0 0
+        frame	data/chars/mankn/11.gif
+        move  1
+        frame	data/chars/mankn/11.gif
+anim riseattack 
+        range	0 50
+	offset	49 91
+	bbox	39 27 20 52
+	delay	10
+	frame	data/chars/mankn/10.gif
+        delay 5
+        frame	data/chars/mankn/11.gif
+        delay 20
+        attack  44 41 44 16 10 0 0 0 20
+        frame	data/chars/mankn/12.gif
+        delay 10
+        attack  0 0 0 0
+        frame	data/chars/mankn/11.gif
+        offset	49 91
+	bbox	39 27 20 52
+	delay	10
+	frame	data/chars/mankn/10.gif
+        delay 5
+        frame	data/chars/mankn/11.gif
+        delay 20
+        attack  44 41 44 16 10 0 0 0 20
+        frame	data/chars/mankn/12.gif
+        delay 10
+        attack  0 0 0 0
+        frame	data/chars/mankn/11.gif
+        offset	49 91
+	bbox	39 27 20 52
+	delay	10
+	frame	data/chars/mankn/10.gif
+        delay 5
+        frame	data/chars/mankn/11.gif
+        delay 5
+        move 5
+        blast  44 41 44 16 10 0 0  20
+        frame	data/chars/mankn/12.gif
+        frame	data/chars/mankn/12.gif
+        frame	data/chars/mankn/12.gif
+        frame	data/chars/mankn/12.gif
+        delay 5
+        move  3
+        blast  0 0 0 0
+        frame	data/chars/mankn/11.gif
+        move  1
+        frame	data/chars/mankn/11.gif
+anim block
+        offset	49 91
+	bbox	39 27 20 52
+	delay	30
+	frame	data/chars/mankn/11.gif
+

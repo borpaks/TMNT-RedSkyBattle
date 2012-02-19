@@ -1,0 +1,9 @@
+name	grflash
+type	none
+toflip 1
+setlayer 1
+anim idle
+	delay	10
+	offset	36 8
+    	frame	data/chars/misc/grflash.gif
+	

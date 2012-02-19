@@ -1,0 +1,6 @@
+
+music           data/music/haha.ogg 0
+animation	data/scenes/demo/bbrck1.gif 0 0
+music           data/music/tlk1.ogg 0
+animation	data/scenes/demo/bbrck.gif 0 0
+

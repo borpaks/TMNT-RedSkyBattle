@@ -1,0 +1,42 @@
+name	ftrh
+health	1
+type	pshot
+speed 12
+nolife 1
+noatflash 1
+flash bflash
+jumpheight 3
+cantgrab 1
+remove 0
+candamage nps enemy player obstacle
+anim idle
+        loop 1
+        seta 1
+        delay 100
+	offset 0 10
+        bbox 6 1 20 19
+        attack  6 1 20 19 10 1 0 0 10
+        frame	data/chars/foot/y8.gif
+anim fall
+	offset	-15 28
+        seta 1
+        delay   5
+        bbox  0 0 0 0
+        landframe 13
+        frame	data/chars/misc/trash3.gif
+        delay 22
+        frame	data/chars/misc/trash5.gif
+        frame	data/chars/misc/trash4.gif
+        frame	data/chars/misc/trash8.gif
+        delay 200
+        frame	data/chars/misc/trash6.gif
+        delay 15
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/trash6.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/trash6.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/trash6.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/trash6.gif
+        frame	data/chars/misc/empty.gif

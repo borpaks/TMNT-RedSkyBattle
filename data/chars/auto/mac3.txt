@@ -1,0 +1,115 @@
+name	mac3
+health	200
+speed	10
+type	enemy
+subtype arrow
+nolife 1
+jumpheight 0
+grabdistance 50
+nodrop 1
+nomove 0 1
+risetime 500
+falldie 1
+nodieblink 2
+noatflash 1
+flash bflash
+candamage enemy obstacle shot player npc
+#no_adjust_base 1
+anim spawn
+	offset	78 110
+	delay	1
+		quakeframe 0 40 -6
+        bbox    54 39 27 55
+        seta 1
+        platform 1 1 1 1 1
+	frame	data/chars/auto/mac3.gif
+anim idle
+	loop	1
+	offset	78 110
+	delay	5
+	followanim	1
+	followcond	1
+	bbox	1000000000 0 1 1
+	seta	1
+	platform	1 1 1 1 1
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	attack5	29 22 116 80 30 0 1 1 0
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	offset	78 110
+	delay	5
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+	frame	data/chars/auto/mac3.gif
+	frame	data/chars/auto/mac3a.gif
+anim walk
+	loop	1
+	offset	78 110
+		delay	5
+        bbox    54 39 27 55
+		frame	data/chars/auto/mac3.gif
+		attack5  52 26 116 100 30 0 1 1 0 
+       frame	data/chars/auto/mac3a.gif
+       frame	data/chars/auto/mac3.gif
+       frame	data/chars/auto/mac3a.gif
+        frame	data/chars/auto/mac3.gif
+        frame	data/chars/auto/mac3a.gif
+        frame	data/chars/auto/mac3.gif
+        frame	data/chars/auto/mac3a.gif
+       frame	data/chars/auto/mac3.gif
+        frame	data/chars/auto/mac3a.gif
+        frame	data/chars/auto/mac3.gif
+        frame	data/chars/auto/mac3a.gif
+		frame	data/chars/auto/mac3.gif
+        frame	data/chars/auto/mac3a.gif
+        frame	data/chars/auto/mac3.gif
+        frame	data/chars/auto/mac3a.gif
+        frame	data/chars/auto/mac3.gif
+        frame	data/chars/auto/mac3a.gif
+		frame	data/chars/auto/mac3.gif
+        frame	data/chars/auto/mac3a.gif
+        frame	data/chars/auto/mac3.gif
+        frame	data/chars/auto/mac3a.gif
+		frame	data/chars/auto/mac3.gif
+        frame	data/chars/auto/mac3a.gif

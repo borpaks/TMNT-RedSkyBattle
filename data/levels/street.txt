@@ -1,0 +1,369 @@
+music		data/music/str1.ogg
+bossmusic	data/music/boss1.ogg
+notime 1
+settime 0
+background	data/bgs/street/b1.gif
+panel		data/bgs/street/a8.gif
+order	a
+wall 2200 76 110 110 518 518 78 170
+wall 2200 110 110 110 218 218 78 170
+wall 0 110 -1000 -1000 2426 2426 108 1100
+wall 2200 132 110 110 148 148 78 170
+wall -20 170 -1000 -1000 2368 2334 38 170
+wall 514 198 -25 0 238 238 46 400
+wall 2734 174 -77 10 0 86 108 300
+spawn1 10 170 0
+spawn2 10 180 0
+spawn3 10 190 0
+spawn4 10 200 0
+cameratype 2
+#--group1----
+spawn	lvbegin
+coords	10 240
+at	0
+spawn	st4
+coords	172 100
+at	0
+spawn	trash
+flip 1
+coords	50 170
+at	0
+spawn	hydr
+map 2
+flip 1
+item hydrnn
+coords	266 236
+at	0
+
+spawn     foot5
+aggression 30
+map 2
+coords    150 170
+at 82
+
+spawn     foot5
+aggression 30
+map 2
+coords    220 170
+at 89
+
+spawn     foot5
+aggression 30
+map 2
+coords    280 170
+at 102
+
+spawn	Footrog
+flip 1
+map 3
+coords	210 150
+at	110
+
+spawn	Footrog
+map 3
+coords	270 150
+at	110
+
+spawn     foottri
+aggression 30
+map 2
+coords    -200  210
+at 110
+
+spawn     foottri
+aggression 30
+map 2
+coords    600  230
+at 110 
+
+wait 
+at 110
+
+spawn     foot5
+aggression 30
+coords    90 200
+at 430
+
+spawn     foot5
+aggression 30
+coords    170 200
+at 430
+
+spawn     foot5
+aggression 30
+coords    260 200
+at 430
+
+spawn robot
+map		1
+aggression 70
+coords   90 220  
+at 430
+
+spawn robot
+map		2
+aggression 70
+coords   180 220  
+at 430
+
+spawn robot
+map 	3
+aggression 70
+coords   270 220 
+at 430
+
+wait
+at 430
+
+spawn foottri
+aggression 30
+map 2
+coords   400 210
+at 590
+
+spawn foottri
+aggression 30
+map 2
+coords   400 180
+at 590
+
+spawn foot5
+aggression 30
+map 8
+coords   100 170
+at 700
+
+spawn foot5
+aggression 30
+map 8
+coords   300 170
+at 700
+
+spawn    footaxe
+aggression 30
+map 3
+coords   -120 230
+at 700
+
+spawn   footaxe2
+aggression 30
+map 3
+coords   600 172
+at 700
+
+spawn   foottrh2
+aggression 90
+map 2
+coords   220 202
+at 700
+
+spawn  footn
+aggression 30
+map 3
+coords   -200 280
+at 700
+
+wait 
+at 700
+spawn	motor
+map 1
+coords	500 240
+at 1000
+spawn	motor
+map 1
+coords	480 216
+at 1100
+
+wait 
+at 1250
+#group 3 5
+spawn   foot2
+aggression 30
+coords  60 176
+at  1250
+
+spawn  foot2
+aggression 30
+coords  160  176
+at 1250
+ 
+spawn  foot2
+aggression 30
+coords  280  176
+at 1250
+
+spawn footsw
+aggression 30
+coords  -200  200
+at 1250
+
+spawn footaxe
+aggression 30
+coords  -400  300
+at 1250
+
+spawn footn
+aggression 30
+coords  -450  280
+at 1250
+
+spawn  auto
+map 3
+coords  1650  186
+at 1250
+############
+group 1 3
+spawn	foottrh
+aggression 30
+map 1
+coords	350 170
+at 1600
+
+spawn	foottrh
+aggression 30
+map 1
+coords	350 200
+at 1600
+
+spawn	foottrh
+aggression 30
+map 1
+coords	350 230
+at 1600
+
+spawn	foottri
+aggression 30
+map 1
+coords	750 200
+at 1600
+
+spawn	foottri
+aggression 30
+map 1
+coords	750 230
+at 1600
+
+wait 
+at 1600
+
+spawn	hydr
+map 2
+flip 1
+item hydrnn
+coords	266 236
+at	1900
+wait
+at 1900
+group  3 2
+spawn  foot4a
+aggression 30
+map 3
+coords   -320 170
+at 1900
+spawn  rock1
+aggression 40
+map 2
+coords   370 210
+at 1900
+spawn  rock1
+flip 1
+aggression 40
+map 2
+coords   -30 210
+at 1900
+spawn  rock2
+map 2
+aggression 40
+map 1
+coords   -100 250
+at 1900
+spawn  foot4a
+aggression 30
+map 3
+coords   620 170
+at 1900
+spawn	Footrog2
+map 3
+coords	136 146
+at 1900
+spawn	Footrog2
+flip 1
+map 3
+coords	250 146
+at 1900
+
+###################
+group 3 3
+at 	2490
+
+spawn  mouser
+aggression 30
+coords  370 174
+at 	2490
+
+spawn  mouser
+aggression 30
+coords  350 200
+at 	2490
+
+wait 
+at 	2490
+spawn    foottrh2
+aggression 30
+map 2
+coords   220 162
+at 2400
+spawn	foot5
+aggression 30
+coords 100 86
+at	2400
+spawn	foot5
+aggression 30
+coords 200 86
+at	2400
+spawn    robot 
+aggression 30
+coords    160 200
+at 	2400
+spawn  	robot 
+aggression 30
+coords    160 200
+at 	2400
+spawn  bigmouse
+aggression 30
+map 1
+coords  -50 208
+at 	2400
+spawn  bigmouse
+aggression 30
+map 1
+coords  -50 230
+at 	2400
+spawn	foot5
+aggression 30
+coords 120 86
+at	2400
+spawn	foot5
+aggression 30
+coords 220 86
+at	2400
+spawn     robot
+aggression 30
+coords    140 100
+at 	2490
+spawn     robot
+aggression 30
+coords    140 150
+at 	2490
+spawn     robot
+aggression 30
+coords    140 220
+at 2490
+spawn	  boxer
+aggression 30
+coords	  -50 240
+at 1
+spawn	  boxer
+aggression 30
+coords	  -50 250
+at 1

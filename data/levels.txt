@@ -1,0 +1,206 @@
+maxplayers 4
+hiscorebg  1
+completebg  1
+rush 1 1 Hits 0 3 MAX 1 1 
+lbarsize  200 3 1 0 0 0 0 10 0
+olbarsize 200 5 1 0 0 0 0 10 0
+mpbarsize 94 2 1 1 0 0 0 0 10 0
+loadingbg 1 10 225 102 15 223 3 
+loadingbg2 1 10 400 300 15 400 3 
+clearbonus 30 110 140 110 240 110 500 110 700 110
+showcomplete 65 75 1000 1000 140 75
+lifebonus  30 130 140 130 240 130 500 130 700 130
+totalscore 30 160 140 160 240 160 500 160 700 160
+e1life	60 225
+e2life	60 225
+e3life	60 225
+e4life	60 225
+e1icon	45 216
+e2icon	45 216
+e3icon	45 216
+e4icon	45 216
+p1lifex 1000 1000
+p1lifen 126 3
+p1life  20 11
+p1mp    20  15
+p1rush  21  46  48 39 1121 1162 1146 1162
+mp1icon 117 16
+p1score 21 2 73 2 82 2
+p1namej 21 2 1000 1000 1000 1000
+p1smenu 70 220 1000 1000
+
+p2lifex 1000 1000
+p2lifen 293 3
+p2mp    187 15
+p2life  187 11
+p2icon  169 2
+p2rush 260 46 285 39 11270 1162 11295 1154
+mp2icon 284 16
+p2score 188 2 240 2 243 2
+p2namej 188 2 1000 1000 1000 1000
+p2smenu 250 220 1000 1000
+
+p3lifex 1000 1000
+p3lifen 126 203
+p3life  20 211
+#p3icon  169 2
+p3mp    20 215
+p3rush  21 126 48 119 1121 1162 1146 1162
+mp3icon 117 216
+p3score 21 202 73 5 82 202
+p3namej 21 2 1000 1000 1000 1000
+p3smenu 130 220 1000 1000
+
+p4lifex 1000 1000
+p4lifen 293 202
+p4mp    187 215
+p4life  187 211
+#p4icon  169 2
+p4rush 260 126 285 119 11270 1162 11295 1154
+mp4icon 284 216
+p4score 188 202 240 2 243 202
+p4namej 188 2 1000 1000 1000 1000
+p4smenu 190 220 1000 1000
+################################
+################################
+
+set	Arcade
+
+nosame 1
+noshare 1
+musicoverlap 1
+lives 3
+credits 3
+
+scene data/scenes/demo/shred.txt
+z   668 792 244
+file	data/levels/lv1a.txt
+
+######Metro
+branch hard1
+
+next
+scene data/scenes/logo.txt
+z   180 256 1
+file	data/levels/metro.txt
+scene data/scenes/logo.txt
+next
+z   120 240 1
+file	data/levels/cafe1.txt
+
+
+######Inside the Tram
+branch hard1a
+
+z   160 211 244
+file	data/levels/metro2.txt
+z   180 256 1
+file	data/levels/metro3.txt
+scene data/scenes/logo.txt
+next
+z   120 240 1
+file	data/levels/cafe1.txt
+
+
+######Canalization
+branch norm1
+
+z 126 240 240
+file	data/levels/sewer.txt
+scene data/scenes/logo.txt
+next
+z   120 240 1
+file	data/levels/cafe1.txt
+
+######Road to Cafe
+branch easy1
+
+next
+scene data/scenes/logo.txt
+z   120 240 1
+file	data/levels/cafe1.txt
+next
+######Backstreet
+branch hard3
+
+scene data/scenes/logo.txt
+z 40 240 240
+file   data/levels/street.txt
+scene data/scenes/demo/bbrck.txt
+z 131 250 240
+file	data/levels/shop.txt
+scene data/scenes/demo/kiss.txt
+next
+######Roofs
+z      120 238 100
+file   data/levels/roof.txt
+next
+######Construction Site
+z      94 372 644
+file   data/levels/constrc.txt
+z      222 280 0
+file   data/levels/constrc1.txt
+z      108 230 644
+file   data/levels/constrc2.txt
+next
+######N.Y. Central Park
+z      60 282 1
+file   data/levels/park.txt
+scene data/scenes/ending/endb.txt
+scene data/scenes/ending/endc.txt
+end
+
+######Cafe
+branch hard2
+
+scene data/scenes/logo.txt
+z   158 240 240
+file	data/levels/cafe.txt
+scene data/scenes/demo/bbrck.txt
+scene data/scenes/logo.txt
+
+z   131 240 240
+file	data/levels/cafe2.txt
+scene data/scenes/demo/kiss.txt
+next
+
+######Road to Port
+z      120 238 100
+file   data/levels/road.txt
+scene data/scenes/logo.txt
+
+######Port
+z      60 240 340
+file   data/levels/port.txt
+next
+
+######Pirate Ship
+z      66 256 1
+file   data/levels/wship.txt
+
+######Trum
+branch secret
+z      66 256 1
+file   data/levels/wship0.txt
+scene data/scenes/logo.txt
+scene data/scenes/ending/enda.txt
+end
+################################
+################################
+
+set    Survival
+
+nosame 1
+musicoverlap 1
+lives 1
+credits 1
+cansave 2
+ifcomplete 1
+
+z 151 240 1
+file   data/levels/surv.txt
+scene data/scenes/demo/surv.txt
+scene data/scenes/logo.txt
+end
+##################################
+######################################

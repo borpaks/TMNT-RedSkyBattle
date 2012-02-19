@@ -1,0 +1,54 @@
+name 	ccore
+health	900
+type	enemy
+subtype arrow
+hostile player
+speed 10
+nolife 1
+nomove 0 1
+shadow 3
+grabdistance 5
+candamage enemy obstacle shot player npc
+anim spawn
+	offset	32 58
+	bbox 0 0 0 0
+	jumpframe 0 7 0 0
+	quakeframe 9 5 20
+	fshadow 0
+	attack5 0 0 60 60 30 0 0 0 0
+	delay	40
+	frame   data/chars/misc/empty.gif
+	delay   13
+	frame	data/chars/misc/ccor4.gif
+	fshadow 1
+	frame	data/chars/misc/ccor3.gif
+	fshadow 2
+	frame	data/chars/misc/ccor2.gif
+	frame	data/chars/misc/ccor.gif
+	frame	data/chars/misc/ccor4.gif
+	frame	data/chars/misc/ccor3.gif
+	frame	data/chars/misc/ccor2.gif
+	frame	data/chars/misc/ccor.gif
+	sound	data/sounds/heavy.wav
+	frame	data/chars/misc/ccor4.gif
+anim idle
+	loop	1
+	offset	32 58
+	bbox 0 0 0 0
+	delay	10
+	attack4 0 0 60 60 30 0 1 0 0
+	frame	data/chars/misc/ccor4.gif
+	frame	data/chars/misc/ccor3.gif
+	frame	data/chars/misc/ccor2.gif
+	frame	data/chars/misc/ccor.gif
+anim walk
+	loop	1
+	offset	32 58
+	bbox 0 0 0 0
+	delay	15
+	attack5 0 0 60 60 30 1 0 0 0
+	frame	data/chars/misc/ccor.gif
+	frame	data/chars/misc/ccor2.gif
+	frame	data/chars/misc/ccor3.gif
+	frame	data/chars/misc/ccor4.gif
+	

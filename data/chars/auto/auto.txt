@@ -1,0 +1,168 @@
+name	auto
+health	50
+speed	8
+type	enemy
+nomove 0 1
+subtype arrow
+load foot2
+load wybu1
+grabdistance 50
+jumpheight 0
+noatflash 1
+flash bflash
+nolife 1
+falldie 1
+nodieblink 2
+remap data/chars/auto/01aa.gif data/chars/auto/alt1.gif
+remap data/chars/auto/01aa.gif data/chars/auto/alt2.gif
+remap data/chars/auto/01aa.gif data/chars/auto/alt3.gif
+candamage enemy obstacle shot npc player
+animationscript data/scripts/escript.c
+anim spawn
+	offset	94 97
+	delay	1
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%3;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/auto/01aa.gif
+anim idle
+	loop	1
+	offset	94 97
+	delay	5
+        attack4 52 36 136 68 10 0 1 1 0 
+        bbox    52 36 136 68
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        attack5  52 36 136 68 10 0 1 1 0 
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        @cmd spawn02 "foot2" 0 0 0
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        attack3 52 36 136 68 10 0 1 1 0 
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+anim walk
+	loop	1
+	offset	94 108
+	delay	5
+        bbox    52 36 136 68
+        attack4 52 36 136 68 10 0 1 1 0 
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+anim pain
+	offset	94 108
+	delay	5
+        bbox 52 36 136 68 
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/01aa.gif
+        offset	95 108
+        frame	data/chars/auto/01ac.gif
+        offset	94 108
+        frame	data/chars/auto/01aa.gif
+        offset	95 108
+        frame	data/chars/auto/01ac.gif
+        offset	94 108
+        frame	data/chars/auto/01aa.gif
+        offset	95 108
+        frame	data/chars/auto/01ac.gif
+        offset	94 108
+        frame	data/chars/auto/01aa.gif
+        offset	95 108
+        frame	data/chars/auto/01ac.gif
+        offset	94 108
+        frame	data/chars/auto/01aa.gif
+        offset	95 108
+        frame	data/chars/auto/01ac.gif
+anim fall
+	offset	94 108
+	delay	5
+        bbox 52 36 136 68 
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+        frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif 
+anim rise
+	offset	94 108
+	delay	5
+        bbox 52 36 136 68 
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/01aa.gif
+        frame	data/chars/auto/01ac.gif
+anim death
+	offset	94 97
+	delay	5
+        bbox 0 0 0 0
+        custknife wybu1
+        throwframe 1 70
+        sound   data/sounds/bike.wav
+	frame	data/chars/auto/01aa.gif
+        delay 145
+        frame	data/chars/auto/01aa.gif
+        delay 10
+        offset  1000 444
+        frame	data/chars/bosf/b2.gif
+

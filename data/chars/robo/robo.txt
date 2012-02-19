@@ -1,0 +1,370 @@
+name	robo
+health	400
+speed   10
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+shadow	4
+jumpheight 3
+diesound data/sounds/empty.wav
+icon data/chars/robo/icon.gif
+cantgrab 1
+nodrop 1
+noatflash 1
+flash flash2
+throwdamage	20
+candamage player npc enemy obstacle 
+hostile player npc
+remap 	data/chars/robo/a1.gif data/chars/robo/alt1.gif
+remap 	data/chars/robo/a1.gif data/chars/robo/alt2.gif
+thold 30
+blockodds 1
+falldie 1
+nodieblink 1
+escapehits 2
+load laser3
+score 7000 2
+gfxshadow 1
+anim spawn
+	offset	32 76
+	bbox	0 0 0 0
+	hitflash cflash
+		delay	15
+        sound   data/sounds/drill.wav
+		jumpframe 1 3 2
+		frame	data/chars/robo/r1.gif
+        offset	38 82	
+        sound   data/sounds/drill.wav
+		offset	32 76
+		bbox	0 0 0 0
+		frame	data/chars/robo/r1.gif
+		attack	41 20 38 25 15 1
+		frame	data/chars/robo/k1.gif
+		frame	data/chars/robo/k1.gif
+        attack  0 0 0 0 0
+		frame	data/chars/robo/r2.gif
+anim idle
+	loop	1
+	seta 1
+	offset	27 67
+	bbox	0 0 0 0
+	delay	50
+	frame	data/chars/robo/a1.gif
+	offset	27 67
+	bbox	11 9 29 41
+	delay	10
+	frame	data/chars/robo/a1.gif
+	frame	data/chars/robo/a1.gif
+	frame	data/chars/robo/a2.gif
+	frame	data/chars/robo/a3.gif
+	frame	data/chars/robo/a2.gif
+	frame	data/chars/robo/a3.gif
+	frame	data/chars/robo/a2.gif
+	frame	data/chars/robo/a3.gif
+anim walk
+	loop	1
+	seta 1
+	delay	10
+	offset	28 75
+	bbox	12 8 31 53
+	frame	data/chars/robo/w1.gif
+	frame	data/chars/robo/w2.gif
+	frame	data/chars/robo/w3.gif
+	frame	data/chars/robo/w4.gif
+        frame	data/chars/robo/w5.gif
+        frame	data/chars/robo/w6.gif
+anim rise
+	seta 1
+	offset	32 76
+	delay	13
+	frame	data/chars/robo/r1.gif
+	frame	data/chars/robo/r2.gif
+        frame	data/chars/robo/r3.gif
+anim riseattack
+	seta 1
+	offset	32 76
+	hitflash bflash
+	bbox	0 0 0 0
+	jumpframe 1 2 1
+		delay	15
+        sound   data/sounds/drill.wav
+		frame	data/chars/robo/r1.gif
+        offset	38 82
+        bbox	0 0 0 0
+        sound   data/sounds/drill.wav
+		offset	32 76
+		bbox	0 0 0 0
+		frame	data/chars/robo/r1.gif
+		attack	41 20 38 25 15 1
+		frame	data/chars/robo/k1.gif
+        attack  0 0 0 0 0
+		frame	data/chars/robo/r2.gif
+anim upper
+	offset	32 76
+	bbox	16 18 30 42
+	hitflash	bflash
+	delay	10
+	sound	data/sounds/drill.wav
+	frame	data/chars/robo/ua1.gif
+	sound	data/sounds/drill.wav
+	offset	32 76
+	frame	data/chars/robo/ua1.gif
+	attack2	42 2 45 40 15 1
+	frame	data/chars/robo/ua2.gif
+	attack2	0 0 0 0 0
+	frame	data/chars/robo/ua1.gif
+anim attack1
+	range	100 200
+	seta 1
+	hitflash bflash
+	offset	32 76
+	bbox	0 0 0 0
+	jumpframe 1 3 2
+		delay	15
+        sound   data/sounds/drill.wav
+		frame	data/chars/robo/r1.gif
+        offset	38 82
+		bbox	0 0 0 0
+        sound   data/sounds/drill.wav
+		offset	32 76
+		bbox	0 0 0 0
+		frame	data/chars/robo/r1.gif
+		attack	41 20 38 25 15 1
+		frame	data/chars/robo/k1.gif
+		frame	data/chars/robo/k1.gif
+        attack  0 0 0 0 0
+		offset	32 76
+		bbox	0 0 0 0
+		frame	data/chars/robo/r2.gif
+anim attack2
+	seta 1
+    range	10 50
+	loop	0
+	hitflash cflash
+	offset	32 76
+	bbox	16 18 30 42
+		delay	10
+		frame	data/chars/robo/r3.gif
+        frame	data/chars/robo/pu1.gif
+        frame	data/chars/robo/pu2.gif
+        blast	41 28 56 20 20 1
+        frame	data/chars/robo/pu3.gif
+        frame	data/chars/robo/pu4.gif
+        blast  0 0 0 0 0
+        frame	data/chars/robo/pu3.gif
+        frame	data/chars/robo/pu2.gif
+        frame	data/chars/robo/pu1.gif
+anim attack3
+	seta 1
+    range	0 100
+	loop	0
+	offset	32 76
+	bbox	16 18 30 42
+		delay	10
+		hitflash bflash
+        sound   data/sounds/drill.wav
+		frame	data/chars/robo/r3.gif
+        frame	data/chars/robo/pu1.gif
+        frame	data/chars/robo/pu2.gif
+        attack	41 28 56 20 10 0
+        frame	data/chars/robo/pu3.gif
+		frame	data/chars/robo/pu4.gif
+        attack 0
+        delay 1
+        frame	data/chars/robo/pu3.gif
+		frame	data/chars/robo/pu2.gif
+        frame	data/chars/robo/pu1.gif
+		delay	10
+        offset	30 75
+		bbox	12 18 29 35
+        sound   data/sounds/drill.wav
+		frame	data/chars/robo/kl1.gif
+        frame	data/chars/robo/k2.gif
+        frame	data/chars/robo/k3.gif
+        blast	48 37 68 17 15 1
+        frame	data/chars/robo/k4.gif
+        blast	0 0 0 0 0
+	frame	data/chars/robo/k3.gif
+        frame	data/chars/robo/k2.gif
+        frame	data/chars/robo/kl1.gif
+anim attack4
+	seta 1
+    range	150 250
+	offset	27 67
+	bbox	11 9 29 41
+	throwframe  6 40
+	custknife laser3
+        delay   10
+		frame	data/chars/robo/sh1.gif
+		frame	data/chars/robo/sh2.gif
+		frame	data/chars/robo/sh3.gif
+		delay	3
+		frame	data/chars/robo/sh5.gif
+		frame	data/chars/robo/sh6.gif
+		frame	data/chars/robo/sh7.gif
+		delay   10
+		frame	data/chars/robo/sh3.gif
+		frame	data/chars/robo/sh2.gif 
+		frame	data/chars/robo/sh1.gif
+anim attack5
+	seta 1
+    range	10 50
+	hitflash cflash
+	loop	0
+	delay	10
+	offset	32 76
+	bbox	16 18 30 42
+	frame	data/chars/robo/r3.gif
+        frame	data/chars/robo/pu1.gif
+        frame	data/chars/robo/pu2.gif
+        blast	41 28 56 20 20 1
+        frame	data/chars/robo/pu3.gif
+        frame	data/chars/robo/pu4.gif
+        blast  0 0 0 0 0
+        frame	data/chars/robo/pu3.gif
+        frame	data/chars/robo/pu2.gif
+        frame	data/chars/robo/pu1.gif
+anim attack6
+	seta 1
+	range	100 200
+	loop	0
+	hitflash bflash
+	delay	15
+	offset	32 76
+	bbox	0 0 0 0
+        sound   data/sounds/drill.wav
+	jumpframe 1 2 1
+	frame	data/chars/robo/r1.gif
+        offset	38 82
+	bbox	0 0 0 0
+        sound   data/sounds/drill.wav
+	offset	32 76
+	bbox	0 0 0 0
+	frame	data/chars/robo/r1.gif
+	attack	41 20 38 25 15 1
+	frame	data/chars/robo/k1.gif
+	frame	data/chars/robo/k1.gif
+        attack  0 0 0 0 0
+	frame	data/chars/robo/r2.gif
+anim block
+	seta 1
+	offset	32 76
+	bbox	0 0 0 0
+	delay	10
+	frame	data/chars/robo/r3.gif
+anim land
+	seta 1
+	offset	32 76
+	bbox	0 0 0 0
+	frame	data/chars/robo/r1.gif
+	frame	data/chars/robo/r2.gif
+anim pain
+	seta 1
+	offset  45 68
+	bbox	41 21 36 35
+		sound	data/sounds/klunk2.wav
+		delay	3
+		move -2
+		frame	data/chars/robo/d0.gif	
+		offset  44 67
+		frame	data/chars/robo/d0.gif
+		offset  45 68
+		bbox	0 0 0 0
+		frame	data/chars/robo/d0.gif
+		offset  44 67
+		frame	data/chars/robo/d0.gif
+		offset  45 68
+		frame	data/chars/robo/d0.gif
+anim fall
+	offset  55 67
+	bbox	11 9 29 41
+	delay	1
+		sound	data/sounds/klunk2.wav
+        landframe 2
+        jumpframe 1 3 -1 0
+		frame	data/chars/robo/f1.gif 
+        delay 1000
+        frame	data/chars/robo/f1.gif 
+        bbox 0 0 0 0
+        delay 40
+        frame	data/chars/robo/f1.gif 
+anim fall2
+	offset  55 67
+	bbox	11 9 29 41
+	delay	1
+		sound	data/sounds/klunk2.wav
+        landframe 2
+        jumpframe 1 3 -1 0
+		frame	data/chars/robo/f1.gif 
+        delay 1000
+        frame	data/chars/robo/f1.gif 
+        bbox 0 0 0 0
+        delay 40
+        frame	data/chars/robo/f1.gif 
+anim death
+	offset  45 68
+	bbox	0 0 0 0
+		sound	data/sounds/klunk2.wav
+		delay	4
+		move -2
+		frame	data/chars/robo/d0.gif	
+		offset  44 67
+		frame	data/chars/robo/d0.gif
+		offset  45 68
+		frame	data/chars/robo/d0.gif
+		offset  44 67
+		frame	data/chars/robo/d0.gif
+		offset  45 68
+		frame	data/chars/robo/d0.gif
+		offset  46 67
+		frame	data/chars/robo/d0.gif
+		offset  45 68
+		frame	data/chars/robo/d0.gif
+		offset  44 67
+		frame	data/chars/robo/d0.gif
+		offset  46 68
+		frame	data/chars/robo/d0.gif
+		offset  44 67
+		frame	data/chars/robo/d0.gif
+		offset  45 68
+		frame	data/chars/robo/d0.gif
+		offset  44 67
+		frame	data/chars/robo/d0.gif
+		offset  45 68
+		frame	data/chars/robo/d0.gif
+		delay   50
+		offset	32 76
+		frame	data/chars/robo/r3.gif
+		delay   5
+		frame	data/chars/robo/r1.gif
+		offset  55 67
+		bbox	0 0 0 0
+		flipframe 15
+	    throwframe 0 -1
+        movea 7
+        move 15
+        delay 4
+		offset	32 76
+		frame	data/chars/robo/r1.gif
+		frame	data/chars/robo/r0.gif
+		frame	data/chars/robo/r1.gif
+		frame	data/chars/robo/r0.gif
+		frame	data/chars/robo/r1.gif
+		frame	data/chars/robo/r0.gif
+		frame	data/chars/robo/r1.gif
+		frame	data/chars/robo/r0.gif
+		frame	data/chars/robo/r1.gif
+		frame	data/chars/robo/r0.gif
+		frame	data/chars/robo/r1.gif
+		frame	data/chars/robo/r0.gif
+		frame	data/chars/robo/r1.gif
+		frame	data/chars/robo/r0.gif
+		frame	data/chars/robo/r1.gif
+		frame	data/chars/robo/r0.gif
+		frame	data/chars/robo/r1.gif
+		frame	data/chars/robo/r0.gif
+		frame	data/chars/robo/r1.gif
+		frame	data/chars/robo/r0.gif
+		frame	data/chars/robo/r1.gif
+		frame	data/chars/robo/r0.gif

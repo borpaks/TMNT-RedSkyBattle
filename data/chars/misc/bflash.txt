@@ -1,0 +1,10 @@
+name	bflash
+type	none
+toflip 1
+anim idle
+	delay	10
+	offset	33 42
+    	frame	data/chars/misc/bflsh1.gif
+	frame	data/chars/misc/bflsh2.gif
+	frame	data/chars/misc/bflsh3.gif
+        frame	data/chars/misc/bflsh4.gif

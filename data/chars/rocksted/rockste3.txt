@@ -1,0 +1,373 @@
+name	Rockste3
+health	499
+type	enemy
+shadow	3
+speed  8
+icon	 data/chars/rocksted/icon.gif
+diesound data/sounds/bossdie.wav
+load    shot
+remap	data/chars/rocksted/a1.gif data/chars/rocksted/alt1.gif
+throw 2 3
+jumpheight 3
+cantgrab 1
+dust dust
+hostile player npc
+candamage player npc enemy obstacle 
+grabdistance 30
+throwdamage	20
+nodieblink 1
+falldie 2
+load rocktlk
+load shotup
+load dynam
+score 5000 2
+aggression -30
+escapehits 4
+load foot2
+weapons rockste3 Rocksted
+weaploss 3
+running  8 4 2 1 0
+#animationscript data/scripts/escript.c
+anim faint
+	loop	1
+	offset	64 95
+        bbox	44 68 28 55
+	delay   5
+        sound   data/sounds/mshgun.wav
+		custknife shot
+		shootframe 0 0 0
+        #@cmd    shoot "shot" 0 0 0
+	frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	64 95
+        #@cmd    shoot "shot" 0 0 0
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	64 95
+        #@cmd    shoot "shot" 0 0 0
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+anim idle
+	loop	1
+	offset	64 95
+        bbox	44 68 28 55
+	delay   5
+        sound   data/sounds/mshgun.wav
+		custknife shot
+		shootframe 0 0 0
+        #@cmd    shoot "shot" 0 0 0
+	frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	64 95
+        #@cmd    shoot "shot" 0 0 0
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	64 95
+        #@cmd    shoot "shot" 0 0 0
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+anim pain
+	offset	56 135
+        bbox	44 68 28 55
+        delay   12
+	frame	data/chars/rocksted/sh6.gif
+	frame	data/chars/rocksted/sh7.gif
+        frame	data/chars/rocksted/sh6.gif
+	frame	data/chars/rocksted/sh7.gif
+        frame	data/chars/rocksted/sh6.gif
+	frame	data/chars/rocksted/sh7.gif
+anim death
+	offset	58 76
+	delay	25
+        bbox    0 0 0 0
+	frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+	frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+        frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+        frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+        frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+        frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+anim fall
+        delay 30
+	offset	63 65
+	bbox	0 0 0 0
+	delay	15
+        hitflash bflash
+        landframe 2
+	frame	data/chars/rocksted/f1.gif
+        attack  44 9 21 51 10 1 0 0 20
+        delay 1000
+        frame	data/chars/rocksted/f1.gif
+        delay 40
+        attack  0 0 0 0 0
+        offset	63 65
+	frame	data/chars/rocksted/r1.gif
+anim fall2
+	offset	63 65
+	delay	1
+        jumpframe 1 3 -1 0
+        landframe 2
+        bbox    44 20 29 40
+	frame	data/chars/rocksted/f1.gif
+        delay 1000
+	frame	data/chars/rocksted/f1.gif
+        bbox    0 0 0 0
+	delay	40
+        offset	63 65
+	frame	data/chars/rocksted/r1.gif
+anim walk
+	loop	1
+	delay	10
+	offset	33 72
+	bbox	25 7 24 46
+	frame	data/chars/rocksted/x07.gif
+        frame	data/chars/rocksted/x08.gif
+        frame	data/chars/rocksted/x09.gif
+        frame	data/chars/rocksted/x10.gif
+        frame	data/chars/rocksted/x11.gif
+        frame	data/chars/rocksted/x12.gif
+anim run
+	loop	1
+	delay	10
+	offset	33 72
+	bbox	25 7 24 46
+	frame	data/chars/rocksted/x07.gif
+        frame	data/chars/rocksted/x08.gif
+        frame	data/chars/rocksted/x09.gif
+        frame	data/chars/rocksted/x10.gif
+        frame	data/chars/rocksted/x11.gif
+        frame	data/chars/rocksted/x12.gif
+anim rise
+        delay	10
+        bbox    0 0 0 0
+	offset	63 65
+	frame	data/chars/rocksted/r1.gif
+        offset	67 69
+	frame	data/chars/rocksted/r2.gif
+        offset	58 76
+        frame	data/chars/rocksted/h1.gif
+        offset	63 137
+	bbox	47 68 28 53
+	frame	data/chars/rocksted/sh2.gif
+        frame	data/chars/rocksted/sh9.gif
+	frame	data/chars/rocksted/sh3.gif
+	frame	data/chars/rocksted/sh4a.gif
+        frame	data/chars/rocksted/sh10.gif
+anim riseattack
+	range	-60 60
+	offset	63 65
+	delay	1
+        followcond 1
+        followanim 1
+        bbox    0 0 0 0
+        hitflash bflash
+	frame	data/chars/rocksted/r1.gif
+        offset	67 69
+	frame	data/chars/rocksted/r2.gif
+	offset	58 76
+	bbox	0 0 0 0
+	frame	data/chars/rocksted/p1.gif
+	blast	56 29 49 27 10 1 0 20
+        bbox	35 9 29 45
+        delay 20
+	frame	data/chars/rocksted/p2.gif
+        blast   0 0 0 0 0
+        delay	10
+	frame	data/chars/rocksted/p1.gif
+        offset	63 137
+	bbox	47 68 28 53
+	frame	data/chars/rocksted/sh2.gif
+        frame	data/chars/rocksted/sh9.gif
+	frame	data/chars/rocksted/sh3.gif
+	frame	data/chars/rocksted/sh4a.gif
+        frame	data/chars/rocksted/sh10.gif
+anim runattack
+anim attack2
+anim attack3
+anim attack4
+anim attack5
+anim attack6
+anim attack1
+	range	100 200
+        offset	64 95
+        bbox	44 68 28 55
+	delay   5
+        sound   data/sounds/mshgun.wav
+		custknife shot
+		shootframe 0 0 0
+        #@cmd    shoot "shot" 0 0 0
+	frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	64 95
+        #@cmd    shoot "shot" 0 0 0
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	64 95
+        #@cmd    shoot "shot" 0 0 0
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	63 137
+	bbox	47 68 28 53
+        delay	5
+        sound   data/sounds/mshgun.wav
+        #@cmd    shoot "shotup" 35 86 0
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+        offset	63 137
+        #@cmd    shoot "shotup" 35 86 0
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+        offset	63 137
+        #@cmd    shoot "shotup" 35 86 0
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+        offset	64 95
+        bbox	44 68 28 55
+	delay   1
+        #@cmd flipdir
+	frame	data/chars/rocksted/sh5.gif
+        delay   5
+        #@cmd    shoot "shot" 0 0 0
+        sound   data/sounds/mshgun.wav
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	64 95
+        #@cmd    shoot "shot" 0 0 0
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	64 95
+        #@cmd    shoot "shot" 0 0 0
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	63 137
+	bbox	47 68 28 53
+        delay	5
+        sound   data/sounds/mshgun.wav
+        #@cmd    shoot "shotup" 35 86 0
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+        offset	63 137
+        #@cmd    shoot "shotup" 35 86 0
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+        #@cmd    shoot "shotup" 35 86 0
+        offset	63 137
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+        offset	64 95
+        bbox	44 68 28 55
+	delay   1
+        #@cmd flipdir
+        frame	data/chars/rocksted/sh5.gif
+        delay 5
+        sound   data/sounds/mshgun.wav
+        #@cmd    shoot "shot" 0 0 0
+	frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        #@cmd    shoot "shot" 0 0 0
+        offset	64 95
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	64 95
+        #@cmd    shoot "shot" 0 0 0
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	63 137
+	bbox	47 68 28 53
+        delay	5
+        sound   data/sounds/mshgun.wav
+        #@cmd    shoot "shotup" 35 86 0
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+        offset	63 137
+        #@cmd    shoot "shotup" 35 86 0
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+        #@cmd    shoot "shotup" 35 86 0
+        offset	63 137
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+anim attack7
+anim attack8
+anim upper
+        offset	63 137
+	bbox	47 68 28 53
+        delay	5
+        sound   data/sounds/mshgun.wav
+		custknife shotup
+		shootframe 0 0 0
+        #@cmd    shoot "shotup" 35 86 0
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+        offset	63 137
+        #@cmd    shoot "shotup" 35 86 0
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+        offset	63 137
+        #@cmd    shoot "shotup" 35 86 0
+        frame	data/chars/rocksted/sh8.gif
+        offset	64 137
+        frame	data/chars/rocksted/sh8a.gif
+anim throw
+        delay	10
+	offset	58 76
+	bbox    0 0 0 0
+	frame	data/chars/rocksted/t2.gif
+        offset	56 135
+	delay	30
+        sound   data/sounds/bospn2.wav
+	frame	data/chars/rocksted/sh7.gif
+anim special2
+        range   0 100
+	offset	64 95
+        bbox	44 68 28 55
+	delay   5
+        sound   data/sounds/mshgun.wav
+		custknife shot
+		shootframe 0 0 0
+        #@cmd    shoot "shot" 0 0 0
+	frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	64 95
+        #@cmd    shoot "shot" 0 0 0
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+        offset	64 95
+        #@cmd    shoot "shot" 0 0 0
+        frame	data/chars/rocksted/sh5.gif
+        offset	65 95
+        frame	data/chars/rocksted/h2.gif
+anim follow1

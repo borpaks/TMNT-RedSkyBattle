@@ -1,0 +1,360 @@
+music		data/music/lv2.ogg
+bossmusic	data/music/bosses.ogg
+notime 1
+settime 0
+#setweap 3
+background	data/bgs/constr/bg1.gif
+panel	    data/bgs/constr/bg1.gif
+order	a
+direction right
+wall    113 138 42 84 70 110 60 590
+wall    202 142 1 1 300  300 10 590
+wall    470 133 1 1 608  608 10 590
+wall    1074 142 -11 -11 250  250 50 590
+wall    1302 122 1 1 200  200 10 590
+wall    1408 159 -16 43 260  260 60 590
+wall    1608 181 -9 50 260  260 60 590
+wall    1694 201 -9 50 860  860 60 590
+wall    1673 274 60 60 660  660 80 590
+wall    1613 420 60 60 276 276 50 590
+wall    2246 400 15 70 186 186 50 590
+wall    2260 380 25 80 186 186 50 590
+wall    1268 428 56 56 435 435 220 590
+wall    734 470 56 56 715 715 220 590
+wall    600 480 48 48 215 215 220 590
+wall    110 534 56 56 564 564 220 590
+wall    216 512 46 46 296 296 220 590
+wall    1857 293 60 90 360  360 50 590
+wall    2146 333 50 90 660  660 58 590
+wall    0 444 1 1 203 203 220 590
+wall    0 444 1 1 203 203 220 590
+spawn1 20 100 0
+spawn2 60 100 0
+spawn3 20 110 0
+spawn4 60 110 0
+#--group1-----
+spawn	lvbegin
+coords	320 240
+at	0
+
+spawn	st6b
+coords	210 130
+at 	0
+
+spawn	pl1
+coords	168 350
+at 	0
+
+spawn	pl2
+coords	1860 336
+at 	0
+
+spawn	foot
+aggression 90
+map 3
+coords	350 160
+at	100
+
+spawn	foot
+aggression 90
+map 3
+coords	350 180
+at	120
+
+spawn	foot
+aggression 90
+map 3
+coords  350 200
+at 	150
+
+spawn	footsw
+aggression 120
+map 4
+coords  350 180
+at 	250
+
+wait
+at 280
+
+spawn	foot4
+aggression 90
+map 3
+coords  360 150
+at 	280
+
+spawn	foot4
+aggression 90
+map 3
+coords  360 230
+at 	280
+
+group 2 2
+at 280
+spawn	robot
+aggression 60
+coords	180 240
+at 	280
+
+spawn	robot
+aggression 60
+coords	100 170
+at 	280
+
+spawn	robot
+aggression 60
+coords	260 280
+at 	280
+
+spawn	robot
+aggression 60
+coords	160 200
+at 	280
+
+wait
+at 450
+
+spawn	foottri
+aggression 120
+coords 330 180
+at 300
+
+spawn	foottri
+aggression 120
+coords 350 210
+at 300
+
+spawn	foot
+aggression 90
+coords 350 200
+at 330
+
+spawn	foot
+aggression 90
+coords 370 220
+at 330
+
+group 4 5
+at 450
+
+spawn	foot4
+flip 1
+aggression 90
+map 3
+coords  -30 150
+at 	450
+
+spawn	foot4
+flip 1
+aggression 90
+map 3
+coords  -30 230
+at 	450
+
+spawn	foot4
+aggression 90
+map 3
+coords  360 150
+at 	450
+
+spawn	foot4
+aggression 90
+map 3
+coords  360 230
+at 	450
+
+spawn	footn
+aggression 90
+coords  360 230
+at 	480
+
+spawn	footn
+aggression 90
+coords  360 150
+at 	480
+
+spawn	footn
+aggression 90
+coords  360 150
+at 	480
+
+wait
+at 690
+
+spawn	foot4a
+aggression 90
+coords  360 150
+at 	600
+
+group	2 6
+at 690
+
+spawn	foot4a
+aggression 90
+coords  360 150
+at 	600
+
+spawn	foot4a
+aggression 90
+coords  360 180
+at 	600
+
+spawn	foot4a
+aggression 90
+coords  360 210
+at 	600
+
+spawn	foot4a
+aggression 90
+coords  -40 150
+at 	600
+
+spawn	foot4a
+aggression 90
+coords  -40 180
+at 	600
+
+spawn	foot4a
+aggression 90
+coords  -40 210
+at 	600
+
+spawn mac3
+coords 490 170
+at 900
+
+spawn mac3
+flip 1
+coords -120 230
+at 900
+
+wait 
+at 900
+
+wait
+at 1100
+
+spawn	rock1
+aggression 110
+coords	350 150
+at	700
+
+spawn	rock1
+aggression 110
+coords	370 165
+at	700
+
+spawn	rock1
+aggression 110
+coords	390 180
+at	700
+
+spawn	rock2
+aggression 110
+coords -30 170
+at 	700
+
+
+wait
+at  1700
+
+
+wait
+at 1800
+
+spawn	mouser
+aggression 120
+coords 350 340
+at 1200
+
+spawn	mouser
+aggression 120
+coords -10 340
+at 1200
+
+spawn	mouser
+aggression 120
+coords 350 340
+at 1300
+
+spawn	mouser
+aggression 120
+coords -10 340
+at 1300
+
+spawn	mouser
+aggression 120
+coords 350 340
+at 1300
+
+spawn	mouser
+aggression 120
+coords -10 340
+at 1400
+
+spawn	mouser
+aggression 120
+coords 350 340
+at 1500
+
+spawn	mouser
+aggression 120
+coords -10 340
+at 1600
+
+spawn	mouser
+aggression 120
+coords 350 340
+at 1500
+
+spawn	mouser
+aggression 120
+coords -10 340
+at 1600
+
+spawn	mouser
+aggression 120
+coords 350 340
+at 1500
+
+spawn	mouser
+aggression 120
+coords -10 340
+at 1600
+
+spawn pizza
+flip 1
+coords 360 340
+at 1900
+
+spawn	rock3
+map 2
+aggression 110
+item	bosf
+health 200
+coords  280 340
+at 2000
+
+2pspawn	rock1
+map 3
+aggression 110
+health 200
+coords  280 340
+at 2000
+
+spawn	footsw
+aggression 120
+coords  -60 330
+at 2000
+
+spawn	footsw
+aggression 120
+coords  -30 320
+at 2000
+
+spawn	footsw
+aggression 120
+coords	-60 300
+at 2000
+
+wait
+at 2100

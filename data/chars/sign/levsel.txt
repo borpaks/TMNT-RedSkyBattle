@@ -1,0 +1,47 @@
+name	levsel
+health	40
+speed	8
+type	enemy
+paingrab 1
+nomove 1 1
+nolife 1
+grabdistance 20
+throwdamage	20
+noquake 1
+noatflash 1
+flash aaaa
+facing 1
+anim spawn
+	offset	74 100
+	bbox	0 0 0 0
+	delay	1
+        @cmd playmusic("data/music/menu.ogg", 1)
+	frame	data/chars/misc/empty.gif
+anim idle
+	loop	1
+	offset	74 100
+	bbox	0 0 0 0
+	delay	50
+        #frame	data/chars/misc/empty.gif
+	frame	data/chars/sign/stsl.gif
+anim walk
+	loop	1
+	offset	26 60
+	bbox	19 9 16 41
+	delay	30
+	frame	data/chars/misc/empty.gif
+anim pain
+	offset	26 60
+	bbox	19 9 16 41
+	delay	30
+	frame	data/chars/misc/empty.gif
+anim fall
+	offset	26 60
+	bbox	19 9 16 41
+	delay	30
+	frame	data/chars/misc/empty.gif
+anim rise
+	offset	26 60
+	bbox	19 9 16 41
+	delay	30
+	frame	data/chars/misc/empty.gif

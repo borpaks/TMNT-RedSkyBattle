@@ -1,0 +1,219 @@
+name	Tricer
+health	100
+speed	6
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+shadow	3
+diesound data/sounds/die2.wav
+nodrop 1
+nolife 1
+cantgrab 1
+jumpheight 3
+escapehits 3
+hostile player npc
+candamage player npc obstacle shoot
+remap data/chars/tricer/01.gif data/chars/tricer/alt1.gif
+gfxshadow 1
+anim idle
+	loop	1
+        delay 15
+	offset	63 85
+	bbox	56 27 24 47
+	frame	data/chars/tricer/01.gif
+anim walk
+	loop	1
+        delay   10
+	offset	63 85
+	bbox	56 27 24 47
+	frame	data/chars/tricer/05.gif
+        frame	data/chars/tricer/06.gif
+        frame	data/chars/tricer/07.gif
+        frame	data/chars/tricer/08.gif
+        frame	data/chars/tricer/09.gif
+        frame	data/chars/tricer/10.gif
+        frame	data/chars/tricer/11.gif
+        frame	data/chars/tricer/12.gif
+anim  backwalk
+	loop	1
+        delay   10
+	offset	63 85
+	bbox	56 27 24 47
+	frame	data/chars/tricer/05.gif
+        frame	data/chars/tricer/06.gif
+        frame	data/chars/tricer/07.gif
+        frame	data/chars/tricer/08.gif
+        frame	data/chars/tricer/09.gif
+        frame	data/chars/tricer/10.gif
+        frame	data/chars/tricer/11.gif
+        frame	data/chars/tricer/12.gif
+anim pain
+	delay   5
+        move -2 
+	offset	63 85
+	bbox	56 27 24 47
+	frame	data/chars/tricer/37.gif
+        offset	64 85
+        frame	data/chars/tricer/37.gif
+        offset	63 85
+        frame	data/chars/tricer/37.gif
+        offset	64 85
+        frame	data/chars/tricer/37.gif
+        offset	63 85
+        delay 20
+        frame	data/chars/tricer/37.gif
+anim fall
+        delay 10
+	offset	63 85
+	bbox	56 27 24 47
+	frame	data/chars/tricer/38.gif
+        frame	data/chars/tricer/39.gif
+        frame	data/chars/tricer/40.gif
+        frame	data/chars/tricer/41.gif
+        bbox    10000000 0 1 1
+        frame	data/chars/tricer/42.gif
+anim rise
+        delay 10
+	offset	63 85
+	bbox    10000000 0 1 1
+        frame	data/chars/tricer/41.gif
+        frame	data/chars/tricer/35.gif
+anim attack1
+        range 30 60
+        delay   5
+	offset	63 85
+	bbox	56 27 24 47
+        hitflash aaaa
+	frame	data/chars/tricer/18.gif
+        frame	data/chars/tricer/20.gif
+        frame	data/chars/tricer/21.gif
+        frame	data/chars/tricer/22.gif
+        frame	data/chars/tricer/23.gif
+        frame	data/chars/tricer/24.gif
+        shock   91 49 93 16 10 1 0 0 20
+        frame	data/chars/tricer/25.gif
+        shock   0 0 0 0
+        frame	data/chars/tricer/26.gif
+        frame	data/chars/tricer/27.gif
+        frame	data/chars/tricer/28.gif
+        frame	data/chars/tricer/29.gif
+        frame	data/chars/tricer/30.gif
+        frame	data/chars/tricer/31.gif
+anim attack2
+         range 150 160
+        delay 10
+	offset	63 85
+	bbox	56 27 24 47
+	frame	data/chars/tricer/01.gif
+        frame	data/chars/tricer/02.gif
+        frame	data/chars/tricer/03.gif
+        delay   50
+        frame	data/chars/tricer/04.gif
+        delay 10
+        frame	data/chars/tricer/03.gif
+        frame	data/chars/tricer/02.gif
+        delay 25
+        frame	data/chars/tricer/01.gif
+anim attack3
+        range 150 160
+        delay   5
+        move 7
+	offset	63 85
+	bbox	56 27 24 47
+        hitflash bflash
+	frame	data/chars/tricer/49.gif
+        frame	data/chars/tricer/49.gif
+        frame	data/chars/tricer/43.gif
+        frame	data/chars/tricer/43.gif
+        frame	data/chars/tricer/44.gif
+        frame	data/chars/tricer/44.gif
+        frame	data/chars/tricer/45.gif
+        frame	data/chars/tricer/45.gif
+        frame	data/chars/tricer/46.gif
+        frame	data/chars/tricer/46.gif
+        frame	data/chars/tricer/47.gif
+        frame	data/chars/tricer/47.gif
+        frame	data/chars/tricer/48.gif
+        frame	data/chars/tricer/48.gif
+        blast   68 46 33 24 10 0 0 30
+        frame	data/chars/tricer/36.gif
+        frame	data/chars/tricer/36.gif
+        frame	data/chars/tricer/36.gif
+        frame	data/chars/tricer/36.gif
+        frame	data/chars/tricer/36.gif
+        move 6
+        blast   68 46 33 24 8 0 0 30
+        frame	data/chars/tricer/36.gif
+        move 5
+        blast   68 46 33 24 6 0 0 30
+        frame	data/chars/tricer/36.gif
+        move 4
+        blast   0 0 0 0 0
+        frame	data/chars/tricer/35.gif
+        move 2
+        frame	data/chars/tricer/35.gif
+        move 0
+        delay 20
+        frame	data/chars/tricer/35.gif
+anim attack4
+         range 150 160
+        delay 10
+	offset	63 85
+	bbox	56 27 24 47
+	frame	data/chars/tricer/14.gif
+        frame	data/chars/tricer/15.gif
+        frame	data/chars/tricer/13.gif
+        delay   50
+        frame	data/chars/tricer/16.gif
+        delay 10
+        frame	data/chars/tricer/13.gif
+        frame	data/chars/tricer/15.gif
+        delay 25
+        frame	data/chars/tricer/14.gif
+anim special2
+        range 0 100
+        delay   5
+	offset	63 85
+	bbox	0 0 0 0
+	frame	data/chars/tricer/18.gif
+        frame	data/chars/tricer/20.gif
+        frame	data/chars/tricer/21.gif
+        frame	data/chars/tricer/22.gif
+        frame	data/chars/tricer/23.gif
+        frame	data/chars/tricer/24.gif
+        shock   91 49 93 16 10 1 0 0 20
+        frame	data/chars/tricer/25.gif
+        shock   0 0 0 0
+        bbox	56 27 24 47
+        frame	data/chars/tricer/26.gif
+        frame	data/chars/tricer/27.gif
+        frame	data/chars/tricer/28.gif
+        frame	data/chars/tricer/29.gif
+        frame	data/chars/tricer/30.gif
+        frame	data/chars/tricer/31.gif
+anim spawn
+        delay 10
+	offset	63 85
+	bbox	56 27 24 47
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%1;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/tricer/01.gif
+        frame	data/chars/tricer/02.gif
+        frame	data/chars/tricer/03.gif
+        delay   50
+        frame	data/chars/tricer/04.gif
+        delay 10
+        frame	data/chars/tricer/03.gif
+        frame	data/chars/tricer/02.gif
+        delay 25
+        frame	data/chars/tricer/01.gif

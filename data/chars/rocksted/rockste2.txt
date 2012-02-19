@@ -1,0 +1,367 @@
+name	Rockste2
+health	499
+type	enemy
+subtype chase
+shadow	3
+speed  8
+icon	 data/chars/rocksted/icon.gif
+diesound data/sounds/bossdie.wav
+load    shot
+remap	data/chars/rocksted/a1.gif data/chars/rocksted/alt1.gif
+throw 2 3
+jumpheight 3
+cantgrab 1
+escapehits 4
+dust dust
+hostile player npc
+candamage player npc enemy obstacle 
+grabdistance 30
+throwdamage	20
+nodieblink 1
+falldie 2
+load rocktlk
+load shotup
+score 5000 2
+aggression -30
+gfxshadow 1
+anim idle
+	loop	1
+	offset	58 76
+	bbox	34 7 44 60
+	delay	10
+	frame	data/chars/rocksted/i1.gif
+	frame	data/chars/rocksted/i2.gif
+        frame	data/chars/rocksted/i3.gif
+	frame	data/chars/rocksted/i4.gif
+anim spawn
+        offset	58 76
+        delay 1
+        seta 100
+        jumpframe 3 2 0 0
+        frame	data/chars/misc/empty.gif
+        seta 30
+        delay  30
+        frame	data/chars/rocksted/a2.gif
+        offset	58 76
+        frame	data/chars/rocksted/h1.gif
+        delay  30
+        seta 0
+        frame	data/chars/rocksted/a2.gif
+        offset	58 76
+        frame	data/chars/rocksted/h1.gif
+	offset	58 76
+	bbox	34 7 44 60
+	delay	60
+	frame	data/chars/rocksted/a1.gif
+        delay 25
+        sound   data/sounds/bostlk1.wav
+	frame	data/chars/rocksted/a3.gif
+	frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a3.gif
+	frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a3.gif
+	frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a3.gif
+	frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a3.gif
+        delay   15
+        frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a2.gif
+	frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a2.gif
+        frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a2.gif
+anim pain
+	offset	58 76
+	bbox	34 7 44 60
+	delay	5
+	frame	data/chars/rocksted/d1.gif
+        offset	59 76
+        frame	data/chars/rocksted/d1.gif
+        offset	58 76
+	delay	30
+        #sound   data/sounds/bospn.wav
+	frame	data/chars/rocksted/d3.gif
+anim death
+	offset	58 76
+	delay	25
+	frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+	frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+        frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+        frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+        frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+        frame	data/chars/rocksted/e1.gif
+	frame	data/chars/rocksted/e2.gif
+anim fall
+        delay 30
+	offset	63 65
+	bbox	0 0 0 0
+	delay	15
+        hitflash bflash
+        landframe 2
+	frame	data/chars/rocksted/f1.gif
+        attack  44 9 21 51 10 1 0 0 20
+        delay 40
+        frame	data/chars/rocksted/f1.gif
+        offset	63 65
+        delay 40
+        attack  0 0 0 0 0
+	frame	data/chars/rocksted/r1.gif
+anim fall2
+	offset	63 65
+	delay	1
+        jumpframe 1 4 -1 0
+        landframe 2
+        bbox    44 20 29 40
+	frame	data/chars/rocksted/f1.gif
+        delay 40
+	frame	data/chars/rocksted/f1.gif
+        bbox    0 0 0 0
+        offset	63 65
+	delay	40
+	frame	data/chars/rocksted/r1.gif
+anim walk
+	loop	1
+	delay	10
+	offset	46 96
+	bbox	35 29 26 50
+	frame	data/chars/rocksted/h3.gif
+        frame	data/chars/rocksted/h4.gif
+        frame	data/chars/rocksted/h5.gif
+        frame	data/chars/rocksted/h6.gif
+        frame	data/chars/rocksted/h7.gif
+        frame	data/chars/rocksted/h8.gif
+anim rise
+        delay	10
+	offset	63 65
+	frame	data/chars/rocksted/r1.gif
+        offset	67 69
+	frame	data/chars/rocksted/r2.gif
+        offset	58 76
+        frame	data/chars/rocksted/h1.gif
+anim special2
+	delay	10
+	offset	58 76
+	bbox	0 0 0 0
+        followcond 1
+        followanim 1
+	frame	data/chars/rocksted/p1.gif
+	blast	56 29 49 27 10 1 0 30
+        bbox	35 9 29 45
+        delay 20
+	frame	data/chars/rocksted/p2.gif
+        blast   0 0 0 0 0
+        delay	10
+	frame	data/chars/rocksted/p1.gif
+anim riseattack
+	range	-60 60
+	offset	63 65
+	delay	1
+        followcond 1
+        followanim 1
+	frame	data/chars/rocksted/r1.gif
+        offset	67 69
+	frame	data/chars/rocksted/r2.gif
+	offset	58 76
+	bbox	0 0 0 0
+	frame	data/chars/rocksted/p1.gif
+	blast	56 29 49 27 10 1 0 20
+        bbox	35 9 29 45
+        delay 20
+	frame	data/chars/rocksted/p2.gif
+        blast   0 0 0 0 0
+        delay	10
+	frame	data/chars/rocksted/p1.gif
+anim attack1
+	range	20 55
+	loop	0
+	delay	10
+	offset	58 76
+	bbox	35 9 29 45
+	frame	data/chars/rocksted/p1.gif
+        delay 20
+	blast	56 29 49 27 10 1 0 20
+	frame	data/chars/rocksted/p2.gif
+        delay 10
+        blast   0 0 0 0 0
+	frame	data/chars/rocksted/p1.gif
+anim attack2
+	range	100 200
+	offset	58 76
+	delay	20
+        bbox	34 7 44 60
+        quakeframe 1 16 1
+        hitflash bflash
+        sound   data/sounds/bospn2.wav
+	frame	data/chars/rocksted/d3.gif
+        delay 10
+        offset	58 76
+        attack4 50 21 37 39 10 0 1 1
+        move    15
+        bbox    50 21 37 39
+	frame	data/chars/rocksted/t1.gif
+       	frame	data/chars/rocksted/t2.gif
+       	frame	data/chars/rocksted/t3.gif
+	frame	data/chars/rocksted/t4.gif
+        attack3 50 21 37 39 10 0 1 1
+	frame	data/chars/rocksted/t1.gif
+	frame	data/chars/rocksted/t2.gif
+	frame	data/chars/rocksted/t3.gif
+	frame	data/chars/rocksted/t4.gif
+        blast  50 21 37 39 16 1 0 20
+        frame	data/chars/rocksted/t1.gif
+       	frame	data/chars/rocksted/t2.gif
+       	frame	data/chars/rocksted/t3.gif
+	frame	data/chars/rocksted/t4.gif
+       	frame	data/chars/rocksted/t1.gif
+	frame	data/chars/rocksted/t2.gif
+	frame	data/chars/rocksted/t3.gif
+	frame	data/chars/rocksted/t4.gif
+anim attack3
+	range	100 200
+	custknife shot
+        throwframe 6 -1
+	delay	12
+        followcond 1
+        followanim 1
+	offset	63 137
+	bbox	47 68 28 53
+	frame	data/chars/rocksted/sh2.gif
+        frame	data/chars/rocksted/sh9.gif
+	frame	data/chars/rocksted/sh3.gif
+	frame	data/chars/rocksted/sh4a.gif
+        frame	data/chars/rocksted/sh10.gif
+        offset	64 95
+        bbox	44 68 28 55
+	delay   5
+        sound   data/sounds/mshgun.wav
+	frame	data/chars/rocksted/sh5.gif
+        frame	data/chars/rocksted/h2.gif
+        frame	data/chars/rocksted/sh5.gif
+        frame	data/chars/rocksted/h2.gif
+        frame	data/chars/rocksted/sh5.gif
+        frame	data/chars/rocksted/h2.gif
+        offset	56 135
+        bbox	44 68 28 55
+        delay   12
+	frame	data/chars/rocksted/sh6.gif
+	frame	data/chars/rocksted/sh7.gif
+        frame	data/chars/rocksted/sh6.gif
+	frame	data/chars/rocksted/sh7.gif
+        frame	data/chars/rocksted/sh6.gif
+	frame	data/chars/rocksted/sh7.gif
+        offset	63 137
+	delay   20
+        bbox	47 68 28 53
+	frame	data/chars/rocksted/sh3.gif
+anim attack4
+	range	100 200
+        offset	58 76
+	bbox	34 7 44 60
+	delay	10
+        quakeframe 6 16 1
+	frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a2.gif
+	frame	data/chars/rocksted/a3.gif
+	frame	data/chars/rocksted/a2.gif
+	frame	data/chars/rocksted/a3.gif
+	offset	58 76
+        bbox	34 7 44 60
+        sound   data/sounds/bospn2.wav
+	frame	data/chars/rocksted/d3.gif
+        delay 10
+        offset	58 76
+        move    15
+        bbox    50 21 37 39
+        movez 2
+        blast  50 21 37 39 16 1 0 20
+	frame	data/chars/rocksted/t1.gif
+       	frame	data/chars/rocksted/t2.gif
+       	frame	data/chars/rocksted/t3.gif
+	frame	data/chars/rocksted/t4.gif
+	frame	data/chars/rocksted/t1.gif
+	frame	data/chars/rocksted/t2.gif
+        movez -2
+	frame	data/chars/rocksted/t3.gif
+	frame	data/chars/rocksted/t4.gif
+        frame	data/chars/rocksted/t1.gif
+       	frame	data/chars/rocksted/t2.gif
+       	frame	data/chars/rocksted/t3.gif
+	frame	data/chars/rocksted/t4.gif
+        movez 2
+	frame	data/chars/rocksted/t1.gif
+	frame	data/chars/rocksted/t2.gif
+	frame	data/chars/rocksted/t3.gif
+	frame	data/chars/rocksted/t4.gif
+anim upper
+	delay   15
+	offset	63 137
+	bbox	47 68 28 53
+        custknife shotup
+        throwframe 3 93
+	frame	data/chars/rocksted/sh2.gif
+	frame	data/chars/rocksted/sh3.gif
+	frame	data/chars/rocksted/sh4a.gif
+        offset	63 137
+	bbox	47 68 28 53
+        delay	30
+        #attack	86 41 21 23 10 1 0 0 20
+        sound   data/sounds/shot1.wav
+        frame	data/chars/rocksted/sh8.gif
+        attack  0 0 0 0 0
+        delay   10
+        offset	56 135
+        bbox	44 68 28 55
+	frame	data/chars/rocksted/sh6.gif
+	frame	data/chars/rocksted/sh7.gif
+        frame	data/chars/rocksted/sh6.gif
+	frame	data/chars/rocksted/sh7.gif
+        offset	63 137
+	delay   20
+        bbox	47 68 28 53
+	frame	data/chars/rocksted/sh3.gif
+anim throw
+	delay	10
+	offset	58 76
+	bbox    0 0 0 0
+	frame	data/chars/rocksted/t2.gif
+        offset	58 76
+        #bbox	34 7 44 60
+	delay	30
+        sound   data/sounds/bospn2.wav
+	frame	data/chars/rocksted/d3.gif
+anim follow1
+        delay 20
+        offset	58 76
+	bbox	35 9 29 45
+        sound   data/sounds/beat1.wav
+        custknife rocktlk
+        throwframe 2 0
+	frame	data/chars/rocksted/p2.gif
+        delay 10
+	frame	data/chars/rocksted/p1.gif
+	offset	58 76
+	bbox	34 7 44 60
+        delay 25
+	frame	data/chars/rocksted/a3.gif
+	frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a3.gif
+	frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a3.gif
+	frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a3.gif
+	frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a3.gif
+        delay   15
+        frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a2.gif
+	frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a2.gif
+        frame	data/chars/rocksted/a1.gif
+	frame	data/chars/rocksted/a2.gif       
+	

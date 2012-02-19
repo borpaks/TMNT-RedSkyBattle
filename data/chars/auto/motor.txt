@@ -1,0 +1,228 @@
+name	motor
+health	100
+speed	8
+type	enemy
+subtype arrow
+nolife 1
+jumpheight 0
+grabdistance 20
+nodrop 1
+nomove 0 1
+risetime 500
+#death 1
+falldie 1
+nodieblink 2
+noatflash 1
+flash bflash
+candamage enemy obstacle shot player npc
+remap data/chars/auto/motor1.gif data/chars/auto/mtalt2.gif
+remap data/chars/auto/motor1.gif data/chars/auto/mtalt3.gif
+remap data/chars/auto/motor1.gif data/chars/auto/mtalt1.gif
+remap data/chars/auto/motor1.gif data/chars/auto/mtalt2.gif
+remap data/chars/auto/motor1.gif data/chars/auto/mtalt3.gif
+remap data/chars/auto/motor1.gif data/chars/auto/mtalt1.gif
+load wybu1
+anim spawn
+	offset	78 110
+	delay	1
+        bbox    54 39 27 55
+        seta 1
+        platform 1 1 1 1 1
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%4;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/auto/motor1.gif
+anim idle
+	loop	1
+	offset	78 110
+	delay	5
+        followanim 1
+        followcond 1
+        bbox    54 39 27 55
+        attack4 37 60 100 40 10 0 1 1 0 
+        seta 1
+        platform 1 1 1 1 1
+        #sound   data/sounds/bike.wav
+	frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+       frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+                frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+       frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+anim follow1
+	loop	1
+	offset	78 110
+	delay	5
+        followanim 1
+        followcond 1
+        seta 1
+        platform 1 1 1 1 1
+        bbox    54 39 27 55
+        #sound   data/sounds/bike.wav
+	frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+       frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+        frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+        frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+       frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+        frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+       frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+        frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+        frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+       frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+                frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+       frame	data/chars/auto/motor2.gif
+        frame	data/chars/auto/motor2a.gif
+anim walk
+	loop	1
+	offset	78 110
+	delay	5
+        bbox    54 39 27 55
+        attack4 37 60 100 40 10 0 1 1 0 
+        #sound   data/sounds/bike.wav
+	frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+       frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+       frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+       frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+       frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+                frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+       frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+anim pain
+	offset	78 110
+	delay	5
+        bbox    54 39 27 55
+        #sound   data/sounds/bike.wav
+	frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+       frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+         frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+anim fall
+	offset	78 110
+	delay	5
+        bbox    54 39 27 55
+        #sound   data/sounds/bike.wav
+	frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+       frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+       frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+anim rise
+	offset	78 110
+	delay	5
+        bbox    54 39 27 55
+        #sound   data/sounds/bike.wav
+	frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+anim death
+	offset	78 110
+	delay	5
+        bbox 0 0 0 0
+        custknife wybu1
+        throwframe 1 100
+        #sound   data/sounds/bike.wav
+	frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        frame	data/chars/auto/motor1.gif
+        frame	data/chars/auto/motor1a.gif
+        delay 10
+        offset  1000 444
+        frame	data/chars/bosf/b2.gif
+
+
+           

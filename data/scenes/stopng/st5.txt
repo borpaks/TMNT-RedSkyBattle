@@ -1,0 +1,11 @@
+name	st5
+type	none
+setlayer 1000
+facing 1
+anim idle
+	offset	132 8
+        delay 30
+        frame	data/chars/misc/empty.gif
+        delay   100
+	frame	data/scenes/stopng/5.gif
+        frame	data/chars/misc/empty.gif

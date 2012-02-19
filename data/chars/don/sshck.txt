@@ -1,0 +1,12 @@
+name	sshck
+health	5
+type	pshot
+nomove 1 1
+facing 1
+nolife 1
+anim idle
+	delay	120
+        offset	10 51
+        bbox    10000000000 0 1 1
+        frame	data/chars/don/sshck.gif
+

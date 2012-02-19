@@ -1,0 +1,11 @@
+name	lflash
+type	none
+toflip 1
+anim idle
+	delay	10
+	offset	16 26
+    	frame	data/chars/robot/c1.gif
+	frame	data/chars/robot/c2.gif
+	frame	data/chars/robot/c3.gif
+        frame	data/chars/robot/c4.gif
+

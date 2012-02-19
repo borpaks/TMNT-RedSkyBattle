@@ -1,0 +1,1369 @@
+name	Raph3
+health	103
+speed	12
+mp 187
+mprate 1
+nolife 1
+chargerate 2
+type	none
+shadow	3
+makeinv 4 
+running  20 4 2 1 0
+throw	2 4
+grabdistance 34
+com d u j freespecial3
+com u d j freespecial4
+com d f a freespecial5
+com d u s freespecial6
+bflash bflash
+thold 1
+noquake 1
+throwdamage	20
+icon data/chars/raph/icon.gif
+iconpain data/chars/raph/icon1.gif
+icondie data/chars/raph/icon2.gif
+iconmphigh data/sprites/mp2.gif
+iconmphalf data/sprites/mp1.gif
+iconmplow data/chars/misc/empty.gif
+parrow	data/sprites/parow1a.gif	-5 -90
+parrow2	data/sprites/parow2a.gif	-5 -90
+#remap data/chars/raph/a1.gif data/chars/raph/alt1.gif
+remap data/chars/raph/a1.gif data/chars/raph/alt2.gif
+remap data/chars/raph/a1.gif data/chars/raph/alt3.gif
+remap data/chars/raph/a1.gif data/chars/raph/alt4.gif
+weapons raph1 raph2 Raph3 raph4 raph5 Raphael
+dust dust
+load dongrtr
+load dongrtr2
+typeshot 2
+summonkill 1
+escapehits 1
+falldie 1
+nodieblink 1
+load footthr
+load bosf3
+load ssh3
+load cowa
+load rapsp
+load don2
+weaploss 1
+atchain 1 1 2 3
+jumpmove 1 1
+jumpheight 4
+didhitscript 	 data/scripts/hit1.c 
+anim idle
+	loop	1
+	delay	120
+	offset	24 62
+	bbox	19 13 22 38
+	frame	data/chars/raph/a1.gif
+        delay   15
+        frame	data/chars/raph/a1a.gif
+        delay   50
+        frame	data/chars/raph/a1.gif
+        delay   10
+        frame	data/chars/raph/a6.gif
+        frame	data/chars/raph/a3.gif
+        frame	data/chars/raph/a4.gif
+        frame	data/chars/raph/a5.gif
+        frame	data/chars/raph/a6.gif
+anim death
+        offset	24 62
+	bbox	0 0 0 0
+	delay	10
+        custknife ssh3
+        throwframe 12 40
+	frame	data/chars/raph/pe3.gif
+        sound data/sounds/shellsh.wav
+        frame	data/chars/raph/pe4.gif
+        offset	106 80
+	delay	10
+        move -10
+	frame	data/chars/raph/j2.gif
+	frame	data/chars/raph/j5.gif
+	frame	data/chars/raph/j4.gif
+	frame	data/chars/raph/j3.gif
+        frame	data/chars/raph/j2.gif
+	frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j4.gif
+	frame	data/chars/raph/j3.gif
+        frame	data/chars/raph/j2.gif
+	frame	data/chars/raph/j5.gif
+        move 0
+  	delay	120
+	offset	24 98
+          seta 0
+        @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 0
+       	frame	data/chars/raph/fl6.gif
+        delay 10
+        frame	data/chars/raph/fl6.gif
+anim charge
+        loop 1
+        delay	1
+	offset	39 101
+        bbox	31 50 26 53
+	frame	data/chars/raph/sel1.gif
+        offset	40 101
+        frame	data/chars/raph/sel1.gif
+anim spawn
+    offset	108 82
+    bbox	0 0 0 0
+		delay	10
+        jumpframe 1 6 0 0
+        dropframe 2
+        landframe 23
+        fshadow 0
+        frame	data/chars/misc/empty.gif
+        delay 1000
+        frame	data/chars/misc/empty.gif
+        delay 5 
+        fshadow 1
+		frame	data/chars/raph/j2.gif
+		frame	data/chars/raph/j3.gif
+		frame	data/chars/raph/j4.gif
+		frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j2.gif
+        fshadow 3
+		frame	data/chars/raph/j3.gif
+		frame	data/chars/raph/j4.gif
+		frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j2.gif
+		frame	data/chars/raph/j3.gif
+      	frame	data/chars/raph/j4.gif
+		frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j2.gif
+		frame	data/chars/raph/j3.gif
+		frame	data/chars/raph/j4.gif
+		frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j2.gif
+		frame	data/chars/raph/j3.gif
+		frame	data/chars/raph/j4.gif
+		frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j2.gif
+        offset	39 101
+		frame	data/chars/raph/sel1.gif
+        offset	40 101
+        frame	data/chars/raph/sel1.gif
+        offset	39 101
+		frame	data/chars/raph/sel1.gif
+        offset	40 101
+        frame	data/chars/raph/sel1.gif
+        offset	39 101
+		frame	data/chars/raph/sel1.gif
+		sound   data/sounds/lkicksh.wav
+        delay 100
+        offset	24 95
+        frame	data/chars/raph/a1b.gif
+        offset	24 62
+        delay 30
+		frame	data/chars/raph/a1.gif	
+anim respawn
+	delay	2
+	offset	24 62
+	bbox	19 13 22 38
+       	frame	data/chars/misc/empty.gif
+        sound   data/sounds/lkicksh.wav
+        frame	data/chars/raph/a1.gif
+anim walk
+	loop	1
+	delay	14
+	offset	41 63
+	bbox	34 12 22 41
+	frame	data/chars/raph/ww01.gif
+	frame	data/chars/raph/ww02.gif
+        #offset	41 63
+	frame	data/chars/raph/ww03.gif
+        #offset	41 64
+        frame	data/chars/raph/ww04.gif
+anim up
+	loop	1
+	delay	14
+	offset	28 61
+	bbox	23 5 19 44
+	frame	data/chars/raph/ww05.gif
+	frame	data/chars/raph/ww06.gif
+      	frame	data/chars/raph/ww07.gif
+        frame	data/chars/raph/ww08.gif
+anim down
+	loop	1
+	delay	14
+	offset	41 63
+	bbox	34 12 22 41
+	frame	data/chars/raph/ww01.gif
+	frame	data/chars/raph/ww02.gif
+	frame	data/chars/raph/ww03.gif
+        frame	data/chars/raph/ww04.gif
+anim jumpdelay
+	delay	10
+	offset	39 101
+      bbox    31 66 23 22
+	frame	data/chars/raph/sel1.gif
+anim jumpland
+	delay	10
+	offset	39 101
+      bbox    31 66 23 22
+	frame	data/chars/raph/sel1.gif
+anim select
+	delay	10
+	offset	39 101
+        sound   data/sounds/cbunga.wav
+	frame	data/chars/raph/sel1.gif
+        delay   5
+        offset	39 106
+	frame	data/chars/raph/sel2.gif  
+        offset	39 111
+        frame	data/chars/raph/sel2.gif
+        offset	39 116
+        frame	data/chars/raph/sel2.gif
+        offset	39 121 
+        frame	data/chars/raph/sel2.gif
+        offset	39 126
+        frame	data/chars/raph/sel2.gif 
+        offset	39 131 
+        frame	data/chars/raph/sel2.gif
+anim run
+        loop	1
+	delay	12
+	offset	27 75
+	bbox	21 24 24 42
+	frame	data/chars/raph/ww09.gif
+        frame	data/chars/raph/ww10.gif
+	frame	data/chars/raph/ww11.gif
+        frame	data/chars/raph/ww12.gif
+anim ATTACKBACKWARD
+        delay 5
+        offset	24 62
+	bbox	19 13 22 38
+       	hitflash bflash
+	frame	data/chars/raph/a1.gif
+       	offset	24 62
+      	delay 14
+	bbox	18 21 26 31
+	frame	data/chars/raph/ka3.gif
+        offset	44 63
+        attack  0 12 42 18 10 1 1 0 20
+        frame	data/chars/raph/ka4.gif
+      	attack  0 0 0 0 0
+       	offset	44 63
+        frame	data/chars/raph/ka5.gif
+anim runattack
+        offset	35 76
+        delay 1
+        bbox  18 22 40 49
+        jumpframe 1 2 0 0
+        blast   32 22 39 49 12 1 0 30
+        frame	data/chars/raph/sf5.gif
+        delay   5
+        move 5
+        frame	data/chars/raph/sf6.gif
+        delay 2
+        move 5
+		frame	data/chars/raph/sf6.gif
+        frame	data/chars/raph/sf6.gif
+        frame	data/chars/raph/sf6.gif
+        frame	data/chars/raph/sf7.gif
+        frame	data/chars/raph/sf7.gif
+        frame	data/chars/raph/sf7.gif
+        frame	data/chars/raph/sf7.gif
+        frame	data/chars/raph/sf7.gif
+        delay 5
+        move 8
+        frame	data/chars/raph/sf7.gif
+        move 6
+        frame	data/chars/raph/sf8.gif
+        move 4
+        frame	data/chars/raph/sf8.gif
+        move 2
+        frame	data/chars/raph/sf8.gif
+        move 0
+        frame	data/chars/raph/sf8.gif
+anim get
+		delay	20
+		offset	49 74
+		frame	data/chars/raph/ge.gif
+anim upper
+        offset	35 76
+        delay 1
+        bbox  22 25 26 38
+        jumpframe 1 2 0 0
+        blast   32 22 39 49 10 1 0 30
+        frame	data/chars/raph/sf5.gif
+        delay   5
+        move 5
+        frame	data/chars/raph/sf6.gif
+        delay 2
+        move 5
+		frame	data/chars/raph/sf6.gif
+        frame	data/chars/raph/sf6.gif
+        frame	data/chars/raph/sf6.gif
+        frame	data/chars/raph/sf7.gif
+        frame	data/chars/raph/sf7.gif
+        frame	data/chars/raph/sf7.gif
+        frame	data/chars/raph/sf7.gif
+        frame	data/chars/raph/sf7.gif
+        delay 5
+        move 8
+        frame	data/chars/raph/sf7.gif
+        move 6
+        frame	data/chars/raph/sf8.gif
+        move 4
+        frame	data/chars/raph/sf8.gif
+        move 2
+        frame	data/chars/raph/sf8.gif
+        move 0
+        frame	data/chars/raph/sf8.gif
+anim attack1
+		delay	10
+		bbox	55 48 31 47
+		offset	74 108
+        hitfx   data/sounds/knifes.wav
+		frame	data/chars/raph/at1.gif
+		bbox	64 56 31 38
+        attack	67 46 56 49 5 0 0 0 5
+		frame	data/chars/raph/at2.gif
+        frame	data/chars/raph/at3.gif
+anim attack2
+		delay	13
+		offset	85 113
+		bbox	70 55 21 41
+        hitfx   data/sounds/knifes.wav
+		frame	data/chars/raph/ab1.gif
+		bbox	78 66 32 30
+		attack	79 57 73 39 5 0 0 0 5
+		frame	data/chars/raph/ab2.gif
+        bbox    67 55 28 41
+        attack	0 0 0 0
+		frame	data/chars/raph/ab3.gif
+        bbox    67 62 24 39
+        attack	58 63 76 47 5 0 0 0 5
+		frame	data/chars/raph/ab4.gif
+		attack  0 0 0 0
+		frame	data/chars/raph/ab5.gif
+anim attack3
+        delay	5
+		offset	30 75
+		bbox	39 26 30 36
+        hitfx   data/sounds/knifes.wav
+        attack  48 40 62 17 2 0 0 0 2
+		frame	data/chars/raph/ac1.gif
+        attack	0 
+        frame	data/chars/raph/ac2.gif
+		attack  76 26 41 42 2 0 0 0 2
+        frame	data/chars/raph/ac3.gif
+        attack	0 
+		frame	data/chars/raph/ac2.gif
+        attack  76 26 41 42 3 1 0 0 3
+		frame	data/chars/raph/ac3.gif
+        attack	0 
+		frame	data/chars/raph/ac2.gif 
+        attack  76 26 41 42 3 1 0 0 4
+		frame	data/chars/raph/ac3.gif
+        delay   25
+        attack 0 0 0 0
+        frame	data/chars/raph/ac4.gif
+anim attackup
+		delay 1
+        offset	102 105
+        jumpframe 1 2
+        bbox    99 43 23 40
+        hitflash bflash
+        frame	data/chars/raph/ja1.gif
+        delay   5
+        move  2
+        frame	data/chars/raph/ja1.gif
+        frame	data/chars/raph/ja1.gif
+        move    4
+        sound   data/sounds/ayoo.wav
+        attack2   108 40 28 41 10 1 0 0 30
+        frame	data/chars/raph/ja2.gif
+        frame	data/chars/raph/ja2.gif
+        frame	data/chars/raph/ja2.gif        
+anim attackdown
+        delay	10
+		jumpframe 2 1 0
+		bbox	40 46 35 39
+		offset	74 108
+		frame	data/chars/raph/new/sf5.gif
+		frame	data/chars/raph/new/sf5.gif
+        delay   5
+		bbox	40 46 35 39
+		offset	60 108
+        blast	65 44 37 18 12 1 0 30
+        sound   data/sounds/ayoo.wav
+        frame	data/chars/raph/new/sf6.gif 
+        frame	data/chars/raph/new/sf6.gif 
+		bbox	77 79 40 30
+		frame	data/chars/raph/new/sf7.gif
+		frame	data/chars/raph/new/sf8.gif
+        blast   0 0 0 0 0
+        frame	data/chars/raph/new/sf9.gif
+anim special
+        mponly  1
+        energycost 61
+		delay	5
+		offset	106 103
+        sound   data/sounds/pizpow.wav
+        move    2
+        movez   2
+        attack  100 47 83 52 2 0 0 0 5
+		frame	data/chars/raph/z1.gif
+        attack  0
+        frame	data/chars/raph/z2.gif
+        move -2
+        attack  46 41 70 53 2 0 0 0 5 
+		frame	data/chars/raph/z3.gif
+		attack  0
+		frame	data/chars/raph/z4.gif
+        attack  100 47 83 52 4 0 0 0 5
+        movez -2
+		frame	data/chars/raph/z1.gif
+        attack  0
+        frame	data/chars/raph/z2.gif
+        move 2
+        attack  46 41 70 53 4 0 0 0 5 
+		frame	data/chars/raph/z3.gif
+        attack  0
+		frame	data/chars/raph/z4.gif
+        attack  100 47 83 52 6 0 0 0 5
+        movez 2
+		frame	data/chars/raph/z1.gif
+        attack  0
+        frame	data/chars/raph/z2.gif
+        move -2
+        attack  46 41 70 53 6 0 0 0 5 
+		frame	data/chars/raph/z3.gif
+        attack  0
+		frame	data/chars/raph/z4.gif
+        movez   -2
+        move    -2
+        attack  100 47 83 52 6 0 0 0 5
+		frame	data/chars/raph/z1.gif
+        attack  0
+		frame	data/chars/raph/z2.gif
+		blast	46 41 70 53 10 1 0 0 0 5
+		move    2
+		frame	data/chars/raph/z3.gif
+		blast	100 47 83 52 12 1 0 0 0 5
+		frame	data/chars/raph/z4.gif
+		blast	46 41 70 53 1 0 0 0 10
+        movez   0
+        move    0
+		frame	data/chars/raph/z1.gif
+anim special2
+        mponly  1
+        energycost 40
+	delay	4
+	offset	34 76
+	bbox    54 20 31 36
+	frame	data/chars/raph/x1.gif
+	frame	data/chars/raph/x1.gif
+	sound   data/sounds/raph.wav
+	move 2
+	frame	data/chars/raph/x2.gif
+	frame	data/chars/raph/x2.gif
+        jumpframe 3 2 3
+        hitflash bflash
+        delay   5
+        move    6
+        offset	70 76
+        blast   42 30 60 29 30 0 0 30
+        bbox    0 0 0 0
+        frame	data/chars/raph/r5.gif
+        frame	data/chars/raph/r6.gif
+        frame	data/chars/raph/r7.gif
+        frame	data/chars/raph/r8.gif
+        frame	data/chars/raph/r5.gif
+        frame	data/chars/raph/r6.gif
+        frame	data/chars/raph/r7.gif
+        frame	data/chars/raph/r8.gif
+        blast   0 0 0 0 0
+        offset	39 81
+        bbox    30 28 28 38
+	delay 8
+        frame	data/chars/raph/r1.gif
+        frame	data/chars/raph/r2.gif		
+        move 5
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r4.gif
+	move    0
+anim special3
+        mponly  1
+        energycost 47
+        dive 2 1
+        delay   5
+        offset	102 105
+        bbox    97 53 22 34
+        hitflash bflash
+        frame	data/chars/raph/ja1.gif
+        attack2  102 40 47 66 10 1 0 0 30
+        delay   10
+        frame	data/chars/raph/ja2.gif
+        offset	102 105
+        delay   5
+        attack  0 0 0 0 0
+        frame	data/chars/raph/ja1.gif
+         offset	40 85
+        bbox    48 19 23 32 
+        attack2  41 36 47 34 10 1 0 0 30
+        delay   10
+	frame	data/chars/raph/jk1.gif
+        delay   5
+        offset	102 105
+        bbox    97 53 22 34
+        attack  0 0 0 0 0
+        frame	data/chars/raph/ja1.gif
+        attack2  102 40 47 66 10 1 0 0 30
+        delay   10
+        frame	data/chars/raph/ja2.gif
+         offset	111 94
+	bbox	106 31 22 43
+        attack 0 0 0 0 0
+        hitflash flash
+	frame	data/chars/raph/g6.gif
+        delay	5
+	frame	data/chars/raph/g8.gif
+        blast	121 11 46 57 8 1 0 30
+	frame	data/chars/raph/g9.gif
+        blast	119 55 50 16 8 1 0 30
+	frame	data/chars/raph/g9.gif
+anim freespecial6
+        energycost 123
+		mponly  1
+        delay	10
+		offset	39 101
+        custknife cowa
+        throwframe  1 -1
+        summonframe 2 -50 200 1 1
+        subentity don2
+        sound   data/sounds/cbunga.wav
+        jumpframe 2 3
+		frame	data/chars/raph/sel1.gif
+		delay 1
+		frame	data/chars/raph/sel1.gif
+        delay 49
+        offset	39 106
+		frame	data/chars/raph/sel2.gif  
+anim freespecial3
+        offset	108 100
+	delay	1
+       	bbox	96 49 26 27
+        jumpframe 1 4 0 -1
+        frame	data/chars/raph/j1.gif
+        delay 4
+       	frame	data/chars/raph/j1.gif
+        frame	data/chars/raph/j1.gif
+	frame	data/chars/raph/j2.gif
+        frame	data/chars/raph/j2.gif
+	frame	data/chars/raph/j3.gif
+        frame	data/chars/raph/j3.gif
+	frame	data/chars/raph/j4.gif
+        frame	data/chars/raph/j4.gif
+	frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j2.gif
+        frame	data/chars/raph/j2.gif
+	frame	data/chars/raph/j3.gif
+        frame	data/chars/raph/j3.gif
+	frame	data/chars/raph/j4.gif
+        frame	data/chars/raph/j4.gif
+        delay 16
+        offset	39 81
+        frame	data/chars/raph/r4.gif
+anim freespecial4
+        offset	108 100
+	delay	1
+       	bbox	96 49 26 27
+        jumpframe 1 4 0 1
+        frame	data/chars/raph/j1.gif
+        delay 4
+       	frame	data/chars/raph/j1.gif
+        frame	data/chars/raph/j1.gif
+	frame	data/chars/raph/j2.gif
+        frame	data/chars/raph/j2.gif
+	frame	data/chars/raph/j3.gif
+        frame	data/chars/raph/j3.gif
+	frame	data/chars/raph/j4.gif
+        frame	data/chars/raph/j4.gif
+	frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j2.gif
+        frame	data/chars/raph/j2.gif
+	frame	data/chars/raph/j3.gif
+        frame	data/chars/raph/j3.gif
+	frame	data/chars/raph/j4.gif
+        frame	data/chars/raph/j4.gif
+        delay 16
+        offset	39 81
+        frame	data/chars/raph/r4.gif
+anim freespecial5
+        delay	1
+	offset	24 62
+	bbox	19 13 22 38
+       	frame	data/chars/raph/a1.gif
+        offset	39 79
+        delay 10
+        bbox	1000000000 0 1 1
+        frame	data/chars/raph/x1.gif
+        delay 3
+        move    5
+        frame	data/chars/raph/x2.gif
+        frame	data/chars/raph/x2.gif
+        frame	data/chars/raph/x2.gif
+        frame	data/chars/raph/x2.gif
+        frame	data/chars/raph/x2.gif
+        delay 5
+        offset	39 79
+        move 0
+	frame	data/chars/raph/r1.gif
+	frame	data/chars/raph/r2.gif
+        delay 3
+        move    5
+	frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        move 3
+	frame	data/chars/raph/r4.gif
+        move 2
+        frame	data/chars/raph/r4.gif
+        move 1
+        frame	data/chars/raph/r4.gif
+        move 0
+        frame	data/chars/raph/r4.gif
+        frame	data/chars/raph/r4.gif
+anim jump
+	loop	0
+	offset	108 100
+	delay	8
+       	bbox	96 49 26 27
+	frame	data/chars/raph/j1.gif
+	frame	data/chars/raph/j2.gif
+	frame	data/chars/raph/j3.gif
+	frame	data/chars/raph/j4.gif
+	frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j2.gif
+	frame	data/chars/raph/j3.gif
+	frame	data/chars/raph/j4.gif
+        offset	 35 81
+       	bbox    32 29 25 31
+        frame	data/chars/raph/r4.gif
+anim jumpforward
+        delay   1
+        offset	102 105
+        bbox    97 53 22 34
+        jumpframe 1 3
+        dive 2 3
+        hitflash bflash
+        frame	data/chars/raph/ja1.gif
+        delay 5
+        frame	data/chars/raph/ja1.gif
+	offset	65 72
+        bbox    38 34 22 35
+        attack  42 35 46 33 10 1 1 0 20
+        delay   100
+        frame	data/chars/raph/jk2.gif
+anim jumpattack
+        offset	111 94
+	bbox	106 31 22 43
+        hitfx   data/sounds/knifes.wav
+	delay	7
+	frame	data/chars/raph/g6.gif
+	frame	data/chars/raph/g8.gif
+        attack	121 11 46 57 8 1 0 0 20
+	frame	data/chars/raph/g9.gif
+	frame	data/chars/raph/g9.gif
+        attack	119 55 50 16 8 1 0 0 30
+	frame	data/chars/raph/g10.gif
+anim jumpattack2
+        delay	3
+	offset	41 91
+	bbox	30 25 27 47
+        hitfx   data/sounds/knifes.wav
+	frame	data/chars/raph/g1.gif
+        delay 4
+        frame	data/chars/raph/g1.gif
+        attack  29 2 31 26 6 0 0 0 10
+        frame	data/chars/raph/g1.gif
+        attack  0 0 0 0 0 0
+        frame	data/chars/raph/g2.gif
+        frame	data/chars/raph/g2.gif
+        attack	34 49 56 35 6 0 0 0 15
+	frame	data/chars/raph/g3.gif
+	frame	data/chars/raph/g3.gif
+	frame	data/chars/raph/g4.gif
+anim jumpattack3
+        delay 10
+        offset	102 105
+        bbox    99 43 23 40
+        hitflash bflash
+        frame	data/chars/raph/ja1.gif
+        sound   data/sounds/ayoo.wav
+        attack  108 40 28 41 10 1 0 0 15
+        delay   50
+        frame	data/chars/raph/ja2.gif
+anim grab
+	offset	24 62
+	bbox	19 13 22 38
+	frame	data/chars/raph/gr.gif
+anim grabattack
+	offset	107 90
+	bbox	106 31 22 43
+        hitfx   data/sounds/knifes.wav
+	delay	8
+	frame	data/chars/raph/g6.gif
+	delay   6
+	frame	data/chars/raph/g6.gif
+	frame	data/chars/raph/g8.gif
+        attack	119 55 50 16 6 0 0 0 3
+	frame	data/chars/raph/g9.gif
+       	attack	0 0 0 0 0
+	frame	data/chars/raph/g9.gif
+	attack	119 55 50 16 8 1 0 0 4
+	frame	data/chars/raph/g10.gif
+        delay 8
+	frame	data/chars/raph/g10.gif
+anim grabattack2
+	loop	0
+	delay	35
+	offset	74 108
+        jumpframe 3 2 0 0
+        bbox    0 0 0 0
+        attackone 0
+        hitflash flash
+	frame	data/chars/raph/at1.gif
+        delay   5
+        frame	data/chars/raph/at1.gif 
+        attack	106 47 64 62 6 0 0 0 5
+	frame	data/chars/raph/at2.gif
+        attack  0
+        delay   5
+        frame	data/chars/raph/at3.gif
+	delay   5
+        move  2
+        offset	102 105
+        sound   data/sounds/aya.wav
+        hitflash bflash
+        frame	data/chars/raph/ja1.gif
+        frame	data/chars/raph/ja1.gif
+        move    4
+        blast   108 40 28 41 10 1 0 30
+        frame	data/chars/raph/ja2.gif
+        frame	data/chars/raph/ja2.gif
+        frame	data/chars/raph/ja2.gif
+        delay 5
+        move   3
+        blast 0 0 0 0
+        frame	data/chars/raph/ja1.gif
+        move   2
+        frame	data/chars/raph/ja1.gif
+        move   1
+        frame	data/chars/raph/ja1.gif
+        move   0
+        frame	data/chars/raph/ja1.gif
+anim grabdown
+	offset	24 62
+	bbox	19 13 22 38
+        hitflash aaaaaa
+        followcond 1
+        followanim   1
+        hitfx data/sounds/empty.wav
+        attack10  36 13 46 24 -1 0 1 1
+	frame	data/chars/raph/gr.gif
+anim grabup
+	offset	24 62
+	bbox	19 13 22 38
+        hitflash aaaaaa
+        hitfx data/sounds/empty.wav
+        followcond 1
+        followanim   3
+        attack8  36 13 46 24 -1 0 1 1
+	frame	data/chars/raph/gr.gif
+anim grabforward
+        offset	 42 62
+        delay 6
+	bbox	18 21 26 31
+        hitflash bflash
+        frame	data/chars/raph/k1.gif
+        frame	data/chars/raph/k3.gif
+        attack  35 20 38 21 2 0 0 0 10
+        frame	data/chars/raph/k2.gif
+        #frame	data/chars/raph/k3.gif
+        attack  35 20 38 21 2 0 0 0 10
+        frame	data/chars/raph/k2.gif
+        attack  0 0 0 0
+        frame	data/chars/raph/k3.gif
+        attack  35 20 38 21 2 0 0 0 10
+        frame	data/chars/raph/k4.gif
+        attack  0 0 0 0
+        frame	data/chars/raph/k3.gif
+        attack  35 20 38 21 2 0 0 0 10
+        frame	data/chars/raph/k2.gif
+        #frame	data/chars/raph/k3.gif
+        #attack  35 20 38 21 2 0 0 0 10
+        frame	data/chars/raph/k4.gif
+        attack  0 0 0 0
+        frame	data/chars/raph/k3.gif
+anim grabforward2
+        delay 1
+        offset	24 62
+	bbox	19 13 22 38
+        flipframe 1
+       hitflash bflash
+	frame	data/chars/raph/a1.gif
+        offset	24 62
+        delay 15
+	bbox	18 21 26 31
+	frame	data/chars/raph/ka1.gif
+        offset	29 62
+        attack2  0 12 42 42 10 1 0 0 20
+        frame	data/chars/raph/ka2.gif
+        attack2  0 0 0 0
+        offset	24 62
+        frame	data/chars/raph/ka1.gif
+anim throw
+        delay   15
+        offset	24 62
+	bbox	0 0 0 0
+        throwframewait 1
+	frame	data/chars/raph/th3.gif
+         delay   8
+	offset	48 56
+	sound	data/sounds/aya.wav
+        frame	data/chars/raph/th1.gif
+	delay	35
+	frame	data/chars/raph/th2.gif
+        offset	39 79
+	delay	15
+	frame	data/chars/raph/r1.gif
+	frame	data/chars/raph/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        move 3
+	frame	data/chars/raph/r4.gif
+        move 2
+        frame	data/chars/raph/r4.gif
+        move 1
+        frame	data/chars/raph/r4.gif
+        move 0
+        frame	data/chars/raph/r4.gif
+        frame	data/chars/raph/r4.gif
+anim pain
+	offset	55 76
+	bbox	36 24 24 42
+	delay	12
+	frame	data/chars/raph/p1.gif
+        frame	data/chars/raph/p2.gif
+        frame	data/chars/raph/p3.gif
+        frame	data/chars/raph/p2.gif
+anim pain2
+	offset	24 62
+	bbox	19 13 22 38
+	delay	5
+	frame	data/chars/raph/pe3.gif
+        offset	25 62
+        frame	data/chars/raph/pe3.gif
+        offset	24 62
+        frame	data/chars/raph/pe3.gif
+        offset	25 62
+        frame	data/chars/raph/pe3.gif
+         offset	24 62
+        frame	data/chars/raph/pe3.gif
+anim pain3
+	offset	24 62
+	bbox	0 0 0 0 
+	delay	5
+        move    5
+        movez   2
+	frame	data/chars/raph/pe1.gif
+        frame	data/chars/raph/pe2.gif
+        move -2
+        frame	data/chars/raph/pe1.gif
+        frame	data/chars/raph/pe2.gif
+         movez -2
+        frame	data/chars/raph/pe1.gif
+        bbox	19 13 22 38
+        frame	data/chars/raph/pe2.gif
+        move 2
+        frame	data/chars/raph/pe1.gif
+        frame	data/chars/raph/pe2.gif
+        movez 2
+        frame	data/chars/raph/pe1.gif
+        frame	data/chars/raph/pe2.gif
+        move -2
+        delay 6
+        frame	data/chars/raph/pe1.gif
+        delay 7
+        frame	data/chars/raph/pe2.gif
+        movez -2
+        move -2
+        delay 8
+        frame	data/chars/raph/pe1.gif
+        delay 9
+        frame	data/chars/raph/pe2.gif
+        move 2
+        delay 10
+        frame	data/chars/raph/pe1.gif
+        frame	data/chars/raph/pe2.gif
+anim pain4
+	offset	24 62
+	bbox	0 0 0 0 
+	delay	10
+        movea 10
+        move -5
+        movez -2
+        sound   data/sounds/mytoss.wav
+	frame	data/chars/raph/pe5.gif
+        movea -5
+        frame	data/chars/raph/pe6.gif
+        move  -5
+        frame	data/chars/raph/pe7.gif
+        movea 10
+	frame	data/chars/raph/pe5.gif
+        movea -5
+        frame	data/chars/raph/pe6.gif
+        movea  -5
+        frame	data/chars/raph/pe7.gif
+        movea 10
+        bbox	19 13 22 38
+	frame	data/chars/raph/pe5.gif
+        movea -5
+        frame	data/chars/raph/pe6.gif
+        movea  -5
+        frame	data/chars/raph/pe7.gif
+        movea 0
+        move  0
+        delay 5
+        movez 0
+        offset	25 62
+        frame	data/chars/raph/pe7.gif
+        offset	24 62
+        frame	data/chars/raph/pe7.gif
+        offset	25 62
+        frame	data/chars/raph/pe7.gif
+anim pain5
+	offset	24 62
+	bbox	0 0 0 0 
+	delay	200
+        sound   data/sounds/mynose.wav
+	frame	data/chars/raph/pe8.gif
+        offset	39 79
+	delay	5
+	frame	data/chars/raph/r1.gif
+	frame	data/chars/raph/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        move 3
+	frame	data/chars/raph/r4.gif
+        move 2
+        frame	data/chars/raph/r4.gif
+        move 1
+        frame	data/chars/raph/r4.gif
+        move 0
+        frame	data/chars/raph/r4.gif
+        frame	data/chars/raph/r4.gif
+anim pain6
+	offset	24 62
+	bbox	19 13 22 38
+	delay	10
+        sound   data/sounds/cooloff.wav
+	frame	data/chars/raph/mous1.gif
+        frame	data/chars/raph/mous2.gif
+        frame	data/chars/raph/mous1.gif
+        frame	data/chars/raph/mous2.gif
+        frame	data/chars/raph/mous1.gif
+        frame	data/chars/raph/mous2.gif
+        frame	data/chars/raph/mous1.gif
+        frame	data/chars/raph/mous2.gif
+        frame	data/chars/raph/mous1.gif
+        frame	data/chars/raph/mous2.gif
+anim pain8
+        delay	10
+	offset	24 62
+	bbox	0 0 0 0
+	frame	data/chars/raph/q1.gif
+	frame	data/chars/raph/q2.gif
+        delay   100
+        frame	data/chars/raph/q3.gif
+        delay 10
+        frame	data/chars/raph/q4.gif
+        frame	data/chars/raph/q5.gif
+        frame	data/chars/raph/q6.gif
+anim pain7
+        delay	100
+	offset	24 62
+	bbox	0 0 0 0
+	frame	data/chars/don/freze.gif
+        delay 10
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 9
+        offset	24 62
+        frame	data/chars/don/freze.gif
+        delay 8
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 7
+        offset	24 62
+        frame	data/chars/don/freze.gif
+        delay 6
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 5
+        offset	24 62
+        frame	data/chars/don/freze.gif
+         delay 4
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 3
+        offset	24 62
+        frame	data/chars/don/freze.gif
+        delay 2
+        offset	25 62
+	frame	data/chars/don/freze.gif
+        delay 1
+        offset	24 62
+        frame	data/chars/don/freze.gif
+anim pain9
+        delay	20
+	offset	39 101
+        frame	data/chars/raph/sel1.gif
+        delay 5
+        movea 8
+        offset	39 106
+        bbox    31 50 21 53
+	frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif
+        movea -8
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif
+        offset	39 101
+        delay 10
+        movea   0
+	frame	data/chars/raph/sel1.gif 
+          delay 5
+        movea 8
+        offset	39 106
+        bbox    31 50 21 53
+	frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif
+        movea -8
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif
+        offset	39 101
+        delay 10
+        movea   0
+	frame	data/chars/raph/sel1.gif 
+         delay 5
+        movea 8
+        offset	39 106
+        bbox    31 50 21 53
+	frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif
+        movea -8
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif 
+        frame	data/chars/raph/sel2.gif
+        offset	39 101
+        delay 10
+        movea   0
+	frame	data/chars/raph/sel1.gif 
+anim fall9
+        delay 1
+        jumpframe 1 3 -1 0
+        landframe 2
+        offset	39 106
+        bbox    0 0 0 0
+	frame	data/chars/raph/sel2.gif 
+        delay 1000
+        frame	data/chars/raph/sel2.gif
+        offset	24 62
+	delay	15
+	frame	data/chars/raph/fl2.gif
+anim death7
+        delay	200
+	offset	24 62
+	bbox	0 0 0 0
+	frame	data/chars/don/freze.gif
+        delay 10
+        frame	data/chars/don/freze.gif
+anim  bpain
+        delay 100
+        offset	24 62
+	bbox	0 0 0 0
+	frame	data/chars/raph/burn.gif
+anim  spain
+    offset	24 62
+	bbox	19 13 22 38
+        delay   5
+        frame	data/chars/raph/spain.gif
+        frame	data/chars/raph/spain2.gif
+        frame	data/chars/raph/spain.gif
+        frame	data/chars/raph/spain2.gif
+        frame	data/chars/raph/spain.gif
+        frame	data/chars/raph/spain2.gif
+        frame	data/chars/raph/spain.gif
+        frame	data/chars/raph/spain2.gif
+        frame	data/chars/raph/spain.gif
+        frame	data/chars/raph/spain2.gif
+        frame	data/chars/raph/spain.gif
+        frame	data/chars/raph/spain2.gif
+        frame	data/chars/raph/spain.gif
+        frame	data/chars/raph/spain2.gif
+        frame	data/chars/raph/spain.gif    
+        frame	data/chars/raph/spain2.gif
+        frame	data/chars/raph/spain.gif
+anim shock
+        delay 5
+        offset	24 62
+	bbox	0 0 0 0
+        frame	data/chars/raph/shock2.gif
+        frame	data/chars/raph/shock1.gif
+        frame	data/chars/raph/shock2.gif
+        frame	data/chars/raph/shock1.gif
+        frame	data/chars/raph/shock2.gif
+        frame	data/chars/raph/shock1.gif
+        frame	data/chars/raph/shock2.gif
+        frame	data/chars/raph/shock1.gif
+        frame	data/chars/raph/shock2.gif
+        frame	data/chars/raph/shock1.gif
+        frame	data/chars/raph/shock2.gif
+        frame	data/chars/raph/shock1.gif
+        frame	data/chars/raph/shock2.gif
+        frame	data/chars/raph/shock1.gif
+        frame	data/chars/raph/shock2.gif
+        frame	data/chars/raph/shock1.gif
+        frame	data/chars/raph/shock2.gif
+        frame	data/chars/raph/shock1.gif
+anim fall
+	offset	24 62
+	delay	15
+	frame	data/chars/raph/pe4.gif
+        delay 45
+        hitflash bflash
+        attack  10 41 16 25 8 1 0 0 0 10
+        frame	data/chars/raph/fl1.gif
+        attack  0
+        delay   80
+       	frame	data/chars/raph/fl2.gif
+anim fall2
+	offset	24 62
+        delay 1
+        jumpframe 1 4 -1 0
+        frame	data/chars/raph/fl1.gif
+	delay	29
+        bbox    10 37 38 26
+	frame	data/chars/raph/fl1.gif
+        frame	data/chars/raph/fl1.gif
+        attack  0
+        delay   80
+       	frame	data/chars/raph/fl2.gif
+anim rise
+	offset	39 79
+	delay	15
+	frame	data/chars/raph/r1.gif
+	frame	data/chars/raph/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        move 3
+	frame	data/chars/raph/r4.gif
+        move 2
+        frame	data/chars/raph/r4.gif
+        move 1
+        frame	data/chars/raph/r4.gif
+        move 0
+        frame	data/chars/raph/r4.gif
+        frame	data/chars/raph/r4.gif
+anim block
+        delay 5
+        offset	24 62
+	bbox	19 13 22 38
+	counterframe 2 1 0
+        followanim 2
+	frame	data/chars/raph/bl1.gif
+        frame	data/chars/raph/bl2.gif
+        delay 100
+        frame	data/chars/raph/bl3.gif
+        delay 10
+        frame	data/chars/raph/bl2.gif
+anim follow1
+        offset	89 92
+	bbox	0 0 0 0
+        delay   10
+        custknife dongrtr
+        throwframe 3 -1
+        hitfx  data/sounds/fall.wav
+        quakeframe 2 2 3
+	frame	data/chars/raph/y2.gif
+        frame	data/chars/raph/y3.gif
+        frame	data/chars/raph/y4.gif
+        attack9  18 55 59 38 19 1 1 1 15
+        sound   data/sounds/fall.wav
+        frame	data/chars/raph/y5.gif
+        frame	data/chars/raph/y5.gif
+anim follow2
+        delay	1
+	offset	24 62
+	bbox	0 0 0 0
+        flipframe 1
+	frame	data/chars/raph/a1.gif
+        offset	39 79
+        delay 10
+        bbox 0 0 0 0
+        frame	data/chars/raph/x1.gif
+        delay 3
+        move    5
+        frame	data/chars/raph/x2.gif
+        frame	data/chars/raph/x2.gif
+        frame	data/chars/raph/x2.gif
+        frame	data/chars/raph/x2.gif
+        frame	data/chars/raph/x2.gif
+        delay 5
+        offset	39 79
+        move 0
+	frame	data/chars/raph/r1.gif
+	frame	data/chars/raph/r2.gif
+        delay 3
+        move    5
+	frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        move 3
+	frame	data/chars/raph/r4.gif
+        move 2
+        frame	data/chars/raph/r4.gif
+        move 1
+        frame	data/chars/raph/r4.gif
+        move 0
+        frame	data/chars/raph/r4.gif
+        frame	data/chars/raph/r4.gif  
+anim follow3
+        offset	89 92
+	bbox	0 0 0 0
+        delay   10
+        custknife footthr
+        throwframe 3 50
+        hitflash aaaaaa
+        hitfx   data/sounds/aya.wav
+	frame	data/chars/raph/y2.gif
+        frame	data/chars/raph/y3.gif
+        frame	data/chars/raph/y6.gif
+        delay 30
+        attack8 54 21 32 39 19 1 1 1 
+        frame	data/chars/raph/y7.gif
+anim follow5
+      offset	108 82
+	delay	8
+      bbox	0 0 0 0
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 1 0
+	frame	data/chars/raph/j2.gif
+	frame	data/chars/raph/j3.gif
+	frame	data/chars/raph/j4.gif
+	frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j2.gif
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 0
+offset	39 79
+	frame	data/chars/raph/r1.gif
+	frame	data/chars/raph/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        move 3
+	frame	data/chars/raph/r4.gif
+        move 2
+        frame	data/chars/raph/r4.gif
+        move 1
+        frame	data/chars/raph/r4.gif
+        move 0
+        frame	data/chars/raph/r4.gif
+        frame	data/chars/raph/r4.gif
+anim follow6
+      offset	108 82
+	delay	8
+      bbox	0 0 0 0
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 -1 0
+	frame	data/chars/raph/j2.gif
+	frame	data/chars/raph/j3.gif
+	frame	data/chars/raph/j4.gif
+	frame	data/chars/raph/j5.gif
+        frame	data/chars/raph/j2.gif
+      @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 0
+      offset	39 79
+	frame	data/chars/raph/r1.gif
+	frame	data/chars/raph/r2.gif
+        delay 3
+        move    4
+	frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        frame	data/chars/raph/r3.gif
+        move 3
+	frame	data/chars/raph/r4.gif
+        move 2
+        frame	data/chars/raph/r4.gif
+        move 1
+        frame	data/chars/raph/r4.gif
+        move 0
+        frame	data/chars/raph/r4.gif
+        frame	data/chars/raph/r4.gif
+anim follow7
+        delay   5
+        bbox    0 0 0 0
+        hitflash bflash
+        offset	39 79
+        jumpframe 4 2 2 0
+	frame	data/chars/raph/r1.gif
+	frame	data/chars/raph/r2.gif
+	frame	data/chars/raph/r3.gif
+      frame	data/chars/raph/r4.gif
+      offset	35 76
+        bbox  0 0 0 0
+        blast   41 38 21 30 50 1 0 30
+        delay   40
+        frame	data/chars/raph/sf7.gif
+      

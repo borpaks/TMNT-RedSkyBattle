@@ -1,0 +1,158 @@
+name	transp2
+health	100
+speed	8
+type	enemy
+cantgrab 1
+noatflash 1
+flash bflash
+nomove 1 1
+facing 1
+nodrop 1
+nolife 1
+load foot
+nopain 1
+load foota
+setlayer 1
+load tricer
+falldie 1
+nodieblink 3
+jumpheight 0
+noquake 1
+anim idle
+	loop	1
+	offset	34 171
+        seta 1
+	#bbox	18 76 54 88
+        bbox   0 0 0 0
+	delay	10
+        spawnframe 7 0 0 0 0
+        subentity foota
+	frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+anim walk
+	loop	1
+	offset	34 172
+	bbox	0 0 0 0
+	delay	10
+	frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+anim pain
+	offset	34 172
+	bbox	0 0 0 0
+	delay	10
+	frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+anim fall
+	offset	34 172
+	bbox	0 0 0 0
+	delay	10
+	frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+anim death
+        offset	34 171
+        seta 1
+	bbox    0 0 0 0
+	delay	10
+	frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        delay	20
+	frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        delay	30
+	frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        delay	40
+	frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+        delay	50
+	frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+anim rise
+        offset	34 172
+	bbox	0 0 0 0
+	delay	10
+	frame	data/chars/transp/22.gif
+        frame	data/chars/transp/23.gif
+anim spawn
+        offset	34 172
+	bbox	0 0 0 0
+	delay	15
+        quakeframe 1 40 -6
+	frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/transp/01.gif
+        frame	data/chars/transp/02.gif
+        frame	data/chars/transp/03.gif
+        frame	data/chars/transp/04.gif
+        frame	data/chars/transp/05.gif
+        frame	data/chars/transp/06.gif
+        frame	data/chars/transp/07.gif
+        frame	data/chars/transp/08.gif
+        frame	data/chars/transp/09.gif
+        frame	data/chars/transp/10.gif
+        frame	data/chars/transp/11.gif
+        frame	data/chars/transp/12.gif
+        frame	data/chars/transp/13.gif
+        frame	data/chars/transp/14.gif
+        frame	data/chars/transp/15.gif
+        frame	data/chars/transp/16.gif
+        frame	data/chars/transp/17.gif
+        frame	data/chars/transp/18.gif
+        frame	data/chars/transp/19.gif
+        frame	data/chars/transp/20.gif
+        frame	data/chars/transp/21.gif

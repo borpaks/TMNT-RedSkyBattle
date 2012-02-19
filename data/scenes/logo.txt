@@ -1,0 +1,3 @@
+silence 1
+animation	data/scenes2/0.gif 0 0
+silence 1

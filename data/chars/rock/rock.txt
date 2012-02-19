@@ -1,0 +1,187 @@
+name	Rock
+health	80
+speed	6
+type	enemy
+shadow	3
+diesound data/sounds/die2.wav
+noatflash 1
+flash bflash
+nodrop 1
+nolife 1
+cantgrab 1
+jumpheight 2
+escapehits 4
+nodieblink 2
+falldie 2
+hostile player npc
+candamage player npc obstacle shoot
+remap data/chars/rock/01.gif data/chars/rock/alt1.gif
+remap data/chars/rock/01.gif data/chars/rock/alt2.gif
+gfxshadow 1
+anim spawn
+        delay 1
+	offset	38 83
+	bbox	30 22 25 48
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%2;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/rock/01.gif
+anim idle
+	loop	1
+        delay 20
+	offset	38 83
+	bbox	30 22 25 48
+	frame	data/chars/rock/01.gif
+        frame	data/chars/rock/02.gif
+anim walk
+	loop	1
+        delay   15
+	offset	38 83
+	bbox	30 22 25 48
+	frame	data/chars/rock/03.gif
+        frame	data/chars/rock/04.gif
+        frame	data/chars/rock/03.gif
+        frame	data/chars/rock/02.gif
+anim pain
+	delay   5
+        move -2 
+	offset	38 83
+	bbox	30 22 25 48
+	frame	data/chars/rock/14.gif
+        offset	39 83
+        frame	data/chars/rock/14.gif
+        offset	38 83
+        frame	data/chars/rock/13.gif
+        offset	39 83
+        frame	data/chars/rock/13.gif
+        offset	38 83
+        frame	data/chars/rock/13.gif
+anim fall
+        delay 15
+	offset	38 83
+	bbox	30 22 25 48
+	frame	data/chars/rock/13.gif
+        frame	data/chars/rock/15.gif
+anim rise
+        delay 10
+	offset	38 83
+	bbox	30 22 25 48
+	frame	data/chars/rock/06.gif
+anim attack1
+        range 25 30
+        delay   10
+	offset	38 83
+	bbox	30 22 25 48
+	frame	data/chars/rock/08.gif
+        frame	data/chars/rock/09.gif
+        attack  37 30 42 21 10 0 0 0 20
+        frame	data/chars/rock/10.gif
+anim attack2
+        range 0 25
+        delay   20
+	offset	38 83
+	bbox	30 22 25 48
+	frame	data/chars/rock/08.gif
+        delay 10
+        frame	data/chars/rock/09.gif
+        attack 37 30 42 21 10 1 0 0 40
+        delay 40
+        frame	data/chars/rock/10.gif      
+anim attack3
+        range 0 25
+        delay   20
+	offset	38 83
+	bbox	30 22 25 48
+	frame	data/chars/rock/11.gif
+        attack3 37 30 42 21 10 0 0 0 20
+        frame	data/chars/rock/12.gif
+        attack3 0 0 0 0 0 0 0
+        delay 40
+        frame	data/chars/rock/08.gif
+        delay 2
+        move 1
+        attack  37 30 42 21 10 1 0 0 20
+        frame	data/chars/rock/10.gif
+        frame	data/chars/rock/10.gif 
+        frame	data/chars/rock/10.gif
+        frame	data/chars/rock/10.gif
+        frame	data/chars/rock/10.gif
+        frame	data/chars/rock/10.gif
+        frame	data/chars/rock/10.gif
+        frame	data/chars/rock/10.gif
+        frame	data/chars/rock/10.gif
+        frame	data/chars/rock/10.gif
+anim attack4
+        range 100 110
+        delay   10
+	offset	38 83
+	bbox	30 22 25 48
+        move    15
+        quakeframe 1 12 1
+	frame	data/chars/rock/05.gif
+        attack3 28 29 26 31 10 0 0 0 10
+        frame	data/chars/rock/06.gif
+        frame	data/chars/rock/07.gif
+        frame	data/chars/rock/06.gif 
+        frame	data/chars/rock/05.gif
+        frame	data/chars/rock/06.gif 
+        frame	data/chars/rock/07.gif
+        frame	data/chars/rock/06.gif 
+        frame	data/chars/rock/05.gif
+        frame	data/chars/rock/06.gif 
+        frame	data/chars/rock/07.gif
+        frame	data/chars/rock/06.gif 
+        frame	data/chars/rock/05.gif
+anim special2
+        delay   10
+	offset	38 83
+	bbox	0 0 0 0
+	frame	data/chars/rock/08.gif
+        delay 5
+        move 10
+        bbox	30 22 25 48
+        attack  37 30 42 21 10 1 0 0 20
+        frame	data/chars/rock/10.gif 
+        frame	data/chars/rock/10.gif
+        frame	data/chars/rock/10.gif 
+        frame	data/chars/rock/10.gif    
+anim upper
+        delay   20
+	offset	38 83
+	bbox	30 22 25 48
+	frame	data/chars/rock/11.gif
+        attack3 36 10 39 45 10 0 0 0 20
+        frame	data/chars/rock/12.gif   
+anim death
+        offset	69 68
+        delay 10
+        quakeframe 1 8 2
+        hitfx data/sounds/granat.wav
+       	sound   data/sounds/wybu1.wav
+    	frame	data/chars/wybu/b1.gif
+	frame	data/chars/wybu/b2.gif
+        frame	data/chars/wybu/b3.gif
+        frame	data/chars/wybu/b4.gif
+         offset	81 89
+        delay 5
+        frame	data/chars/wybu/d02.gif
+        frame	data/chars/wybu/d03.gif
+        frame	data/chars/wybu/d04.gif
+        attack  0 0 0 0 0
+        frame	data/chars/wybu/d05.gif
+        frame	data/chars/wybu/d06.gif
+         frame	data/chars/wybu/d07.gif
+        frame	data/chars/wybu/d08.gif
+        frame	data/chars/wybu/d09.gif
+        frame	data/chars/wybu/d10.gif
+        frame   data/chars/misc/empty.gif 
+
+        

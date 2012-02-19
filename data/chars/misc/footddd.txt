@@ -1,0 +1,61 @@
+name	footddd
+health	1000
+type	trap
+nolife 1
+facing 1
+hostile player npc
+load foot
+load footthr
+candamage player npc enemy
+remap data/chars/foot/01.gif data/chars/foot/alt1.gif
+remap data/chars/foot/01.gif data/chars/foot/alt2.gif
+remap data/chars/foot/01.gif data/chars/foot/alt3.gif
+remap data/chars/foot/01.gif data/chars/foot/alt4.gif 
+remap data/chars/foot/01.gif data/chars/foot/alt5.gif
+remap data/chars/foot/01.gif data/chars/foot/alt6.gif
+setlayer 10
+animationscript data/scripts/escript.c
+anim spawn
+	delay	1
+	offset	41 69
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%4;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/foot/f1.gif
+anim idle 
+        loop 1
+	delay	100
+	offset	41 69
+        followanim 1
+        followcond 1
+        hitflash bflash
+        bbox    100000000000 0 1 1
+        blast   32 14 23 80 10 1 0 20
+	frame	data/chars/foot/f1.gif
+        delay 15
+        frame	data/chars/foot/f1a.gif
+anim follow1
+        range -10 10
+        delay	10
+	offset	41 69
+        bbox    1 1 1 1
+        blast   32 14 23 80 10 1 1 20
+        frame	data/chars/foot/f3.gif 
+        blast   26 8 8 87 10 1 1 20 
+        frame	data/chars/foot/f4.gif
+        blast   4 14 24 82 10 1 1 20
+        frame	data/chars/foot/f5.gif
+        blast   0 0 0 0  
+        delay 30
+        frame	data/chars/foot/f6.gif
+        @cmd spawn02 "foot" 0 1 0
+        frame	data/chars/foot/f7.gif
+        

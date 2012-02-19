@@ -1,0 +1,27 @@
+name	vict
+health 500
+type	enemy
+subtype chase
+speed 10
+nolife 1
+grabdistance 999
+hostile player
+candamage player
+remove 1
+nolife 1
+cantgrab 1
+anim idle
+        delay   40
+        offset  1 1
+        bbox    0 0 1000 488
+        attack9 0 0 1000 488 -1 0 1 1
+        bbox    0 0 1000 488
+        hitfx data/sounds/cbunga.wav
+        frame	data/chars/misc/empty.gif
+        attack9 0 0 0 0 0 0 0 
+        frame	data/chars/misc/empty.gif
+        attack9 0 0 1000 488 -1 0 1 1
+        frame	data/chars/misc/empty.gif
+        move    10000000
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/misc/empty.gif

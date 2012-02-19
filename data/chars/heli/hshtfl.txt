@@ -1,0 +1,9 @@
+name	hshtfl
+type	none
+toflip 1
+anim idle
+	delay	1
+	offset	14 32
+    	frame	data/chars/heli/hshtfl1.gif
+	frame	data/chars/heli/hshtfl2.gif
+        frame	data/chars/heli/hshtfl3.gif

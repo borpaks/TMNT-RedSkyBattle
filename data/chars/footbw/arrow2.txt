@@ -1,0 +1,17 @@
+name	arrow2
+type	enemy
+speed 12
+candamage player npc enemy obstacle 
+nolife 1
+grabdistance 26
+noatflash 1
+flash bflash
+anim idle
+	loop	1
+	delay	10
+	offset	-22 15
+	hitflash flash
+	bbox	10000000 0 1 1
+	attack	0 0 48 10 15 1 0 0 10
+	frame	data/chars/footbw/arrow.gif
+

@@ -1,0 +1,435 @@
+music		data/music/lv2.ogg
+bossmusic	data/music/boss3.ogg
+notime 1
+settime 0
+background data/bgs/port/bg1a.gif
+panel      data/bgs/port/a1.gif
+order a
+wall 0 118 -10 0 889 889 15 500
+wall 780 118 -70 0  126 126 75 500
+wall 1041 245 -50 -50 143 183 45 500
+wall 1174 118 -83 -10  163 163 78 500
+wall 1174 118 -12 0 899 899 74 500
+wall 2010 245 -50 -50 226 226 30 500
+wall 2180 118 -10 -10 689 689  74 500
+spawn1 30 80 0
+spawn2 40 100 0
+spawn3 50 120 0
+spawn4 60 140 0
+cameratype 1
+#--group1----
+spawn	lvbegin
+flip 1
+coords	40 230
+at	0
+spawn	pan1
+coords	1160 286
+at	0
+spawn	pan2
+coords	2210 246
+at	0
+spawn	1up
+coords 2180 210
+at	0
+2pspawn	1up
+coords 2200 210
+at	0
+spawn	Foot
+aggression 70
+coords	350 182
+at	280
+
+spawn	Foot
+aggression 70
+coords	350 212
+at	300
+
+spawn	Foot
+aggression 70
+coords	380 198
+at	300
+
+spawn	Footsw
+aggression 70
+map 3
+coords	450 152
+at	500
+
+spawn	Footsw
+aggression 70
+map 3
+coords	450 192
+at	500
+
+wait
+at 500
+
+#group 2 2
+Wait
+at 	870
+
+spawn	Foot2
+aggression 70
+map 5
+coords	40 42
+at	800
+
+spawn	Foot2
+aggression 70
+map 5
+coords	130 42
+at	800
+
+spawn	Foot2
+aggression 70
+map 5
+coords	220 42
+at	800
+
+spawn	foot4
+aggression 70
+flip 1
+coords -60 200
+at 	800
+
+spawn	foot4
+aggression 70
+coords  400 200
+at 	800
+
+spawn	foottri
+aggression 130
+coords  600 70
+at 	800
+
+spawn	foottri
+aggression 130
+coords  -120 70
+at 	800
+
+spawn foota
+aggression 70
+coords 350 160
+at  1400
+spawn foota
+aggression 70
+coords 350 200
+at  1400
+spawn foota
+aggression 70
+coords 350 240
+at  1400
+spawn foota
+aggression 70
+coords 370 180
+at  1400
+spawn foota
+aggression 70
+coords 370 220
+at  1400
+wait
+at  1400
+group 1 5
+at 1400
+
+spawn foot
+aggression 70
+coords -30 160
+at  1400
+spawn foot
+aggression 70
+coords -30 200
+at  1400
+spawn foot
+aggression 70
+coords -30 240
+at  1400
+spawn foot
+aggression 70
+coords -30 180
+at  1400
+spawn foot
+aggression 70
+coords -30 220
+at  1400
+
+spawn footfh
+aggression 80
+map 1
+coords 20 120
+at  1400
+spawn footfh
+aggression 80
+map 1
+coords 140 120
+at  1400
+spawn footfh
+aggression 80
+map 1
+coords 260 120
+at  1400
+
+group 2 4
+at 1700
+wait
+at 1900
+spawn footsw
+aggression 70
+map 7
+coords 350 170
+at 1700
+spawn footsw
+aggression 70
+map 7
+coords 350 200
+at 1700
+spawn motor
+map 4
+coords 550 190
+at 1700
+spawn footn
+aggression 70
+map 7
+coords 350 220
+at 1700
+spawn footn
+aggression 70
+map 7
+coords -30 220
+at 1700
+spawn footaxe2
+aggression 70
+coords -30 140
+at 1700
+spawn footaxe2
+aggression 70
+coords -30 190
+at 1700
+spawn foot2
+aggression 70
+map 5
+coords 260 50
+at 1700
+spawn robot
+aggression 70
+coords 120 210
+at 1700
+spawn robot
+aggression 70
+coords 140 210
+at 1700
+spawn robot
+aggression 70
+coords 160 210
+at 1700
+spawn robot
+aggression 70
+coords 130 210
+at 1700
+
+spawn foottri
+aggression 70
+map 5
+coords 350 180
+at 1800
+
+spawn foottri
+aggression 70
+map 5
+coords 350 200
+at 1850
+
+spawn pizza
+flip 1
+coords 450 130
+at 2000
+
+spawn pizza
+2pspawn pizza
+flip 1
+coords 480 130
+at 2000
+
+spawn pizza
+3pspawn pizza
+flip 1
+coords 510 130
+at 2000
+
+spawn pizza
+4pspawn pizza
+flip 1
+coords 540 130
+at 2000
+
+wait
+at 2300
+
+group 2 5
+at 2300
+spawn foottrh
+aggression 70
+coords -30 170
+at 2300
+spawn foottrh
+aggression 70
+coords -50 190
+at 2300
+spawn foottrh
+aggression 70
+coords -30 210
+at 2300
+spawn foottrh
+aggression 70
+coords -30 210
+at 2300
+spawn foottrh
+aggression 70
+coords -30 230
+at 2300
+spawn bigmouse
+aggression 70
+coords -30 210
+at 2300
+spawn mouser
+aggression 70
+coords -30 170
+at 2300
+spawn bigmouse
+aggression 70
+coords -30 210
+at 2300
+spawn mouser
+aggression 70
+coords -30 170
+at 2300
+spawn foottri
+aggression 70
+map 5
+coords -30 130
+at 2300
+spawn footn
+aggression 70
+map 2
+coords -60 150
+at 2300
+spawn auto2
+flip 1
+map 3
+coords -100 150
+at 2300
+spawn foottri
+aggression 70
+map 5
+coords -30 180
+at 2300
+
+spawn dirtbag2
+alias Dirtbag
+item bosslow
+health 500
+2phealth 600
+3phealth 700
+4phealth 850
+map 1
+item bosf
+boss 1
+aggression 120
+coords	400 192
+at 2300
+
+spawn footfh
+aggression 100
+map 1
+coords 10 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 120 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 310 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 120 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 30 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 310 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 200 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 120 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 30 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 310 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 200 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 120 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 30 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 310 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 200 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 120 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 30 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 310 130
+at 2300
+spawn footfh
+aggression 70
+map 1
+coords 200 130
+at 2300

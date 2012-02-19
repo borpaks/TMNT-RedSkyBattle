@@ -1,0 +1,1245 @@
+name Casene
+health	599
+speed	10
+mp 187
+mprate 1
+nolife 1
+chargerate 2
+type	enemy
+subtype chase
+shadow	3
+makeinv 4
+running  20 4 2 1 1
+throw	2 4
+escapehits 3
+grabdistance 34
+bflash bflash
+thold 30
+noquake 1
+throwdamage	20
+thold 30
+blockodds 5
+icon data/chars/casey/icon.gif
+iconpain data/chars/casey/iconp.gif
+icondie data/chars/casey/icond.gif
+iconmphigh data/sprites/mp2.gif
+iconmphalf data/sprites/mp1.gif
+iconmplow data/chars/misc/empty.gif
+parrow	data/sprites/parow.gif	-5 -90
+parrow2	data/sprites/parow2.gif	-5 -90
+weapons cas1 cas2 cas3 cas4 cas5 cas6 Casey__J!
+com d u a freespecial2
+com d f a freespecial3
+com u d s freespecial4
+dust dust
+falldie 1
+nodieblink 3
+remap data/chars/casey/037.gif data/chars/casey/alt1.gif
+remap data/chars/casey/037.gif data/chars/casey/alt2.gif
+remap data/chars/casey/037.gif data/chars/casey/alt3.gif
+load bbat
+load fck
+load transp2
+atchain 1 1 2 3
+jumpmove 1 1
+hostile player enemy npc
+candamage player enemy npc
+cantgrab 1
+anim select
+	delay	15
+	offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/005.gif
+        frame	data/chars/casey/004.gif
+        frame	data/chars/casey/001.gif
+        offset	38 114
+        frame	data/chars/casey/b1.gif
+        sound   data/sounds/cmon.wav
+        frame	data/chars/casey/b2.gif
+        frame	data/chars/casey/b1.gif
+        frame	data/chars/casey/b2.gif
+        frame	data/chars/casey/b1.gif
+        frame	data/chars/casey/b2.gif
+anim idle
+        loop 1
+	delay	100
+	offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/006.gif
+        delay   500
+        frame	data/chars/casey/006a.gif
+        delay 10
+        offset	39 93
+        bbox	34 40 18 42
+        frame	data/chars/casey/005.gif
+        frame	data/chars/casey/004.gif
+        offset	39 98
+        bbox	34 40 18 42
+	frame	data/chars/casey/110.gif
+        frame	data/chars/casey/111.gif
+        frame	data/chars/casey/112.gif
+        frame	data/chars/casey/113.gif
+         frame	data/chars/casey/114.gif
+	delay	20
+	offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        frame	data/chars/casey/072.gif
+        frame	data/chars/casey/073.gif
+        frame	data/chars/casey/074.gif
+        delay 10
+        offset	39 98
+        bbox	34 40 18 42
+        frame	data/chars/casey/114.gif
+        frame	data/chars/casey/113.gif
+        frame	data/chars/casey/112.gif
+        frame	data/chars/casey/111.gif
+        frame	data/chars/casey/110.gif
+        offset	39 93
+        bbox	34 40 18 42
+        frame	data/chars/casey/004.gif
+        frame	data/chars/casey/005.gif
+#anim faint
+       # loop 1
+	  #delay	100
+	  #offset	39 93
+	  #bbox	34 40 18 42
+        #summonframe 0 160 150 0 1
+        #subentity transp2
+	  #frame	data/chars/casey/006.gif
+        #delay   500
+        #frame	data/chars/casey/006a.gif
+anim charge
+        loop 1
+        delay	1
+	offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/023.gif
+        offset	38 93
+        frame	data/chars/casey/024.gif
+anim spawn
+	delay	20
+	offset	31 114
+	bbox	25 55 17 49
+	frame	data/chars/casey/a1.gif
+        frame	data/chars/casey/a2.gif
+        delay   35
+        frame	data/chars/casey/a3.gif
+        delay 20
+        offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/006.gif
+anim respawn
+	delay	15
+	offset	39 93
+	bbox	34 40 18 42
+      sound  data/sounds/csjfight.wav
+	frame	data/chars/casey/001.gif
+        frame	data/chars/casey/002.gif
+        sound   data/sounds/cmon.wav
+        frame	data/chars/casey/003.gif
+        frame	data/chars/casey/002.gif
+        frame	data/chars/casey/003.gif
+        frame	data/chars/casey/002.gif
+        frame	data/chars/casey/003.gif
+        frame	data/chars/casey/002.gif
+        offset	39 93
+        frame	data/chars/casey/001.gif
+        frame	data/chars/casey/004.gif
+        frame	data/chars/casey/005.gif
+        frame	data/chars/casey/006.gif
+anim walk
+	loop	1
+	delay	9
+	offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/007.gif
+        frame	data/chars/casey/008.gif
+        frame	data/chars/casey/009.gif
+        frame	data/chars/casey/010.gif
+        frame	data/chars/casey/011.gif
+        frame	data/chars/casey/012.gif
+        frame	data/chars/casey/013.gif
+        frame	data/chars/casey/014.gif
+anim run
+        loop	1
+	delay	12
+	offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb4.gif
+anim runattack
+       delay	8
+        move 5
+	offset	39 93
+	bbox	34 40 18 42
+        sound   data/sounds/csjkd.wav
+	frame	data/chars/casey/056.gif
+        frame	data/chars/casey/057.gif
+        frame	data/chars/casey/058.gif
+        frame	data/chars/casey/059.gif
+        attack2 41 48 47 50 16 1 0 0 20
+        frame	data/chars/casey/060.gif
+        frame	data/chars/casey/061.gif
+        attack  37 0  29 93 16 1 0 0 20
+        frame	data/chars/casey/062.gif
+        attack  0 0 0 0 0
+        frame	data/chars/casey/063.gif
+        frame	data/chars/casey/064.gif
+        move 0
+        frame	data/chars/casey/065.gif
+        frame	data/chars/casey/066.gif
+        frame	data/chars/casey/067.gif
+anim get
+	delay	15
+	offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/120a.gif
+anim attack1
+	delay	3
+	offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/043.gif
+        frame	data/chars/casey/044.gif
+        offset	43 93
+        frame	data/chars/casey/045.gif
+        offset	39 93
+        frame	data/chars/casey/046.gif
+        offset	27 93
+        frame	data/chars/casey/047.gif
+        offset	30 93
+        attack  51 25 44 65 8 0 0 0 10 
+        frame	data/chars/casey/048.gif
+        frame	data/chars/casey/049.gif
+        frame	data/chars/casey/051.gif
+        attack  0 0 0 0 0 0
+        frame	data/chars/casey/052.gif
+        offset	32 93
+        frame	data/chars/casey/053.gif
+        offset	31 93
+        frame	data/chars/casey/054.gif
+        offset	34 93
+        frame	data/chars/casey/055.gif
+anim attack2
+	delay	10
+	offset	39 93
+	bbox	34 40 18 42
+        hitflash bflash
+	frame	data/chars/casey/056.gif
+        frame	data/chars/casey/057.gif
+        move 2
+        delay 1
+        frame	data/chars/casey/058.gif
+        frame	data/chars/casey/058.gif
+        frame	data/chars/casey/058.gif
+        frame	data/chars/casey/058.gif
+        frame	data/chars/casey/058.gif
+        attack  36 48 24 25 10 0 0 0 15
+        frame	data/chars/casey/052.gif
+        frame	data/chars/casey/052.gif
+        frame	data/chars/casey/052.gif
+        frame	data/chars/casey/052.gif
+        frame	data/chars/casey/052.gif
+        frame	data/chars/casey/052.gif
+        frame	data/chars/casey/052.gif
+        frame	data/chars/casey/052.gif
+        frame	data/chars/casey/052.gif
+        frame	data/chars/casey/052.gif
+anim attack3
+	delay	8
+	offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/056.gif
+        frame	data/chars/casey/057.gif
+        frame	data/chars/casey/058.gif
+        frame	data/chars/casey/059.gif
+        attack2 41 48 47 50 16 1 0 0 20
+        frame	data/chars/casey/060.gif
+        frame	data/chars/casey/061.gif
+        attack  37 0  29 93 16 1 0 0 20
+        frame	data/chars/casey/062.gif
+        attack  0 0 0 0 0
+        frame	data/chars/casey/063.gif
+        frame	data/chars/casey/064.gif
+        frame	data/chars/casey/065.gif
+        frame	data/chars/casey/066.gif
+        frame	data/chars/casey/067.gif
+anim special
+        mponly  1
+        energycost 61
+	delay	8
+        offset	39 98
+	bbox	0 0 0 0
+        hitflash bflash
+        flipframe 8
+	frame	data/chars/casey/110.gif
+        frame	data/chars/casey/111.gif
+        frame	data/chars/casey/112.gif
+        offset	39 93
+        frame	data/chars/casey/091.gif
+        frame	data/chars/casey/092.gif
+        frame	data/chars/casey/094.gif
+        frame	data/chars/casey/095.gif
+        sound   data/sounds/csjfight.wav
+        attack8   48 45 32 27 10 1 0 0 20
+        frame	data/chars/casey/096a.gif
+        offset	60 93
+        frame	data/chars/casey/102.gif
+        attack8 0 0 0 0 0  
+        offset	61 93
+        frame	data/chars/casey/103.gif
+        offset	39 93
+        frame	data/chars/casey/104.gif
+        blast 48 45 32 27 16 1 0 20 
+        frame	data/chars/casey/096a.gif
+        delay 18
+        blast   0 0 0 0 0 0
+        frame	data/chars/casey/095.gif
+        delay 8
+        frame	data/chars/casey/091.gif
+        offset	39 98
+        frame	data/chars/casey/111.gif
+        frame	data/chars/casey/110.gif
+        offset	39 93
+        bbox	34 40 18 42
+        frame	data/chars/casey/001.gif
+        frame	data/chars/casey/004.gif
+        frame	data/chars/casey/005.gif
+anim special2
+        mponly 1
+        energycost 61
+        delay	7
+        jumpframe 6 4
+	offset	39 93
+	bbox	0 0 0 0 
+        move 5
+        sound   data/sounds/csjkd.wav
+	frame	data/chars/casey/056.gif
+        frame	data/chars/casey/057.gif
+        frame	data/chars/casey/058.gif
+        frame	data/chars/casey/015.gif
+        frame	data/chars/casey/016.gif
+        attack2 45 42 40 55 10 1 0 0 20
+        frame	data/chars/casey/017.gif
+        delay 3
+        attack2 0 0 0 0 0
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/018.gif
+        attack2 45 0 30 77 10 1 0 0 20
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/019.gif
+        attack2 0 0 0 0 0
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/021.gif
+        frame	data/chars/casey/021.gif
+        frame	data/chars/casey/021.gif
+        frame	data/chars/casey/021.gif
+        attack2  0 0 0 0 0
+        delay	4
+        move 3
+	offset	39 93
+	bbox	34 40 18 42
+        frame	data/chars/casey/045.gif
+        frame	data/chars/casey/046.gif
+        frame	data/chars/casey/047.gif
+        blast  51 25 44 65 20 1 0 30 
+        frame	data/chars/casey/048.gif
+        frame	data/chars/casey/049.gif
+        frame	data/chars/casey/051.gif
+        blast  0 0 0 0 0 0
+        frame	data/chars/casey/052.gif
+        frame	data/chars/casey/053.gif
+        frame	data/chars/casey/054.gif
+        frame	data/chars/casey/055.gif
+anim upper
+        delay 5
+        offset	39 93
+	bbox	34 40 18 42
+        jumpframe 1 4 1 0
+        landframe 8
+        frame	data/chars/casey/015.gif
+        frame	data/chars/casey/016.gif
+        attack  37 0  29 93 16 1 0 0 20
+        frame	data/chars/casey/017.gif
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/021.gif
+        attack  0 0 0 0 0
+        delay 1000
+        frame	data/chars/casey/025.gif
+        delay 30
+        frame	data/chars/casey/024.gif
+anim grab
+	offset	39 93
+	bbox	34 40 18 42
+        frame	data/chars/casey/001.gif
+anim grabattack
+	delay	10
+        offset	39 98
+	bbox	34 40 18 42
+        hitflash bflash
+        sound   data/sounds/csjkd.wav
+	frame	data/chars/casey/110.gif
+        frame	data/chars/casey/111.gif
+        frame	data/chars/casey/112.gif
+        offset	39 93
+        frame	data/chars/casey/091.gif
+        frame	data/chars/casey/092.gif
+        frame	data/chars/casey/094.gif
+        frame	data/chars/casey/095.gif
+        blast   48 45 32 27 40 1 0 30
+        frame	data/chars/casey/096a.gif
+        blast   0 0 0 0 0 0
+        frame	data/chars/casey/097.gif
+        frame	data/chars/casey/098.gif
+        frame	data/chars/casey/099.gif
+        offset	39 98
+	bbox	34 40 18 42
+        frame	data/chars/casey/110.gif
+        offset	39 93
+        frame	data/chars/casey/001.gif
+        frame	data/chars/casey/004.gif
+        frame	data/chars/casey/005.gif
+anim grabattack2
+	delay	5
+        jumpframe 6 4
+	offset	39 93
+	bbox	34 40 18 42
+        sound   data/sounds/csjkd.wav
+	frame	data/chars/casey/056.gif
+        frame	data/chars/casey/057.gif
+        frame	data/chars/casey/058.gif
+        frame	data/chars/casey/015.gif
+        frame	data/chars/casey/016.gif
+        attack2  37 0  29 93 10 1 0 0 20
+        frame	data/chars/casey/017.gif
+        move 4
+        delay 3
+        attack2  0 0 0 0 0
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/018.gif
+        attack2  37 0  29 93 10 1 0 0 20
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/019.gif
+        attack2  0 0 0 0 0
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/020.gif
+        blast  37 0 29 93 10 1 0 20
+        frame	data/chars/casey/021.gif
+        frame	data/chars/casey/021.gif
+        frame	data/chars/casey/021.gif
+        frame	data/chars/casey/021.gif
+        blast  0 0 0 0 0
+        delay 30
+        move 0
+        frame	data/chars/casey/025.gif
+        delay 20
+        frame	data/chars/casey/053.gif
+        delay 10
+        frame	data/chars/casey/054.gif
+        frame	data/chars/casey/055.gif
+anim throw
+        delay   10
+        offset	24 62
+	bbox	0 0 0 0
+        throwframewait 1
+        offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/052.gif
+        frame	data/chars/casey/060.gif
+        frame	data/chars/casey/061.gif
+        frame	data/chars/casey/023.gif
+        frame	data/chars/casey/024.gif
+anim pain
+        delay 5
+        offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/029.gif
+        offset	40 93
+        frame	data/chars/casey/029.gif
+        offset	39 93
+        frame	data/chars/casey/029.gif
+        offset	40 93
+        frame	data/chars/casey/029.gif
+        offset	39 93
+        frame	data/chars/casey/029.gif
+anim pain2
+        delay 5
+        offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/030.gif
+        offset	40 93
+        frame	data/chars/casey/030.gif
+        offset	39 93
+        frame	data/chars/casey/030.gif
+        offset	40 93
+        frame	data/chars/casey/030.gif
+        offset	39 93
+        frame	data/chars/casey/030.gif
+anim pain3
+        delay 5
+        offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/030.gif
+        offset	40 93
+        frame	data/chars/casey/030.gif
+        offset	39 93
+        frame	data/chars/casey/030.gif
+        offset	40 93
+        frame	data/chars/casey/030.gif
+        offset	39 93
+        frame	data/chars/casey/030.gif
+anim pain4
+        delay 15
+        offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/063.gif
+        offset	40 93
+        frame	data/chars/casey/065.gif
+        offset	39 93
+        frame	data/chars/casey/063.gif
+        offset	40 93
+        frame	data/chars/casey/065.gif
+        offset	39 93
+        frame	data/chars/casey/063.gif
+        offset	40 93
+        frame	data/chars/casey/065.gif
+anim pain5
+        offset	39 93
+	bbox	100000000 0 1 1
+        delay 200
+        frame	data/chars/casey/035.gif
+        delay 15
+	offset	39 93
+	frame	data/chars/casey/036.gif
+        frame	data/chars/casey/037.gif
+anim pain6
+	offset	39 93
+	bbox	10000000 0 1 1
+	delay	10
+      	frame	data/chars/casey/d1.gif
+        frame	data/chars/casey/d2.gif
+        frame	data/chars/casey/d1.gif
+        frame	data/chars/casey/d2.gif
+        frame	data/chars/casey/d1.gif
+        frame	data/chars/casey/d2.gif
+        frame	data/chars/casey/d1.gif
+        frame	data/chars/casey/d2.gif
+        frame	data/chars/casey/d1.gif
+        frame	data/chars/casey/d2.gif
+anim pain8
+        delay 100
+        offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/freeze.gif
+        delay 10
+        offset	40 93
+        frame	data/chars/casey/freeze.gif
+        offset	39 93
+        delay 9
+        frame	data/chars/casey/freeze.gif
+        delay 8
+        offset	40 93
+        frame	data/chars/casey/freeze.gif
+        offset	39 93
+        delay 7
+        frame	data/chars/casey/freeze.gif
+        delay 6
+        offset	40 93
+        frame	data/chars/casey/freeze.gif
+        offset	39 93
+        delay 5
+        frame	data/chars/casey/freeze.gif
+        delay 4
+        offset	40 93
+        frame	data/chars/casey/freeze.gif
+        offset	39 93
+        delay 3
+        frame	data/chars/casey/freeze.gif
+        delay 2
+        offset	40 93
+        frame	data/chars/casey/freeze.gif
+        offset	39 93
+        delay 1
+        frame	data/chars/casey/freeze.gif
+anim pain9
+        delay 15
+        offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/005.gif
+        delay 50
+        offset	26 112
+        bbox	16 51 17 47
+        sound   data/sounds/csjok.wav
+        frame	data/chars/casey/c1.gif
+        delay 10
+        offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/005.gif
+anim spain
+	delay   5
+        offset	37 81
+	bbox	28 35 28 43
+	frame	data/chars/casey/schock1.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+anim shock
+	delay   5
+        offset	37 81
+	bbox	1000000 0 1 1
+	frame	data/chars/casey/schock1.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+       frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+      frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+anim sdie
+	delay   5
+        offset	37 81
+	bbox	1000000 0 1 1
+        jumpframe 17 3
+        custknife fck
+        throwframe 94 -1
+	frame	data/chars/casey/schock1.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+       frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+      frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+        frame	data/chars/casey/schock2.gif
+        frame	data/chars/casey/schock3.gif
+   offset	39 93
+        delay 1
+	bbox	10000000 0 1 1
+        move -1
+	frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        frame	data/chars/casey/030.gif
+        offset	49 97
+        frame	data/chars/casey/031.gif
+        frame	data/chars/casey/031.gif
+        frame	data/chars/casey/031.gif
+         frame	data/chars/casey/031.gif
+        frame	data/chars/casey/031.gif
+        frame	data/chars/casey/031.gif
+         frame	data/chars/casey/031.gif
+        frame	data/chars/casey/031.gif
+        frame	data/chars/casey/031.gif
+         frame	data/chars/casey/031.gif
+        frame	data/chars/casey/031.gif
+        frame	data/chars/casey/031.gif
+         frame	data/chars/casey/031.gif
+        frame	data/chars/casey/031.gif
+        frame	data/chars/casey/031.gif
+        offset	39 93
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+         frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/034.gif
+        frame	data/chars/casey/034.gif
+        frame	data/chars/casey/034.gif
+         frame	data/chars/casey/034.gif
+        frame	data/chars/casey/034.gif
+        frame	data/chars/casey/034.gif
+         frame	data/chars/casey/034.gif
+        frame	data/chars/casey/034.gif
+        frame	data/chars/casey/034.gif
+         frame	data/chars/casey/034.gif
+        frame	data/chars/casey/034.gif
+        frame	data/chars/casey/034.gif
+         frame	data/chars/casey/034.gif
+        frame	data/chars/casey/034.gif
+        frame	data/chars/casey/034.gif
+        move  0
+        delay 30
+        frame	data/chars/casey/035a.gif
+        delay 20
+	bbox	0 0 0 0
+	frame	data/chars/casey/038.gif
+        frame	data/chars/casey/039.gif
+        frame	data/chars/casey/040.gif
+        frame	data/chars/casey/041.gif
+        frame	data/chars/casey/040.gif
+        frame	data/chars/casey/039.gif
+        frame	data/chars/casey/040.gif
+        frame	data/chars/casey/041.gif
+        frame	data/chars/casey/040.gif
+        frame	data/chars/casey/039.gif
+        frame	data/chars/casey/040.gif
+        frame	data/chars/casey/041a.gif
+anim bpain
+        delay 100
+        offset	39 93
+	bbox	10000000 0 1 1
+	frame	data/chars/casey/burn.gif
+anim bdie
+        delay 100
+        offset	39 93
+	bbox	10000000 0 1 1
+	frame	data/chars/casey/burn.gif
+
+anim fall
+	delay   15
+        offset	39 93
+	bbox	1000000000 0 1 1
+	frame	data/chars/casey/031.gif
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/034.gif
+        delay 30
+        frame	data/chars/casey/035.gif
+anim rise
+        delay 15
+	offset	39 93
+	bbox	10000000 0 1 1
+	frame	data/chars/casey/036.gif
+        frame	data/chars/casey/037.gif
+anim death 
+        offset	39 93
+        delay 15
+	bbox	10000000 0 1 1
+        jumpframe 0 3 -1 0
+        landframe 5
+        custknife fck
+        throwframe 6 -1
+	frame	data/chars/casey/030.gif
+        offset	49 97
+        frame	data/chars/casey/031.gif
+        offset	39 93
+        frame	data/chars/casey/032.gif
+        frame	data/chars/casey/033.gif
+        frame	data/chars/casey/034.gif
+        delay 30
+        frame	data/chars/casey/035a.gif
+        delay 20
+	bbox	0 0 0 0
+	frame	data/chars/casey/038.gif
+        frame	data/chars/casey/039.gif
+        frame	data/chars/casey/040.gif
+        frame	data/chars/casey/041.gif
+        frame	data/chars/casey/040.gif
+        frame	data/chars/casey/039.gif
+        frame	data/chars/casey/040.gif
+        frame	data/chars/casey/041.gif
+        frame	data/chars/casey/040.gif
+        frame	data/chars/casey/039.gif
+        frame	data/chars/casey/040.gif
+        frame	data/chars/casey/041a.gif
+anim land
+        delay	10
+	offset	39 93
+	bbox	0 0 0 0
+	frame	data/chars/casey/023.gif
+        offset	40 93
+        frame	data/chars/casey/024.gif
+        offset	39 93
+	frame	data/chars/casey/023.gif
+        offset	40 93
+        frame	data/chars/casey/024.gif
+anim freespecial2
+        mponly 1
+        energycost 31
+        delay	7
+        jumpframe 6 4
+	offset	39 93
+	bbox	34 40 18 42
+        sound   data/sounds/csjkd.wav
+	frame	data/chars/casey/056.gif
+        frame	data/chars/casey/057.gif
+        frame	data/chars/casey/058.gif
+        frame	data/chars/casey/015.gif
+        frame	data/chars/casey/016.gif
+        attack2 45 42 40 55 10 1 0 0 20
+        frame	data/chars/casey/017.gif
+        move 4
+        delay 3
+        attack2  0 0 0 0 0
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/018.gif
+        attack2 45 0 30 77 10 1 0 0 20
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/019.gif
+        attack2  0 0 0 0 0
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/020.gif
+        attack  45 0 30 77 10 1 0 0 20
+        frame	data/chars/casey/021.gif
+        frame	data/chars/casey/021.gif
+        frame	data/chars/casey/021.gif
+        frame	data/chars/casey/021.gif
+        attack  0 0 0 0 0
+        delay 30
+        move 0
+        frame	data/chars/casey/025.gif
+        delay 20
+        frame	data/chars/casey/053.gif
+        delay 10
+        frame	data/chars/casey/054.gif
+        frame	data/chars/casey/055.gif
+anim attackup
+        delay	7
+        jumpframe 6 3
+	offset	39 93
+	bbox	34 40 18 42
+	frame	data/chars/casey/056.gif
+        frame	data/chars/casey/057.gif
+        frame	data/chars/casey/058.gif
+        frame	data/chars/casey/015.gif
+        frame	data/chars/casey/016.gif
+        attack2  37 0  29 93 20 1 0 0 20
+        frame	data/chars/casey/017.gif
+        move 2
+        delay 2
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/018.gif
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/019.gif
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/020.gif
+        frame	data/chars/casey/021.gif
+        frame	data/chars/casey/021.gif
+        frame	data/chars/casey/021.gif
+        attack2  0 0 0 0 0
+        delay 35
+        move 0
+        frame	data/chars/casey/025.gif
+        delay 20
+        frame	data/chars/casey/053.gif
+        delay 10
+        frame	data/chars/casey/054.gif
+        frame	data/chars/casey/055.gif
+anim attackdown
+        delay	8
+        offset	39 98
+	bbox	34 40 18 42
+        hitflash bflash
+	frame	data/chars/casey/110.gif
+        delay 4
+        frame	data/chars/casey/111.gif
+        frame	data/chars/casey/112.gif
+        frame	data/chars/casey/113.gif
+        offset	39 93
+        frame	data/chars/casey/090.gif
+        delay 8
+        frame	data/chars/casey/091.gif
+        frame	data/chars/casey/092.gif
+        frame	data/chars/casey/094.gif
+        frame	data/chars/casey/095.gif
+        attack   48 45 32 27 10 0 0 0 20
+        frame	data/chars/casey/096a.gif
+        attack   0 0 0 0 0 0
+        sound   data/sounds/csjsolg.wav
+        frame	data/chars/casey/097.gif
+        frame	data/chars/casey/098.gif
+        offset	60 93
+        frame	data/chars/casey/102.gif
+        offset	61 93
+        frame	data/chars/casey/103.gif
+        offset	39 93
+        frame	data/chars/casey/104.gif
+        attack8 48 45 32 27 16 1 1 0 20 
+        frame	data/chars/casey/096a.gif
+        delay 20
+        blast   0 0 0 0 0 0
+        frame	data/chars/casey/095.gif
+        delay 10
+        frame	data/chars/casey/091.gif
+        offset	39 98
+        frame	data/chars/casey/111.gif
+        frame	data/chars/casey/110.gif
+        offset	39 93
+        frame	data/chars/casey/001.gif
+        frame	data/chars/casey/004.gif
+        frame	data/chars/casey/005.gif
+anim freespecial3
+        mponly 1
+        energycost 61
+	delay	10
+        delay	15
+	offset	39 93
+	bbox	34 40 18 42
+        custknife bbat
+        throwframe 7 20
+       	frame	data/chars/casey/005.gif
+        frame	data/chars/casey/004.gif
+        offset	39 98
+	bbox	34 40 18 42
+       	frame	data/chars/casey/110.gif
+        offset	48 93
+        frame	data/chars/casey/101.gif
+        offset	60 93
+        frame	data/chars/casey/102.gif
+        offset	61 93
+        frame	data/chars/casey/103.gif
+        offset	39 93
+        sound   data/sounds/csjshot.wav
+        frame	data/chars/casey/104.gif
+        delay 20
+        frame	data/chars/casey/105.gif
+        delay 10
+        frame	data/chars/casey/106.gif
+        frame	data/chars/casey/107.gif
+        frame	data/chars/casey/106.gif
+        frame	data/chars/casey/107.gif
+        delay 10
+        frame	data/chars/casey/105.gif
+        offset	39 98
+        frame	data/chars/casey/108.gif
+        frame	data/chars/casey/109.gif
+        offset	39 93
+        frame	data/chars/casey/001.gif
+        frame	data/chars/casey/004.gif
+        frame	data/chars/casey/005.gif
+anim block
+        anim block
+        bbox	0 0 0 0
+        offset	39 93
+        delay 1
+        jumpframe 1 1 -2 0
+        landframe 2
+       	frame	data/chars/casey/063.gif
+        delay 30
+        frame	data/chars/casey/063.gif
+        bbox	34 40 18 42
+        delay 15
+        @cmd changeentityproperty getlocalvar("self") "velocity" 0 0 0
+        frame	data/chars/casey/065.gif
+anim freespecial4
+        energycost 123
+        mponly 1
+        delay 10
+        offset	39 93
+        followanim 1
+        followcond 1
+        hitfx   data/sounds/aaaaaaa.wav
+        hitflash  bflash
+	bbox	10000000 0 1 1
+	frame	data/chars/casey/005.gif
+        offset	25 112
+        delay 40
+      sound  data/sounds/ssjok.wav
+	frame	data/chars/casey/c1.gif
+        delay	2
+        move 4
+	offset	39 93
+	attack	54 34 25 60 1 0 1 0 0
+	frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb4.gif
+        frame	data/chars/casey/rnb4.gif
+        frame	data/chars/casey/rnb4.gif
+        frame	data/chars/casey/rnb4.gif
+        frame	data/chars/casey/rnb4.gif
+        frame	data/chars/casey/rnb4.gif
+        	frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb1.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb2.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb3.gif
+        frame	data/chars/casey/rnb4.gif
+        frame	data/chars/casey/rnb4.gif
+        frame	data/chars/casey/rnb4.gif
+        frame	data/chars/casey/rnb4.gif
+        frame	data/chars/casey/rnb4.gif
+        frame	data/chars/casey/rnb4.gif
+        offset	39 93
+        delay 6
+        move 3
+        attack  0 0 0 0 0
+        frame	data/chars/casey/063.gif
+        frame	data/chars/casey/064.gif
+        frame	data/chars/casey/064.gif
+        frame	data/chars/casey/064.gif
+        move 2
+        frame	data/chars/casey/064.gif
+        frame	data/chars/casey/064.gif
+        frame	data/chars/casey/064.gif
+        move 1
+        frame	data/chars/casey/065.gif
+        frame	data/chars/casey/065.gif
+anim follow1
+        hitflash   bosf3
+        delay	5
+        offset	39 93
+	bbox	100000000 0 1 1
+        flipframe 36
+	attack  36 48 24 25 1 0 1 0 20
+        frame	data/chars/casey/052.gif
+        delay	3
+	offset	39 93
+        attack  0 0 0 0
+	frame	data/chars/casey/043.gif
+        frame	data/chars/casey/044.gif
+        offset	43 93
+        frame	data/chars/casey/045.gif
+        offset	39 93
+        frame	data/chars/casey/046.gif
+        offset	27 93
+        frame	data/chars/casey/047.gif
+        offset	30 93
+        attack  51 25 44 65 2 0 1 0 20 
+        frame	data/chars/casey/048.gif
+        frame	data/chars/casey/049.gif
+        frame	data/chars/casey/051.gif
+        attack  0 0 0 0 0 0
+        frame	data/chars/casey/052.gif
+        offset	32 93
+        frame	data/chars/casey/053.gif
+        offset	31 93
+        frame	data/chars/casey/054.gif
+        offset	34 93
+        frame	data/chars/casey/055.gif
+        delay	5
+	offset	39 93
+	frame	data/chars/casey/056.gif
+        move 2
+        frame	data/chars/casey/057.gif
+        frame	data/chars/casey/058.gif
+        frame	data/chars/casey/059.gif
+        attack  41 48 47 50 4 0 1 0 20
+        frame	data/chars/casey/060.gif
+        frame	data/chars/casey/061.gif
+        attack  37 0 29 93 6 0 1 0 20
+        frame	data/chars/casey/062.gif
+        move 0
+        attack  0 0 0 0 0
+        offset	39 93
+        frame	data/chars/casey/004.gif
+        offset	39 98
+	frame	data/chars/casey/110.gif
+        frame	data/chars/casey/111.gif
+        frame	data/chars/casey/112.gif
+        offset	39 93
+        frame	data/chars/casey/091.gif
+        frame	data/chars/casey/092.gif
+        frame	data/chars/casey/094.gif
+        frame	data/chars/casey/095.gif
+        sound   data/sounds/csjfight.wav
+        attack   48 45 32 27 8 0 1 0 20
+        frame	data/chars/casey/096a.gif
+        offset	60 93
+        frame	data/chars/casey/102.gif
+        attack 0 0 0 0 0  
+        offset	61 93
+        frame	data/chars/casey/103.gif
+        offset	39 93
+        frame	data/chars/casey/104.gif
+        attack8 48 45 32 27 30 1 1 0 40 
+        frame	data/chars/casey/096a.gif
+        offset	60 93
+        frame	data/chars/casey/102.gif
+        attack8 0 0 0 0 0  
+        offset	61 93
+        frame	data/chars/casey/103.gif
+        offset	39 93
+        frame	data/chars/casey/104.gif
+        blast 48 45 32 27 16 1 0 20 
+        frame	data/chars/casey/096a.gif
+        delay 18
+        blast   0 0 0 0 0 0
+        frame	data/chars/casey/095.gif
+        delay 8
+        frame	data/chars/casey/091.gif
+        offset	39 98
+        frame	data/chars/casey/111.gif
+        frame	data/chars/casey/110.gif
+        offset	39 93
+        bbox	34 40 18 42
+        frame	data/chars/casey/001.gif
+        frame	data/chars/casey/004.gif
+        frame	data/chars/casey/005.gif

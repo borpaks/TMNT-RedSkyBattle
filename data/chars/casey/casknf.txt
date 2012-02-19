@@ -1,0 +1,29 @@
+name	casknf
+health	1
+type	pshot
+speed 10
+nolife 1
+noatflash 1
+flash bflash
+candamage enemy obstacle
+noquake 1
+anim idle
+	loop	1
+	delay	10
+	offset	-18 10
+        bbox	0 7 20 6
+	attack	0 7 20 6 10 0 0 0 15
+        hitfx   data/sounds/knifes.wav
+	frame	data/chars/casey/cas1/k1.gif
+anim fall
+	delay	10
+	offset	-18 8
+       	frame	data/chars/casey/cas1/k2.gif
+	frame	data/chars/casey/cas1/k3.gif
+        frame	data/chars/casey/cas1/k4.gif
+        frame	data/chars/casey/cas1/k5.gif
+	frame	data/chars/casey/cas1/k6.gif
+        frame	data/chars/casey/cas1/k7.gif
+        frame	data/chars/casey/cas1/k8.gif
+        frame	data/chars/casey/cas1/k1.gif
+

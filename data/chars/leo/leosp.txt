@@ -1,0 +1,63 @@
+name	leosp
+health	1
+type	pshot
+speed 10
+hitenemy 1
+nolife 1
+setlayer 1
+nomove 1 1
+remove 0
+grabdistance 400
+alpha 5
+candamage enemy
+anim idle
+	offset  500 294
+        delay   10
+        platform 1 1 1 1 1 1
+        seta 1
+        delay 10
+        frame	data/chars/leo/spcl3.gif
+        attack  0 0 1000 488 2 0 1
+        frame	data/chars/bosf/b1.gif
+        attack  0 0 0 0 0
+        frame	data/chars/leo/spcl3.gif
+        attack  0 0 1000 488 2 0 1
+        frame	data/chars/bosf/b1.gif
+        attack  0 0 0 0 0
+        frame	data/chars/leo/spcl3.gif
+        attack  0 0 1000 488 3 0 1
+        frame	data/chars/bosf/b1.gif
+        attack  0 0 0 0 0
+        frame	data/chars/leo/spcl3.gif
+        attack  0 0 1000 488 3 0 1
+        frame	data/chars/bosf/b1.gif
+        attack  0 0 0 0 0
+        frame	data/chars/leo/spcl3.gif
+        attack  0 0 1000 488 4 0 1
+        frame	data/chars/bosf/b1.gif
+        attack  0 0 0 0 0
+        frame	data/chars/leo/spcl3.gif
+        attack  0 0 1000 488 4 0 1
+        frame	data/chars/bosf/b1.gif
+        attack  0 0 0 0 0
+        frame	data/chars/leo/spcl3.gif
+        attack  0 0 1000 488 5 0 1
+        frame	data/chars/bosf/b1.gif
+        attack  0 0 0 0 0
+        frame	data/chars/leo/spcl3.gif
+        attack  0 0 1000 488 5 0 1
+        frame	data/chars/bosf/b1.gif
+        attack  0 0 0 0 0
+        frame	data/chars/leo/spcl3.gif
+        attack  0 0 1000 488 6 0 1
+        frame	data/chars/bosf/b1.gif
+        attack  0 0 0 0 0
+        frame	data/chars/leo/spcl3.gif
+        attack  0 0 1000 488 6 0 1
+        frame	data/chars/bosf/b1.gif
+        attack  0 0 0 0 0
+        frame	data/chars/leo/spcl3.gif
+        blast   0 0 1000 488 30 1
+        frame	data/chars/bosf/b1.gif
+        frame	data/chars/leo/spcl3.gif
+

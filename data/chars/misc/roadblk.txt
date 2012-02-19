@@ -1,0 +1,21 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	roadblk
+health	1
+type	obstacle
+#shadow	2
+#icon	data/chars/misc/boxicon.gif
+diesound data/sounds/klunk.wav
+
+
+anim idle
+	delay	1000
+	offset	28 57
+	bbox     11 13 42 52
+	frame	data/chars/misc/roadblk.gif
+
+anim fall
+	delay	1000
+	offset	34 55
+	frame	data/chars/misc/roadbld.gif

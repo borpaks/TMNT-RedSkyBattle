@@ -1,0 +1,204 @@
+music		data/music/lv1.ogg
+bossmusic	data/music/boss1.ogg
+notime 1
+settime 0
+background	data/bgs/metro/a1.gif
+panel		data/bgs/metro/a2.gif
+order	a
+bgspeed 15
+setweap 1
+#rock 1
+spawn1 50 50 0
+spawn2 70 70 0
+spawn3 50 90 0
+spawn4 70 110 0
+#--group1-----
+spawn	lvbegin
+flip 1
+coords	320 240
+at	0
+spawn	st2
+coords	155 100
+at	0
+
+wait
+at 1
+group 2 3
+at 1
+
+spawn	Foot3
+coords	350 180
+at	1
+spawn	Foot3
+map 2
+coords	350 220
+at	1
+spawn	Foot3
+map 3
+coords	550 180
+at	1
+spawn	Foot3
+map	4
+coords	550 220
+at	1
+
+spawn	tram
+coords	450 254
+at	1
+
+spawn	Foot3
+map 3
+coords	350 180
+at	1
+spawn	Foot3
+map	4
+coords	350 190
+at	1
+spawn	fly2
+coords	350 180
+at	1
+spawn	fly2
+coords	350 190
+at	1
+spawn	Foot3
+map 2
+coords	350 200
+at	1
+
+spawn	tram2
+coords	450 244
+at	1
+
+spawn	Foot3
+map 3
+coords	350 180
+at	1
+spawn	Foot3
+map	4
+coords	350 190
+at	1
+
+spawn	heli
+item    wybua
+aggression 40
+coords	550 180
+at	1
+
+spawn	Foot3
+map	4
+coords	350 190
+at	1
+spawn	Foot3
+coords	350 180
+at	1
+spawn	fly2
+coords	350 180
+at	1
+spawn	fly2
+coords	350 190
+at	1
+spawn	Foot3
+map 2
+coords	350 200
+at	1
+
+spawn	tram
+coords	450 244
+at	1
+
+spawn	Foot3
+map 3
+coords	350 180
+at	1
+spawn	Foot3
+map	1
+coords	350 220
+at	1
+spawn	Foot3
+map	4
+coords	350 190
+at	1
+
+spawn	tram
+coords	450 244
+at	1
+
+spawn	Foot3
+map 3
+coords	350 180
+at	1
+spawn	Foot3
+map	1
+coords	350 220
+at	1
+spawn	Foot3
+map	4
+coords	350 190
+at	1
+
+spawn	tram
+coords	450 244
+at	1
+
+spawn	Foot3
+map 3
+coords	350 180
+at	1
+
+spawn	heli
+aggression 40
+item    wybua
+map 1
+coords	550 180
+at	1
+
+spawn	fly2
+coords	350 180
+at	1
+spawn	fly2
+coords	350 190
+at	1
+spawn	Foot3
+coords	350 180
+at	1
+spawn	Foot3
+map 2
+coords	350 200
+at	1
+
+spawn	tram
+coords	450 244
+at	1
+
+spawn	Foot3
+map 3
+coords	350 180
+at	1
+spawn	Foot3
+map	1
+coords	350 220
+at	1
+spawn	Foot3
+map	4
+coords	350 190
+at	1
+##########################
+wait
+at 1
+group 2 2
+at 1
+spawn	Rtkng
+item bosf
+coords	285 210
+at	1
+spawn	Rat_king
+aggression 60
+2phealth 600
+3phealth 700
+4phealth 850
+alias _Rat_King
+item wybu
+boss 1
+health 400
+coords	450 250
+at	1

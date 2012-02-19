@@ -1,0 +1,9 @@
+name	lvbegin
+type	none
+setlayer 900
+anim idle
+        delay  200
+	offset	540 240
+        @cmd changeentityproperty getlocalvar("self") "velocity" 9 0 0
+        sound   data/sounds/lvbigin.wav
+	frame	data/chars/misc/lvst.gif

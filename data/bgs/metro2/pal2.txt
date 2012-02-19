@@ -1,0 +1,12 @@
+name	pal2
+health 1
+type	obstacle
+nolife 1
+grabdistance 20
+anim idle
+        loop 1
+	offset	7 134
+        delay 500
+        bbox    100000000 0 1 1
+	frame	data/bgs/metro2/b2.gif
+      

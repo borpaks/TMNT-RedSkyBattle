@@ -1,0 +1,22 @@
+name	easy1
+type	endlevel
+branch easy1
+nolife 1
+nolife 1
+anim idle
+        loop 1
+	offset  32 100
+        delay   50
+        bbox    24 4 15 76
+        @cmd changeentityproperty getlocalvar("self") "velocity" 0 -2 0
+        frame	data/chars/sign/1a.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/sign/1b.gif
+        frame	data/chars/misc/empty.gif
+        @cmd changeentityproperty getlocalvar("self") "velocity" 0 2 0
+        frame	data/chars/sign/1a.gif
+        frame	data/chars/misc/empty.gif
+        frame	data/chars/sign/1b.gif
+        frame	data/chars/misc/empty.gif
+
+ 

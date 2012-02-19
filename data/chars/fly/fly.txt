@@ -1,0 +1,189 @@
+name	fly
+health	20
+speed	16
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+shadow	1
+diesound data/sounds/klunk.wav
+cantgrab 1
+throw	2 4
+nolife 1
+grabdistance 20
+throwdamage	20
+noquake 1
+dust dust
+noatflash 1
+flash bflash
+falldie 2
+nodieblink 2
+load laser2
+risetime 500
+hostile player npc
+candamage player npc obstacle
+remap data/chars/fly/1.gif data/chars/fly/alt1.gif 
+remap data/chars/fly/1.gif data/chars/fly/alt2.gif 
+remap data/chars/fly/1.gif data/chars/fly/alt3.gif 
+gfxshadow 1
+anim idle
+	loop	1
+	offset	18 26
+	bbox	8 10 24 18
+	delay	10
+        seta 40
+	frame	data/chars/fly/1.gif
+        frame	data/chars/fly/2.gif     
+        frame	data/chars/fly/3.gif
+        frame	data/chars/fly/2.gif
+anim spawn
+	offset	18 26
+	bbox	8 10 24 18
+	delay	1
+        seta 40
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%3;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+	frame	data/chars/fly/1.gif
+anim walk
+	loop	1
+	offset	18 26
+	bbox	8 10 24 18
+	delay	10
+        seta 40
+	frame	data/chars/fly/1.gif
+        frame	data/chars/fly/2.gif
+        frame	data/chars/fly/3.gif
+        frame	data/chars/fly/2.gif
+anim up
+	loop	1
+	offset	18 26
+	bbox	8 10 24 18
+	delay	10
+        seta 40
+	frame	data/chars/fly/4.gif
+        frame	data/chars/fly/5.gif
+        frame	data/chars/fly/6.gif
+        frame	data/chars/fly/5.gif
+anim down
+	loop	1
+	offset	18 26
+	bbox	8 10 24 18
+	delay	10
+        seta 40
+	frame	data/chars/fly/7.gif
+        frame	data/chars/fly/8.gif
+        frame	data/chars/fly/9.gif
+        frame	data/chars/fly/8.gif
+anim pain
+	offset	18 26
+	bbox	8 10 24 18
+	delay	5
+        seta 40
+        move -5
+	frame	data/chars/fly/1.gif
+        offset	19 26
+        frame	data/chars/fly/8.gif
+        offset	18 26
+        frame	data/chars/fly/b1.gif
+        offset	19 26
+        frame	data/chars/fly/5.gif
+        offset	18 26
+        frame	data/chars/fly/1.gif
+        offset	19 26
+        frame	data/chars/fly/8.gif
+        offset	18 26
+        frame	data/chars/fly/b1.gif
+        offset	19 26
+        frame	data/chars/fly/5.gif
+anim fall
+	offset	18 26
+	bbox	8 10 24 18
+	delay	5
+	frame	data/chars/fly/1.gif
+        frame	data/chars/fly/2.gif
+        frame	data/chars/fly/3.gif
+        frame	data/chars/fly/2.gif
+        frame	data/chars/fly/1.gif
+        frame	data/chars/fly/2.gif
+        frame	data/chars/fly/3.gif
+        frame	data/chars/fly/2.gif
+        frame	data/chars/fly/1.gif
+        frame	data/chars/fly/2.gif
+        frame	data/chars/fly/3.gif
+        frame	data/chars/fly/2.gif
+        frame	data/chars/fly/7.gif
+        frame	data/chars/fly/8.gif
+        frame	data/chars/fly/9.gif
+        frame	data/chars/fly/8.gif
+        frame	data/chars/fly/7.gif
+        frame	data/chars/fly/8.gif
+        frame	data/chars/fly/9.gif
+        frame	data/chars/fly/8.gif
+        frame	data/chars/fly/7.gif
+        frame	data/chars/fly/8.gif
+        frame	data/chars/fly/9.gif
+        frame	data/chars/fly/8.gif
+anim rise
+      offset	18 26
+	bbox	8 10 24 18
+	delay	5
+        movea   5
+	frame	data/chars/fly/1.gif
+        frame	data/chars/fly/2.gif
+        frame	data/chars/fly/3.gif
+        frame	data/chars/fly/2.gif
+        frame	data/chars/fly/1.gif
+        frame	data/chars/fly/2.gif
+        frame	data/chars/fly/3.gif
+        frame	data/chars/fly/2.gif
+anim attack1
+        range 150 170
+        custknife laser2
+        throwframe 6 3
+	offset	18 26
+	bbox	8 10 24 18
+	delay	5
+        seta 40
+	frame	data/chars/fly/a1.gif
+        frame	data/chars/fly/a2.gif
+        frame	data/chars/fly/a1.gif
+        frame	data/chars/fly/a2.gif
+        frame	data/chars/fly/a1.gif
+        frame	data/chars/fly/a2.gif
+        frame	data/chars/fly/a3.gif
+        frame	data/chars/fly/a4.gif
+        frame	data/chars/fly/1.gif
+        frame	data/chars/fly/2.gif
+        frame	data/chars/fly/3.gif
+        frame	data/chars/fly/2.gif
+anim death
+        offset	64 96
+	bbox	0 0 0 0
+	delay	2
+        seta 1
+        quakeframe 0 6 1
+        hitfx   data/sounds/granat.wav
+	frame	data/chars/wybu/d11.gif       
+        frame	data/chars/wybu/d12.gif    
+        frame	data/chars/wybu/d13.gif 
+        frame	data/chars/wybu/d14.gif       
+        frame	data/chars/wybu/d15.gif    
+        frame	data/chars/wybu/d16.gif 
+        frame	data/chars/wybu/d17.gif       
+        frame	data/chars/wybu/d18.gif    
+        frame	data/chars/wybu/d19.gif 
+        frame	data/chars/wybu/d20.gif       
+        frame	data/chars/wybu/d21.gif    
+        frame	data/chars/wybu/d22.gif 
+        frame	data/chars/wybu/d23.gif    
+        frame	data/chars/wybu/d24.gif  
+
